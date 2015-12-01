@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>Teaching and Lectures</h1>
+
+  <ul>
+    <li><b>Introduction to programming</b>: The current instantiation of the course is <a href="https://github.com/leoferres/lp1">503208</a>.</li>
+      <li><b>Peek & Poke</b>: Six lectures on <a href="./">computing
+      in the 1980s</a> [In Progress, ETA: 2016-2]</li>
+      <li><b>Computing Machines</b>: Ten lectures on <a href="./">the
+      history of computing</a> [In progress, ETA: 2018-1]</li>
+  </ul>
+
+  <h1>Research</h1>
+
+  <ul>
+    <li><b>News systems of the world</b>: (Ok, Chile, but we want to
+	extend it) I've been working with
+	<a href="http://www.informatics.indiana.edu/jbollen/">Johan
+	Bollen</a> on a project to characterize the news cycle and the
+	characteristics of news outlets in the world. You can access
+	our
+	<a href="http://azu1.inf.udec.cl/twitter">News Analytics</a>
+	dashboard to find out more. We have been showcased at in the
+	<a href="http://www.udec.cl/panoramaweb2/2015/06/investigacion-de-la-udec-analizara-consumo-de-noticias-a-traves-de-twitter/">University newspaper</a>!</li>
+    <li><b>Succinct trees</b>: My student José Fuentes and
+	    myself (together with Norbert Zhe and Meng He over at
+	    Dalhousie U) have been working on parallel construction of
+	    succinct trees. Here's our
+	    <a href="http://www.inf.udec.cl/~josefuentes/sea2015/">page</a>
+	    with some experiments, and
+	    the <a href="https://github.com/jfuentess/sea2015/">code</a>
+	    itself. We did this for
+	    <a href="http://sea2015.lip6.fr/">SEA 2015</a> in
+	    Paris. We also designed an algorithm for parallel
+	    construction of wavelet trees (joint work with José
+	    Fuentes, Erick Elejalde and Diego Seco), which we
+	    presented in <a href="./parwt.pdf">SEA 2014</a>, here is
+	    the <a href="http://www.inf.udec.cl/~josefuentes/wavelettree/">webpage</a>
+	    with
+	    the <a href="https://github.com/jfuentess/waveletree">code</a>
+	    for it.</li>
+
+	  <li><b>Hazard pointers</b>: We have an in-house
+	    implementation of hazard-pointers. See
+	    our <a href="https://github.com/azu-labs/Hazard-Pointers">github
+	    page</a>.</li>
+	  <li><b>Numa locks</b>: My student, Erick Elejalde, and
+	    myself have published code for a set of Numa-Aware
+	    locks. You can access the
+	    <a href="http://azu-labs.com/numa_locks/">experiments
+	    page</a>, or the code page
+	    at <a href="https://github.com/azu-labs/rw-numa-locks/">github</a>.</li>
+	  <li><b>Accessibility</b>: For my earlier accessibility work, you
+	may wish to
+	visit <a href="http://www.inf.udec.cl/~leo/previous_life.html">here</a>,
+	while for iGraph-related work, you may wish to
+	visit <a href="http://inf.udec.cl/~leo/igraph.html">this
+	page</a>. All the sources of iGraph are available
+	<a href="https://github.com/leoferres/igraph">here</a>. <b>Note
+	  that this work is no longer maintained</b>.</li>
+  </ul>
+
+  <h1>Blog Posts</h1>
+
+  <ul>
+    {% for post in site.posts reversed%}
+    <li><b>{{ post.date | date: "%b %-d, %Y" }}</b>: <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

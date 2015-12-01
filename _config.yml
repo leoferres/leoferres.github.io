@@ -18,3 +18,4 @@ github_username:  leoferres
 
 # Build settings
 highlighter: pygments
+markdown: kramdown

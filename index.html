@@ -2,11 +2,21 @@
 layout: default
 ---
 
-<div class="home">
-  <h1>Teaching and Lectures</h1>
+  <a class="twitter-timeline" width="280"
+  href="https://twitter.com/leoferres"
+  data-widget-id="697118755223138304">Tweets by @leoferres</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  <div class="main-content">
+    <h1>Teaching and Lectures</h1>
 
   <ul>
-    <li><b>Introduction to programming</b>: The current instantiation of the course is <a href="https://github.com/leoferres/lp1">503208</a>.</li>
+    <li><b>Intro to Programming</b>: Eleven lectures on low-level
+    programming <a href="https://github.com/leoferres/lp1">using
+    C</a>.</li>
+    <li><b>NLP for Data Science</b>: Thirteen lectures
+	on <a href="./">handling natural languages by means of
+	computers</a> [In Progress, ETA: 2016-2]</li>
       <li><b>Peek & Poke</b>: Six lectures on <a href="./">computing
       in the 1980s</a> [In Progress, ETA: 2016-2]</li>
       <li><b>Computing Machines</b>: Ten lectures on <a href="./">the
@@ -19,9 +29,9 @@ layout: default
     <li><b>News systems of the world</b>: (Ok, Chile, but we want to
 	extend it) I've been working with
 	<a href="http://www.informatics.indiana.edu/jbollen/">Johan
-	Bollen</a> on a project to characterize the news cycle and the
-	characteristics of news outlets in the world. You can access
-	our
+	Bollen</a> and <a href="http://www.barbara.cl/">Barbara
+	Poblete</a> on a project to characterize the news cycle and
+	the outlets in the world using Twitter. You can access our
 	<a href="http://azu1.inf.udec.cl/twitter">News Analytics</a>
 	dashboard to find out more. We have been showcased at in the
 	<a href="http://www.udec.cl/panoramaweb2/2015/06/investigacion-de-la-udec-analizara-consumo-de-noticias-a-traves-de-twitter/">University newspaper</a>!</li>
@@ -43,13 +53,12 @@ layout: default
 	    the <a href="https://github.com/jfuentess/waveletree">code</a>
 	    for it.</li>
 
-	  <li><b>Hazard pointers</b>: We have an in-house
-	    implementation of hazard-pointers. See
-	    our <a href="https://github.com/azu-labs/Hazard-Pointers">github
+	  <li><b>Hazard pointers</b>: See
+	     <a href="https://github.com/azu-labs/Hazard-Pointers">github
 	    page</a>.</li>
-	  <li><b>Numa locks</b>: My student, Erick Elejalde, and
-	    myself have published code for a set of Numa-Aware
-	    locks. You can access the
+	  <li><b>Numa locks</b>: Erick Elejalde, and myself have
+	    published code for a set of Numa-Aware locks. You can
+	    access the
 	    <a href="http://azu-labs.com/numa_locks/">experiments
 	    page</a>, or the code page
 	    at <a href="https://github.com/azu-labs/rw-numa-locks/">github</a>.</li>
@@ -62,6 +71,7 @@ layout: default
 	<a href="https://github.com/leoferres/igraph">here</a>. <b>Note
 	  that this work is no longer maintained</b>.</li>
   </ul>
+  </div> <!-- main-content class -->
 
   <h1>Blog Posts</h1>
 
@@ -72,5 +82,3 @@ layout: default
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>

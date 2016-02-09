@@ -2,7 +2,7 @@
 layout: post
 title:  "Thai Qinoa"
 date:   2016-01-03-12:59
-categories: recipes thai simple
+categories: recipes thai
 ---
 
 I just got back from a 2 week trip to Argentina with the kids, and
@@ -17,9 +17,10 @@ until tonight.
 First off, I didn't know what "clean, rinsed and dry quinoa" meant. A
 quick Google search yielded
 [this page](http://www.bonappetit.com/test-kitchen/common-mistakes/article/5-most-common-mistakes-when-cooking-quinoa),
-which answered my question. Here's a picture of all the ingredients:
+which answered my question. Below's a picture of all the ingredients:
 
-<a href="/images/DSC_0005.jpg"><img src="/images/DSC_0005.jpg" width="200" hspace="20" align="left"/></a>
+<a href="/images/DSC_0005.jpg"><img src="/images/DSC_0005.jpg"
+width="200" hspace="20" align="left"/></a>
 
 I was mostly worried about
 "[cúrcuma](https://es.wikipedia.org/wiki/Curcuma_longa)"

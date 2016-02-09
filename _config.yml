@@ -17,5 +17,5 @@ twitter_username: leoferres
 github_username:  leoferres
 
 # Build settings
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown

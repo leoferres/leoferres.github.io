@@ -9,8 +9,9 @@
 encoding: utf-8
 title: Leo Ferres' Home page
 email: leoferres@gmail.com
+email2: lferres@udd.cl
 description: > # this means to ignore newlines until "baseurl:"
-  Leo Ferres is an Assistant Professor of Computer Science at Universidad de Concepción, in Concepción, Chile. His interests include big data, parallel computing, and computational social science.
+  Leo Ferres is a Research Professor of Computer Science at Universidad del Desarrollo, and a fellow of the Telefónica R+D Center in Santiago, Chile. His interests include big data, parallel computing, natural language processing and computational social science.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://leoferres.github.io" # the base hostname & protocol for your site
 twitter_username: leoferres

@@ -76,8 +76,8 @@ layout: default
   <h1>Blog Posts</h1>
 
   <ul>
-    {% for post in site.posts reversed%}
-    <li><b>{{ post.date | date: "%b %-d, %Y" }}</b>: <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% for post in site.posts %}
+    <li><b>{{ post.date | date: "%b %d, %Y" }}</b>: <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 

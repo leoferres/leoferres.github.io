@@ -5,7 +5,8 @@ layout: default
   <a class="twitter-timeline" width="280"
   href="https://twitter.com/leoferres"
   data-widget-id="697118755223138304">Tweets by @leoferres</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script>!function(d,s,id){var
+    js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   <div class="main-content">
     <h1>Teaching and Lectures</h1>
@@ -72,9 +73,12 @@ layout: default
 	  that this work is no longer maintained</b>.</li>
   </ul>
   </div> <!-- main-content class -->
-
+  <iframe src="http://widget.websta.me/in/leoferres/?s=140&w=2&h=3&b=1&p=3"
+     allowtransparency="true" frameborder="1" scrolling="no"
+	  style="float:right;border:none;overflow:hidden;width:280px;height:345px;margin-top:-55px">
+  </iframe> <!-- widget from: http://websta.me/tools/ -->
+  
   <h1>Blog Posts</h1>
-
   <ul>
     {% for post in site.posts %}
     <li><b>{{ post.date | date: "%b %d, %Y" }}</b>: <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>

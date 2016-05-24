@@ -1,0 +1,902 @@
+3,"influential, pagerank, twitter",TwitterRank: Finding Topic-sensitive Influential Twitterers,2010,1
+5,"Twitter, classification, marketing, sentiment analysis, social networking",Twitter Power: Tweets As Electronic Word of Mouth,2009,1
+8,"Twitter, informal communication, micro-blog",How and Why People Twitter: The Role That Micro-blogging Plays in Informal Communication at Work,2009,1
+10,"location-based estimation, spatial data mining, text mining, twitter",You Are Where You Tweet: A Content-based Approach to Geo-locating Twitter Users,2010,1
+11,"social media analytics, social media credibility, twitter",Information Credibility on Twitter,2011,1
+19,"classification, feature selection, short text, twitter",Short Text Classification in Twitter to Improve Information Filtering,2010,1
+20,"microblogging, topic modeling, twitter",Comparing Twitter and Traditional Media Using Topic Models,2011,1
+21,"affect, annotation, debate, journalism, sentiment, tv, video",Characterizing Debate Performance via Aggregated Twitter Sentiment,2010,1
+22,"content-based recommendation, news recommendation, real-time recommendation, social recommendation, twitter",Using Twitter to Recommend Real-time Topical News,2009,1
+23,"aging theory, text analysis, topic detection",Emerging Topic Detection on Twitter Based on Temporal and Social Terms Evaluation,2010,1
+24,"Twitter, rumor identification, social media analytics",Twitter Under Crisis: Can We Trust What We RT?,2010,1
+28,"Twitter, social media, topic models",Empirical Study of Topic Modeling in Twitter,2010,1
+31,"geolocation, graphical model, language model, latent variable inference, topic models, twitter, user profiling",Discovering Geographical Topics in the Twitter Stream,2012,1
+36,"Twitter, user interests",Discovering Users' Topics of Interest on Twitter: A First Look,2010,1
+38,"Twitter, affect, sentiment analysis, social networking, weblogs",Sentiment in Twitter Events,2011,1
+39,"account abuse, social networks, spam",Suspended Accounts in Retrospect: An Analysis of Twitter Spam,2011,1
+45,"memes, tagging, trends, twitter",Conversational Tagging in Twitter,2010,1
+50,"collusionrank, link farming, pagerank, spam, twitter",Understanding and Combating Link Farming in the Twitter Social Network,2012,1
+51,"Twitter, automatic identification, bot, cyborg","Who is Tweeting on Twitter: Human, Bot, or Cyborg?",2010,1
+53,"linkage, news, semantic enrichment, twitter, user profile construction",Semantic Enrichment of Twitter Posts for User Profile Construction on the Social Web,2011,1
+54,"named entity recognition, tweets, twitter, web n-gram, wikipedia",TwiNER: Named Entity Recognition in Targeted Twitter Stream,2012,1
+55,"controversy, event mining, opinion mining",Detecting Controversial Events from Twitter,2010,1
+59,"geo-social event detection, geographical regularity, microblogs",Measuring Geographical Regularities of Crowd Behaviors for Twitter-based Geo-social Event Detection,2010,1
+63,"Twitter, communication patterns, content analysis, government, user generated content",Twitter Use by the U.S. Congress,2010,1
+66,"ecosystem, online social network, spammer",Analyzing Spammers' Social Networks for Fun and Profit: A Case Study of Cyber Criminal Ecosystem on Twitter,2012,1
+68,"graph-based classification, hashtag, sentiment analysis, twitter",Topic Sentiment Analysis in Twitter: A Graph-based Hashtag Sentiment Classification Approach,2011,1
+72,"Twitter, information extraction, opinion mining, social media",Extracting Events and Event Descriptions from Twitter,2011,1
+73,"link semantics, modeling, ranking, twitter, web graph",Topical Semantics of Twitter Links,2011,1
+79,"feature interpolation, semantic concepts, sentiment analysis",Semantic Sentiment Analysis of Twitter,2012,1
+83,"Twitter, Topic Detection and Tracking, Real-time text-mining, Information Retrieval",Breaking News Detection and Tracking in Twitter,2010,1
+97,"event detection, social media analytics, twitter",Geo-spatial Event Detection in the Twitter Stream,2013,1
+100,"Twitter, event detection, future tense, geotagging, tense identification",Identification of Live News Events Using Twitter,2011,1
+102,"Twitter, interestingness, microblog, retweet, sentiment analysis, topic modeling",Bad News Travel Fast: A Content-based Analysis of Interestingness on Twitter,2011,1
+103,"adaptation, faceted search, semantic enrichment, twitter",Leveraging the Semantics of Tweets for Adaptive Faceted Search on Twitter,2011,1
+104,"event detection, localized events, online approach",EvenTweet: Online Localized Event Detection from Twitter,2013,1
+114,"expertise, user profiling, microblogs, Twitter",It's Not in Their Tweets: Modeling Topical Expertise of Twitter Users,2012,1
+120,"social network, spam, spam filtering, twitter",Spam Filtering in Twitter Using Sender-receiver Relationship,2011,1
+121,"Micro-blogging, Ontology, Sentiment analysis, Tweet, Twitter",Ontology-based Sentiment Analysis of Twitter Posts,2013,1
+125,"classification, real-time, social media, trending topics, twitter",Classifying Trending Topics: A Typology of Conversation Triggers on Twitter,2011,1
+129,"credibility, data mining, microblogs, social networking, trust",Modeling Topic Specific Credibility on Twitter,2012,1
+138,"DAN2, Feature engineering, Machine learning, SVM, Sentiment analysis, Twitter, Twitter-specific lexicon, n-gram analysis",Twitter Brand Sentiment Analysis: A Hybrid System Using N-gram Analysis and Dynamic Artificial Neural Network,2013,1
+141,"Twitter, corpus creation, reproducibility",On Building a Reusable Twitter Corpus,2012,1
+147,"Social Networks, Twitter, Topic Classification",Twitter Trending Topic Classification,2011,1
+150,"Text analysis, lexical normalization, microblog, short text message, text preprocessing",Lexical Normalization for Social Media Text,2013,1
+154,"microblogging, social network, topic analysis, twitter",Characterization of the Twitter @Replies Network: Are User Ties Social or Topical?,2010,1
+156,"Opinion mining, sentiment analysis, social media","Twitter, MySpace, Digg: Unsupervised Sentiment Analysis in Social Media",2012,1
+159,"Twitter, Sentiment, Retweetability, Political Communication",Political Communication and Influence Through Microblogging--An Empirical Analysis of Sentiment in Twitter Messages and Retweet Behavior,2012,1
+161,"big-data analytic, drug-related adverse events, high performance computing, mapreduce, natural language processing, public health, twitter mining",Towards Large-scale Twitter Mining for Drug-related Adverse Events,2012,1
+162,"Emotion Identification, Emotion Analysis, Emotion Intelligence, Twitter",Harnessing Twitter Big Data for Automatic Emotion Identification,2012,1
+164,"crowdsourcing, event detection, mechanical turk, reproducibility, social media, test collection, twitter corpus",Building a Large-scale Corpus for Evaluating Event Detection on Twitter,2013,1
+165,"machine learning, social network security, spam detection",Spam Detection on Twitter Using Traditional Classifiers,2011,1
+166,"Figurative language processing, Irony detection, Negation, Web text analysis",A Multidimensional Approach for Detecting Irony in Twitter,2013,1
+168,"#hashtag, Twitter, opinion summarization, sentiment analysis, topic analysis",Entity-centric Topic-oriented Opinion Summarization in Twitter,2012,1
+172,"Communication privacy management, Followers/followed, Front/back-stage, Mediated disclosure, Self-disclosure, Twitter","Mediated Disclosure on Twitter: The Roles of Gender and Identity in Boundary Impermeability, Valence, Disclosure, and Stage",2013,1
+174,"big data, information storage and retrieval, social networks",Seeder Finder: Identifying Additional Needles in the Twitter Haystack,2013,1
+177,"Attraction, Bot, CASA, Communication competence, Credibility, Twitter",Is That a Bot Running the Social Media Feed? Testing the Differences in Perceptions of Communication Quality for a Human Agent and a Bot Agent on Twitter,2014,1
+178,"group dynamics, information overload, mixed methods, online communities, ostracism, speech codes theory, twitter chats",On Participation in Group Chats on Twitter,2013,1
+179,"Twitter,Social network services,Identification,Electronic mail,Blogs,social networks,Automatic identification,bot,cyborg,Twitter","Detecting Automation of Twitter Accounts: Are You a Human, Bot, or Cyborg?",2012,1
+184,"twitter, pagerank, amazon, data mining, web crawl",Mining Twitter in the Cloud: A Case Study,2010,1
+186,"influence, twitter, user classification, web science",Identifying Communicator Roles in Twitter,2012,1
+187,"Twitter, Data Mining, Credibility",Credibility in Context: An Analysis of Feature Distributions in Twitter,2012,1
+190,"Online documents, Group interaction: analysis of verbal and non-verbal communication, Pattern recognition systems and applications",A Study on Detecting Patterns in Twitter Intra-topic User and Message Clustering,2010,1
+191,"Brand trust, Self-brand personality match, Social media brand, Trust transfer, Twitter",Antecedents and Consequences of Trust in a Social Media Brand: A Cross-cultural Study of Twitter,2013,1
+192,"semantic enrichment, service, twitter, user modeling",TUMS: Twitter-based User Modeling Service,2012,1
+205,"LDA, data mining, public health, social media, social networks, tobacco use, topic modeling",Identifying Health-related Topics on Twitter: An Exploration of Tobacco-related Tweets As a Test Topic,2011,1
+212,"event detection, text mining",STED: Semi-supervised Targeted-interest Event Detectionin in Twitter,2013,1
+217,"identity-based groups, seekers of topical information, topical experts, topical groups, twitter",Deep Twitter Diving: Exploring Topical Groups in Microblogs at Scale,2014,1
+219,"events, real-time, summarization, twitter",Towards Real-time Summarization of Scheduled Events from Twitter Streams,2012,1
+223,"Twitter sentiment analysis, emotion token, metwork informal language, multilingual sentiment analysis, sentiment lexicon",Emotion Tokens: Bridging the Gap Among Multilingual Twitter Sentiment Analysis,2011,1
+231,"social network service, crowdsourcing, opportunity discovery, local event detection",EventRadar: A Real-Time Local Event Detection Scheme Using Twitter Stream,2012,1
+232,"genre analysis, microblogging, tweet",Information Interaction in 140 Characters or Less: Genres on Twitter,2010,1
+234,"Graphical model, Location-time constrained topic, Social event detection, Social streams, Variable dimensional extendible hash",Event Detection over Twitter Social Media Streams,2014,1
+239,"gender studies, tagging, twitter",A Gender Based Study of Tagging Behavior in Twitter,2012,1
+241,"chi-square, event extraction, sentiment, timeline, twitter",Extracting Social Events Based on Timeline and Sentiment Analysis in Twitter Corpus,2012,1
+243,"Twitter, meta-level features, sentiment classification","Combining Strengths, Emotions and Polarities for Boosting Twitter Sentiment Analysis",2013,1
+249,"large-scale machine learning, social media, text classification, topic modeling",Large-scale High-precision Topic Modeling on Twitter,2014,1
+250,"microblogs, question identification, twitter",Question Identification on Twitter,2011,1
+253,"cursing., emotion, gender difference, profanity, social media, twitter",Cursing in English on Twitter,2014,1
+255,"Gaussian mixture, HDP, event detection, twitter",Real Time Event Detection in Twitter,2013,1
+260,"political discourse, sentiment analysis, social media",GOP Primary Season on Twitter: Popular Political Sentiment in Social Media,2013,1
+261,"big data, geospatial analysis, retweet network, twitter visualization",Understanding Twitter Data with TweetXplorer,2013,1
+262,"Twitter, hashtag, interestingness, ranking",What Do People Want in Microblogs? Measuring Interestingness of Hashtags in Twitter,2010,1
+264,"hashtag prediction, microposts, short-text classification, topic models, twitter",Using Topic Models for Twitter Hashtag Recommendation,2013,1
+267,"Bayesian network, emergency situation, information credibility, sequential k-means, twitter",Information Credibility on Twitter in Emergency Situation,2012,1
+268,"Microblog, Twitter, location-based estimation, spatial data mining, text mining",A Content-driven Framework for Geolocating Microblog Users,2013,1
+270,"relation learning, semantic enrichment, social web, twitter",Learning Semantic Relationships Between Entities in Twitter,2011,1
+274,"Classification, Data sparsity, SentiWordNet, Sentiment analysis, Social network analysis, Twitter",TOM: Twitter Opinion Mining Framework Using Hybrid Classification Scheme,2014,1
+275,"social spam, campaign detect, similarity measure",Detecting Spam and Promoting Campaigns in the Twitter Social Network,2012,1
+276,"natural language processing, public health, social media",Estimating County Health Statistics with Twitter,2014,1
+282,"information extraction, microblogging, semantic annotation",Extracting Semantic Annotations from Twitter,2011,1
+287,"Clustering, Data stream, Spam detection, Twitter",Twitter Spammer Detection Using Data Stream Clustering,2014,1
+291,"linguistics, lobbying, political communication, politics, speech acts, twitter",Tweet Acts: How Constituents Lobby Congress via Twitter,2014,1
+293,"Opinion Mining, PageRank, Polarity classification, SentiWordNet, Sentiment Analysis, Twitter, Unsupervised method",Ranked WordNet Graph for Sentiment Polarity Classification in Twitter,2014,1
+301,"Self-Disclosure, Twitter, Linguistic Markers, Social Network Sites",Linguistic Markers of Secrets and Sensitive Self-Disclosure in Twitter,2012,1
+302,"event detection, event visualization, social media",An Interactive Interface for Visualizing Events on Twitter,2014,1
+303,"Twitter, hits, social network, tweet ranking",Finding Interesting Posts in Twitter Based on Retweet Graph Analysis,2012,1
+309,"sentiment analysis, opinion mining, social media analytics, text mining, machine learning",Twitter Sentiment Analysis: A Bootstrap Ensemble Framework,2013,1
+311,"Sentiment Analysis, Sentiment Summarization, Opinion Mining",Sentiment Analysis and Summarization of Twitter Data,2013,1
+315,"event detection, query expansion, semantic web, twitter",Event Detection Using Twitter and Structured Semantic Query Expansion,2012,1
+318,"rumor spreading, agent-based modeling, social network",Rumor Propagation in Online Social Networks Like Twitter -- A Simulation Study,2011,1
+327,"Interesting content, LDA, Social media, Topic model, Twitter",Identifying Interesting Twitter Contents Using Topical Analysis,2014,1
+329,"large-scale data collection, microblogs, public belief analysis",Belief Surveillance with Twitter,2012,1
+334,"Credibility, Trust, Social Networks, Twitter",Understanding Information Credibility on Twitter,2013,1
+336,"location estimation, microblog, text mining",Inferring Twitter User Locations with 10 Km Accuracy,2014,1
+337,"collaborative filtering, online ranking, twitter",What is Happening Right Now ... That Interests Me?: Online Topic Discovery and Recommendation in Twitter,2012,1
+340,"emergency detection, natural language processing, social network analysis",Detection and Extracting of Emergency Knowledge from Twitter Streams,2012,1
+345,"Twitter, Wikipedia, social networks, user interest",Interest Classification of Twitter Users Using Wikipedia,2013,1
+346,"labeled lda, lists, twitter, user interests",Inferring User Interests in the Twitter Social Network,2014,1
+353,"geolocation, sentiment analysis, social media, twitter","Mirroring the Real World in Social Media: Twitter, Geolocation, and Sentiment Analysis",2013,1
+356,"crf, fs-ner, named entity recognition, twitter",FS-NER: A Lightweight Filter-stream Approach to Named Entity Recognition on Twitter Data,2013,1
+357,"cross-language, information diffusion, information discovery, micro-blogs, multilingual, social media, social network analysis",Global Connectivity and Multilinguals in the Twitter Network,2014,1
+358,"clustering, topic model, twitter, unsupervised learning",Dynamic Multi-faceted Topic Discovery in Twitter,2013,1
+368,"community startup, critical mass, natural language analysis, online communities, social networking sites, topical focus",Twitter and the Development of an Audience: Those Who Stay on Topic Thrive!,2012,1
+370,"Information Systems, Keywords: E-Commerce, Knowledge Discovery, Sentiment Analysis, Topic Models, Virtual Communities",What is the Conversation About?: A Topic-Model-Based Approach for Analyzing Customer Sentiments in Twitter,2012,1
+376,"e-Participation, machine learning, semantic analysis, semantic patterns, semantic search, social network analysis, trend analysis, twitter mining",Extracting Semantic Knowledge from Twitter,2011,1
+380,"sentiment analysis, affective lexicon, Twitter",Twitter for Sentiment Analysis: When Language Resources Are Not Available,2011,1
+383,"hadoop, machine learning, topic modeling, twitter",Detecting Offensive Tweets via Topical Feature Discovery over a Large Scale Twitter Corpus,2012,1
+385,"anomaly detection, machine learning, spam detection, twitter",Detecting Social Spam Campaigns on Twitter,2012,1
+392,"Box office, Twitter, forecasting, sentiment index, stock market",Forecasting with Twitter Data,2014,1
+393,"computational linguistics, filtering, twitter",The Twitter Mute Button: A Web Filtering Challenge,2012,1
+398,"portuguese language, sentiment analysis, twitter",Sentiment Analysis on Twitter Data for Portuguese Language,2012,1
+400,"hashtags, semantics, social structure, twitter",Meaning As Collective Use: Predicting Semantic Hashtag Categories on Twitter,2013,1
+403,"information discovery, knowledge discovery, linguistic analysis",Sentiment Analysis of Twitter Audiences: Measuring the Positive or Negative Influence of Popular Twitterers,2012,1
+404,"hierarchical classification, sentiment and emotions classification, Twitter",Hierarchical Classification Approach to Emotion Recognition in Twitter,2012,1
+410,"multilingualism, social media, sociolinguistics, topic modeling",Sociolinguistic Analysis of Twitter in Multilingual Societies,2014,1
+411,"collaborative personalized search, language modeling, topic modeling, twitter",Collaborative Personalized Twitter Search with Topic-language Models,2014,1
+414,"characteristic co-occurrence word, clustering, hashtags, news topic, social media, tweet, twitter",News-Topic Oriented Hashtag Recommendation in Twitter Based on Characteristic Co-occurrence Word Detection,2012,1
+417,"Twitter, classification, event detection, microblogging, semi-automatic training",Social Event Detection on Twitter,2012,1
+425,"crowdsourcing, lists, topic inference, twitter, who is who",Inferring Who-is-who in the Twitter Social Network,2012,1
+429,"emoticons, opinion mining, product review, sentiment analysis, sentiment lexicon, topic modeling, twitter",Twitter Opinion Topic Model: Extracting Product Opinions from Tweets by Leveraging Hashtags and Sentiment Lexicon,2014,1
+431,"subjectivity, social features, Twitter",What Do the Average Twitterers Say: A Twitter Model for Public Opinion Analysis in the Face of Major Political Events,2011,1
+433,"event credibility, event detection, event timespan computation, event type prediction, location prediction, microblogs, social media analytics platform, twitter, www tutorial",Towards a Social Media Analytics Platform: Event Detection and User Profiling for Twitter,2014,1
+435,"social media analytics, data mining, big data",A Fuzzy Logic Approach for Opinion Mining on Large Scale Twitter Data,2014,1
+438,"MapReduce, opinion mining, social networks, twitter",Towards Building Large-scale Distributed Systems for Twitter Sentiment Analysis,2012,1
+445,"discussion retrieval, event data, social media",Real Time Discussion Retrieval from Twitter,2013,1
+447,"Tourism, Sentiment Mining, SOM, Twitter, Social Networks, Semantic Web, Text Mining",Thailand -- Tourism and Conflict: Modeling Sentiment from Twitter Tweets Using Na\{\i}Ve Bayes and Unsupervised Artificial Neural Nets,2010,1
+452,"social and behavioral sciences, social networks, twitter",A Sentiment Analysis of Audiences on Twitter: Who is the Positive or Negative Audience of Popular Twitterers?,2011,1
+455,"Twitter stream analysis, anomaly detection, binary classification, spam and off-topic content detection",Topical Anomaly Detection from Twitter Stream,2012,1
+456,"hashtag, hashtag annotation, topic model, twitter",Tagging Your Tweets: A Probabilistic Modeling of Hashtag Annotation in Twitter,2014,1
+458,"Data mining, Semantic analysis, Social network, Software architecture, Tweet","A Software Architecture for Twitter Collection, Search and Geolocation Services",2013,1
+468,"Semisupervised learning, model combination, tweet normalization",Named Entity Recognition for Tweets,2013,1
+469,"mood analysis, regression on tweets, twitter user mood prediction",Twitter User Behavior Understanding with Mood Transition Prediction,2012,1
+471,"Semantic Patterns, Sentiment Analysis, Twitter",Semantic Patterns for Sentiment Analysis of Twitter,2014,1
+472,"named entities, noun phrases, social media, twitter",Community-based Classification of Noun Phrases in Twitter,2012,1
+474,"SEIZ, SIS, epidemiological modeling, rumor detection",Epidemiological Modeling of News and Rumors on Twitter,2013,1
+482,"Sentiment Analysis, Opinion Mining, Twitter Sentiment Analysis, Aspect-based Sentiment Analysis",Aspect-Based Twitter Sentiment Classification,2013,1
+483,"sentiment analysis, influence analysis, Twitter",Learning Sentimental Influence in Twitter,2011,1
+485,"Named entity recognition, Social networks, Network analysis, Multiplex social network",Towards Named Entity Recognition Method for Microtexts in Online Social Networks: A Case Study of Twitter,2011,1
+489,"Social Media, Conditional Random Fields, Event Extraction, Entity Resolution",Extraction and Compilation of Events and Sub-events from Twitter,2012,1
+490,"event detection, sentiment analysis, summarization","Brand-Related Events Detection, Classification and Summarization on Twitter",2012,1
+496,"Twitter, classification, political disaffection, sentiment analysis",Modelling Political Disaffection from Twitter Data,2013,1
+497,"query expansion, social media, Twitter hashtags, semantic network",Socio-semantic Query Expansion Using Twitter Hashtags,2012,1
+504,"Social Media, Twitter, Text Classification, Semantic Role Labelling, Machine Learning",Detecting Life Events in Feeds from Twitter,2013,1
+505,"Sentiment Analysis, Time Series, Twitter, Elections, Polarity, Hash Tags, Topics",2012 Presidential Elections on Twitter -- An Analysis of How the US and French Election Were Reflected in Tweets,2013,1
+515,"microblogging data, returns, sentiment analysis, text mining, trading volume, volatility",Some Experiments on Modeling Stock Market Behavior Using Investor Sentiment Analysis and Posting Volume from Twitter,2013,1
+529,"content curation, network analysis, social media monitoring, social network discovery",A System for Twitter User List Curation,2012,1
+537,"Demographics, Gender, Metadata, Social media, Time, Twitter, n-gram corpus",Twitter N-gram Corpus with Demographic Metadata,2013,1
+538,"friend recommendation, micro blogs, social network distance, topical proximity",An Analysis of Topical Proximity in the Twitter Social Graph,2012,1
+545,"information credibility, Latent Dirichlet Allocation, topic model, Twitter, sentiment analysis",Topic and Opinion Classification Based Information Credibility Analysis on Twitter,2013,1
+547,"Keyphrase Extraction, Graph-based Ranking, Hashtag, Twitter, PageRank, TextRank, NE-Rank",NE-Rank: A Novel Graph-Based Keyphrase Extraction in Twitter,2012,1
+558,"opinion mining, time series analysis, volatility, twitter",Opinion Dynamics of Elections in Twitter,2012,1
+561,"text mining, identity recognition, social networks, machine learning",Recognising User Identity in Twitter Social Networks via Text Mining,2013,1
+562,"language models, road hazards, sentiment analysis, twitter",Where Not to Go?: Detecting Road Hazards Using Twitter,2014,1
+565,"sentiment analysis, social network services, twitter",Sentiment Analysis for Tracking Breaking Events: A Case Study on Twitter,2013,1
+568,"Political talk, Selective exposure, Social Media, Social networks, Twitter",Birds of a Feather Tweet Together: Integrating Network and Content Analyses to Examine Cross-Ideology Exposure on Twitter,2013,1
+575,"DBpedia, concept drift, feature relevance decay, social media, topic detection",Stretching the Life of Twitter Classifiers with Time-Stamped Semantic Graphs,2014,1
+587,"Multirelation, Twitter topic detection, multiview clustering, suffix tree",Detecting Hot Topics from Twitter: A Multiview Approach,2014,1
+594,"natural language processing, text mining",Tweeting About the Tsunami?: Mining Twitter for Information on the Tohoku Earthquake and Tsunami,2012,1
+596,"Salience Theory, Social Media, Text mining, Twitter",Determining Political Stances from Twitter Timelines: The Belgian Parliament Case,2014,1
+603,"mood, twitter, weather",What a Nasty Day: Exploring Mood-Weather Relationship from Twitter,2014,1
+608,"event detection, geography, information propagation, twitter",Information Current in Twitter: Which Brings Hot Events to the World,2013,1
+609,"Event Detection, Clustering, Micro-blogging, Twitter, Tweets in Turkish, Semantics, Word Co-occurrences",Semantic Expansion of Tweet Contents for Enhanced Event Detection in Twitter,2012,1
+621,"behavioral analysis, homophily, overlapping community, same wavelength group, sentiment analysis",Identifying Same Wavelength Groups from Twitter: A Sentiment Based Approach,2013,1
+632,"Keyphrase Extraction, Graph-based Ranking, Hashtag, Twitter, NE-Rank, Social Network Analysis",Learning from Twitter Hashtags: Leveraging Proximate Tags to Enhance Graph-Based Keyphrase Extraction,2012,1
+677,"Sentiment analysis, Social TV, Social recommendation, Text mining, Topic extraction",Twitter Analysis Algorithms for Intelligence Circulation System,2013,1
+679,"contextual semantics, sentiment analysis, stopwords, twitter",Automatic Stopword Generation Using Contextual Semantics for Sentiment Analysis of Twitter,2014,1
+680,"Twitter, linguistic factors, quantitative politics",Linguistic Factors Associated With Propagation of Political Opinions in Twitter,2014,1
+683,"emotion, mood, mood diffusion, social media, twitter","You'Re Happy, I'M Happy: Diffusion of Mood Expression on Twitter",2014,1
+685,"live sports updates, Twitter, summarization",Generating Live Sports Updates from Twitter by Finding Good Reporters,2013,1
+691,"computational humor, humor recognition, machine learning, twitter",Recognizing Humor on Twitter,2014,1
+692,"Comparability metrics, Comparable corpora, NLP, Social networks, Text mining",Twitter As a Multilingual Source of Comparable Corpora,2014,1
+694,"entity specific twitter sentiment, micro blogs, sentiment analysis, spam, twitter",TwiSent: A Multistage System for Analyzing Sentiment in Twitter,2012,1
+701,"human computer interaction, natural processing language, social network sites natural, user eXperience",Do Users Write About the System in Use?: An Investigation from Messages in Natural Language on Twitter,2014,1
+704,"information extraction, sentiment analysis, time series analysis, quality of services, twitter",Early Detection Method of Service Quality Reduction Based on Linguistic and Time Series Analysis of Twitter,2013,1
+729,"Twitter, sentiment analysis, social networks, stream analysis, tweets",Twitter Stream Analysis in Spanish,2013,1
+736,"Emoticon, Microblog, Sentiment, Twitter",Role of Emoticons for Multidimensional Sentiment Analysis of Twitter,2014,1
+749,"Opinion mining, sentiment analysis, text mining, classifier, social media",Twitter Sentiment Mining: A Multi Domain Analysis,2013,1
+750,"Big Data, Data Sources, Keyword-Based Classifier, Micro Blogging Community, Sentiment Dimensions, Short Message Based Sentiment Mining, Social Media Community, User Relations",Keyword-Based Sentiment Mining Using Twitter,2013,1
+758,"public health informatics,Literature-based discovery,semantic information,Twitter",A Semantic Approach to Involve Twitter in LBD Efforts,2012,1
+759,"topic model, LDA (Latent Dirichlet Allocation), correlation coefficient, Jensen-Shannon divergence, Twitter",Refining LDA Results and Ranking Topics in Order of Quantity and Quality with an Application to Twitter Streaming Data,2014,1
+794,"Twitter, deception, social network analysis, opinion mining, sentimental analysis, anomaly detection, natural language processing",Prospects for Detecting Deception on Twitter,2014,1
+803,"Hashtag, Statistical Machine Translation, Twitter",Statistical Translation Language Model for Twitter Search,2013,1
+804,"computer-mediated communication, language choice, microblogging, microblogs, multilingual communication, social network analysis, twitter",Multilingual Use of Twitter: Social Networks and Language Choice,2012,1
+809,"emotion analysis, exploring TV programs, twitter",Searching Emotional Scenes in TV Programs Based on Twitter Emotion Analysis,2013,1
+810,"Dirichlet process, Twitter, HDP-HMM, microblog summarization",Automatic Twitter Topic Summarization,2014,1
+811,"Twitter, authorship attribution, clustering, malicious campaigns, online social networks, suspicious profiles",REPLOT: REtrieving Profile Links on Twitter for Suspicious Networks Detection,2013,1
+818,"Twitter, data mining, forex, gold, microblogging, oil, sentiment analysis, social network analysis, stock market","Modeling Movements in Oil, Gold, Forex and Market Indices Using Search Volume Index and Twitter Sentiments",2013,1
+821,"76m27 Visualization algorithms, Big data, Internet, Social network, Twitter, Visualization",A Multiscale Approach to Network Event Identification Using Geolocated Twitter Data,2014,1
+839,"social media, data mining, big data algorithm, Twitter, MapReduce",A Paralleled Big Data Algorithm with MapReduce Framework for Mining Twitter Data,2014,1
+848,"expertise score, sentiment analysis, topic classification, topic model, twitter, information credibility",High Precision Credibility Analysis of Information on Twitter,2013,1
+849,"311 civil complaints, happiness index, online social networks, sentiment analysis, spatio-temporal analysis, twitter data","Hey #311, Come Clean My Street!: A Spatio-temporal Sentiment Analysis of Twitter Data and 311 Civil Complaints",2014,1
+870,"Social media, semantic enrichment, topic model, unsupervised learning",Integrating Social and Auxiliary Semantics for Multifaceted Topic Modeling in Twitter,2014,1
+874,"hashtag, social phenomena, twitter, user sentiment analysis",Characterizing the Effectiveness of Twitter Hashtags to Detect and Track Online Population Sentiment,2012,1
+877,"analytics, big data, realtime, twitter",Realtime Analytics @ Twitter,2013,1
+879,"Twitter, Moodle, OAI-PMH, Digital Repository Integration, Ontologies, Semantic Retrieval",Use of Twitter and Semantic Resource Recovery in the Educational Context,2012,1
+883,"Personal Health Information, Text Mining",Text Mining for Personal Health Information on Twitter,2012,1
+885,"Twitter, natural language processing, exploratory searching, user interface, feature term extraction",Estimating Feature Terms for Supporting Exploratory Browsing of Twitter Timelines,2013,1
+897,"PageRank, characteristic co-occurrence word, hashtag, social network analysis, twitter",Finding News-topic Oriented Influential Twitter Users Based on Topic Related Hashtag Community Detection,2014,1
+914,"Semantics, Social Media, Twitter",Semantifying Twitter: The Influence Tracker Ontology,2014,1
+932,"Sentiment Analysis, Text Classification, Twitter, Opinion Mining, Polarity",Automatic Unsupervised Polarity Detection on a Twitter Data Stream,2014,1
+934,"topic detection, twitter, cluster algorithm, label propagation model",Topic Detection in Twitter Based on Label Propagation Model,2014,1
+939,"Twitter geolocation, conceptual fuzzy set, language-game and natural language processing",A Recommendation System for Twitter Users in the Same Neighborhood,2013,1
+940,"attitude, selective exposure, twitter",Association Between Selective Exposure and Attitude on Twitter,2013,1
+945,"document clustering, community detection, early fusion, late fusion",Early and Late Fusion Methods for the Automatic Creation of Twitter Lists,2012,1
+961,"Opinion Mining, Sentiment Analysis, Twitter",Twitter Mining in the Oil Business: A Sentiment Analysis Approach,2013,1
+962,"Twitter, Government, Genre Analysis",Tweeting Government: A Case of Australian Government Use of Twitter,2011,1
+989,"Twitter, natural language processing, influenza, social media",Enhancing Twitter Data Analysis with Simple Semantic Filtering: Example in Tracking Influenza-Like Illnesses,2012,1
+1000,"Twitter, bursty keyword detection, text mining",On-line Relevant Anomaly Detection in the Twitter Stream: An Efficient Bursty Keyword Detection Model,2013,1
+0,"Twitter data stream, event detection, event identification, microblogs, monitoring social media",A Survey of Techniques for Event Detection in Twitter,2015,1
+3,"behavioral modeling, sarcasm detection, social media",Sarcasm Detection on Twitter: A Behavioral Modeling Approach,2015,1
+6,"Contextual semantics, Sentiment analysis, Twitter",Contextual Semantics for Sentiment Analysis of Twitter,2016,1
+12,"real-time data processing., stream data processing systems",Twitter Heron: Stream Processing at Scale,2015,1
+18,"information extraction, text mining",Weakly Supervised Extraction of Computer Security Events from Twitter,2015,1
+22,"Crowdsourcing, Natural language processing, Pharmacovigilance, Twitter",Crowdsourcing Twitter Annotations to Identify First-hand Experiences of Prescription Drug Use,2015,1
+24,"egypt, mobilization, opinion switch, polarization, twitter",Content and Network Dynamics Behind Egyptian Political Polarization on Twitter,2015,1
+34,"SemEval, Sentiment analysis, Twitter",Developing a Successful SemEval Task in Sentiment Analysis of Twitter and Other Social Media Texts,2016,1
+35,"Content analysis, Crisis, Natural disasters, Social media, Twitter",Communicating on Twitter During a Disaster,2015,1
+36,"convolutional neural networks, twitter sentiment analysis",Twitter Sentiment Analysis with Deep Convolutional Neural Networks,2015,1
+45,"Topic Derivation, Twitter, Interactions of Tweets, Joint Matrix Factorization",Deriving Topics in Twitter by Exploiting Tweet Interactions,2015,1
+49,"Classification task, Machine learning, Sentiment analysis, Social media, Text mining, Twitter",A Polarity Analysis Framework for Twitter Messages,2015,1
+50,"Bayesian theorem, Twitter, classification, feature selection, topic model",Topic-centric Classification of Twitter User's Political Orientation,2015,1
+74,"Semantic Network, Social Network Analysis, Text Mining",Real-time Monitoring of Twitter Traffic by Using Semantic Networks,2015,1
+103,"Clustering, Information Retrieval, NLP, Text Classification, Topic Detection, Twitter, document categorization, social media, story, text analysis, topic labelling, trending topics, tweet stories",SocialStories: Segmenting Stories Within Trending Twitter Topics,2016,1
+110,"artificial intelligence, human safety, text analysis, web-based interaction",Machine Classification and Analysis of Suicide-Related Communication on Twitter,2015,1
+113,"Natural language processing, Opinion mining, Parsing, Sarcasm, Sentiment, Tweets",Parsing-based Sarcasm Sentiment Recognition in Twitter Data,2015,1
+115,"lexicon generation, sentiment analysis, twitter",From Unlabelled Tweets to Twitter-specific Opinion Words,2015,1
+117,"OOV categorization, classification",WASSUP? LOL : Characterizing Out-of-Vocabulary Words in Twitter,2016,1
+118,"event tracking, event visualization, twitter event detection","What Are Popular: Exploring Twitter Features for Event Detection, Tracking and Visualization",2015,1
+130,"emotion lexicon, hashtag, polarity, sentiment analysis, subjectivity, twitter",HBE: Hashtag-Based Emotion Lexicons for Twitter Sentiment Analysis,2015,1
+169,"censorship, social networks, twitter",Known Unknowns: An Analysis of Twitter Censorship in Turkey,2015,1
+184,"Big Data, Fuzzy Formal Concept Analysis, Microblog summarization, Social media analytics, Time awareness",Time Aware Knowledge Extraction for Microblog Summarization on Twitter,2016,1
+186,"dynamics, interactions, sociolinguistics, twitter","Language, Twitter and Academic Conferences",2015,1
+197,"Scotland independence referendum, classification, naive Bayesian, topic modelling, twitter",Topic-centric Classification of Twitter User's Political Orientation,2015,1
+209,"Twitter, automated content analysis, campaigning, online political participation",How Do Online Citizens Persuade Fellow Voters? Using Twitter During the 2012 Dutch Parliamentary Election Campaign,2016,1
+224,"clustering, disaster response, lexicon, mutual information, risk, twitter",Disentangling the Lexicons of Disaster Response in Twitter,2015,1
+231,"online behavior, social attention, social media, topic detection on short-message, twitter, weibo",Topical Differences Between Chinese Language Twitter and Sina Weibo,2016,1
+233,"Microblogging, Query suggestion, Twitter, Viral content",Semantic Query Suggestion Using Twitter Entities,2015,1
+246,"event extraction, event message identification, semantic elements extraction, event categorization",An Overview of Event Extraction from Twitter,2015,1
+251,"Social media, Twitter Trend Analysis, Apache HADOOP, Source and sink Mechanism, Apache HBase, Hive, Pig. Apache Oozie, Zookeeper",A Speedy Data Uploading Approach for Twitter Trend and Sentiment Analysis Using HADOOP,2015,1
+257,"conceptual similarity, linguistics, medical education, semantic similarity, semantics, text analysis","How Do Twitter, Wikipedia, and Harrison's Principles of Medicine Describe Heart Attacks?",2015,1
+263,"Similarity network, Social semantics, Twitter entities",Discovering Similar Twitter Accounts Using Semantics,2016,1
+267,"communication, conversation, coordination, language, psychology, social media, social networks, social status, twitter",A Robust Framework for Estimating Linguistic Alignment in Twitter Conversations,2016,1
+282,"social media, twitter, sentiment analysis, POS sequence, subjectivity, polarity",The Use of POS Sequence for Analyzing Sentence Pattern in Twitter Sentiment Analysis,2015,1
+304,"Sentiment analysis, Topic modeling, Twitter hashtag",Is That Twitter Hashtag Worth Reading,2015,1
+305,"attitude, brand, social media, twitter",Predicting Attitude and Actions of Twitter Users,2016,1
+,keywords,title,year,
+0,"Twitter, degree of separation, homophily, influential, information diffusion, online social network, pagerank, reciprocity, retweet","What is Twitter, a Social Network or a News Media?",2010,
+1,"Twitter, earthquake, event detection, location estimation, social sensor",Earthquake Shakes Twitter Users: Real-time Event Detection by Social Sensors,2010,
+2,"microblogging, social media, social network analysis, user intent",Why We Twitter: Understanding Microblogging Usage and Communities,2007,
+4,"communication networks, diffusion, influence, twitter, word of mouth marketing",Everyone's an Influencer: Quantifying Influence on Twitter,2011,
+6,"measurement, online social networks",A Few Chirps About Twitter,2008,
+7,"information diffusion, social contagion, social media","Differences in the Mechanics of Information Diffusion Across Topics: Idioms, Political Hashtags, and Complex Contagion on Twitter",2011,
+12,"social media analysis, trend detection",TwitterMonitor: Trend Detection over the Twitter Stream,2010,
+13,"computer-mediated communication, crisis informatics, disaster, emergency, hazards, microblogging, situational awareness",Microblogging During Two Natural Hazards Events: What Twitter May Contribute to Situational Awareness,2010,
+14,"classification, communication networks, communications, information flow, twitter, two-step flow",Who Says What to Whom on Twitter,2011,
+17,"collaborative filtering, content based recommendation, twitter, web 2.0",Recommending Twitter Users to Follow Using Content and Collaborative Filtering Approaches,2010,
+25,"personalization, semantics, twitter, user modeling",Analyzing User Modeling on Twitter for Personalized News Recommendations,2011,
+26,"Twitter, recency modeling, recency ranking",Time is of the Essence: Improving Recency Ranking Using Twitter Data,2010,
+29,"classification, information diffusion, microblogs, social media",Predicting Popular Messages in Twitter,2011,
+34,"attribute learning, latent attribute classification, social media",Classifying Latent User Attributes in Twitter,2010,
+42,"classification, data mining, regression, social media",Towards Detecting Influenza Epidemics by Analyzing Twitter Messages,2010,
+43,"information extraction, social media",Open Domain Event Extraction from Twitter,2012,
+46,"Facebook, Need for cognition, Personality, Sociability, Social network sites, Twitter",A Tale of Two Sites: Twitter vs. Facebook and the Personality Predictors of Social Media Usage,2012,
+47,"machine learning, microblogging, social media, user profiling","Democrats, Republicans and Starbucks Afficionados: User Classification in Twitter",2011,
+48,Twitter,Tweet This: A Uses and Gratifications Perspective on How Active Twitter Use Gratifies a Need to Connect with Others,2011,
+49,"graph processing, hadoop, link prediction",WTF: The Who to Follow Service at Twitter,2013,
+52,"computer-mediated communication, online relationship, twitter, unfollow",Fragile Online Relationship: A First Look at Unfollow Dynamics in Twitter,2011,
+56,"Twitter, classification, knowledge discovery, regional aspects, trends",Hip and Trendy: Characterizing Emerging Trends on Twitter,2011,
+58,"content analysis, micro-blogging, online social networks",Dynamical Classes of Collective Attention in Twitter,2012,
+62,"implicit crowdsourcing, journalism, social media, status updates",Summarizing Sporting Events Using Twitter,2012,
+64,"Twitter, computational social science, elections, predictions, social media","Why the Pirate Party Won the German Election of 2009 or The Trouble With Predictions: A Response to Tumasjan, A., Sprenger, T. O., Sander, P. G., &Amp; Welpe, I. M. ``Predicting Elections With Twitter: What 140 Characters Reveal About Political Sentiment''",2012,
+77,"Twitter, election forecasts, elections, information market, microblogging, politics, prediction markets, sentiment analysis",Election Forecasts With Twitter: How 140 Characters Reflect the Political Landscape,2011,
+78,"social media analytics, social networks, twitter",Do All Birds Tweet the Same?: Characterizing Twitter Around the World,2011,
+84,"ensembles, logistic regression, online learning, stochastic gradient descent",Large-scale Machine Learning at Twitter,2012,
+85,"social networks, Twitter, triadic closure",Structural Predictors of Tie Formation in Twitter: Transitivity and Mutuality,2010,
+86,"collaborative filtering, latent factor models, recommender systems, twitter",Co-factorization Machines: Modeling User Interests and Predicting Individual Decisions in Twitter,2013,
+87,"enterprise, facebook, linkedin, social networking, twitter","A Longitudinal Study of Facebook, LinkedIn, &#38; Twitter Use",2012,
+88,"influentials, information diffusion, ranking, social networks, twitter",Finding Influentials Based on the Temporal Order of Information Adoption in Twitter,2010,
+90,"collective intelligence, decision making, knowledge base, memetics, microblogging, trend analysis, twitter",Integrating Web-based Intelligence Retrieval and Decision-making from the Twitter Trends Knowledge Base,2009,
+91,"graphical model, prediction and recommendation, spatio-temporal, twitter, user profiling","Who, Where, when and What: Discover Spatio-temporal Topics for Twitter Users",2013,
+92,"comparisons, ranking mechanisms, thumb-based ranking",Ranking Mechanisms in Twitter-like Forums,2010,
+94,"real-time query processing, stream data management",Storm@Twitter,2014,
+95,"Twitter, bibliometrics, citation, scholarly communication, social media",How and Why Scholars Cite on Twitter,2010,
+101,"conservative, journalism, liberal, news, politics, twitter",Computing Political Preference Among Twitter Followers,2011,
+105,"social media, social networks, tie breaks, twitter",The Impact of Network Structure on Breaking Ties in Online Social Networks: Unfollowing on Twitter,2011,
+109,"health, insomnia, mental health, microblogging, self-disclosure, twitter",I Can'T Get No Sleep: Discussing #Insomnia on Twitter,2012,
+110,"cold-start problem, collaborative filtering, latent user models, mobile apps, recommender systems, twitter",Addressing Cold-start in App Recommendation: Latent User Models Constructed from Twitter Followers,2013,
+111,"Information control, Mumbai terrorist attack, Situation awareness, Twitter",Information Control and Terrorism: Tracking the Mumbai Terrorist Attack Through Twitter,2011,
+112,"conversation, messaging, regrets, survey, twitter",I Read My Twitter the Next Morning and Was Astonished: A Conversational Perspective on Twitter Regrets,2013,
+113,"Computer-mediated communication, News, Online credibility, Social media, System-generated cues",A Social Network As Information: The Effect of System Generated Reports of Connectedness on Credibility on Twitter,2012,
+115,"ESL, communication, language learning, microblogging",Microblogging for Language Learning: Using Twitter to Train Communicative and Cultural Competence,2009,
+117,"Iranian election, Twitter, cascades, information propagation, social media",Information Resonance on Twitter: Watching Iran,2010,
+118,"information rights, reuse, social media, survey, twitter",Social Media Ownership: Using Twitter As a Window Onto Current Attitudes and Beliefs,2011,
+122,"crisis coordination, disaster management, situation awareness, social media, system architectures",Emergency Situation Awareness from Twitter for Crisis Management,2012,
+127,"Twitter, social media, social network analysis, social networking potential",Measuring Influence on Twitter,2011,
+130,"breaking news, opinion leaders, social media, twitter",Breaking News on Twitter,2012,
+131,"computer-mediated communication, social media, social networks",A Longitudinal Study of Follow Predictors on Twitter,2013,
+133,"social media, software development, web 2.0","Towards Understanding Twitter Use in Software Engineering: Preliminary Findings, Ongoing Challenges and Future Questions",2011,
+134,"comparative usage analysis, microblogging, user modeling",A Comparative Study of Users' Microblogging Behavior on Sina Weibo and Twitter,2012,
+135,"computer-mediated communication, crisis informatics, disasters, field medicine, microblogging, social media",Beacons of Hope in Decentralized Coordination: Learning from On-the-ground Medical Twitterers During the 2010 Haiti Earthquake,2012,
+137,"Twitter, recommendation system, probabilistic model, collaborative filtering, MapReduce",TWITOBI: A Recommendation System for Twitter Using Probabilistic Modeling,2011,
+139,"graph analysis, large-scale data collection, network evolution, online social networks, user behavior",We Know Who You Followed Last Summer: Inferring Social Link Creation Times in Twitter,2011,
+140,"Dengue, Twitter, data mining, spatio-temporal data mining, surveillance, web",Dengue Surveillance Based on a Computational Model of Spatio-temporal Locality of Twitter,2011,
+143,"crowdsourcing, lists, topic inference, twitter, who is who",Inferring Who-is-who in the Twitter Social Network,2012,
+144,privacy twitter multi-party computation,Hummingbird: Privacy at the Time of Twitter,2012,
+148,"analytics, data summarization, twitter",A Framework for Summarizing and Analyzing Twitter Feeds,2012,
+149,"graph analysis, social media",Information Network or Social Network?: The Structure of the Twitter Follow Graph,2014,
+151,"hashtag, recommendation systems, twitter",On Recommending Hashtags in Twitter Networks,2012,
+152,"events, social media, twitter, user classification",Unfolding the Event Landscape on Twitter: Classification and Exploration of User Categories,2012,
+153,"distributed system, focused crawling, micro-blogging, open source, social network analysis, twitter",TwitterEcho: A Distributed Focused Crawler to Support Open Research with Twitter Data,2012,
+157,"Twitter, leaks, privacy, social networks",Loose Tweets: An Analysis of Privacy Leaks on Twitter,2011,
+160,"Crowd behavior, Location-based social network sites, Microblogs, Urban characteristics",Urban Area Characterization Based on Crowd Behavioral Lifelogs over Twitter,2013,
+170,"follower markets, online social networks, sybils, twitter",Follow the Green: Growth and Dynamics in Twitter Follower Markets,2013,
+173,"Congress, Internet, Twitter, communication",Twitter: The Electoral Connection?,2011,
+175,"Diffusion, Government, Microblogging, Social Media, Social Presence, Twitter",Twitter in Government: Building Relationships One Tweet at a Time,2010,
+176,"elections, internet, participation, politics, social media","Social Media and Political Participation: Are Facebook, Twitter and YouTube Democratizing Our Political Systems?",2011,
+181,online social networks,Faking Sandy: Characterizing and Identifying Fake Images on Twitter During Hurricane Sandy,2013,
+182,"Classification, Regression, Social media",Lightweight Methods to Estimate Influenza Rates and Alcohol Sales Volume from Twitter Messages,2013,
+183,"random sampling, sampling content streams, sampling from experts, twitter, twitter lists",On Sampling the Wisdom of Crowds: Random vs. Expert Sampling of the Twitter Stream,2013,
+185,"94A02, Korea, Polarization, Politician, Triple Helix, Twitter",Measuring Twitter-based Political Participation and Deliberation in the South Korean Context by Using Social Network and Triple Helix Indicators,2012,
+188,"information filtering, twitter recommendation",Making Your Interests Follow You on Twitter,2012,
+189,"network dynamics, networks of diffusion, twitter",The Bursty Dynamics of the Twitter Information Network,2014,
+194,"crowd behavior, location-based social network sites, urban characteristics",Crowd-based Urban Characterization: Extracting Crowd Behavioral Patterns in Urban Areas from Twitter,2011,
+195,"diffusion, events, online social network, topics",Spatio-temporal and Events Based Analysis of Topic Popularity in Twitter,2013,
+196,"topic model, user interest, Twitter, twitter-user model",Discovering User Interest on Twitter with a Modified Author-Topic Model,2011,
+197,"Facebook, Millennials, Narcissism, Personality, Social networking, Twitter",Twitter Versus Facebook: Exploring the Role of Narcissism in the Motives and Usage of Different Social Media Platforms,2014,
+198,"information need, time series analysis, twitter",Questions About Questions: An Empirical Analysis of Information Needs on Twitter,2013,
+199,"expertise judgment, recommendation system, twitter",Understanding Experts' and Novices' Expertise Judgment of Twitter Users,2012,
+200,"Electronic word-of-mouth, Social media, Tourism behavior, Tourism services, Twitter",Electronic Word-of-mouth and Online Reviews in Tourism Services: The Use of Twitter by Tourists,2013,
+202,"online social networks, underground economy",Poultry Markets: On the Underground Economy of Twitter Followers,2012,
+203,"Discovery analytics, Computational behavior finance, Social media, Twitter",Twitter Mood As a Stock Market Predictor,2011,
+204,"audience ratings, microblogging, social network",Towards Better TV Viewing Rates: Exploiting Crowd's Media Life Logs over Twitter for TV Rating,2011,
+207,"computer-mediated communication, live-tweeting, mixed-methods",Glitter: A Mixed-methods Study of Twitter Use During Glee Broadcasts,2012,
+209,"Civilian response, Data mining, Demographic analysis, Microblogging, Sentiment analysis, Terrorism informatics, Twitter, Visualization",A Microblogging-based Approach to Terrorism Informatics: Exploration and Chronicling Civilian Sentiment and Response to Terrorism Events via Twitter,2011,
+210,"Multiplex social network, Named entity recognition, Network analysis, Social networks",Online Named Entity Recognition Method for Microtexts in Social Networking Services: A Case Study of Twitter,2012,
+214,"data collection, data management, methods, social media, twitter","Twitter Zombie: Architecture for Capturing, Socially Transforming and Analyzing the Twittersphere",2012,
+215,"Twitter, elections, forecasting, politics, prediction, social media",A Meta-Analysis of State-of-the-Art Electoral Prediction From Twitter Data,2013,
+218,"Collaborative filtering, context awareness, recommender systems, user feedback",Social Temporal Collaborative Ranking for Context Aware Movie Recommendation,2013,
+220,"Recommender systems, algorithms, social web, tagging",Improving Recommendation Accuracy Based on Item-specific Tag Preferences,2013,
+221,"Twitter, breaks, internet, media refusal, self-control, social media, willpower",Giving Up Twitter for Lent: How and Why We Take Breaks from Social Media,2014,
+222,"personalization, recommender systems, twitter",A Survey of Recommender Systems in Twitter,2012,
+224,"Twitter hashtags, collaborative tagging, diffusion of innovation, social media",A New Perspective on Twitter Hashtag Use: Diffusion of Innovation Theory,2010,
+225,"Awareness, Learning, Microblogging, Social Media, Twitter",Software Engineering at the Speed of Light: How Developers Stay Current Using Twitter,2014,
+226,"dynamic discrete choice models, field experiments, social media",Intrinsic vs. Image-Related Utility in Social Media: Why Do People Contribute Content to Twitter?,2013,
+227,"Information retrieval, online recommendation, sentiment analysis",Generating Virtual Ratings from Chinese Reviews to Augment Online Recommendations,2013,
+228,"community detection, graph mining, social networks, twitter",Finding Twitter Communities with Common Interests Using Following Links of Celebrities,2012,
+229,"Twitter, social media, prediction, forecasting, politics, elections","No, You Cannot Predict Elections with Twitter",2012,
+230,"geographical regularity, microblogs, urban characteristics",Urban Area Characterization Based on Semantics of Crowd Activities in Twitter,2011,
+233,"Twitter, Swine Flu, H1N1, Data Mining, News, Social Media, eHealth, Web Science",Twitter Informatics: Tracking and Understanding Public Reaction During the 2009 Swine Flu Pandemic,2011,
+235,"geographic information retrieval, news queries, search engines",TWinner: Understanding News Queries with Geo-content Using Twitter,2010,
+236,"Personality, Social Networks, Twitter, Dark Triad",Predicting Dark Triad Personality Traits from Twitter Usage and a Linguistic Analysis of Tweets,2012,
+237,"Twitter, content sharing, information diffusion, social broadcasting, weak tie",Content Sharing in a Social Broadcasting Environment: Evidence from Twitter,2014,
+238,"microblogging, social network analysis, social networking, collaborative learning",A Social Network Analysis Perspective on Student Interaction Within the Twitter Microblogging Environment,2010,
+240,"automatic learning, digital curator, journalism, news story, social media",Finding News Curators in Twitter,2013,
+242,"Twitter,Media,Blogs,Predictive models,Data collection,Diseases,Social Networks,Social Media,Twitter,Microblogging,News Diffusion,Information Diffusion",Sharing News Articles Using 140 Characters: A Diffusion Analysis on Twitter,2012,
+246,"microblogging services, online social networking, peer-to-peer systems",Twittering by Cuckoo: Decentralized and Socio-aware Online Microblogging Services,2010,
+247,"microblogging services, online social networking, peer-to-peer systems",Twittering by Cuckoo: Decentralized and Socio-aware Online Microblogging Services,2010,
+248,"burst detection, hashtag, social media, twitter",Discover Breaking Events with Popular Hashtags in Twitter,2012,
+251,"collaborator recommendation, linked data, twitter","Finding Co-solvers on Twitter, with a Little Help from Linked Data",2012,
+254,"computer-mediated communication, information flow, journalism, online discussion, political discourse, social computing and social navigation, social networking site design and use, twitter",Is News Sharing on Twitter Ideologically Biased?,2013,
+256,"Twitter, communication patterns, content analysis, law enforcement, microblogging, social media, user generated content",Twitter for City Police Department Information Sharing,2010,
+257,"cascade, information diffusion, realtime analysis, social network, twitter",Online Analysis of Information Diffusion in Twitter,2014,
+259,"Memory, personality, recommender systems, social networks, trust",Social Factors in Group Recommender Systems,2013,
+265,"personality, retweet, social media, twitter, willingness",Who Will Retweet This?: Automatically Identifying and Engaging Strangers on Twitter to Spread Information,2014,
+271,"data mining, social networks, twitter",The Complete Picture of the Twitter Social Graph,2012,
+277,"crisis communication, information use, microblogs, real-time communication, twitter",Tweet Me Home: Exploring Information Use on Twitter in Crisis Situations,2011,
+279,"information sharing, micro-blog, people-tag, twitter",Tadvise: A Twitter Assistant Based on Twitter Lists,2011,
+280,"bursty words, spatial signature, text stream",Spatio-temporal Characteristics of Bursty Words in Twitter Streams,2013,
+281,"cluster analysis, twitter, visualization",ThemeCrowds: Multiresolution Summaries of Twitter Usage,2011,
+285,"Twitter,Feature extraction,Crawlers,Servers,IP networks,Browsers,Training,classification,Suspicious URL,twitter,URL redirection,conditional redirection",WarningBird: A Near Real-Time Detection System for Suspicious URLs in Twitter Stream,2013,
+286,"Collaborative filtering, LDA, Matrix factorization, Probabilistic model, Recommendation system, Twitter",TWILITE: A Recommendation System for Twitter Using a Probabilistic Model Based on Latent Dirichlet Allocation,2014,
+288,"Location, time zone, tweets",Home Location Identification of Twitter Users,2014,
+290,"ambient displays, community awareness, evocative objects, informative art, social networking",Twitterspace: A Co-developed Display Using Twitter to Enhance Community Awareness,2008,
+292,"Social recommender system, ubiquitous computing, user modeling",An Approach to Social Recommendation for Context-aware Mobile Services,2013,
+295,"Twitter, retweet behavior, social media",Analyzing User Retweet Behavior on Twitter,2012,
+296,"South Korea, Twitter, Web 1.0, Web 2.0, blog, network analysis, politician","Sociology of Hyperlink Networks of Web 1.0, Web 2.0, and Twitter: A Case Study of South Korea",2011,
+297,"Opinion leadership, Political discussion, Political participation, Twitter, Uses and gratifications","Does Twitter Motivate Involvement in Politics? Tweeting, Opinion Leadership, and Political Engagement",2013,
+299,"collaborative learning, microblogging, social network analysis, social networking",Who Students Interact with? A Social Network Analysis Perspective on the Use of Twitter in Language Learning,2010,
+300,"Recency ranking, Twitter, tweet ranking",Improving Recency Ranking Using Twitter Data,2013,
+304,"application for social network, color-based features, language independent, social network",Language Independent Gender Classification on Twitter,2013,
+305,"propagation analysis, retweeter, twitter",Who Will Retweet Me?: Finding Retweeters in Twitter,2013,
+307,"Government, Innovative, Policy promotion, Semantic network analysis, Twitter","Government Organizations' Innovative Use of the Internet: The Case of the Twitter Activity of South Korea's Ministry for Food, Agriculture, Forestry and Fisheries",2012,
+308,"crisis management, disaster management, situation awareness, social media",A Sensitive Twitter Earthquake Detector,2013,
+313,"Online participation, Twitter, digital scholarship, higher education, online social networks, social networking sites",Higher Education Scholars' Participation and Practices on Twitter,2012,
+314,"dirichlet process, timeline, twitter",Timeline Generation: Tracking Individuals on Twitter,2014,
+316,"groups, online communities, periodic time series",Group Chats on Twitter,2013,
+317,"query-biased learning to rank, real-time twitter search, semi-supervised learning",Query-biased Learning to Rank for Real-time Twitter Search,2012,
+319,"Monitoring,Twitter,Motion pictures,Databases,Fans,Blogs,Biomedical monitoring,Twitter,evolution monitoring,user monitoring",Monitoring User Evolution in Twitter,2012,
+320,"Ecuador, Latin America, Paraguay, Twitter, Venezuela, election prediction, prediction",Leveraging Candidate Popularity on Twitter to Predict Election Outcome,2013,
+321,"three-way clustering, twitter hyperlink recommendation",Twitter Hyperlink Recommendation with User-tweet-hyperlink Three-way Clustering,2012,
+322,"communication, culture, social media","Twitter Ain'T Without Frontiers: Economic, Social, and Cultural Boundaries in International Communication",2014,
+323,"data mining, graph structure, social networks, twitter",Studying Social Networks at Scale: Macroscopic Anatomy of the Twitter Social Graph,2014,
+325,"conferences, scientific communities, twitter",How Groups of People Interact with Each Other on Twitter During Academic Conferences,2014,
+326,"health improvement, persuasive technology",Twitter Me: Using Micro-blogging to Motivate Teenagers to Exercise,2010,
+331,"Collaborative filtering, context-aware recommendation, matrix factorization, mood-specific movie similarity, recommender systems",Mining Contextual Movie Similarity with Matrix Factorization for Context-aware Recommendation,2013,
+332,"Twitter, online social networks (OSNs), spam",Twitter Games: How Successful Spammers Pick Targets,2012,
+333,"crowdsourcing, social networks, twitter",Tweetflows: Flexible Workflows with Twitter,2011,
+335,"electronic government, internet, network effects, political communication, political marketing, social media",Does the Early Bird Move the Polls?: The Use of the Social Media Tool 'Twitter' by U.S. Politicians and Its Impact on Public Opinion,2011,
+338,"ego networks, online social networks, personal social relationships",Dynamics of Personal Social Relationships in Online Social Networks: A Study on Twitter,2013,
+341,"visual network analysis, social network analysis, information visualization, Twitter, conference, co-organization",Visual Network Analysis of Twitter Data for Co-organizing Conferences: Case CMAD 2013,2014,
+342,"Knowledge management, Twitter, co-organization, conference, information visualization, knowledge transfer, microblogging",Information Visualization of Twitter Data for Co-organizing Conferences,2013,
+343,"Twitter, micro blog, physical activity, social networks, technology-mediated social participation",Descriptive Analysis of Physical Activity Conversations on Twitter,2011,
+344,"account hijacking, compromise, social networks",Consequences of Connectivity: Characterizing Account Hijacking on Twitter,2014,
+348,"Twitter, reply behavior, reply prediction, social media communication",The Utility of Social and Topical Factors in Anticipating Repliers in Twitter Conversations,2013,
+349,"social networks, timeline, twitter",Understanding Factors That Affect Response Rates in Twitter,2012,
+350,"summarization, twitter context tree, user influence model",Towards Twitter Context Summarization with User Influence Models,2013,
+351,"Bonding online social capital, Bridging online social capital, Followees, Followers, Twitter",Perceived Bridging and Bonding Social Capital on Twitter: Differentiating Between Followers and Followees,2013,
+354,"congress, legislation, pipa, sopa, twitter",I'D Have to Vote Against You: Issue Campaigning via Twitter,2013,
+355,"automated classification, congress, political communication, social media, twitter",What's Congress Doing on Twitter?,2013,
+359,"social network analysis, Twitter, suspicious profiles, support vector machine, aggressiveness, visibility, level of danger",SPOT 1.0: Scoring Suspicious Profiles on Twitter,2011,
+361,"degree distribution, degree of separation, diameter, reciprocity, social network analysis, twitter",How Social Network is Evolving?: A Preliminary Study on Billion-scale Twitter Network,2013,
+362,"Twitter, behavior modeling, event detection, information propagation, originating behavior, promoting behavior, retweet, weak retweet","Who is Retweeting the Tweeters? Modeling, Originating, and Promoting Behaviors in the Twitter Network",2012,
+363,"3D printing, accessibility, crisis informatics, education, fabrication, programming, visual impairments","Tracking @Stemxcomet: Teaching Programming to Blind Students via 3D Printing, Crisis Management, and Twitter",2014,
+364,"audience analysis, twitter, video recommendation, youtube",Who Watches (and Shares) What on Youtube? And when?: Using Twitter to Understand Youtube Viewership,2014,
+365,"Twitter, West Nile virus, social network",Real-time Spatio-temporal Analysis of West Nile Virus Using Twitter Data,2012,
+367,"data mining, machine learning, regression, twitter",Validating Models for Disease Detection Using Twitter,2013,
+369,"routing algorithm, social network, social query, twitter",Predicting Potential Responders in Twitter: A Query Routing Algorithm,2012,
+371,"Color-based features, profile characteristics, phonemes as features, color quantization, social networks, language independence",Empirical Evaluation of Profile Characteristics for Gender Classification on Twitter,2013,
+372,"Affiliative tendency, Communication competence, Social enhancement, Twitter",How Social is Twitter Use? Affiliative Tendency and Communication Competence As Predictors,2014,
+373,"Twitter, diary study, resilience",Cognitive Resilience: Can We Use Twitter to Make Strategies More Tangible?,2012,
+374,"academic conferences, interactions, retention, twitter, usage","Twitter in Academic Conferences: Usage, Networking and Participation over Time",2014,
+378,"commercial intent, knowledge acquisition, twitter",Towards Linking Buyers and Sellers: Detecting Commercial Intent on Twitter,2013,
+379,"graph mining, online interactions, social network",Reconstruction and Analysis of Twitter Conversation Graphs,2012,
+382,"nokia internet pulse, sentiment, twitter, visualization",Nokia Internet Pulse: A Long Term Deployment and Iteration of a Twitter Visualization,2012,
+384,"cross-media analysis, social network analysis, twitter",Cross-media Impact on Twitter in Japan,2010,
+386,"LDA, information recommendation, twitter",Developing a User Recommendation Engine on Twitter Using Estimated Latent Topics,2011,
+387,"Conversation analysis, Coordinated behavior, Disaster response, Information filtering, Twitter",What Kind of #Conversation is Twitter? Mining #Psycholinguistic Cues for Emergency Coordination,2013,
+388,"Twitter, geocoding, traffic",Traffic Observatory: A System to Detect and Locate Traffic Events and Conditions Using Twitter,2012,
+389,"Altmetrics, Disciplinary differences, Scholarly communication, Twitter, Webometrics",Disciplinary Differences in Twitter Scholarly Communication,2014,
+390,"cancer, disease detection, disease surveillance, epidemics, influenza, public health, social media, twitter",Real-time Disease Surveillance Using Twitter Data: Demonstration on Flu and Cancer,2013,
+394,"crowdsourcing, games with a purpose, human-computation, microblogs, social information filtering",Twiage: A Game for Finding Good Advice on Twitter,2012,
+396,"social media, twitter, you tube","Cyberactivism Through Social Media: Twitter, YouTube, and the Mexican Political Movement I'M Number 132",2013,
+397,"Twitter, SNS, mobile, discontinuance, continuance, uses and gratifications, UG, diffusion of innovation, IDT, PLS",Twitter Users vs. Quitters: A Uses and Gratifications and Diffusion of Innovations Approach in Understanding the Role of Mobility in Microblogging,2010,
+399,"Twitter, Social Networks, Community Detection",Tweets Beget Propinquity: Detecting Highly Interactive Communities on Twitter Using Tweeting Links,2012,
+401,"tag recommendation, twitter, wikipedia",Exploiting Twitter and Wikipedia for the Annotation of Event Images,2014,
+402,"Campaign Promoter, Markov Random Fields",Detecting Campaign Promoters on Twitter Using Markov Random Fields,2014,
+406,"Micro-blog mining, Patient's language learning, Syndromic surveillance, Terminology clustering, Twitter mining",Twitter Mining for Fine-grained Syndromic Surveillance,2014,
+407,"newsgathering, scoop, social media, trends, user-interface",Curating and Contextualizing Twitter Stories to Assist with Social Newsgathering,2013,
+409,"crowd behavior, location-based social network sites, urban life monitoring",Crowd-sourced Urban Life Monitoring: Urban Area Characterization Based Crowd Behavioral Patterns from Twitter,2012,
+412,"disaster response, earthquake, micro blogging, twitter",Use Trend Analysis of Twitter After the Great East Japan Earthquake,2012,
+413,"expert finding, local expert, social tagging, twitter",Finding Local Experts on Twitter,2014,
+418,"burst detection, dynamic temporal map, topic association, twitter",Detecting Dynamic Association Among Twitter Topics,2012,
+419,"information cascades, information diffusion, visualizations",RApID: A System for Real-time Analysis of Information Diffusion in Twitter,2014,
+420,"earthquake, information diffusion, information sharings, social networks, twitter",Information Sharing on Twitter During the 2011 Catastrophic Earthquake,2013,
+422,"Social media, Twitter, early tsunami warning system, Indonesia, disaster management agencies",Twitter Early Tsunami Warning System: A Case Study in Indonesia's Natural Disaster Management,2013,
+427,"Twitter, elections, political campaigning, Pakistan, vote",My Name Is Khan: The Use of Twitter in the Campaign for 2013 Pakistan General Election,2014,
+428,"community detection, graph mining, social networks, twitter",Following the Follower: Detecting Communities with Common Interests on Twitter,2012,
+432,"Andy Carvin, Arab Spring, Twitter, gatekeeping, journalism, sourcing",Sourcing the Arab Spring: A Case Study of Andy Carvin's Sources on Twitter During the Tunisian and Egyptian Revolutions,2014,
+434,"Twitter, bundestagswahl 2009, entropy, gatekeepers, network analysis, political communication",Small Worlds with a Difference: New Gatekeepers and the Filtering of Political Information on Twitter,2011,
+436,"Twitter, correlation, prediction, stock",Correlating S&#38 P 500 Stocks with Twitter Data,2012,
+439,"Twitter, crawling, data-mining, social analysis, super bowl 2012",Automated Twitter Data Collecting Tool for Data Mining in Social Network,2012,
+440,"Microblogging, event detection, burst detection",Live Semantic Sport Highlight Detection Based on Analyzing Tweets of Twitter,2012,
+441,"Twitter, information amplification, real time rank, influence","IARank: Ranking Users on Twitter in Near Real-Time, Based on Their Information Amplification Potential",2012,
+442,"<b>T</b>witter, cross cultural aspects, international aspects, news media, topics",Trending Twitter Topics in English: An International Comparison,2012,
+443,"Filtering, Name disambiguation, Online reputation management, Twitter",Discovering Filter Keywords for Company Name Disambiguation in Twitter,2013,
+444,"sentiment analysis, social media, Twitter, survey research, Nigeria","Twitter, Public Opinion, and the 2011 Nigerian Presidential Election",2013,
+446,"accessibility, blind, screen reader, social network, usability, web 2.0",Web 2.0: Twitter and the Blind,2011,
+450,"Twitter, information diffusion, trend prediction",On Predicting Twitter Trend: Factors and Models,2013,
+451,"civic engagement, elections, political discourse, social media, twitter",Tweet Recall: Examining Real-time Civic Discourse on Twitter,2012,
+454,"classification, computer science, social network, twitter",Identifying and Analyzing Researchers on Twitter,2014,
+457,"crowdsourcing, expert finding, local expert, social tagging, twitter",Who is the Barbecue King of Texas?: A Geo-spatial Approach to Finding Local Experts on Twitter,2014,
+459,"social media, user profiling, classification",Religious Politicians and Creative Photographers: Automatic User Categorization in Twitter,2013,
+461,"Twitter, USDA, collaboration, open government initiative, participation, social media","Transparency, Participation, Cooperation: A Case Study Evaluating Twitter As a Social Media Interaction Tool in the US Open Government Initiative",2012,
+462,"Twitter, communities of practice, informal learning, learning, memory aids, social network analysis",Visualizing Informal Learning Behavior from Conference Participants Twitter Data,2014,
+463,"DTN, application, development, social networking, twitter",An Implementation for Accessing Twitter Across Challenged Networks,2011,
+464,"inference, privacy leak, twitter, url shortening service",I Know the Shortened URLs You Clicked on Twitter: Inference Attack Using Public Click Analytics and Twitter Metadata,2013,
+465,"IMDB, YouTube, dataset, goodreads, mining, pandora, twitter",Mining Cross-domain Rating Datasets from Structured Data on Twitter,2014,
+466,"actor-oriented modeling (siena), snowball sampling, tie dissolution, twitter, unfollow relations",Structures of Broken Ties: Exploring Unfollow Behavior on Twitter,2013,
+467,"internet of things, pervasive computing, web of things",Thing Broker: A Twitter for Things,2013,
+470,"Internet, behavior, gubernatorial election, political participation, social media, twitter, voting",Who Tweets About Politics?: Political Participation of Twitter Users During the 2011Gubernatorial Elections,2013,
+473,"conversation retrieval, twitter",Conversation Retrieval from Twitter,2011,
+475,"diversification, duplicate detection, search, twitter",Groundhog Day: Near-duplicate Detection on Twitter,2013,
+476,"Databases, Discovering, Geographic Information Retrieval, Places of Interest, Social Media",Discovering and Characterizing Places of Interest Using Flickr and Twitter,2013,
+477,"Twitter, epidemics detection, epidemics distribution, epidemics spread, health information visualization, social network",Epidemic Outbreak and Spread Detection System Based on Twitter Data,2012,
+478,"Cognitive Informatics, Complex Contagion, Information Diffusion, Quantum Cognition, Social Computing, Social Influence, Twitter",Modeling Indirect Influence on Twitter,2012,
+479,"link classification, micro-blogging, social network",Why You Follow: A Classification Scheme for Twitter Follow Links,2014,
+480,"experimentation, human factors, migration, selection bias, twitter",Inferring International and Internal Migration Patterns from Twitter Data,2014,
+481,"Recommender Systems, collaborative filtering, graph theory, hybrid recommenders, random walk, social networks, user coverage","An Empirical Comparison of Social, Collaborative Filtering, and Hybrid Recommenders",2013,
+484,"bonding, bridging, social capital, Twitter, follow-backs, homophily, affinities",Bonding vs. Bridging Social Capital: A Case Study in Twitter,2010,
+486,"Citizen journalism, Labor, Protest mobilization, Twitter, Wisconsin protests","Time, Place, Technology: Twitter As an Information Source in the Wisconsin Labor Protests",2014,
+487,"social network services, Twitter, physical activity, running, information retrieval, data analysis",Characterizing the Performance and Behaviors of Runners Using Twitter,2013,
+488,"crowd knowledge, social sensor, twitter",Can Twitter Be an Alternative of Real-world Sensors?,2011,
+492,"nationality inference, qatar, twitter, user classification",Inferring Nationalities of Twitter Users and Studying Inter-national Linking,2014,
+493,"community detection, social networks, twitter",iTop: Interaction Based Topic Centric Community Discovery on Twitter,2012,
+494,"Twitter, business intelligence, information extraction",Understanding the Functions of Business Accounts on Twitter,2011,
+495,"digital epidemiology, remote diagnosis, twitter, validation",On the Ground Validation of Online Diagnosis with Twitter and Medical Records,2014,
+499,"community detection, crisis events, online social media",Identifying and Characterizing User Communities on Twitter During Crisis Events,2012,
+500,"Twitter, analytics, celebrity, social media, social media analytics",Exploring Celebrity Dynamics on Twitter,2013,
+501,"Twitter, behavior analysis, social media, social network analysis",A Study on Twitter User-follower Network: A Network Based Analysis,2013,
+502,"Learning to Rank, Recommender Systems, Twitter, User Engagement",Predicting User Engagement in Twitter with Collaborative Ranking,2014,
+503,"crowdsourcing, tweet",A Transfer Learning Based Framework of Crowd-selection on Twitter,2013,
+506,"Social networks, information diffusion, Information propagation, Twitter","Information Diffusion on Twitter: Everyone Has Its Chance, But All Chances Are Not Equal",2013,
+507,"Twitter, TV-program, Scene labeling, microblogging",Social Indexing of TV Programs: Detection and Labeling of Significant TV Scenes by Twitter Analysis,2012,
+508,"energy function, life activity modeling, news event detection, single-pass clustering, twitter",Life Activity Modeling of News Event on Twitter Using Energy Function,2012,
+510,"advertising, classification, crowdsourcing, machine learning, marketing",Automatic Crowdsourcing-Based Classification of Marketing Messaging on Twitter,2013,
+511,"dns, email, multiple platform spam, spam, twitter",Observing Common Spam in Twitter and Email,2012,
+512,"affective interactional prototype development, emotion sensing, offline interaction",Reactions: Twitter Based Mobile Application for Awareness of Friends' Emotions,2012,
+513,"content curation, social media, social network analysis",Aggregating Content and Network Information to Curate Twitter User Lists,2012,
+514,"comparison orientation, depression, differential effects, envy, facebook, happiness, life satisfaction, news feed, passive consumption, reference groups, social comparison, survey, twitter, wellbeing",Social Comparison in Social Media: A Look at Facebook and Twitter,2014,
+517,"Twitter, attitude change, behavioral patterns, incremental, microblogging, persuasive systems design, social influence",Incremental Persuasion Through Microblogging: A Survey of Twitter Users in Latvia,2011,
+518,"microblog, Twitter, user modeling, trends, location",Trend-Aware User Modeling with Location-Aware Trends on Twitter,2012,
+519,"Collaborative Filtering, Explanation, Integration, Random Walk, Ranking",A Modified Random Walk Framework for Handling Negative Ratings and Generating Explanations,2013,
+521,"microblogging, situational awareness",Twitter Communications in Mass Emergency: Contributions to Situational Awareness,2012,
+523,"social media mining, real-time Twitter trend miming system, topic modeling, network analysis, Korean presidential election",RT^2M: Real-Time Twitter Trend Mining System,2013,
+524,"Twitter, Malware Propagation, Analysis",Analysis of Malware Propagation in Twitter,2013,
+525,"Twitter, content-based, multi-view hybridization, recommendation system, social network",A Multi-view Content-based User Recommendation Scheme for Following Users in Twitter,2012,
+527,"Thought Bubble, Twitter, classification, data mining, recommender system, social",Thought Bubbles: A Conceptual Prototype for a Twitter Based Recommender System for Research 2.0,2012,
+528,"tags, twitter lists, user model",A Multi-faceted User Model for Twitter,2012,
+531,"signal analysis, traffic events search, wavelet",A Search and Summary Application for Traffic Events Detection Based on Twitter Data,2014,
+533,"Celebrities, Malicious users, Non-malicious users, Online Social Networks (OSNs), Twitter",Detecting Malicious Users in Twitter Using Classifiers,2014,
+534,"Stock market, sentiment analysis, Twitter, microblogging, social network analysis",Analyzing Stock Market Movements Using Twitter Sentiment Analysis,2012,
+535,"data pipeline, disease surveillance, social media geostreams, spatiotemporal analysis",Spatiotemporal Transformation of Social Media Geostreams: A Case Study of Twitter for Flu Risk Analysis,2013,
+536,"experts analysis, interest analysis, twitter analytics",Peckalytics: Analyzing Experts and Interests on Twitter,2013,
+539,"Twitter, consumer behavior, daily deal service, electronic commerce, electronic word-of-mouth (eWOM), microblogging, online social networking, social media marketing",When Daily Deal Services Meet Twitter: Understanding Twitter As a Daily Deal Marketing Platform,2012,
+541,"Twitter, Social network services",Online Social Behavior in Twitter: A Literature Review,2012,
+542,"Online Social Networks, Twitter, Digital Forensics, Cloud Computing, Social Network Forensic Analysis",Moments in Time: A Forensic View of Twitter,2013,
+543,"Twitter-like service, LDA, User modeling, Data selection",Data Selection for User Topic Model in Twitter-Like Service,2011,
+544,"Twitter, social bots, feature selection, interaction, replies",Which Users Reply to and Interact with Twitter Social Bots?,2013,
+548,"classification, conflict, political ideology, social network, twitter",Predicting Ideological Friends and Foes in Twitter Conflicts,2014,
+549,"Twitter, geolocation, social networks, spatial data mining",TweoLocator: A Non-intrusive Geographical Locator System for Twitter,2012,
+550,"Twitter, complex contagion, quantum cognition, social influence",There is More Than Complex Contagion: An Indirect Influence Analysis on Twitter,2012,
+552,"attribute-value extraction, event infoboxes, fact triplet extraction, natural calamities, natural disaster events, structured event mining, twitter",Structured Information Extraction from Natural Disaster Events on Twitter,2014,
+553,"Technology adoption, Small- and Medium-sized enterprises (SMEs), Social media tools, Firm innovativeness, Twitter",Twitter Adoption and Use by SMEs: An Empirical Study,2013,
+554,"and visual analytics, faceted search, social media",Navigating Information Facets on Twitter (NIF-T),2012,
+555,"inverted indexing, memory allocation",Dynamic Memory Allocation Policies for Postings in Real-time Twitter Search,2013,
+556,"contentious politics, influence, social media, social network analysis",Identifying Influential Twitter Users in the 2011 Egyptian Revolution,2013,
+557,"blogging, diffusion, social media, social networking, Twitter",Twitter Quo Vadis: Is Twitter Bitter or Are Tweets Sweet?,2010,
+559,"Crowd behavior, Land use detection, Spectral clustering, Urban computing",Spectral Clustering for Sensing Urban Land Use Using Twitter Activity,2014,
+560,"Twitter, pairwise influence, retweet probability, dummy retweet, Bayesian model",How Your Friends Influence You: Quantifying Pairwise Influences on Twitter,2012,
+566,"Dempster-Shafer theory, Twitter, basic probability assignment, belief functions, location estimation",Evidential Location Estimation for Events Detected in Twitter,2013,
+569,"social media, social media, stock price, prediction",Trading on Twitter: The Financial Information Content of Emotion in Social Media,2014,
+571,"Twitter, Web News, Net View Data, Browsing Behavior, Social Network, Process Mining, Clustering",An Exploratory Analysis of Browsing Behavior of Web News on Twitter,2012,
+572,"Network Learning, Geographic Targeting, Geolocation Estimation, Spatial Data Mining",Uncovering the Location of Twitter Users,2013,
+573,"collaborative communities, design, social media, socio-technical systems",Conversations in Context: A Twitter Case for Social Media Systems Design,2010,
+574,"hashtags, information seeking, q&#38;a, social search, twitter",Is Anyone out There?: Unpacking Q-A Hashtags on Twitter,2014,
+576,"Twitter, online social networks, spam-farms",Spammers' Networks Within Online Social Networks: A Case-study on Twitter,2011,
+577,"epidemic intelligence, event-based surveillance, medisys, twitter analysis",Combining Twitter and Media Reports on Public Health Events in Medisys,2013,
+578,"signal processing, social network, twitter, user recommendation, wavelet",Signal-based User Recommendation on Twitter,2013,
+579,"geographic information retrieval, geographical focus, language models, social networks",Every Move You Make I'Ll Be Watching You: Geographical Focus Detection on Twitter,2013,
+580,"media spectacles, multiplatform TV-formats, text-TV, twitter",Text-TV + Twitter = a New Form of Social TV?,2012,
+583,"US congress, influential users, mobile information retrieval, social media data mining, spatio-temporal search engine",Kongress: A Search and Data Mining Application for U.S. Congressional Voting and Twitter Data,2013,
+585,"Twitter mining, UEC-FOOD100, food classifier, food photos, photo tweet",Twitter Food Photo Mining and Analysis for One Hundred Kinds of Foods,2014,
+586,"Social Movement Network Analysis, Twitter, Green Movement, Mining Online Communities",Social Network Analysis of Iran's Green Movement Opposition Groups Using Twitter,2010,
+588,"Twitter, clustering, network analysis, social media, text analysis",An Exploration of Social Identity: The Structure of the BBC News-sharing Community on Twitter,2014,
+589,"Restricted network growth, Restrictions on node-degree, Soft cut-off, Spammers' linking strategies, Twitter social network",Effects of a Soft Cut-off on Node-degree in the Twitter Social Network,2012,
+591,"Personalization, reorder, retweet, twitter",Reorder User's Tweets,2013,
+593,"Twitter, homeless, social inclusion, social networks",We Are Visible: Technology-mediated Social Participation in a Twitter Network for the Homeless,2012,
+595,"Twitter, Wikipedia, health surveillance, item-set mining",A Framework for Detecting Public Health Trends with Twitter,2013,
+598,"Twitter, crowdsourcing, language learning, microblogging, social networking",Twasebook: A Crowdsourced Phrasebook for Language Learners Using Twitter,2012,
+601,"Twitter, collective intelligence, diffusion, government, microblogging, social influence, social media, social presence","Twitter Takes Wing in Government: Diffusion, Roles, and Management",2010,
+602,"feature buzz summary, feature-based opinion summarization, opinion mining, opinion strength, sentiment classification",Customer Review Summarization Approach Using Twitter and SentiWordNet,2013,
+604,"Twitter, epidemic intelligence, medicine 2.0","Tracking Twitter for Epidemic Intelligence: Case Study: EHEC/HUS Outbreak in Germany, 2011",2012,
+605,"information flow, information leakage, social network services, twitter",Syntactic Analysis for Monitoring Personal Information Leakage on Social Network Services: A Case Study on Twitter,2013,
+606,"Twitter,YouTube,Feeds,Facebook,Media,Business",WhACKY! - What Anyone Could Know About You from Twitter,2012,
+610,"Twitter, Twitter volume spikes, stock, stock trading",Twitter Volume Spikes: Analysis and Application in Stock Trading,2013,
+611,"Twitter, psychopathy, feature selection, data sampling, ensemble learning",Using Twitter Content to Predict Psychopathy,2012,
+612,"Twitter, campus shootings, crisis informatics, microblogging, natural language toolkit, social media, word clouds",Twitter Use During an Emergency Event: The Case of the UT Austin Shooting,2011,
+613,"advertising, communication, quantitative, twitter",Ad-itudes: Twitter Users Advertising,2012,
+615,"discussion groups, group chats, online communities, ranking groups, search, twitter",Ranking Twitter Discussion Groups,2014,
+616,"children, data capture, health, memories, microblogging, parents, public health, social media, twitter",@BabySteps: Design and Evaluation of a System for Using Twitter for Tracking Children's Developmental Milestones,2014,
+617,"Twitter, collective action, computational social science, digital methods, social media","Through a Glass, Darkly: Tactical Support and Symbolic Association in Twitter Messages Commenting on Stuttgart 21",2014,
+618,"Corporate Activity Score CAS, FCB-Grid Model, Fortune 500 Rankings, Online Marketing Communication, Social Media, Social Networking Site SNS, Twitter",Twitter As a Tool for Corporate Communication: Exploring Interactive Communication Patterns Between Fortune 500 Companies and Twitter Users,2013,
+619,"Facebook, Millennials, Narcissism, Personality, Social networking, Twitter",Twitter Versus Facebook,2014,
+622,"Message Orientation, Relationship Building, Relationship Marketing, Social Media, Twitter",Building Marketing Relationships on Twitter: A Content Analysis of University Twitter Accounts,2013,
+623,"prediction, stock market indicators, mood, Twitter, psychological states, Support Vectors Machine, Neural Networks",Machine Learning in Prediction of Stock Market Indicators Based on Historical Data and Data from Twitter Sentiment Analysis,2013,
+624,"Event Detection, Twitter Stream Analysis, Electric Fields Analogy, Machine Learning","Detection, Clustering and Tracking of Life Cycle Events on Twitter Using Electric Fields Analogy",2013,
+626,"micro cluster, burst detection, edit distance, knapsack-constrained maximum covering problem, social viewing",Detecting Topics from Twitter Posts During TV Program Viewing,2013,
+633,"Attention, Twitter, Attention Economy, Attention Simulator",A Prototype of Attention Simulator on Twitter,2011,
+634,"CMC, Consumer-brand relationship, Social response theory, Twitter",Twitter As a Social Actor,2014,
+636,"Influence, Social Networks",Ranking Twitter Influence by Combining Network Centrality and Influence Observables in an Evolutionary Model,2013,
+637,"apology, corporate mistakes, sentiment analysis, twitter",CEO's Apology in Twitter: A Case Study of the Fake Beef Labeling Incident by E-Mart,2011,
+639,"information retrieval, social network analysis, microblogs, security",Analysis of Security Messages Posted on Twitter,2012,
+641,"peer recommendation, ranking strategy, social media, twitter",A Hybrid Algorithm for Recommendation Twitter Peers,2014,
+645,"information retrieval, microblogs, security",Evaluating the Utilization of Twitter Messages As a Source of Security Alerts,2013,
+646,"climate change, female, gender differences, male, twitter",Analyzing the Climate Change Debate on Twitter: Content and Differences Between Genders,2014,
+647,"Recommender systems, context-aware recommendations, context-awareness, datasets, social network analysis, user modeling",Introduction to Special Section on CAMRa2010: Movie Recommendation in Context,2013,
+648,"Adaptive process, decision theory, mutation, replicator dynamics, risk, risk choice strategy, sequentiality, winner-takes-all",Mathematical Description and Analysis of Adaptive Risk Choice Behavior,2013,
+650,social media analysis,Mainstream Media Behavior Analysis on Twitter: A Case Study on UK General Election,2013,
+651,"Prediction, Twitter, W-JRip, data mining, decision tree, na&#239;ve Bayes, news, popularity",Predicting the Popularity of Trending Arabic News on Twitter,2014,
+652,"EU, Twitter, activity, assortativity, clustering coefficient, followers, mentions/replies, ministries, networks, performance, skewnness",Exploring Potential Communities of Followers in Governmental Twitter Accounts of EU Countries,2014,
+653,"Twitter bio, link prediction",How People Describe Themselves on Twitter,2013,
+654,"temporal analysis, time series, twitter, wikipedia",Analysing the Duration of Trending Topics in Twitter Using Wikipedia,2014,
+655,"Super Bowl 2012, Twitter, crawling, data-mining, social analysis",Automated Twitter Data Collecting Tool and Case Study with Rule-based Analysis,2012,
+656,"entity linking, time series analysis, twitter, wikipedia",Twitter Anticipates Bursts of Requests for Wikipedia Articles,2013,
+657,"inferring social ties, social networks",Inferring Social Ties from Common Activities in Twitter,2014,
+660,"culture, identity management, privacy, self-disclosure, twitter",Who Am I on Twitter?: A Cross-country Comparison,2014,
+661,"information diffusion, iran, micro-celebrities, social media, twitter",Information Diffusion on Twitter: The Case of the 2013 Iranian Presidential Election,2014,
+663,"Twitter, hashtag recommendation",Design and Evaluation of a Twitter Hashtag Recommendation System,2014,
+666,"Online Social Network, Privacy, Facebook, Twitter",New Privacy Threats for Facebook and Twitter Users,2012,
+670,"Blogs,Computers",Classifying Twitter Data with Na\{\i}Ve Bayes Classifier,2012,
+673,"complex interactive system, Twitter, usability, mental models","Mental Models, Performance and Usability of a Complex Interactive System: The Case of Twitter",2013,
+674,"advertisability, LDA mode, multi-source corpus, logistic regression",Social Advertisability Analysis on Twitter,2014,
+675,"Collective user behaviour, Fuzzy association rule mining, Mass assignment, Twitter data analysis",Study of Collective User Behaviour in Twitter: A Fuzzy Approach,2014,
+678,"twitter, clustering, web search",A Clustering Algorithm Using Twitter User Biography,2013,
+681,"online social network, restricted network growth, soft cut-off, twitter, utility function for restrictions",Assessing the Effects of a Soft Cut-off in the Twitter Social Network,2011,
+682,"query routing, twitter, social query, expertise finding, social networks",Routing Questions in Twitter: An Effective Way to Qualify Peer Helpers,2013,
+687,"feature detection &#38; tracking, geospatial visualisaition, research, time varying data, visual knowledge discovery",Moving on Twitter: Using Episodic Hotspot and Drift Analysis to Detect and Characterise Spatial Trajectories,2014,
+688,"ERGM, Twitter, exponential random graph model, parallel computing, social network analysis",Exploring Twitter Networks in Parallel Computing Environments,2013,
+689,"education, microblogging, motivation, twitter",Collaborating Across International Boundaries: Using Twitter As a Tool in the Classroom,2011,
+690,"Twitter, digital methods, social media",Debanalizing Twitter: The Transformation of an Object of Study,2013,
+693,"anonymity, behavioral analysis, online social networks, quantify, twitter","On the Internet, Nobody Knows You'Re a Dog: A Twitter Case Study of Anonymity in Social Networks",2014,
+695,"geo-filter, keyword focus, local keywords, localized event",On the Locality of Keywords in Twitter Streams,2014,
+697,"classification, influential community detection, personality mining, social media analytics",T-PICE: Twitter Personality Based Influential Communities Extraction System,2014,
+698,"SOA, crowd sourcing, mobility, workflows",Creating Mobile Ad Hoc Workflows with Twitter,2012,
+699,"popularity prediction, social media, twitter, youtube",Twitter-driven YouTube Views: Beyond Individual Influencers,2014,
+705,"social network analysis, Twitter, local health departments, exponential random graph modeling",Twitter Connections Among Local Health Departments As Potential Pathways for Dissemination,2014,
+708,"prediction, stock market indicators, mood, Twitter, psychological states, Support Vectors Machine, Neural Networks",Machine Learning in Prediction of Stock Market Indicators Based on Historical Data and Data from Twitter Sentiment Analysis,2013,
+709,"learning to rank, recency, twitter search",A Survey of Learning to Rank for Real-time Twitter Search,2013,
+710,"Social Networks, Location Based Social Networks, Location Prediction, Technical Surveillance, Digital Forensics, Information Security",Predicting Next Location of Twitter Users for Surveillance,2013,
+711,"twitter, social media, border intelligence, immigration, sentiment analysis, event extraction, early warning, situation awareness, africa",Exploiting Twitter for Border Security-Related Intelligence Gathering,2013,
+712,"classification, suspiciousness, tweet score, user meta data, user score",Friend or Foe: Twitter Users Under Magnification,2014,
+713,"context-aware, real-world activity, self-supervised learning, twitter mining, users' behaviors",Capturing Users' Buying Activity at Akihabara Electric Town from Twitter,2010,
+717,"clustering, Twitter, topics, unsupervised, similarity",Unsupervised Construction of Topic-Based Twitter Lists,2012,
+718,"Learning to rank, Ranking algorithm, Recommender system, Social Network, Twitter",Personalized Recommender System on Whom to Follow in Twitter,2014,
+719,"Bibliometrics, Impact Indicator, Scientific Influence-Passivity-Score (SIP-Score), Time Related Aspects, Twitter Ecosystem",The Scientific Influence Passivity Score (SIP): Bibliometrics Learning from Twitter,2014,
+720,"microblogging, noise addition, privacy, profiling, twitter",Using Profiling Techniques to Protect the User's Privacy in Twitter,2012,
+721,"Computer Mediated Communication, Education, Social Interaction, Twitter",TReACLE: A Framework for TwitteR Analysis in a SoCial and Learning Environment,2014,
+722,"data mining, information diffusion, social network",Characterizing Topic-specific Hashtag Cascade in Twitter Based on Distributions of User Influence,2012,
+723,"TF/IDF method, big data, clustering techniques, multi-agent system, social networks",Agent-based Simulation of Twitter for Building Effective Recommender System,2014,
+724,"descriptive modeling, lists, membership, subscription, twitter","Examining Lists on Twitter to Uncover Relationships Between Following, Membership and Subscription",2013,
+733,"click log mining, community comparison, information diffusion, information retrieval, social media, twitter, weibo, wikipedia",Comparing the Pulses of Categorical Hot Events in Twitter and Weibo,2014,
+734,"Academic Conferences, Communication Design, Social Media, Twitter",An Analysis of Twitter Conversations at Academic Conferences,2014,
+738,"information extraction, music retrieval, social media",#Nowplaying Music Dataset: Extracting Listening Behavior from Twitter,2014,
+739,"Twitter, government, homophily, online social network, reciprocity, web 2.0",Social Networking in Government: An Exploration of the Use of the Twitter Micro-blogging Service by U. S. State Governors,2012,
+741,"data mining, hit prediction, machine learning",#Nowplaying the Future Billboard: Mining Music Listening Behaviors of Twitter Users for Hit Song Prediction,2014,
+742,"fireme!, privacy awareness, social networks, twitter, user issues, webscience",Haters Gonna Hate: Job-related Offenses in Twitter,2014,
+743,"candidate-citizen interaction, metropolitan mayoral elections, social media, tweet categories, twitter",Political Use of Twitter: The Case of Metropolitan Mayor Candidates in 2014 Local Elections in Turkey,2014,
+744,"Generalized Association Rule Mining, Social Network Analysis, Taxonomy Inference, User-Generated Content",Discovering Generalized Association Rules from Twitter,2013,
+746,"HCI, Twitter, complex interactive systems, mental models","How Do You Understand Twitter?: Analyzing Mental Models, Understanding and Learning About Complex Interactive Systems",2013,
+747,"digital evidence, digital forensics, forensics",Forensic Twitter,2010,
+748,"social network analysis, virtual social networks, cancer-based Twitter networks, data visualization, trust inference, information-flow",Understanding Cancer-Based Networks in Twitter Using Social Network Analysis,2011,
+751,"Machine learning, Classification, Natural Language Processing",Feature Selection for Twitter Classification,2014,
+752,"Sentiment Analysis, Tourism information on the Web, Twitter",Analyzing Tourism Information on Twitter for a Local City,2011,
+754,"library list, Twitter, influential users, ego-centric network, collective intelligence",Actualization of a Course Library Through Influential Twitter Knowledge,2012,
+755,"social media, social networking sites, Microblogs, abandoners, abandonment",An Investigation of Twitter and Facebook Abandonment,2014,
+760,"retweet, retweet bahavior prediction, twitter, Bayes model, user interests",Retweet Behavior Prediction in Twitter,2014,
+761,"sentiment analysis, social media, security informatics",Twitter Sentiment Analysis for Security-Related Information Gathering,2014,
+762,"Event extraction, temporal LDA, timeline analysis, user behavior analysis",Extracting Social Events Based on Timeline and User Reliability Analysis on Twitter,2014,
+765,"political messages, social science, twitter, virtual identity",The Pragmatics of Political Messages in Twitter Communication,2012,
+767,"Twitter, corporate image, credibility, engagement, informedness, social influence",Social Influence: The Effect of Twitter Information on Corporate Image,2012,
+770,"recommender systems, similarity, social networks, trust, twitter",Does Social Contact Matter?: Modelling the Hidden Web of Trust Underlying Twitter,2013,
+771,"high-dimensional visualization, parallel coordinates visualization, public engagement with science, web science","Nerding out on Twitter: Fun, Patriotism and #Curiosity",2013,
+773,"Information Diffusion, Predicting Engagement, Recommender Systems, Twitter",A Recommender System for Predicting User Engagement in Twitter,2014,
+774,"Social networks, Sybil account, Fake user accounts, Twitter, Web spam, Content spam, Spamdexing",TSD: Detecting Sybil Accounts in Twitter,2014,
+776,"geo-tagged, keyword co-occurrence pattern, twitter stream",Efficiently Identify Local Frequent Keyword Co-occurrence Patterns in Geo-tagged Twitter Stream,2014,
+778,"aging, communication, distance, intergenerational, twitter",Bridging the Digital Divide One Tweet at a Time: Twitter-enabled Devices for Family Communication,2010,
+779,"agreement technologies, argumentation, e-participation, electronic governance, social media",Empowering Citizens Through Opinion Mining from Twitter-based Arguments,2014,
+782,"sampling, social graph, social networks, twitter",Sampling Online Social Networks: An Experimental Study of Twitter,2014,
+783,"charities, communication, marketing, social media, web science",Taking the Relationship to the Next Level: A Comparison of How Supporters Converse with Charities on Facebook and Twitter,2014,
+784,"Twitter, e-government, social media, social network",City of New York on Twitter: @NYCGov,2012,
+785,"social networks, teenagers, twitter",The Properties of Twitter Network Communications Among Teenagers,2014,
+786,"personalization, twitter, microblog, recommender, news recommendations",Personalized News Recommendation Using Twitter,2013,
+787,"anonymity, privacy, pseudonymity, social networks, twitter","Twitter (R)Evolution: Privacy, Free Speech and Disclosure",2013,
+791,"topic models, information filtering, bioinformatics, social media, microblogging",Collact.Me: Conceptual Framework for Extracting Domain-Specific Content from Twitter,2013,
+792,"Topic Discovery, Graphic Models, Twitter",Multi Topic Distribution Model for Topic Discovery in Twitter,2013,
+797,"Facebook, Internet, Twitter, dialogic loop, dialogic principles, environmental organizations, nonprofit organizations, public relations, social media, websites","The Employment of Dialogic Principles in Website, Facebook, and Twitter Platforms of Environmental Nonprofit Organizations",2014,
+798,"communities, social networking, twitter, visualization",Gathering in Digital Spaces: Exploring Topical Communities on Twitter,2011,
+800,"Boston, Social networks, Twitter analysis, terrorism",A Descriptive Analysis of Twitter Activity in Spanish Around Boston Terror Attacks,2013,
+805,"Nominations and elections,Twitter,Media,Correlation,Biological system modeling,Internet,political elections prediction,Twitter,Social media",Twitter As a Tool for Predicting Elections Results,2012,
+806,"Twitter, Online Social Network, Sampling, Crawling, RDS, MHRW, Public Timeline, Uniform",Characterizing Twitter with Respondent-Driven Sampling,2011,
+808,"abuse, account compromising, machine learning, microblogging, social media, spam, twitter","Sorry, I Was Hacked: A Classification of Compromised Twitter Accounts",2014,
+812,"online social networks, underground economy",Poultry Markets: On the Underground Economy of Twitter Followers,2012,
+813,"celebrity, influence, social media, twitter",A Comparative Study of Two Models for Celebrity Identification on Twitter,2014,
+814,"Recommender System, Social Networks, Twitter, Alternative Medicine",T-Recs: Time-aware Twitter-based Drug Recommender System,2012,
+815,"Classification, Learning to Rank, Social Media Mining",A Two Step Ranking Solution for Twitter User Engagement,2014,
+816,"Twitter, image, image uses, information diffusion, social network",How Images Are Conversed on Twitter?,2013,
+822,"HCI, Twitter, complex interactive systems, mental models","How Do You Understand Twitter?: Analyzing Mental Models, Understanding and Learning About Complex Interactive Systems",2013,
+823,"social networking analysis, Twitter, spam, data mining, machine learning",An Evaluation of the Effect of Spam on Twitter Trending Topics,2013,
+825,"Complex Networks, co-evolution, twitter",Co-evolutionary Dynamics in Social Networks: A Case Study of Twitter,2014,
+826,"lifelogging, twitter, data gathering, data analyzing",Malaysian Lifelogging over Twitter,2013,
+827,"citizen engagement, diffusion, microblogging, social media, social networks, twitter",Tweets and Retweets: Twitter Takes Wing in Government,2011,
+829,"Twitter, early detection, influenza, infectious disease, logistic regression, ridge, ILI, AIC, SNS, truncated data",Prediction of Infectious Disease Spread Using Twitter: A Case of Influenza,2012,
+830,"Social implications of technology,Human factors,Machine intelligence,Computational and artificial intelligence,computational society,Alan Mathison Turing,Qu Yuan,Karl Popper,Raymond Kurzweil,singularity,open society",From Piecemeal Engineering to Twitter Technology: Toward Computational Societies,2012,
+834,"PHP, action script, cartoonization, twitter, web services",CiVo: Real-time Visualization of Social Activities by Cartoonized Twitter,2011,
+835,"Social Networking System, Web Mashup, Social Semantic Web",An Ontology-Based Representation of the Twitter REST API,2012,
+836,"Consumer Engagement, Electronic Word-of-Mouth, Interactivity, Online Consumer Motivation, Twitter, eWOM Intentions",Investigating Electronic Word-of-Mouth Motivations in the Middle East: Twitter As Medium and Message,2014,
+837,"social network analysis, communities, social media",The Nature of Communications and Emerging Communities on Twitter Following the 2013 Syria Sarin Gas Attacks,2014,
+840,"social media, Twitter, stock market, data mining",Public Sentiment Analysis in Twitter Data for Prediction of a Company's Stock Price Movements,2014,
+841,"Big-Five Personality Model, Personality Traits, Personality Traits Prediction, Social Network, Twitter","Predicting Personality Traits, Gender and Psychopath Behavior of Twitter Users",2014,
+843,"Twitter, News, Social Networking, Mobile Computing",Palantir: Crowdsourced Newsification Using Twitter,2014,
+846,"Web 2.0, Web 2.0, book review, social networking, messaging, book review, messaging, social networking",Micro Review: Twitter,2009,
+847,"Social Networks, Social Media, Place, Geography, Twitter, Occupy Wall Street, Contentious Politics",Examining the Role of Place in Twitter Networks Through the Lens of Contentious Politics,2014,
+850,"Social Network, Twitter, Epidemics Detection, Health Information Visualization, Sentiment Analysis",Monitoring Public Health Concerns Using Twitter Sentiment Classifications,2013,
+851,"E-Business, E-Marketing, Marketing, Micro-Blogging, Social Networking",The Role of Twitter in the World of Business,2011,
+853,"RDF, Twitter, extreme tagging, folksonomies, knowledge acquisition, microblogging, tagging",HyperTwitter: Collaborative Knowledge Engineering via Twitter Messages,2010,
+856,"social media, microblogging, trend identification, topic stability, language usage, ranking, Twitter",Does Love Change on Twitter? The Dynamics of Topical Conversations in Microblogging,2013,
+857,"Twitter,Visualization,Real-time systems,User interfaces,Receivers,Servers,Browsers,digraph,Twitter,microblogging,visualization",Method of Visualizing Relations Between Tweets to Facilitate Discussions via Twitter,2012,
+858,"categorical attributes, microblogs, visualization",VisCAT: Spatio-temporal Visualization and Aggregation of Categorical Attributes in Twitter Data,2014,
+859,"complex contagion, social influence, twitter",How Can Spreaders Affect the Indirect Infuence on Twitter?,2012,
+860,"Classification, Clustering, Collective Trends, Data Mining, Social Network, Twitter",Extracting Collective Trends from Twitter Using Social-Based Data Mining,2013,
+861,"Social media, news communities, online communities, twitter",The Common Man: An Examination of Content Creation and Information Dissemination on Twitter During the 2012 New Delhi Gang-Rape Protest,2013,
+862,"social capital, social networks, trending topics, twitter",On the Rise of Artificial Trending Topics in Twitter,2012,
+863,"digital library, information dissemination, ipl2, microblogging, retweet, twitter",A Qualitative Analysis of Information Dissemination Through Twitter in a Digital Library,2012,
+864,"Twitter, Retweet, Social network",Discovery of Interesting Users in Twitter by Overlapping Propagation Paths of Retweets,2012,
+865,"co-following, twitter, user classification, user similarity",Co-following on Twitter,2014,
+867,"coping strategies, information overload, microblogging services",Lists As Coping Strategy for Information Overload on Twitter,2013,
+869,"accessibility, mobile computing, social networks",L\^{e}brailleTWT: Providing Visual Accessibility to Twitter on Touchscreen Devices,2012,
+871,"anomaly detection, citizen participation, environmental monitoring, incident visualization, social sensing",Canary in a Coal Mine: Monitoring Air Quality and Detecting Environmental Incidents by Harvesting Twitter,2011,
+872,"social media, Twitter, influenza epidemics, data visualization, data mining, linguistic analysis",Real-Time Monitoring of Flu Epidemics Through Linguistic and Statistical Analysis of Twitter Messages,2014,
+873,"Twitter, social influence, social media",Influence of Controlled and Uncontrolled Interventions on Twitter in Different Target Groups,2013,
+876,"Information gain, K-anonymity, L-diversity, T-closeness, Twitter",An Approach of Privacy Preserving Based Publishing in Twitter,2014,
+878,"influence, methods, social media, social psychology, theory",Understanding Twitter Influence in the Health Domain: A Social-psychological Contribution,2014,
+880,"twitter, picarro, carbon, CO2","Capturing, Calculating, and Disseminating Real-Time CO2 Emissions and CO2 Flux Measurements via Twitter in a Smart City",2013,
+881,"community extraction, complex network, hierarchical clustering, intersection graph, microblog network, text mining",Applying to Twitter Networks of a Community Extraction Method Using Intersection Graph and Semantic Analysis,2013,
+882,"Social Spam Profile (SSP), Online Social Network (OSN), Content-Based, Behavioral-Based, Graph-Based",Threshold and Associative Based Classification for Social Spam Profile Detection on Twitter,2013,
+884,"Authorship Attribution, Machine Learning Classifier, Online Social Media, Stylometry Analysis, Twitter",Stylometric Analysis for Authorship Attribution on Twitter,2013,
+887,"Twitter, Wiki, cross-channel workspace, informal awareness",Integrating Twitter into Wiki to Support Informal Awareness,2011,
+890,"Twitter, Twitter activity, college class, education, tweet",Influence of Twitter Activity on College Classes,2013,
+892,"content type, electoral prediction, engagement degree, political preference, social intelligence, tweet mode, twitter analytics, user categorization",Are Twitter Users Equal in Predicting Elections? A Study of User Groups in Predicting 2012 U.S. Republican Presidential Primaries,2012,
+893,"conflict, social hierarchy, social network, twitter",Cross-hierarchical Communication in Twitter Conflicts,2014,
+894,"Twitter, Social Networks, Ontology, RDF, OWL, NoSQL",Collective Knowledge Ontology User Profiling for Twitter -- Automatic User Profiling,2013,
+896,"Twitter, node importance, retweet, social network analysis",Measuring Node Importance on Twitter Microblogging,2012,
+898,"MapReduce, NodeXL, Twitter, social relationship",Monitoring Social Relationship Among Twitter Users by Using NodeXL,2013,
+899,"influential users, multi-view, twitter",Inferring Topic-dependent Influence Roles of Twitter Users,2014,
+902,"class balancing, link decay, link prediction, machine learning, social network analysis, user interactions",Predicting the Stability of User Interaction Ties in Twitter,2014,
+904,"recommender systems, social media, twitter, visualization","Emphasize, Don'T Filter!: Displaying Recommendations in Twitter Timelines",2014,
+905,"Twitter, online social network websites, spam",A Taste of Tweets: Reverse Engineering Twitter Spammers,2014,
+907,"temporal text mining, Symbolic Aggregate approXimation, event discovery, Twitter mining",Time Makes Sense: Event Discovery in Twitter Using Temporal Similarity,2014,
+912,"hashtag recommendation, topic model, twitter",TOMOHA: TOpic Model-based HAshtag Recommendation on Twitter,2014,
+913,"complex contagion, social influence, twitter",Multiple Spreaders Affect the Indirect Influence on Twitter,2012,
+915,"behavior change, competition, persuasive software features, recognition, social influence, twitter, user participation",Comparative Analysis of Recognition and Competition As Features of Social Influence Using Twitter,2012,
+917,"Epidemic intelligence, Twitter, data mining, global health and well-being, monitoring spread of disease, real-time data management and public health response, social media, swine flu 2009 analysis",Swineflu: The Use of Twitter As an Early Warning and Risk Communication Tool in the 2009 Swine Flu Pandemic,2014,
+918,"account abuse, microblogging, online social networks, spam",Twitter: Who Gets Caught? Observed Trends in Social Micro-blogging Spam,2014,
+919,Twitter,Spatial and Temporal Analysis of Twitter: A Tale of Two Countries,2014,
+920,"information diffusion, information dissemination, online social networks, viral marketing",Finding Influential Neighbors to Maximize Information Diffusion in Twitter,2014,
+922,"Exchange rate modeling, Social networks, Twitter, regARIMA",Predictive Modeling in Turbulent Times --- What Twitter Reveals About the EUR/USD Exchange Rate,2014,
+923,"Disasters, Great East Japanese Earth Quake, Information Balance, Informational Supply and Demand, Receivers, Transmitters, Twitter",Information Balance Between Transmitters and Receivers Based on the Twitter After Great East Japan Earthquake,2013,
+924,"Audience response systems, Discussion, Engagement, Interaction, Social media, Technology, Twitter",A Study of the Use of Twitter by Students for Lecture Engagement and Discussion,2014,
+926,"mobile device, social network service, wearable clothing","The Effort of Social Networking on Social Behavior: Integrating Twitter, Mobile Devices, and Wearable Clothing As an Example",2011,
+928,"Text Classification, Blog, Twitter, Q&A, Reference Services",Development of a Website to Collect and Provide Questions About Book Titles Posted in Blogs and on Twitter,2012,
+930,"Social Network, Analysis, financial, credit",Identifying Relevant Users and Groups in the Context of Credit Analysis Based on Data from Twitter,2013,
+931,"social media, information diffusion, content dissemination, source influence, peer referrals, content crossover",Information Diffusion with Content Crossover in Online Social Media: An Empirical Analysis of the Social Transmission Process in Twitter,2013,
+935,"real-time photo mining, Twitter stream, event detection, food photo recognition",Real-Time Photo Mining from the Twitter Stream: Event Photo Discovery and Food Photo Detection,2014,
+936,"Twitter, microblog, personalized ranking, social networking service",A Method for Personalized Ranking of Items Based on Similarity Between Twitter Users,2014,
+938,"public-health events, social media analysis, twitter messages",Finding Indicators of Epidemiological Events by Analysing Messages from Twitter and Other Social Networks,2011,
+942,"internet measurements, social cascading, social video sharing, social web, twitter, youtube",The Role of Twitter in Youtube Videos Diffusion,2012,
+943,"opportunistic networks, smart probing",Twitter in Disaster Mode: Smart Probing for Opportunistic Peers,2012,
+947,"cross-media user communication, location-based microblogs",TwinChat: A Twitter and Web User Interactive Chat System,2014,
+949,"community question answering, social media, twitter",Finding Informative As on Twitter,2014,
+951,"political discourse, sentiment analysis, social media",Political Speech in Social Media Streams: YouTube Comments and Twitter Posts,2012,
+952,"faceted search, twitter, twitter lists, twitter user search",FACTUS: Faceted Twitter User Search Using Twitter Lists,2011,
+955,"health communication, social media, social web, twitter",I See You'Re Talking #HPV: Communication Patterns in the #HPV Stream on Twitter,2012,
+957,"Twitter Resources, Organizational Memory, Digital Ecosystem",Management of Twitter Resources in a Semantic Organizational Memory,2013,
+958,"social media, Twitter, forecast, consumer spending","Twitter Keyword Volume, Current Spending, and Weekday Spending Norms Predict Consumer Spending",2012,
+963,"social behavioral biometrics, social networking sites, cyber security, person authentication, biomteric recognition, knowledge discovery, user profiling",Mining Social Behavioral Biometrics in Twitter,2014,
+966,"activity time pattern, information flow, power-law distribution",Mining Users' Activity on Large Twitter Text Data,2013,
+967,"authority transfer, credibility, hybrid, microblog, twitter",A Hybrid Approach for Credibility Detection in Twitter,2014,
+968,"Syndromic Surveillance, Epidemiology, Topic Model, Social Media, Data Mining, Twitter",Flu Gone Viral: Syndromic Surveillance of Flu on Twitter Using Temporal Topic Models,2014,
+973,"curation, discovery, information retrieval, relevance, reputation, search, twitter",Yokie: Explorations in Curated Real-time Search  Discovery Using Twitter,2012,
+975,"altmetric, google scholar, research paper sharing, twitter",Has Much Potential but Biased: Exploring the Scholarly Landscape in Twitter,2014,
+979,"Twitter streaming data, geographic clustering, social network analysis, social topic detection",Discovering Hot Topics Using Twitter Streaming Data: Social Topic Detection and Geographic Clustering,2013,
+985,"micro cluster, burst detection, edit distance, knapsack-constrained maximum covering problem, social viewing",Detecting Topics from Twitter Posts During TV Program Viewing,2013,
+986,"Twitter, School Event, Web Service",A Twitter Service for School Event,2011,
+988,"Time series analysis, Time series regression, Social network analysis, Twitter, Trending topics, Google, Hot trends",Trending Topics on Twitter Improve the Prediction of Google Hot Queries,2013,
+990,"Geographical communities, Locality, Measurements, Twitter, User behavior",Understanding the Locality Effect in Twitter: Measurement and Analysis,2014,
+992,"Multiple targets tracking, sensor fusion","An Online System for Multiple Interacting Targets Tracking: Fusion of Laser and Vision, Tracking and Learning",2013,
+993,"event detection, highlight, social media, sports video",Event Detection Based on Twitter Enthusiasm Degree for Generating a Sports Highlight Video,2014,
+995,"Online social networks, socialbots, social computing",Socialbots: Implications on the Safety and Reliability of Twitter-Based Services,2014,
+996,"Twitter, Information diffusion, Multi-Agent",Multi-agent Information Diffusion Model for Twitter,2014,
+998,"social role theory, topic modeling, twitter",Originator or Propagator?: Incorporating Social Role Theory into Topic Models for Twitter Content Analysis,2013,
+999,"Twitter, hollywood movies, machine learning, opinion mining, sentiment analysis",Sentiment Analysis of Hollywood Movies on Twitter,2013,
+1,"dietary health, food, obesity, social networks, twitter",You Tweet What You Eat: Studying Food Consumption Through Twitter,2015,
+2,"Short-term interest, cross-platform, personalization, time-aware, video recommendation",Twitter is Faster: Personalized Time-Aware Video Recommendation from Twitter to YouTube,2015,
+5,"Social network analysis, decentralized network architectures, microblogging systems",Aggregate Characterization of User Behavior in Twitter and Analysis of the Retweet Graph,2015,
+7,"arab spring, automated social actor, botnet, bots, social computing, twitter","Dissecting a Social Botnet: Growth, Content and Influence in Twitter",2015,
+8,"Audience emotional reactions, Big data, FIFA World Cup, Sentiment analysis, Sports games, Twitter",World Cup 2014 in the Twitter World,2015,
+9,"Bullying, Computer science, Machine learning, Social media, Twitter",The Five W's of Bullying on Twitter,2015,
+10,"Twitter, Twitter analytics, hashtag analysis, learning analytics, social network, topic modeling",Twitter Archeology of Learning Analytics and Knowledge Conferences,2015,
+13,"Social Networks, Social Media, Diffusion",Image Attributes and Diffusion via Twitter: The Case of #Guncontrol,2015,
+14,"Option, Stock, Stock options trading, Twitter, Twitter volume spikes",Twitter Volume Spikes and Stock Options Pricing,2016,
+16,"Recommendation and search, Twitter, context-aware, geographical topic modeling, graphical model, requirement-aware location recommendation, spatiotemporal","Who, Where, When, and What: A Nonparametric Bayesian Approach to Context-aware Recommendation and Search for Twitter Users",2015,
+17,"Drugs, K-H networks, Mining, PubMed, Search, Twitter",Twitter K-H Networks in Action,2015,
+19,"Sampling content streams, Twitter, Twitter Lists, random sampling, sampling from experts",Sampling Content from Online Social Networks: Comparing Random vs. Expert Sampling of the Twitter Stream,2015,
+21,"Africa, Twitter, democracy, elections, social media, text analysis",Twitter Democracy: Policy Versus Identity Politics in Three Emerging African Democracies,2015,
+25,"Information spread, Social computing, Social network, Twitter, User influence",The 10 Million Follower Fallacy: Audience Size Does Not Prove Domain-influence on Twitter,2015,
+26,"depression, machine learning, social media, twitter",Recognizing Depression from Twitter Activity,2015,
+30,"Facebook, Twitter, college students, risk-taking, social media",College Students and Risk-taking Behaviour on Twitter Versus Facebook,2015,
+31,"live-tweeting, social media, politics, television, welfare",Debating Poverty Porn on Twitter: Social Media As a Place for Everyday Socio-Political Talk,2015,
+32,"Computational social science, Social media, Social network analysis, Suicide, Twitter",Analysing the Connectivity and Communication of Suicidal Users on Twitter,2016,
+37,"Constructivism, Online discussion board, Online social networking, Social learning, Twitter",Introducing a Twitter Discussion Board to Support Learning in Online and Blended Learning Environments,2015,
+40,"Social Media, Incident Detection, Spatial Point Pattern, Latent Dirichlet Allocation",Using Twitter to Enhance Traffic Incident Awareness,2015,
+41,"Audience responses, Crisis, Information behavior, Information cues, Situational crisis communication theory, Twitter",Twittering the Little India Riot,2016,
+46,"Information Diffusion Analysis, Geo-spatial, Temporal, Real-world events, Online social media",How Has Twitter Changed the Event Discussion Scenario? A Spatio-temporal Diffusion Analysis,2015,
+47,"Agenda Setting, Campaigns, New Media, Presidential Primary, Social Media, Twitter",The Rise of Twitter in the Political Campaign: Searching for Intermedia Agenda-Setting Effects in the Presidential Primary,2015,
+48,"IS continuance, Twitter, digital natives and digital immigrants, generational differences",The Effects of Generational Differences on Use Continuance of Twitter: An Investigation of Digital Natives and Digital Immigrants,2015,
+60,"Islamic extremism, Islamic state, communication, global social networks, multi-sided networks, propaganda, radicalization, recruitment, shamiwitness, social network analysis, strategy, terrorism communication, twitter","Tweeting Propaganda, Radicalization and Recruitment: Islamic State Supporters Multi-sided Twitter Networks",2015,
+64,"Twitter, fast-greedy optimization of modularity, geo-located communities, social media, spatial clustering",Geo-located Community Detection in Twitter with Enhanced Fast-greedy Optimization of Modularity: The Case Study of Typhoon Haiyan,2015,
+67,"Topic Derivation, Twitter, Non-negative Matrix Factorization, Inter-Joint Factorization",Matrix Inter-joint Factorization - A New Approach for Topic Derivation in Twitter,2015,
+68,"Online social media, Twitter adoption, U.S. Congress, Political Orientation",The Impact of Twitter Adoption on Decision Making in Politics,2015,
+69,"Twitter, data mining, personality recognition, social network analysis",Long Chains or Stable Communities? The Role of Emotional Stability in Twitter Conversations,2015,
+73,"aurora borealis, crisis, disaster, early warning systems, social media, twitter",Harnessing Twitter and Crowdsourcing to Augment Aurora Forecasting,2015,
+77,"ads click-through prediction, ads selection, ads targeting, computational advertising, online advertising, social media",Ads Selection At Twitter,2015,
+84,"human-computer interaction, microblog, social computing, social media",Study on the Relationship Between Profile Images and User Behaviors on Twitter,2015,
+85,"Election Campaigning, Internet, Political Communication, Quantitative-Network Analysis, Social Media, Twitter",Interacting with Whom?: Swedish Parliamentarians on Twitter During the 2014 Elections,2016,
+88,"Active social media use, Passive social media use, Political efficacy, Political expression",The Relationship Between Passive and Active Non-political Social Media Use and Political Expression on Facebook and Twitter,2016,
+89,"Twitter, network, race, sentiment analysis, topic model",#Criming and #Alive: Network and Content Analysis of Two Sides of a Story on Twitter,2015,
+90,"Twitter, mechanical turk, online harassment, scale development, verbal violence",Quantifying Toxicity and Verbal Violence on Twitter,2016,
+91,"Addiction, Loneliness, Microblogging, Social networking, Twitter",Excessive Use of Twitter Among College Students in the UK,2016,
+96,"link classification, social network, twitter lists",Classification of Twitter Follow Links Based on the Followers' Intention,2015,
+97,"Concept Learning, Distributed Practice, Microblogging, Mobile Communication, Social Media, Spaced Practice, Twitter",Utilizing Twitter for Concept Learning,2016,
+98,17,Communicating Diabetes and Diets on Twitter ,,
+100,"news, news-tweet, tweet authentication, twitter, user profiling",Identifying Top-k Consistent News-Casters on Twitter,2015,
+101,11,Exploring Twitter As a Game Platform,,
+102,"Twitter, personality, retweet, social media, willingness",Who Will Retweet This? Detecting Strangers from Twitter to Retweet Information,2015,
+112,"Hidden Markov model, Social media, Syndromic surveillance, Topic model",Syndromic Surveillance of Flu on Twitter Using Weakly Supervised Temporal Topic Models,2016,
+119,"Google trends, Nowcasting, Social media",Google Searches and Twitter Mood: Nowcasting Telecom Sales Performance,2015,
+124,"Twitter mining, analytics, big data, business intelligence, efficient markets, event studies, social media","Twitter Mining for Discovery, Prediction and Causality: Applications and Methodologies",2015,
+125,"Mention mechanism, Ranking SVM, Recommender system, Social media marketing, Twitter",Locating Targets Through Mention in Twitter,2015,
+128,"Egyptian revolution, Twitter, collective action, global networks, global protest, information diffusion, online social network, partial differential equation, protest mobilization, social media, social medium, social movement, spatial diffusion, spatiotemporal information diffusion",A Spatiotemporal Model of Twitter Information Diffusion: An Example of Egyptian Revolution 2011,2015,
+132,"Mashup technology, Video search, Twitter, TF-IDF, Support vector",Regional Information Video Searches Using Word Searches Generated by Twitter Posts,2015,
+140,"isis, twitter data analysis, violent groups supporters","I Like ISIS, but I Want to Watch Chris Nolan's New Movie: Exploring ISIS Supporters on Twitter",2015,
+141,"CyberGIS, GeoHashViz, Hadoop, interactive visualization, social media",GeoHashViz: Interactive Analytics for Mapping Spatiotemporal Diffusion of Twitter Hashtags,2015,
+143,"click-through prediction, online advertising, social media stream",Click-through Prediction for Advertising in Twitter Timeline,2015,
+144,"Controversy, Social media",Exploring Controversy in Twitter,2016,
+145,"event detection, twitter mining, web image mining",Visual Event Mining from the Twitter Stream,2016,
+151,"Social Media Analysis, Ontology, Event detection, Semantics, Knowledge discovery",Ontology Based Approach for Event Detection in Twitter Datastreams,2015,
+153,"News popularity prediction, Social news media, Twitter",Analyzing and Predicting News Popularity on Twitter,2015,
+154,"Information retrieval, Twitter analytics, location inference",A Survey of Location Inference Techniques on Twitter,2015,
+155,"bing, google, search engine, search result comparison, social media search, twitter, web search",Overlap Between Google and Bing Web Search Results!: Twitter to the Rescue?,2015,
+156,"ASD, Autism, Blogger, Community, Sentiment Analysis, Social Support, Twitter",Demonstrating Social Support from Autism Bloggers Community on Twitter,2015,
+157,"Twitter, data journalism, journalism practice, news sourcing, social media, trust, verification",Sourcing and Trust: Twitter Journalism in Ireland,2015,
+162,"campus information, emergency, signage, twitter, wearable",A Wearable LED Matrix Sign System Which Shows a Tweet of Twitter and Its Application to Campus Guiding and Emergency Evacuation,2015,
+167,"rumor debunking, social computing, twitter",Real-time Rumor Debunking on Twitter,2015,
+170,"Agent-based Social Simulation, Big data, Rumor spreading model, Social network analysis, Twitter, Viral marketing",Validating Viral Marketing Strategies in Twitter via Agent-based Social Simulation,2016,
+171,"Fitness engagement, social sharing",Persistent Sharing of Fitness App Status on Twitter,2016,
+173,"Botnet, Command and Control, Denial of Service, Social Network, Steganography, Twitter",Covert Botnet Command and Control Using Twitter,2015,
+174,"Network analysis, SNS network, sharing function, weak ties",The Structural Effects of Sharing Function on Twitter Networks: Focusing on the Retweet Function,2015,
+175,"social network analysis, data analytics, sentiment analysis, opinion mining","Using Twitter for Tapping Public Minds, Predict Trends and Generate Value",2015,
+178,"principal features, user influence",Finding and Analyzing Principal Features for Measuring User Influence on Twitter,2015,
+181,"component, travel diary survey, twitter, social media","Complementing Travel Diary Surveys with Twitter Data: Application of Text Mining Techniques on Activity Location, Type and Time",2015,
+183,"Facebook, Facebook API, Twitter, media selection, social network sites, technology adoption",An Exploratory Study on the Use of Twitter and Facebook in Tandem,2015,
+185,"Social sensing, Topic detection, Twitter analysis",A Framework for Real-time Twitter Data Analysis,2016,
+187,"density ratio estimation, locally adaptive kernel, novelty detection, semantic kernel representation, social media analysis",Locally Adaptive Density Ratio for Detecting Novelty in Twitter Streams,2015,
+188,"Facebook, Privacy, Social network analysis, Twitter",Comparing Twitter and Facebook User Behavior,2015,
+190,"information diffusion, modelling, social networks",A Dynamical Model of Twitter Activity Profiles,2015,
+191,"data mining, gis, social media, transport",Identification of (Near) Real-time Traffic Congestion in the Cities of Australia Through Twitter,2015,
+193,"information diffusion, information provenance, social media, user interactions",Information Diffusion and Provenance of Interactions in Twitter: Is It Only About Retweets?,2016,
+194,"ICTD, India, Twitter, e-democracy, election campaigning, elections, social media",The 2014 Indian General Election on Twitter: An Analysis of Changing Political Traditions,2015,
+195,"election forecasting, microblogs, twitter",Twitter-based Election Prediction in the Developing World,2015,
+196,"quantified self, smart scales, twitter",Quantified Self Meets Social Media: Sharing of Weight Updates on Twitter,2016,
+204,"IEMOCAP, emotion recognition, linguistics, twitter",Twitter: A New Online Source of Automatically Tagged Data for Conversational Speech Emotion Recognition,2015,
+205,"geolocation, social media search, twitter",Searching for Twitter Posts by Location,2015,
+206,"Indian elections, Na&#239;ve Bayes, Twitter, sentiment analysis",Application of Location-based Sentiment Analysis Using Twitter for Identifying Trends Towards Indian General Elections 2014,2015,
+210,"anonymous, geosocial, social media, twitter, yik yak",Of Oxen and Birds: Is Yik Yak a Useful New Data Source in the Geosocial Zoo or Just Another Twitter?,2015,
+213,"Internet, computational analysis, data mining, optimization","The Who-To-Follow System at Twitter: Strategy, Algorithms, and Revenue Impact",2015,
+215,"Twitter, message diffusion, micro-blog, police",Police Message Diffusion on Twitter: Analysing the Reach of Social Media Communications,2015,
+216,"Internet, computational analysis, data mining, optimization","The Who-To-Follow System at Twitter: Strategy, Algorithms, and Revenue Impact",2015,
+217,"social network analysis, ICT in education, Twitter, STEM education",Investigation of Social Networks and Discussions in STEM Education Communities on Twitter,2015,
+218,"Data Analysis, Social Media, Transportation",The Reach and Influence of DOT Twitter Accounts: A Case Study in Florida,2015,
+219,"Twitter, hyperlink, online community, quantitative evaluation, social network analysis, web impact analysis",Networking Interest and Networked Structure: A Quantitative Analysis of Twitter Data,2015,
+221,"scientometrics and scholarly communication, social informatics, social media",Assessing the Popularity of the Top-tier Journals in the LIS Field on Twitter,2015,
+223,"Facebook, Twitter, information sharing, motivations, social network sites",Why Do Social Network Site Users Share Information on Facebook and Twitter?,2015,
+227,"cross-network recommendation, multi-label classification",Pinterest Board Recommendation for Twitter Users,2015,
+232,"social graph, social tagging, tensor analysis",Why Do You Follow Him?: Multilinear Analysis on Twitter,2015,
+236,"public participation, social activism, social media, wisdom of crowds",Social Learning and Online Discussion: Is Twitter a Wise Crowd?,2015,
+238,"Banking Sector, Multi-Agent Models, Trend Prediction, Twitter, Universities",Development and Evaluation of Multi-Agent Models Predicting Twitter Trends in Multiple Domains,2015,
+240,"Social network, campaign detection, social spam",Detecting Spam and Promoting Campaigns in Twitter,2016,
+241,"profile attributes, social privacy, twitter analysis",Privacy Behaviour and Profile Configuration in Twitter,2016,
+242,"noise filtering, nonnegative matrix factorization, streaming algorithm, topic detection, twitter",Real-Time Top-R Topic Detection on Twitter with Topic Hijack Filtering,2015,
+244,"content virality, news articles, online social networks","Content Virality on Online Social Networks: Empirical Evidence from Twitter, Facebook, and Google+ on German News Websites",2015,
+248,"Internet, computational analysis, data mining, optimization","The Who-To-Follow System at Twitter: Strategy, Algorithms, and Revenue Impact",2015,
+249,"Big Data, User Engagement, Social Media, Data Mining",Understanding Library User Engagement Strategies Through Large-Scale Twitter Analysis,2015,
+250,"Event mining, Event photo mining, Geo-photo tweet, Geotagged image, Microblog, Twitter",Event Photo Mining from Twitter Using Keyword Bursts and Image Clustering,2016,
+252,"Twitter, social network analysis, learning, social media, expertise, centrality measures",Tweet to Learn: Expertise and Centrality in Conference Twitter Networks,2015,
+254,"Behavioral characteristics, Event detection, Popular users, Twitter",The Rich and Middle Classes on Twitter,2016,
+255,"demographic attributes, sampling, semi-automatic classification, social research, twitter, user interface",An Interactive Method for Inferring Demographic Attributes in Twitter,2015,
+256,"Data Science, Machine Learning, Natural Language Processing, Prediction, Road Traffic, Twitter",Tweeting Traffic: Analyzing Twitter for Generating Real-time City Traffic Insights and Predictions,2015,
+259,"social information retrieval, social media classification, twitter",Inferring Latent Attributes of an Indian Twitter User Using Celebrities and Class Influencers,2015,
+260,"generative model, graph analysis, social networks",Equality and Social Mobility in Twitter Discussion Groups,2016,
+261,"mobile computing, search interfaces, topic modelling",TwIST: A Mobile Approach for Searching and Exploring Within Twitter,2016,
+264,"Authoship Verification, Compromised Accounts, N-grams",Recognition of Compromised Accounts on Twitter,2015,
+268,"local events, microblog, twitter",Eyewitness: Identifying Local Events via Space-time Signals in Twitter Feeds,2015,
+269,"online social networks, public shaming, twitter",Look Before You Shame: A Study on Shaming Activities on Twitter,2016,
+273,"#tvduell, German elections, election campaign, political debate, second screen, twitter",Two Different Debates? Investigating the Relationship Between a Political Debate on TV and Simultaneous Comments on Twitter,2015,
+274,"Crisis communication, Network analysis, Risk communication, Social media",A Network Analysis of Official Twitter Accounts During the West Virginia Water Crisis,2016,
+275,"choice model, customer relationship, hidden Markov model, microblogging, service intervention, social media, word of mouth",The Squeaky Wheel Gets the Grease-An Empirical Analysis of Customer Voice and Firm Intervention on Twitter,2015,
+276,"community dynamics, information seeking, informational and social needs, physical gatherings, social media analysis, social search",Information Seeking and Responding Networks in Physical Gatherings: A Case Study of Academic Conferences in Twitter,2015,
+277,"event detection, floods, live web, microblogs, visualization",Twitter Floods when It Rains: A Case Study of the UK Floods in Early 2014,2015,
+278,"bot analyser, content analysis, information dissemination",Stweeler: A Framework for Twitter Bot Analysis,2016,
+279,"American, Demographics, Mobilization, Race, Social Media, Twitter, Urban",Urban Social Media Demographics: An Exploration of Twitter Use in Major American Cities,2016,
+281,"Location based social media, Social media, Topic modelling, Travel demand analysis",Utilising Location Based Social Media in Travel Survey Methods: Bringing Twitter Data into the Play,2015,
+283,"microblogging, Twitter, feedback, peer instruction, Web 2.0, social media",Using Twitter to Support Peer Instruction: A Case Study,2015,
+285,"Content analysis, Employees, Social media, Work-related twitter use, Workplace communication",How Employees Use Twitter to Talk About Work,2016,
+287,"Twitter, network analysis, online public forum, opinion leadership, social media, two-step flow of communication",The Two-Step Flow of Communication in Twitter-Based Public Forums,2015,
+288,"co-occurrence analysis, health, twitter",Identification and Analysis of Medical Entity Co-occurrences in Twitter,2015,
+289,"drug trends, drug use, social media, social networks, twitter",This is Your Twitter on Drugs: Any Questions?,2015,
+290,"event identification, geo tagging, opinion mining, point of interest",Event Recommendation Using Twitter Activity,2015,
+291,"link prediction, social networks",Enhancing Link Prediction in Twitter Using Semantic User Attributes,2015,
+296,"Twitter, computational social science, municipal elections, small sample datasets, social media campaigning",#Vote4Me: The Impact of Twitter on Municipal Campaign Success,2015,
+303,"analysis, clustering, data mining, network, social media",Classification Method for Shared Information on Twitter Without Text Data,2015,
+307,"ASKEWBOWTIE, E-commerce, Twitter conversations",Mining Twitter Conversations Around E-commerce Promotional Events,2016,
+308,"clustering, social media, text processing",Surpassing the Limit: Keyword Clustering to Improve Twitter Sample Coverage,2015,

@@ -84,9 +84,11 @@ to name but a few of what we might cover. To this, we have to add the "high perf
 This is simply a list of topics, I'd be very interesting in hearing what students might be interested in as well. Shoot me [an email](emailto:lferres@udd.cl)!
 
 {% include image.html
-            img="./images/my_twitter_wordcloud.png"
-            title="test"
-            caption="Wordcloud of all the papers in the ACM DL with \"Twitter\" in the title." %}
+   img="./images/my_twitter_wordcloud.png"
+   title="Twitter shaped wordcloud"
+   caption="Word-Cloud of papers in the ACM DL with \"Twitter\" in the title." %}
+
+**A short history**: to "come up" with this list of topics, I took all the papers in the ACM DL with the word "Twitter" in the title. Once this was done (about 1300 papers), I manually chose which ones could be helpful. This [curated list](./downloadables/acm_curated.csv) had all the "keywords" associated with them and after some light pre-processing I built the wordcloud above using [this file](./downloadables/acm_wcloud.csv).
 
 
 ## Scheduling

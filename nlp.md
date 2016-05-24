@@ -18,18 +18,23 @@ Telefónica R&D Center<br>
 
 ## Introduction
 
-In this tutorial, we will analyze and discuss some of the most recent natural 
-language processing (NLP) techniques for extracting detailed information
+In this tutorial, we will analyze and discuss some Natural 
+Language Processing (NLP) techniques for extracting detailed information
 from free-text fields (noisy text) in tweets. We will assume a "task-driven NLP approach", which means that
 our objective will be to define certain common tasks performed on
-tweets (e.g., sentiment analysis or rumor detection) using (non-naïve)
+tweets (e.g., sentiment analysis or rumor detection) using (sometimes non-naïve)
 NLP techniques.
 
-Remember that this course is about NLP techniques, not, for example about graph-based approaches (think hashtag identification). However, some of these models are simple enough that they lend themselves easily to those graph-based approaches: keyword/n-gram-based approaches come to mind.
+Remember that this course is about NLP techniques, not, for example about graph-based approaches (think hashtag identification) for Twitter research. However, some of these models are simple enough that they lend themselves easily to those graph-based approaches: keyword/n-gram-based approaches come to mind.
 
 Another thing I have actually paid attention to is multilingual processing: if there're ever two similar papers, one on a weird language, like, say, Italian, and another one in English, I picked the former one.
 
-Finally, I have tried to go to the origin of ideas, as much as possible, just to put the ideas in their right context.
+Finally, I have tried to go to the origin of ideas, as much as possible, just to put the ideas in their right context. Thankfully, Twitter is young (2006) and research on it even younger. However, this is not the case with NLP, and even less so linguistics. I do wish to be comprehensive though, and this is the first step towards that... **with your help**. But what does **with your help** means?
+
+The Turin Lectures (yes, I'm aware I'm only missing a 'g' for this to be epic, but still) is not your run-of-the-mill course. It will be unusual in the sense that we will all be working and researching papers together, doing research together. Each of us will be working on implementing a paper that does not have code in it, and we will discuss this in class. This is loosely inspired in [Knuth's "Aha" Sessions](https://youtu.be/Lg5rrgIfWWg). We will have to prepare some of this beforehand, so I'm making available some of the papers I consider important for each topic. You will find those beside each of the topics below.
+
+We don't really have that much time, so let's enjoy ourselves and be productive. Happy coding!
+
 
 ## Topics
 
@@ -52,7 +57,7 @@ We will try to cover several topics in this course. Some of them include:
  19. Authorship identification
  20. Censorship identification
 
-while some of the NLP techniques involve
+while some of the NLP techniques include
 
  1. POS-Tagging
  2. Latent semantic analysis
@@ -71,6 +76,13 @@ while some of the NLP techniques involve
  15. Language identification
  16. Conceptual/semantic similarity
  17. Content analysis
+ 
+to name but a few of what we might cover. To this, we have to add the "high performance" part of it:
+
+ 1. Frameworks: hadoop, spark
+ 2. Parallel programming: parallel (bash), pyparallel (python)
+
+This is simply a list of topics, I'd be very interesting in hearing what students might be interested in as well. Shoot me an email!
 
 ## Scheduling
 
@@ -136,8 +148,11 @@ environment manager.  I suggest downloading and installing
 [miniconda](http://conda.pydata.org/miniconda.html).
 
 Once this is installed, the following command will install all
-required packages in your Python environment: `$ conda install numpy
-scipy matplotlib scikit-learn ipython-notebook seaborn`.
+required packages in your Python environment: 
+
+`$ conda install numpy scipy matplotlib scikit-learn ipython-notebook seaborn`
+
+
 Alternatively, you can download and install the (very large) Anaconda
 software distribution, found at https://store.continuum.io/.
 

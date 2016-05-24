@@ -1,6 +1,5 @@
 ---
 layout: default
-title: The Turin Lectures
 ---
 
 # NLP4Twitter: The Turin Lectures (June 2016)
@@ -29,7 +28,7 @@ Remember that this course is about NLP techniques, not, for example about graph-
 
 Another thing I have actually paid attention to is multilingual processing: if there're ever two similar papers, one on a weird language, like, say, Italian, and another one in English, I picked the former one.
 
-Finally, I have tried to go to the origin of ideas, as much as possible, just to put the ideas in their right context. Thankfully, Twitter is young (2006) and research on it even younger. However, this is not the case with NLP, and even less so linguistics. I do wish to be comprehensive though, and this is the first step towards that... **with your help**. But what does **with your help** means?
+Finally, I have tried to go to the origin of ideas, as much as possible, just to put the ideas in their right context. Thankfully, Twitter is young (2006) and research on it even younger. However, this is not the case with NLP, and even less so linguistics. I do wish to be comprehensive though, and this is the first step towards that... **with your help**. But what does "with your help" means?
 
 The Turin Lectures (yes, I'm aware I'm only missing a 'g' for this to be epic, but still) is not your run-of-the-mill course. It will be unusual in the sense that we will all be working and researching papers together, doing research together. Each of us will be working on implementing a paper that does not have code in it, and we will discuss this in class. This is loosely inspired in [Knuth's "Aha" Sessions](https://youtu.be/Lg5rrgIfWWg). We will have to prepare some of this beforehand, so I'm making available some of the papers I consider important for each topic. You will find those beside each of the topics below.
 
@@ -82,7 +81,13 @@ to name but a few of what we might cover. To this, we have to add the "high perf
  1. Frameworks: hadoop, spark
  2. Parallel programming: parallel (bash), pyparallel (python)
 
-This is simply a list of topics, I'd be very interesting in hearing what students might be interested in as well. Shoot me an email!
+This is simply a list of topics, I'd be very interesting in hearing what students might be interested in as well. Shoot me [an email](emailto:lferres@udd.cl)!
+
+{% include image.html
+            img="./images/my_twitter_wordcloud.png"
+            title="test"
+            caption="Wordcloud of all the papers in the ACM DL with \"Twitter\" in the title." %}
+
 
 ## Scheduling
 

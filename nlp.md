@@ -15,6 +15,11 @@ Telefónica R&D Center<br>
 - github: [leoferres](http://github.com/leoferres)
 - instagram: [leoferres](https://www.instagram.com/leoferres/)
 
+## News
+
+ - **25 May, 2016 11:18am**: Please fill out: [http://goo.gl/forms/wf5IA156IYzYkXHh2](http://goo.gl/forms/wf5IA156IYzYkXHh2)
+ - **20 May, 2016 09:01am**: First instantiation of the website: [http://leoferres.github.io/nlp.html](http://leoferres.github.io/nlp.html)
+
 ## Introduction
 
 In this tutorial, we will analyze and discuss some Natural 

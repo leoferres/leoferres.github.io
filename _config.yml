@@ -18,6 +18,5 @@ twitter_username: leoferres
 github_username:  leoferres
 
 # Build settings
-highlighter: pygments # remember to sudo apt-get install python-pygments
+highlighter: rouge
 markdown: kramdown
-#markdown: redcarpet # remember to sudo gem install redcarpet

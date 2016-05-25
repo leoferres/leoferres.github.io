@@ -35,7 +35,7 @@ Another thing I have actually paid attention to is multilingual processing: if t
 
 Finally, I have tried to go to the origin of ideas, as much as possible, just to put the ideas in their right context. Thankfully, Twitter is young (2006) and research on it even younger. However, this is not the case with NLP, and even less so linguistics. I do wish to be comprehensive though, and this is the first step towards that... **with your help**. But what does "with your help" means?
 
-The Turin Lectures (yes, I'm aware I'm only missing a 'g' for this to be epic, but still) is not your run-of-the-mill course. It will be unusual in the sense that we will all be working and researching papers together, doing research together. Each of us will be working on implementing a paper that does not have code in it, and we will discuss this in class. This is loosely inspired in [Knuth's "Aha" Sessions](https://youtu.be/Lg5rrgIfWWg). We will have to prepare some of this beforehand, so I'm making available some of the papers I consider important for each topic. You will find those beside each of the topics below.
+The Turin Lectures (yes, I'm aware I'm only missing a 'g' for this to be epic, but still) is not your run-of-the-mill course. It will be unusual in the sense that we will all be working and researching papers together, and mostly coding together. Each of us will be working on implementing a paper that does not have code in it, and we will discuss this in class. This is loosely inspired in [Knuth's "Aha" Sessions](https://youtu.be/Lg5rrgIfWWg). We will have to prepare some of this beforehand, so I'm making available some of the papers I consider important for each topic. You will find those beside each of the topics below.
 
 We don't really have that much time, so let's enjoy ourselves and be productive. Happy coding!
 
@@ -144,7 +144,7 @@ The first class will be a tutorial on using the following tools:
 
  - Python version 2.6-2.7 or 3.3+
  - `numpy` version 1.5 or later: http://www.numpy.org/
-- `scipy` version 0.10 or later: http://www.scipy.org/
+ - `scipy` version 0.10 or later: http://www.scipy.org/
  - `matplotlib` version 1.3 or later: http://matplotlib.org/
  - `scikit-learn` version 0.14 or later: http://scikit-learn.org
  - `ipython` version 2.0 or later, with notebook support:
@@ -152,6 +152,7 @@ The first class will be a tutorial on using the following tools:
  - `seaborn` version 0.5 or later
  - `nltk` version 3.2.1 or later: https://github.com/nltk/nltk
  - `spacy` version 0.100.6 or later: https://github.com/spacy-io/spaCy
+ - I also use [Jabref](http://www.jabref.org/) to manage my bibliography.
 
 and we will probably use some other tools in the Python stack.
 
@@ -164,9 +165,8 @@ required packages in your Python environment:
 
 `$ conda install numpy scipy matplotlib scikit-learn ipython-notebook seaborn`
 
-
 Alternatively, you can download and install the (very large) Anaconda
-software distribution, found at https://store.continuum.io/.
+software distribution, found at `https://store.continuum.io/`.
 
 ## Downloading the Tutorial Materials
 

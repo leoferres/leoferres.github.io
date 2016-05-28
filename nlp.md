@@ -44,22 +44,23 @@ We don't really have that much time, so let's enjoy ourselves and be productive.
 
 We will try to cover several topics in this course. Some of them include:
 
- 1. Sentiment analysis/classification
- 2. Polarity
- 4. Event detection
- 5. Topic detection/identification/modeling
- 6. Opinion mining
- 7. Rumor identification
- 8. Credibility
- 9. Controversy identification
- 10. Spam filtering
- 11. Bot detection
- 13. Gender identification
- 14. Political alignment
- 15. Mood/emotion prediction/diffusion
- 17. Humor/Irony/Sarcasm/deception/subjectivity identification
- 19. Authorship identification
- 20. Censorship identification
+ 1. Sentiment Analysis [[fullbib](SA.bib)] [**Baseline**: [Go2009](http://cs.stanford.edu/people/alecmgo/papers/TwitterDistantSupervision09.pdf): Cited by 1026 times!]
+       1. Polarity [[Koto2015](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7096234)]
+       1. Opinion mining
+       1. Mood/emotion
+       1. Rhetorical devices (Humor/Irony/Sarcasm/deception/subjectivity)
+ 2. Event detection
+ 3. Topic detection
+       1. Credibility
+       1. Spam filtering
+       1. Controversy
+       1. Rumor
+ 3. User profiling 
+       1. Bot detection
+       1. Gender/Age/Location
+       1. Political alignment
+       1. Authorship
+       1. Censorship
 
 while some of the NLP techniques include
 

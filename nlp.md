@@ -42,15 +42,20 @@ We don't really have that much time, so let's enjoy ourselves and be productive.
 
 ## Topics
 
-We will try to cover several topics in this course, and these have been chosen with the [following rationale](notebooks/00-bibs.ipynb). **TL;DR**: to "come up" with this list of topics, I took all the papers in the ACM DL with the word "Twitter" in the title. Once this was done (about 1300 papers), I manually chose which ones could be helpful. This [curated list](./downloadables/acm_curated.csv) had all the "keywords" associated with them and after some light pre-processing I built the wordcloud above using [this file](./downloadables/acm_wcloud.csv). These include:
+We will try to cover several topics in this course, and these have been chosen with the [following rationale](notebooks/00-bibs.ipynb). **A short history**: to "come up" with this list of topics, I took all the papers in the ACM DL with the word "Twitter" in the title. Once this was done (about 1300 papers), I manually chose which ones could be helpful. This [curated list](./downloadables/acm_curated.csv) had all the "keywords" associated with them and after some light pre-processing I built the wordcloud above using [this file](./downloadables/acm_wcloud.csv). These include:
 
  1. Sentiment Analysis [[fullbib](SA.bib)]
-       1. Polarity
-       1. Opinion mining
+       1. Polarity [ [Montejo-Raez2012](http://dl.acm.org/citation.cfm?id=2392969), [Gao2009](https://goo.gl/5OTQlW) ]
+       1. Opinion mining [ [Bing2014](http://dx.doi.org/10.1109/UCC.2014.105) ]
        1. Mood/emotion
-       1. Rhetorical devices (Humor/Irony/Sarcasm/deception/subjectivity)
- 2. Event detection
- 3. Topic detection
+       1. Rhetorical devices [ [fullbib]() ]
+           1. Humor [ [Zhang2014](http://dx.doi.org/10.1145/2661829.2661997), [Reyes2012](http://dx.doi.org/10.1016/j.datak.2012.02.005) ]
+           1. Irony [ [Barbieri2014](http://www.lrec-conf.org/proceedings/lrec2014/pdf/231_Paper.pdf), [Reyes2013](http://afflatus.ucd.ie/papers/reyesirony.pdf) ]
+           1. Sarcasm [ [Gonzalez2011](http://dl.acm.org/citation.cfm?id=2002850) ]
+           1. Deception [ [Alowibdi2015](https://goo.gl/Fdur1B) ]
+           1. subjectivity [[Refaee2014](http://goo.gl/n8Yisc),[Volkova2013](http://goo.gl/bpBZjZ)]
+ 2. Event detection/identification
+ 3. Topic detection/identification
        1. Credibility
        1. Spam filtering
        1. Controversy

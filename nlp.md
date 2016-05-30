@@ -52,7 +52,7 @@ The topics include:
  1. Sentiment Analysis [ [fullbib](SA.bib) ]
        1. Polarity [ [Montejo-Raez2012](http://dl.acm.org/citation.cfm?id=2392969), [Gao2009](https://goo.gl/5OTQlW) ]
        1. Opinion mining [ [Bing2014](http://dx.doi.org/10.1109/UCC.2014.105) ]
-       1. Mood/emotion
+       1. Mood/emotion [ ??? ]
        1. Rhetorical devices [ [fullbib]() ]
            1. Humor [ [Zhang2014](http://dx.doi.org/10.1145/2661829.2661997), [Reyes2012](http://dx.doi.org/10.1016/j.datak.2012.02.005) ]
            1. Irony [ [Barbieri2014](http://www.lrec-conf.org/proceedings/lrec2014/pdf/231_Paper.pdf), [Reyes2013](http://afflatus.ucd.ie/papers/reyesirony.pdf) ] [ **Code**: [JenniferLing](https://github.com/JenniferLing/irony_and_sarcasm_in_twitter) ]
@@ -63,7 +63,7 @@ The topics include:
  3. Topic detection/identification [ [Lau2012](http://www.aclweb.org/anthology/C12-1093) ]
        1. Credibility [ [Kang2012](http://www.cs.ucsb.edu/~holl/pubs/Kang-2012-IUI.pdf) ]
        1. Spam filtering [ [Santos2013](http://paginaspersonales.deusto.es/isantos/papers/2013/2013-Santos-TwitterSpam.pdf), [Afzal2016](http://icact.org/upload/2016/0125/20160125_finalpaper.pdf) ]
-       1. Controversy [ [](http://arxiv.org/pdf/1512.05550.pdf) ]
+       1. Controversy [ ??? ]
        1. Rumor [ [Takahashi2011](https://goo.gl/po8X67) ] [**Code**: [snikolov](https://github.com/snikolov/rumor) ]
  3. User profiling 
        1. Bot detection [ [Clark2016](http://arxiv.org/pdf/1505.04342.pdf) ]
@@ -74,7 +74,7 @@ The topics include:
 
 while some of the NLP techniques include
 
- 1. POS-Tagging [[](), [](), []()]
+ 1. POS-Tagging
  2. Latent semantic analysis
  3. Dirichlect allocation
  4. Web n-grams (co-occurrence)
@@ -86,7 +86,7 @@ while some of the NLP techniques include
  10. Tweet normalization/content curation (OOVs)
  11. Semantic role labeling
  12. Keyphrase/keyword detection/extraction
- 13. Stop/positive/negative words [[en](https://goo.gl/7So8JE), [](), []()]
+ 13. Stop/positive/negative words
  14. Comparability/similarity metrics
  15. Language identification
  16. Conceptual/semantic similarity

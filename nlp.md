@@ -4,6 +4,9 @@ layout: default
 
 # NLP4Twitter: The Turin Lectures (June 2016)
 
+Sponsored by the Faculty of Engineering, UDD, Telefónica R&D (Santiago)<br>
+& Politecnico Di Torino, Italy
+
 [Leo Ferres](http://leoferres.github.io), PhD<br>
 Data science Institute<br>
 Faculty of Engineering,<br>
@@ -42,37 +45,39 @@ We don't really have that much time, so let's enjoy ourselves and be productive.
 
 ## Topics
 
-We will try to cover several topics in this course, and these have been chosen with the [following rationale](notebooks/00-bibs.ipynb). **A short history**: to "come up" with this list of topics, I took all the papers in the ACM DL with the word "Twitter" in the title. Once this was done (about 1300 papers), I manually chose which ones could be helpful. This [curated list](./downloadables/acm_curated.csv) had all the "keywords" associated with them and after some light pre-processing I built the wordcloud above using [this file](./downloadables/acm_wcloud.csv). These include:
+We will try to cover several topics in this course, and these have been chosen with the [following rationale](notebooks/00-bibs.ipynb). **A short history**: to "come up" with this list of topics, I took all the papers in the ACM DL with the word "Twitter" in the title. Once this was done (about 1300 papers), I manually chose which ones could be helpful. This [curated list](./downloadables/acm_curated.csv) had all the "keywords" associated with them and after some light pre-processing I built the wordcloud above using [this file](./downloadables/acm_wcloud.csv). Notice that some of these papers are not mainstream (although most have been cited many times) or well-written even. The idea is to discuss them, provide new ones, provide code to test the claims, etc. They all have some characteristic why I deemed them relevant for our course. However, I intend this to be comprehensive, so please, do not hesitate to suggest new topics/papers/code/resources/etc.
 
- 1. Sentiment Analysis [[fullbib](SA.bib)]
+The topics include:
+
+ 1. Sentiment Analysis [ [fullbib](SA.bib) ]
        1. Polarity [ [Montejo-Raez2012](http://dl.acm.org/citation.cfm?id=2392969), [Gao2009](https://goo.gl/5OTQlW) ]
        1. Opinion mining [ [Bing2014](http://dx.doi.org/10.1109/UCC.2014.105) ]
        1. Mood/emotion
        1. Rhetorical devices [ [fullbib]() ]
            1. Humor [ [Zhang2014](http://dx.doi.org/10.1145/2661829.2661997), [Reyes2012](http://dx.doi.org/10.1016/j.datak.2012.02.005) ]
-           1. Irony [ [Barbieri2014](http://www.lrec-conf.org/proceedings/lrec2014/pdf/231_Paper.pdf), [Reyes2013](http://afflatus.ucd.ie/papers/reyesirony.pdf) ]
-           1. Sarcasm [ [Gonzalez2011](http://dl.acm.org/citation.cfm?id=2002850) ]
+           1. Irony [ [Barbieri2014](http://www.lrec-conf.org/proceedings/lrec2014/pdf/231_Paper.pdf), [Reyes2013](http://afflatus.ucd.ie/papers/reyesirony.pdf) ] [ **Code**: [JenniferLing](https://github.com/JenniferLing/irony_and_sarcasm_in_twitter) ]
+           1. Sarcasm [ [Gonzalez2011](http://dl.acm.org/citation.cfm?id=2002850) ] [ **Code**: [priyanshu-bajpai](https://github.com/priyanshu-bajpai/Sarcasm-Detection-on-Twitter) ]
            1. Deception [ [Alowibdi2015](https://goo.gl/Fdur1B) ]
            1. subjectivity [[Refaee2014](http://goo.gl/n8Yisc),[Volkova2013](http://goo.gl/bpBZjZ)]
- 2. Event detection/identification
- 3. Topic detection/identification
-       1. Credibility
-       1. Spam filtering
-       1. Controversy
-       1. Rumor
+ 2. Event detection/identification [ [Atefeh2013](http://goo.gl/jkrDv8), [Thelwall2010](http://www.uvm.edu/~pdodds/files/papers/others/2011/thelwall2011a.pdf) ]
+ 3. Topic detection/identification [ [Lau2012](http://www.aclweb.org/anthology/C12-1093) ]
+       1. Credibility [ [Kang2012](http://www.cs.ucsb.edu/~holl/pubs/Kang-2012-IUI.pdf) ]
+       1. Spam filtering [ [Santos2013](http://paginaspersonales.deusto.es/isantos/papers/2013/2013-Santos-TwitterSpam.pdf), [Afzal2016](http://icact.org/upload/2016/0125/20160125_finalpaper.pdf) ]
+       1. Controversy [ [](http://arxiv.org/pdf/1512.05550.pdf) ]
+       1. Rumor [ [Takahashi2011](https://goo.gl/po8X67) ] [**Code**: [snikolov](https://github.com/snikolov/rumor) ]
  3. User profiling 
-       1. Bot detection
-       1. Gender/Age/Location
-       1. Political alignment
-       1. Authorship
-       1. Censorship
+       1. Bot detection [ [Clark2016](http://arxiv.org/pdf/1505.04342.pdf) ]
+       1. Gender/Age/Location [ [**Gender**: [Miller2012](http://file.scirp.org/pdf/IJIS20122400002_20423388.pdf), [Ciot2013](http://anthology.aclweb.org/D/D13/D13-1114.pdf) ], [ **Age**: [Nguyen2013](http://eprints.eemcs.utwente.nl/23604/01/5984-30392-1-PB.pdf) ] [**Location**: [Chandra2013](http://www.utdallas.edu/~swarup.chandra/papers/socialcom11.pdf)] ]
+       1. Political alignment [ [Pla2014](http://www.aclweb.org/anthology/C/C14/C14-1019.pdf), [Cohen2013](http://www.networkdynamics.org/static/publication_files/CohenRuths_ICWSM2013.pdf) ]
+       1. Authorship attribution [ [Layton2010](https://goo.gl/m8iXHi), [Schwartz2013](http://goo.gl/mjwJ0F) ]
+       1. Censorship [ ??? ]
 
 while some of the NLP techniques include
 
- 1. POS-Tagging
+ 1. POS-Tagging [[](), [](), []()]
  2. Latent semantic analysis
  3. Dirichlect allocation
- 4. web n-grams (co-occurrence)
+ 4. Web n-grams (co-occurrence)
  5. Language modelling
  6. Semantic enrichment
  7. Corpus creation
@@ -81,7 +86,7 @@ while some of the NLP techniques include
  10. Tweet normalization/content curation (OOVs)
  11. Semantic role labeling
  12. Keyphrase/keyword detection/extraction
- 13. Stop words
+ 13. Stop/positive/negative words [[en](https://goo.gl/7So8JE), [](), []()]
  14. Comparability/similarity metrics
  15. Language identification
  16. Conceptual/semantic similarity

@@ -34,7 +34,7 @@ NLP techniques.
 
 Remember that this course is about NLP techniques, not, for example about graph-based approaches (think hashtag identification) for Twitter research. However, some of these models are simple enough that they lend themselves easily to those graph-based approaches: keyword/n-gram-based approaches come to mind.
 
-Another thing I have actually paid attention to is multilingual processing: if there're ever two similar papers, one on a weird language, like, say, Italian, and another one in English, I picked the former one.
+Another thing I have actually paid attention to is multilingual processing: if there're ever two similar papers, one on a weird language, like, say, `<sarcasm>`Italian or Spanish`</sarcasm>`, and another one in English, I picked the former one.
 
 Finally, I have tried to go to the origin of ideas, as much as possible, just to put the ideas in their right context. Thankfully, Twitter is young (2006) and research on it even younger. However, this is not the case with NLP, and even less so linguistics. I do wish to be comprehensive though, and this is the first step towards that... **with your help**. But what does "with your help" means?
 

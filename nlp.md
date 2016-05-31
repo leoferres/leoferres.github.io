@@ -111,24 +111,24 @@ This is simply a list of topics, I'd be very interesting in hearing what student
 ### Week 1
 
 - **Lecture 1**: Intro, Sentiment Analysis I <span style="color: red">(Wed 8 Jun 2016 11:00am, Aula E)</span><br>
-[ video ] [ [notebooks](https://github.com/leoferres/nlp4twitter_tutorial/tree/master/notebooks/01-SentimentAnalysisI-Notes.ipynb) ] [ extra code ] [ datasets ] [ scribe notes ]
+[ video ] [ [notebooks]() ] [ extra code ] [ datasets ] [ scribe notes ]
 
 - **Lecture 2**: Sentiment Analysis II <span style="color: red">(Thu 9 Jun 2016 4:00pm, Aula F)</span><br>
-[ video ] [ [notebooks](github_place) ] [ extra code ] [ datasets ] [ scribe notes ]
+[ video ] [ [notebooks]() ] [ extra code ] [ datasets ] [ scribe notes ]
 
 - **Lecture 3**: Event Detection <span style="color: red">(Fri 10 Jun 2016 11:00am, Aula F)</span><br>
-[ video ] [ [notebooks](github_place) ] [ extra code ] [ datasets ] [ scribe notes ]
+[ video ] [ [notebooks]() ] [ extra code ] [ datasets ] [ scribe notes ]
 
 ### Week 2
 
 - **Lecture 4**: Topic Detection <span style="color: red">(Mon 13 Jun 2016 2:00pm, Aula F)</span><br>
-[ video ] [ [notebooks](github_place) ] [ extra code ] [ datasets ] [ scribe notes ]
+[ video ] [ [notebooks]() ] [ extra code ] [ datasets ] [ scribe notes ]
 
 - **Lecture 5**: User Profiling <span style="color: red">(Wed 15 Jun 2016 4:00pm, Aula F)</span><br>
-[ video ] [ [notebooks](github_place) ] [ extra code ] [ datasets ] [ scribe notes ]
+[ video ] [ [notebooks]() ] [ extra code ] [ datasets ] [ scribe notes ]
 
 - **Lecture 6**: High-Performance Computing and NLP <span style="color: red">(Fri 17 Jun 2016 11:00am, Aula F)</span><br>
-[ video ] [ [notebooks](github_place) ] [ extra code ] [ datasets ] [ scribe notes ]
+[ video ] [ [notebooks]() ] [ extra code ] [ datasets ] [ scribe notes ]
 
 
 ## Evaluation

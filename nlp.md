@@ -52,11 +52,11 @@ We don't really have that much time, so let's enjoy ourselves and be productive.
 
 ## Topics
 
-We will try to cover several topics in this course, and these have been chosen with the [following rationale](notebooks/00-bibs.ipynb). **A short history**: to "come up" with this list of topics, I took all the papers in the ACM DL with the word "Twitter" in the title. Once this was done (about 1300 papers), I manually chose which ones could be helpful. This [curated list](./downloadables/acm_curated.csv) had all the "keywords" associated with them and after some light pre-processing I built the wordcloud above using [this file](./downloadables/acm_wcloud.csv). Notice that some of these papers are not mainstream (although most have been cited many times) or well-written even. The idea is to discuss them, provide new ones, provide code to test the claims, etc. They all have some characteristic why I deemed them relevant for our course. However, I intend this to be comprehensive, so please, do not hesitate to suggest new topics/papers/code/resources/etc.
+We will try to cover several topics in this course, and these have been chosen with the [following rationale](notebooks/https://github.com/leoferres/nlp4twitter_tutorial/blob/master/notebooks/WhyTheseTopics.ipynb). **A short history**: to "come up" with this list of topics, I took all the papers in the ACM DL with the word "Twitter" in the title. Once this was done (about 1300 papers), I manually chose which ones could be helpful. This [curated list](./downloadables/acm_curated.csv) had all the "keywords" associated with them and after some light pre-processing I built the wordcloud above using [this file](./downloadables/acm_wcloud.csv). Notice that some of these papers are not mainstream (although most have been cited many times) or well-written even. The idea is to discuss them, provide new ones, provide code to test the claims, etc. They all have some characteristic why I deemed them relevant for our course. However, I intend this to be comprehensive, so please, do not hesitate to suggest new topics/papers/code/resources/etc.
 
 The topics include:
 
- 1. Sentiment Analysis [ [fullbib](SA.bib) ]
+ 1. Sentiment Analysis [ [fullbib](https://github.com/leoferres/nlp4twitter_tutorial/blob/master/bib/01-SentimentAnalysis.bib) ]
        1. Polarity [ [Montejo-Raez2012](http://dl.acm.org/citation.cfm?id=2392969), [Gao2009](https://goo.gl/5OTQlW) ]
        1. Opinion mining [ [Bing2014](http://dx.doi.org/10.1109/UCC.2014.105) ]
        1. Mood/emotion [ ??? ]
@@ -79,7 +79,7 @@ The topics include:
        1. Authorship attribution [ [Layton2010](https://goo.gl/m8iXHi), [Schwartz2013](http://goo.gl/mjwJ0F) ]
        1. Censorship [ ??? ]
 
-while some of the NLP techniques include
+while some of the NLP techniques include (numbers in parentheses indicate topic in which the technique is used; e.g., X (1.1; 1.4.2) means that technique X is used in "Polarity" and  "Irony").
 
  1. POS-Tagging
  2. Latent semantic analysis

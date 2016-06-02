@@ -18,8 +18,15 @@ Telefónica R&D Center<br>
 - github: [leoferres](http://github.com/leoferres)
 - instagram: [leoferres](https://www.instagram.com/leoferres/)
 
+This term we will be using Piazza for class discussion. The system is highly catered to getting you help fast and efficiently from classmates, the TA, and myself. Rather than emailing questions to the teaching staff, I encourage you to post your questions on Piazza. If you have any problems or feedback for the developers, email team@piazza.com.
+
+Find our course page at: [https://piazza.com/udd.cl/summer2016/ds/home](https://piazza.com/udd.cl/summer2016/ds/home).
+
+
 ## News
 
+ - **2 Jun, 2016, 08:26am**: First (complete) notebook is available! Twitter, Computers and Natural Language: [https://goo.gl/PCncE1](https://goo.gl/PCncE1)
+ - **31 May, 2016, 11:44am**: Please sign up in Piazza! [piazza.com/udd.cl/summer2016/ds](piazza.com/udd.cl/summer2016/ds) (signup page)
  - **25 May, 2016 11:18am**: Please fill out: [http://goo.gl/forms/wf5IA156IYzYkXHh2](http://goo.gl/forms/wf5IA156IYzYkXHh2)
  - **20 May, 2016 09:01am**: First instantiation of the website: [http://leoferres.github.io/nlp.html](http://leoferres.github.io/nlp.html)
 
@@ -111,7 +118,7 @@ This is simply a list of topics, I'd be very interesting in hearing what student
 ### Week 1
 
 - **Lecture 1**: Intro, Sentiment Analysis I <span style="color: red">(Wed 8 Jun 2016 11:00am, Aula E)</span><br>
-[ video ] [ [notebooks]() ] [ extra code ] [ datasets ] [ scribe notes ]
+[ video ] [ [notebook1-BasicNLPNotes](https://github.com/leoferres/nlp4twitter_tutorial/blob/master/notebooks/00-BasicNLPNotes.ipynb) ] [ extra code ] [ datasets ] [ scribe notes ]
 
 - **Lecture 2**: Sentiment Analysis II <span style="color: red">(Thu 9 Jun 2016 4:00pm, Aula F)</span><br>
 [ video ] [ [notebooks]() ] [ extra code ] [ datasets ] [ scribe notes ]

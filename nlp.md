@@ -5,7 +5,7 @@ layout: default
 # NLP4Twitter: The Turin Lectures (June 2016)
 
 Sponsored by the Faculty of Engineering, UDD, Telefónica R&D (Santiago)<br>
-& Politecnico Di Torino, Italy
+& Universita' degli Studi Di Torino, Italy
 
 [Leo Ferres](http://leoferres.github.io), PhD<br>
 Data science Institute<br>

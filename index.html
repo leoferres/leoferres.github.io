@@ -19,9 +19,10 @@ layout: default
 	on <a href="nlp">handling natural languages by means of
 	computers</a> [In Progress, ETA: 2016-2]</li>
       <li><b>Peek & Poke</b>: Six lectures on <a href="./">computing
-      in the 1980s</a> [In Progress, ETA: 2016-2]</li>
-      <li><b>Computing Machines</b>: Ten lectures on <a href="./">the
-      history of computing</a> [In progress, ETA: 2018-1]</li>
+      in the 1980s</a> [In Progress, ETA: 2017-1]</li>
+      <li><b>Parallel Computing</b>: Ten lectures on <a href="./">the
+      history and algorithms of parallel computing</a> [In progress,
+      ETA: 2019-1]</li>
   </ul>
 
   <h1>Research</h1>
@@ -36,10 +37,10 @@ layout: default
 	<a href="http://azu1.inf.udec.cl/twitter">News Analytics</a>
 	dashboard to find out more. We have been showcased at in the
 	<a href="http://www.udec.cl/panoramaweb2/2015/06/investigacion-de-la-udec-analizara-consumo-de-noticias-a-traves-de-twitter/">University newspaper</a>!</li>
-    <li><b>Succinct trees</b>: My student José Fuentes and
-	    myself (together with Norbert Zhe and Meng He over at
-	    Dalhousie U) have been working on parallel construction of
-	    succinct trees. Here's our
+    <li><b>Parallel succinct data structures</b>: My student José
+	    Fuentes and myself (together with Norbert Zhe and Meng He
+	    over at Dalhousie U) have been working on parallel
+	    construction of succinct trees. Here's our
 	    <a href="http://www.inf.udec.cl/~josefuentes/sea2015/">page</a>
 	    with some experiments, and
 	    the <a href="https://github.com/jfuentess/sea2015/">code</a>
@@ -74,11 +75,52 @@ layout: default
   </ul>
   </div> <!-- main-content class -->
 
+  <h1>Selected Publications</h1>
+  <ul>
+    <li>
+      José Fuentes-Sepúlveda, Erick Elejalde, Leo Ferres, and Diego
+      Seco. 2016. Parallel construction of wavelet trees on multicore
+      architectures. Knowledge and Information Systems,
+      1-24. <a href="http://dx.doi.org/10.1007/s10115-016-1000-6">10.1007/s10115-016-1000-6</a>
+    </li>
+    <li>
+      José. Fuentes-Sepúlveda and L. Ferres. 2012. Improving
+      accessibility to mathematical formulas: the Wikipedia Math
+      Accessor. New Review Of Hypermedia And Multimedia Vol. 18 ,
+      Iss. 3. Taylor and
+      Francis. <a href="http://dx.doi.org/10.1080/13614568.2012.702134">http://dx.doi.org/10.1080/13614568.2012.702134</a>
+    </li>
+    <li>
+      Leo Ferres, Gitte Lindgaard, Livia Sumegi, and Bruce
+      Tsuji. 2013. Evaluating a Tool for Improving Accessibility to
+      Charts and Graphs. ACM Transactions on Computer-Human
+      Interaction 20, 5, Article 28 (November
+      2013). <a href="http://dx.doi.org/10.1145/2533682.2533683">10.1145/2533682.2533683</a>
+    </li>
+    <li>Michel Dumontier, Leo Ferres, and Natalia
+    Villanueva-Rosales. 2010. Modeling and querying graphical
+    representations of statistical data. Journal of Web Semantics 8,
+    2-3 (July 2010),
+    241-254. <a href="http://dx.doi.org/10.1016/j.websem.2009.12.002">10.1016/j.websem.2009.12.002</a></li>
+  </ul>
+
   <h1>Blog Posts</h1>
   <ul>
     {% for post in site.posts %}
     <li><b>{{ post.date | date: "%b %d, %Y" }}</b>: <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
     {% endfor %}
+  </ul>
+
+  <h1>LAFs</h1>
+
+  LAFs are small notes I write to myself for whatever reason. They
+  simply help me organize my thoughts. Sometimes they are ideas,
+  sometimes it's code. I publish them because it makes me be a bit
+  more systematic in their archiving process.
+  <br>
+  <ul>
+    <li> LAF1, LAF2, ...
+    </li>
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

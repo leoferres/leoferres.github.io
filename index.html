@@ -6,7 +6,8 @@ layout: default
   href="https://twitter.com/leoferres"
   data-widget-id="697118755223138304">Tweets by @leoferres</a>
   <script>!function(d,s,id){var
-    js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+      js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   <div class="main-content">
     <h1>Teaching and Lectures</h1>
@@ -14,29 +15,44 @@ layout: default
   <ul>
     <li><b>Intro to Programming</b>: Eleven lectures on low-level
     programming <a href="https://github.com/leoferres/lp1">using
-    C</a>.</li>
-    <li><b>NLP for Data Science</b>: Thirteen lectures
+    C</a>. Now at <a href="udd.cl">Universidad del Desarrollo</a>,
+    seventeen lectures on intro to programming
+    using <a href="https://github.com/leoferres/prograUDD/tree/master/clases">Python</a>
+    with a data science flavor, heavily inspired
+    on <a href="https://github.com/jakevdp/WhirlwindTourOfPython">Jake
+    van der Plas</a>'s O'Reilly book/website.</li>
+    <li><b>NLP for Data Science</b>: Some lectures notes
 	on <a href="nlp">handling natural languages by means of
-	computers</a> [In Progress, ETA: 2016-2]</li>
+	computers</a>. I should complete this with more modern
+	methods.</li>
       <li><b>Peek & Poke</b>: Six lectures on <a href="./">computing
-      in the 1980s</a> [In Progress, ETA: 2017-1]</li>
+	  in the
+	  1980s</a>. Watch <a href="https://youtu.be/34yLT4Yhg5w">the
+	  teaser trailer</a> [In Progress, ETA: 2017-2]</li>
       <li><b>Parallel Computing</b>: Ten lectures on <a href="./">the
       history and algorithms of parallel computing</a> [In progress,
-      ETA: 2019-1]</li>
+      ETA: 2019-1, however, it's more proablable that my awesome
+      ex-PhD student, <a href="https://t.co/PllzltN2Wj">José
+      Fuentes</a> will get there first. I'll live vicariously through
+      him at this stage. :)]</li>
   </ul>
 
   <h1>Research</h1>
 
   <ul>
-    <li><b>News systems of the world</b>: (Ok, Chile, but we want to
-	extend it) I've been working with
+    <li><b>Computational Social Science:</b>: Using CDRs to gather
+    information at the country scale on how people behave and how we
+    can help society be more efficient and happier.
+    <li><b>Bias in the news systems of the world</b>: (Ok, Chile, but
+	we'll extend it) I've been working with
 	<a href="http://www.informatics.indiana.edu/jbollen/">Johan
 	Bollen</a> and <a href="http://www.barbara.cl/">Barbara
 	Poblete</a> on a project to characterize the news cycle and
 	the outlets in the world using Twitter. You can access our
 	<a href="http://azu1.inf.udec.cl/twitter">News Analytics</a>
-	dashboard to find out more. We have been showcased at in the
-	<a href="http://www.udec.cl/panoramaweb2/2015/06/investigacion-de-la-udec-analizara-consumo-de-noticias-a-traves-de-twitter/">University newspaper</a>!</li>
+	dashboard to find out more. We have been showcased in the
+	<a href="http://www.udec.cl/panoramaweb2/2015/06/investigacion-de-la-udec-analizara-consumo-de-noticias-a-traves-de-twitter/">University
+	newspaper</a>! (in my previous university)</li>
     <li><b>Parallel succinct data structures</b>: My student José
 	    Fuentes and myself (together with Norbert Zhe and Meng He
 	    over at Dalhousie U) have been working on parallel
@@ -109,18 +125,6 @@ layout: default
     {% for post in site.posts %}
     <li><b>{{ post.date | date: "%b %d, %Y" }}</b>: <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
     {% endfor %}
-  </ul>
-
-  <h1>LAFs</h1>
-
-  LAFs are small notes I write to myself for whatever reason. They
-  simply help me organize my thoughts. Sometimes they are ideas,
-  sometimes it's code. I publish them because it makes me be a bit
-  more systematic in their archiving process.
-  <br>
-  <ul>
-    <li> LAF1, LAF2, ...
-    </li>
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

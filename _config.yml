@@ -16,6 +16,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://leoferres.github.io" # the base hostname & protocol for your site
 twitter_username: leoferres
 github_username:  leoferres
+facebook_username: leoferres
+instagram_username: leoferres
 
 # Build settings
 highlighter: rouge

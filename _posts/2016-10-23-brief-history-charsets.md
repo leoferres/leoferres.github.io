@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Brief History Of Character Sets"
 date:   2016-10-23 11:41:10 -0300
 categories: history charsets

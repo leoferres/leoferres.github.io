@@ -295,7 +295,8 @@ pre {
  * Posts
  */
 .post-header {
-  margin-bottom: 30px; }
+    margin: 0 50px 30px 70px;
+}
 
 .post-title {
   font-size: 42px;
@@ -305,8 +306,8 @@ pre {
     .post-title {
       font-size: 36px; } }
 
-.post-content {
-  margin-bottom: 30px; }
+  .post-content {
+          margin: 0 130px 30px 70px;}
   .post-content h2 {
     font-size: 32px; }
     @media screen and (max-width: 800px) {
@@ -321,7 +322,25 @@ pre {
     font-size: 20px; }
     @media screen and (max-width: 800px) {
       .post-content h4 {
-        font-size: 18px; } }
+          font-size: 18px; } }
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+    text-align: right;
+}
 
 /**
  * Syntax highlighting styles

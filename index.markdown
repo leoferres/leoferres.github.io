@@ -5,10 +5,11 @@ layout: home
 ---
 
 
-![image](/assets/leo.jpeg){: style="float: right; margin-right: 20px; margin-bottom: 20px; width: 250px;"}
-I'm an Associate Professor of Computer and Data Science at the [Data
-Science Institute](https://ingenieria.udd.cl/data-science/), [Faculty
-of Engineering](https://ingenieria.udd.cl/), [Universidad del
+![image](/assets/leo.jpeg){: style="float: right; margin-right: 20px;
+margin-bottom: 20px; width: 250px;"} I'm an Associate Professor of
+Computer and Data Science at the [Data Science
+Institute](https://ingenieria.udd.cl/data-science/), [Faculty of
+Engineering](https://ingenieria.udd.cl/), [Universidad del
 Desarrollo](http://www.udd.cl) (2016-) in Santiago, Chile, a Fellow of
 Telefónica Research & Development, also in Santiago, and a Research
 Fellow of the [ISI Foundation](https://isi.it/en/home) (2019-), in
@@ -23,7 +24,7 @@ Concepción](https://fi.udec.cl/departamentos/informatica-y-cs-de-la-computacion
 somewhat previous life) and in computational social
 science. Currently, my research focuses on using mobile and telephony
 data for social good, data-driven policy and digital
-transformation. At UDD/TEF I've been involved in[ industry and
+transformation. At UDD/TEF I've been involved in [industry and
 government](https://www.udd.cl/noticias/2021/12/22/premios-icono-udd-a-la-transferencia-e-innovacion/)
-research projects.
+research and development projects.
 

@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "The Sinclair ZX80 Lamo-Lem Manual and Inserts"
+date:   2017-05-25 00:00:00 -0300
+categories: oldcomps
+---
+
+![](/assets/zx80.jpeg){: style="float: right; margin-right: 20px;
+margin-bottom: 20px; width: 250px;"} This is my original ZX80 computer
+(by the way, the TV is also from the 1980s, a Sanyo, Portable Deluxe…
+I like the orange color very much). I bought this a few years ago on
+Ebay, and it’s probably one of my most prized possessions. It featured
+a whopping 1KB of RAM, no sound, and it was black and white. The
+original ZX80 came with a single "demo" cassette, produced by Lamo-Lem
+Laboratories in La Jolla, California, and an accompanying manual. The
+combo looked like the picture to the left. I have scanned the booklet
+and all the inserts in high resolution and made it available on the
+web in case someone else, like me, is interested in these technologies
+and the “early history” of home computing, Sinclair in particular.
+
+I have uploaded five PDF files that you can find below:
+
+1. [The Lamo-Lem manual covers](/assets/LamoLem.pdf) (1 page): This is a high-definition
+   (1200 dpi, 17,347,913 bytes or about 17MB) photographic scan of
+   both sides of the manual’s (very) soft cover (like the one in the
+   picture above). You might have to rotate the pdf.
+1. [The Lamo-Lem manual’s content pages](/assets/LamoLemText.pdf) (7
+   pages): This is a high-definition (1200 dpi, 10,833,875 bytes or
+   about 10MB) text scan of the contents of the manual. The darker
+   pages in the scan are in fact a darker beige in the original. This
+   content explains how to use the different programs in the package.
+1. [The Lamo-Lem inserts](/assets/LamoLemInserts.pdf) (1 page): This
+   is a high-definition (1200 dpi, 9,279,479 bytes or about 9MB)
+   photographic scan of the keyboard overlay that came with the
+   manual. The yellow one (on top) is for the Composer, the blue one
+   (bottom) is for the Checkbook Balancer. They may have been
+   attached, given that the right margin shows a “Contents (r) by
+   Lamo-Lem” message. Looks like it may just be a simple careless
+   cutting by the original owner, but then again, maybe not, we know
+   that these things were really very cheap!
+1. [The Lamo-Lem manual’s content pages](/assets/LamoLemRefCards.pdf) (1 page): This is a
+   high-definition (1200 dpi, 2,276,034 bytes or about 2MB) text scan
+   of the reference cards that came with the manual. The one on the
+   left is the one for the Composer program and the one on the right
+   is for the Etch-A-Screen program. There’s some annotation by the
+   previous owner, I assume. Interesting that the character encoding
+   was not ASCII.
+   ![](/assets/zx80manscassette.jpeg){: style="float: left; margin-right: 20px;
+margin-bottom: 20px; width: 250px;"}
+1. [The Lamo-Lem ZX80 program design
+   pages](/assets/LamoLemZX80Program.pdf) (2 pages): This is a
+   high-definition (1200 dpi, 3,433,445 bytes or about 2MB) text scan
+   of a helper for program design, archiving and maybe debugging. This
+   is my favorite. It has sections for describing “named” variables,
+   “one-letter” variables, arrays (with their parenthesis, A(), B(),
+   …, Z()) and strings (A$, B$, …, Z$) and the coding itself. It’s
+   like a paper comment section of a program. Notice that this was
+   also intended for the ZX81.
+
+I hope this is helpful to somone else.
+
+**DISCLAIMER**: I’m not sure who owns the copyright for this, and I’d be grateful if anyone could tell me whether I’m violating any copyright laws. If so, I will take this information down asap. Still, I’d very much appreciate if the copyright holders would grant me their permission to post this online. This belongs to a museum! I’ve done due diligence in finding people related to Lamo-Lem Labs in La Jolla, California but have so far had no success.

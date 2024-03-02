@@ -1,0 +1,43 @@
+"date","country","dtype",,"tags"
+"13/03/2020","Italy","gps","https://covid19mm.github.io/in-progress/2020/03/13/first-report-assessment.html","mobility"
+"22/03/2020","US (BOS)","gps","https://covid-19-sds.github.io/assets/pdfs/Preliminary_Report_Effectiveness_of_social_distance_strategies_COVID-19.pdf","mobility"
+"24/03/2020","China","gps","https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-Exiting-Social-Distancing-24-03-2020.pdf","mobility"
+"25/03/2020","Italy","gps","https://covid19mm.github.io/in-progress/2020/03/25/second-report.html","mobility;social mixing"
+"29/03/2020","US (NYC)","gps","http://curveflattening.media.mit.edu/Social_Distancing_New_York_City.pdf","mobility"
+"31/03/2020","US","gps","https://uploads-ssl.webflow.com/5c9104426f6f88ac129ef3d2/5e8374ee75221201609ab586_Assessing_mobility_changes_in_the_United_States_during_the_COVID_19_outbreak.pdf","mobility"
+"03/04/2020","Ghana","unclear","https://statsghana.gov.gh/COVID-19%20press%20release%20report%20-%20analysis%20overview%20-%20final.pdf","mobility"
+"05/04/2020","Chile (SCL)","xdr",http://datascience.udd.cl/covid_ids_tef_01.pdf","mobility"
+"05/04/2020","Germany","xdr","http://rocs.hu-berlin.de/covid-19-mobility/reports/first-report-general-mobility/","mobility"
+"09/04/2020","UK","gps","https://covid19-uk-mobility.github.io/reports/Covid19-UK-9-April.pdf","mobility"
+"09/04/2020","US","gps","https://arxiv.org/pdf/2004.04544","mobility"
+"11/04/2020","Estonia","xdr","https://news.err.ee/1075440/mobility-study-shows-people-stay-in-one-location-for-20-hours-per-day","mobility"
+"11/04/2020","Argentina","madid","https://covid.grandata.com/#/distancing/ar","mobility"
+"11/04/2020","Uruguay","madid","https://covid.grandata.com/#/distancing/mx","mobility"
+"11/04/2020","Mexico","madid","https://covid.grandata.com/#/distancing/uy","mobility"
+"11/04/2020","Spain","xdr/cdr","https://www.mitma.gob.es/ministerio/covid-19/evolucion-movilidad-big-data","mobility"
+"13/04/2020","India (Kerala)","cdr","https://www.nature.com/articles/d41586-020-01058-5","moobility"
+"15/04/2020","US","gps","https://www.wired.com/story/trump-voters-arent-staying-in-as-much-as-everybody-else/","politics"
+"17/04/2020","LACRO","gps","http://idbdocs.iadb.org/wsdocs/getdocument.aspx?docnum=EZSHARE-1993837609-142
+","mobility"
+"23/04/2020","US","gps",https://arxiv.org/pdf/2004.11430.pdf,"social distancing"
+"27/04/2020","Italy","cdr/xdr"https://arxiv.org/pdf/2004.11278.pdf","mobility"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

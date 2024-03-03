@@ -1,0 +1,19 @@
+
+
+.post-list-heading {
+  @include relative-font-size(1.625);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: 0;
+  }
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1);
+}

@@ -6,4 +6,21 @@ $base-font-size:   14px;
 $base-font-weight: 400 !default;
 
 @import "minima";
-@import "custom";
+
+.post-list-heading {
+  @include relative-font-size(1.625);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: 0;
+  }
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1);
+}

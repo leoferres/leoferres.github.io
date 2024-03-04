@@ -24,5 +24,3 @@ permalink: /oldcomputers/
   know the game I took the tune from, here's
   the <a href="https://youtu.be/aHXDAOv8AQA">YouTube video</a> <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/34yLT4Yhg5w" frameborder="0" allowfullscreen></iframe>
-
-

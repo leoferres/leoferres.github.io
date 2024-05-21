@@ -13,18 +13,19 @@ Engineering](https://ingenieria.udd.cl/), [Universidad del
 Desarrollo](http://www.udd.cl) (2016-) in Santiago, Chile, a Fellow of
 Telefónica Research & Development, also in Santiago, and a Research
 Fellow of the [ISI Foundation](https://isi.it/en/home) (2019-), in
-Turin, Italy. I got my PhD in Cognitive Science (2005) from Carleton
-University, in Ottawa, Canada. I did a post-doc (2004-2005) at the
-Human-Oriented Technology Lab at Carleton, and became a senior
-researcher there (2006-2008). I was an invited professor at the
-University of Edinburgh (2006-2008) and moved to Chile as an Assistant
-professor of Computer Science at [Universidad de
+Turin, Italy. I got my PhD from Carleton University, in Ottawa,
+Canada. I did a post-doc (2004-2005) at the Human-Oriented Technology
+Lab at Carleton, and became a senior researcher there (2006-2008). I
+was an invited professor at the University of Edinburgh (2006-2008)
+and moved to Chile as an Assistant professor of Computer Science at
+[Universidad de
 Concepción](https://fi.udec.cl/departamentos/informatica-y-cs-de-la-computacion/)
-(2008-2016). I've published in high-performance computing (in a
-somewhat previous life) and in computational social
-science. Currently, my research focuses on using mobile and telephony
-data for social good, data-driven policy and digital
-transformation. At UDD/TEF I've been involved in [industry and
+(2008-2016) before moving to UDD in Santiago. I've published in
+high-performance computing (in a somewhat previous life) and in
+computational social science. Currently, my research focuses on using
+mobile and telephony data for social good, data-driven policy and
+non-traditional data sources. At UDD/TEF I've been involved in
+[industry and
 government](https://www.udd.cl/noticias/2021/12/22/premios-icono-udd-a-la-transferencia-e-innovacion/)
 research and development projects.
 

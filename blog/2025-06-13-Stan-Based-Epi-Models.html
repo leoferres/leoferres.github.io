@@ -323,10 +323,38 @@ directory</a> or clone all of it. I've written a small python script
 the <code>RData</code> files and transform them into <code>csv</code>
 files.
 
+<p>I have chosen a simple flu outbreak, appearing
+  in <code>influenza_england_1978_school.csv</code> in the files
+  above.</p>
+
+<pre>
+                      Mean      MCSE     StdDev        MAD          5%         50%         95%  ESS_bulk  ESS_tail     R_hat
+lp__            -71.844400  0.060424   1.628700   1.182000  -74.967600  -71.397900  -70.221500   1111.97   981.472  1.001790
+beta              1.716790  0.001833   0.062927   0.051476    1.623000    1.717780    1.812570   1804.90  1017.500  1.000940
+gamma             0.511552  0.001591   0.049080   0.041009    0.434826    0.514744    0.581725   1633.92  1150.480  1.000540
+phi              10.105200  0.131786   5.508760   4.686720    3.405800    8.964990   20.467600   1437.19  1373.830  1.000650
+
+</pre>
+
+    <p>Just like in the previous case, the model performs quite well,
+      even without any modifications. We could have, for example,
+      modified the priors with a bit more specific information about
+      influenza that could have brought down the errors, but there's
+      no need to do that at this point. This is just an example. We
+      will sophisticate this in future posts so that we can account
+      for our potential dengue outbreaks.</p>
+
+    <img src="flu_inference_results.png" alt="seir0" style="margin:
+      5px; width: 900px;">
+
     <p><em>This post also appears on <a href="">Substack</a>.</em></p>
 
     <p><em>Thanks to Nicolò Gozzi, Bruno Gonçalves, Nicola Perra and
     Kyriaki Kalimeri for reviewing this post.</em></p>
+
+    <p><em>This post has been written with the support of Fondo de
+    Investigación y Desarrollo en Salud – Fonis, Project
+    SA24I0124</em></p>
 
     <a href="/">Index</a><br>
     <a href="https://github.com/leoferres">github.com/crawshaw</a><br>

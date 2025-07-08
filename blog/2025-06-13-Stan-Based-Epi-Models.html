@@ -168,15 +168,7 @@ own unique transmission characteristics and backstory. The complete
 code for generating these synthetic datasets can be
 found <a href="gendisease.html">here</a>. If you don't want to read
 the explanation of the file, you can find the python script in
-[<a href="sir_synthetic_data.py">sir_synthetic_data.py</a>]. But I
-like the backstories, in particular the Silver Drift.</p>
-
-<p>We'll only deal with the simplest case, Nexus fever: A mysterious
-respiratory illness first discovered in a research facility studying
-quantum particles, Nexus Fever spreads through airborne droplets and
-causes severe fatigue and cognitive fog. The disease emerged when a
-containment breach allowed experimental nanomaterials to interact with
-common cold viruses, creating an entirely new pathogen (LOL).</p>
+[<a href="sir_synthetic_data.py">sir_synthetic_data.py</a>].</p>
 
 <p>The objective is to fit the cases brought about by these
 diseases. That is, fitting beta and gamma without knowing them a
@@ -284,12 +276,12 @@ phi              91.22360  0.433643  25.389000  23.988400   54.080300   88.72400
 </pre>
 
 <p>The parameter recovery is remarkably precise (in this toy example,
-  reality is not like that, unfortunately). For <b>beta</b>
-  (transmission rate), our posterior mean of 1.183 is extremely close
-  to the true value of 1.2 we used to generate the data, representing
-  only a 1.4% difference. The 95% credible interval [1.154, 1.213]
-  captures the true value with high confidence, and the narrow
-  standard deviation of 0.018 indicates excellent precision.</p>
+reality is not like that, unfortunately). For <b>beta</b>
+(transmission rate), our posterior mean of 1.183 is extremely close to
+the true value of 1.2 we used to generate the data, representing only
+a 1.4% difference. The 95% credible interval [1.154, 1.213] captures
+the true value with high confidence, and the narrow standard deviation
+of 0.018 indicates excellent precision.</p>
 
 <p>Similarly, <b>gamma</b> (recovery rate) shows outstanding recovery
 with a posterior mean of 0.101 versus the true value of 0.1 - a 1%

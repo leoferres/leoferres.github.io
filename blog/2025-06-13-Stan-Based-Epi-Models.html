@@ -6,7 +6,7 @@
     <title>Leo's Blog</title>
   </head>
   <body>
-    <h1>Stan-Based Epidemiological Models</h1>
+    <h1>Stan-Based Epidemiological Models I: The Basics</h1>
     <p>Started: 2025-06-13 12:57:40 -0400, Published: 2025-07-16 05:06:16 -0400</p>
     <p>Last edited: 2025-07-05 06:22:56 -0400</p>
 
@@ -209,7 +209,7 @@ gamma ~ lognormal(-2.30, 0.5);
 phi ~ exponential(0.1);
 </pre>
 
-These prior choices are <b>weakly informative</b>, they don't
+<p>These prior choices are <b>weakly informative</b>, they don't
 constrain the search too much, and grounded in epidemiological
 knowledge. The <b>beta prior</b> <code>lognormal(-0.69, 0.5)</code>
 centers around 0.5 per day with a 95% credible interval of roughly
@@ -231,7 +231,7 @@ unrealistic scenarios (like beta = 100 or 1-day infectious periods),
 provide gentle regularization when data is sparse, and allow the data
 to dominate inference while implying reasonable R0 values (mean ≈ 5)
 that align with epidemiological expectations for infectious disease
-modeling.
+modeling.</p>
 
 <p>Finally, the likelihood is <code>cases ~ neg_binomial_2(y[,2],
 phi);</code>, because real epidemiological data almost always exhibits
@@ -345,7 +345,7 @@ phi              10.105200  0.131786   5.508760   4.686720    3.405800    8.9649
     SA24I0124</em></p>
 
     <a href="/">Index</a><br>
-    <a href="https://github.com/leoferres">github.com/crawshaw</a><br>
+    <a href="https://github.com/leoferres">github.com/leoferres</a><br>
     <a href="https://twitter.com/leoferres">twitter.com/leoferres</a><br>
     leoferres@gmail.com
 </body>

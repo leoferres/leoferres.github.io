@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stan-Based Epidemiological Models I: The Basics</title>
+<meta name="author" content="Leo's Blog" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Stan-Based Epidemiological Models I: The Basics</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org494c69c">Introduction</a></li>
+<li><a href="#orgdf1c3e8">The simplest models in Stan</a>
+<ul>
+<li><a href="#org8432715">SIR</a></li>
+<li><a href="#org14a9418">SEIR</a></li>
+</ul>
+</li>
+<li><a href="#org392b8da">Inference</a></li>
+<li><a href="#orgd2a8c3f">A real disease!</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org494c69c" class="outline-2">
+<h2 id="org494c69c">Introduction</h2>
+<div class="outline-text-2" id="text-org494c69c">
+<p>
+This post is primarily for my own understanding rather than to present new ideas. I'll walk through the latest epidemiological model developed by a leading group of researchers, one that incorporates behavioral factors like mobility, from the ground up. I couldn't find working Stan implementations. Partly due to version changes (e.g., renaming of the differential equation solver: from <code>integrate_ode_rk45</code> to <code>ode_rk45</code>) LLMs don't do that well on it either, so I've reconstructed the models here. Hopefully, this will be useful to others facing similar issues.
+</p>
+</div>
+</div>
+<div id="outline-container-orgdf1c3e8" class="outline-2">
+<h2 id="orgdf1c3e8">The simplest models in Stan</h2>
+<div class="outline-text-2" id="text-orgdf1c3e8">
+</div>
+<div id="outline-container-org8432715" class="outline-3">
+<h3 id="org8432715">SIR</h3>
+<div class="outline-text-3" id="text-org8432715">
+<p>
+Files are: <a href="../code/sir0.stan">sir0.stan</a>: the model, <a href="../code/sir0.py">sir0.py</a>: the runtime.
+</p>
+
+<p>
+SIR models divide a population into three compartments: S - Susceptible → I - Infected → R - Recovered. S: People who can catch the disease, I: People currently infected and contagious and R: People who have recovered (or died!) and are immune. The parameters of these models are
+</p>
+
+<ul class="org-ul">
+<li>beta: Transmission rate or how easily the disease spreads</li>
+<li>gamma: Recovery rate or how quickly people recover</li>
+<li>R0 = beta/gamma: Basic reproduction number or average new infections per infected person.</li>
+</ul>
+
+<p>
+The rate of transition from one state to the other can be modeled using a system of ordinary differential equations, with each equation describing the rate of change of one compartment.
+</p>
+
+<pre class="example" id="org4e3d326">
+dS/dt = -beta × S × I / N
+dI/dt = beta × S × I / N - gamma × I
+dR/dt = gamma × I
+</pre>
+
+<p>
+which in turn can be straightforwardly encoded in Stan as:
+</p>
+
+
+<div class="org-src-container">
+<pre class="src src-stan"><span style="color: #a020f0;">functions</span> { <span style="color: #228b22;">vector</span> <span style="color: #a0522d;">sir</span>(<span style="color: #228b22;">real</span> t, <span style="color: #228b22;">vector</span> y, <span style="color: #228b22;">real</span> beta, <span style="color: #228b22;">real</span> gamma) {
+    <span style="color: #228b22;">real</span> S <span style="color: #008b8b;">=</span> y[1];
+    <span style="color: #228b22;">real</span> I <span style="color: #008b8b;">=</span> y[2];
+    <span style="color: #228b22;">real</span> R <span style="color: #008b8b;">=</span> y[3];
+    <span style="color: #228b22;">real</span> N <span style="color: #008b8b;">=</span> S + I + R;
+
+    <span style="color: #228b22;">vector</span>[3] <span style="color: #a0522d;">dydt</span>;
+    dydt[1] <span style="color: #008b8b;">=</span> -beta * S * I / N;            <span style="color: #b22222;">// </span><span style="color: #b22222;">dS/dt</span>
+    dydt[2] <span style="color: #008b8b;">=</span> beta * S * I / N - gamma * I; <span style="color: #b22222;">// </span><span style="color: #b22222;">dI/dt</span>
+    dydt[3] <span style="color: #008b8b;">=</span> gamma * I;                    <span style="color: #b22222;">// </span><span style="color: #b22222;">dR/dt</span>
+
+    <span style="color: #a020f0;">return</span> dydt;
+  }
+}
+</pre>
+</div>
+
+<p>
+The most important part now is simply generating the quantities.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stan"><span style="color: #a020f0;">generated quantities</span> {
+  array[n_days] <span style="color: #228b22;">vector</span>[3] y <span style="color: #008b8b;">=</span> ode_rk45(sir, y0, t0, ts, beta, gamma);
+}
+</pre>
+</div>
+
+<p>
+You will see in <a href="../code/sir0.stan">sir0.stan</a> that there's an
+empty <code>model{...}</code> block. In Stan, the model block is where you
+typically specify your likelihood and priors for Bayesian
+inference. However, in this case, we're not doing any parameter
+estimation. We'll come back to this below
+</p>
+
+
+<div id="org6d7830a" class="figure">
+<p><img src="../img/sir0.png" alt="sir0.png" style="margin: 5px; width: 600px;" />
+</p>
+</div>
+
+<p>
+The data come from the Python file <a href="../code/sir0.py">sir0.py</a>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #a0522d;">N</span> = 1000 <span style="color: #b22222;"># </span><span style="color: #b22222;">Total population size.</span>
+
+<span style="color: #a0522d;">data</span> = {
+    <span style="color: #8b2252;">'n_days'</span>: 100,          <span style="color: #b22222;"># </span><span style="color: #b22222;">How long to run the simulation (100 days)</span>
+    <span style="color: #8b2252;">'t0'</span>: 0,                <span style="color: #b22222;"># </span><span style="color: #b22222;">Starting time (day 0)</span>
+    <span style="color: #8b2252;">'y0'</span>: [N-1, 1, 0],      <span style="color: #b22222;"># </span><span style="color: #b22222;">Initial conditions: [999, 1, 0]</span>
+    <span style="color: #8b2252;">'beta'</span>: 0.5,            <span style="color: #b22222;"># </span><span style="color: #b22222;">Transmission rate</span>
+    <span style="color: #8b2252;">'gamma'</span>: 0.1            <span style="color: #b22222;"># </span><span style="color: #b22222;">Recovery rate</span>
+}
+</pre>
+</div>
+
+<p>
+The initial conditions <code>y0: [N-1, 1, 0]</code> set up the epidemic starting
+point. <b>S0 = 999</b> means almost everyone in the population starts
+susceptible to the disease. <b>I0 = 1</b> indicates there is one initially
+infected person, often called "patient zero," who will start the
+outbreak. <b>R0 = 0</b> shows that nobody has recovered yet at the
+beginning. The model's parameters control how the disease spreads:
+<b>beta = 0.5</b> represents the transmission rate, meaning an infected
+person has an average of 0.5 disease-transmitting contacts per day
+with each susceptible person (when scaled by the total
+population). <b>gamma = 0.1</b> is the recovery rate, indicating that each
+infected person has a 10% chance of recovering each day, which
+translates to an average infectious period of 1/gamma = 10 days.
+</p>
+</div>
+</div>
+<div id="outline-container-org14a9418" class="outline-3">
+<h3 id="org14a9418">SEIR</h3>
+<div class="outline-text-3" id="text-org14a9418">
+<p>
+Files are <a href="../code/seir0.stan">seir0.stan</a> and <a href="../code/seir0.py">seir0.py</a>.
+</p>
+
+<p>
+The Exposed (E) compartment represents individuals who have been
+infected but are not yet infectious themselves. When a susceptible
+person contracts the disease, they first enter the E state where the
+pathogen is incubating - multiplying within their body but not yet at
+levels sufficient to transmit to others. After an average incubation
+period of 1/σ days, they transition to the Infectious (I) state where
+they can spread the disease. This is more realistic than the SIR
+model's assumption that people become immediately infectious upon
+infection, and is particularly important for diseases like COVID-19,
+influenza, or measles where there's a significant latent period
+between infection and infectiousness. The E compartment is easy to
+add. First we modify the equations, in Stan it would translate to:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stan">dydt[1] <span style="color: #008b8b;">=</span> -beta * S * I / N;              <span style="color: #b22222;">// </span><span style="color: #b22222;">dS/dt</span>
+dydt[2] <span style="color: #008b8b;">=</span> beta * S * I / N - sigma * E;   <span style="color: #b22222;">// </span><span style="color: #b22222;">dE/dt</span>
+dydt[3] <span style="color: #008b8b;">=</span> sigma * E - gamma * I;          <span style="color: #b22222;">// </span><span style="color: #b22222;">dI/dt</span>
+dydt[4] <span style="color: #008b8b;">=</span> gamma * I;                      <span style="color: #b22222;">// </span><span style="color: #b22222;">dR/dt</span>
+</pre>
+</div>
+
+<p>
+We just added the sigma parameter (ie., rate of progression from E to
+I).
+</p>
+
+
+<div id="orgea7a134" class="figure">
+<p><img src="../img/seir0.png" alt="seir0.png" style="margin: 5px; width: 600px;" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org392b8da" class="outline-2">
+<h2 id="org392b8da">Inference</h2>
+<div class="outline-text-2" id="text-org392b8da">
+<p>
+The above is essentially using Stan as a differential equation solver
+rather than a probabilistic programming language. Remember the
+"forward simulation" we were talking about above? So that means that
+we're taking the SIR differential equations and solving them forward
+in time from a starting point, without trying to fit the model to any
+data or estimate unknown parameters. In the forward case, we're
+asking: "Given these parameters, what happens?". In the inverse case,
+we'd ask: "Given what happened (data), what were the parameters?" Or,
+a bit closer to our examples here: from "Given beta and gamma, what
+epidemic do we get?", to "Given observed cases, what beta and gamma
+most likely produced them?".
+</p>
+
+<p>
+Now we'll demonstrate Bayesian inference using Markov Chain Monte
+Carlo (MCMC) methods applied to the classic SIR epidemiological
+model. To make this exercise concrete, we'll work with synthetic
+epidemic data representing fictional disease outbreaks, each with its
+own unique transmission characteristics and backstory. The complete
+code for generating these synthetic datasets can be found <a href="gendisease.html">here</a>. If you
+don't want to read the explanation of the file, you can find the
+python script in <a href="../code/sir_synthetic_data.py"><code>sir_synthetic_data.py</code></a>.
+</p>
+
+<p>
+The objective is to fit the cases brought about by these
+diseases. That is, fitting beta and gamma without knowing them a
+priori. <b>We</b> know them, but the model doesn't, and it should be able
+to recover them. You can find the model specification in
+<a href="../code/sir_infer.stan"><code>sir_infer.stan</code></a>, and we'll try to recover
+the data generated by our script, where the most important part is the
+following:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">generate_sir_synthetic_data</span>(
+    N=1000,
+    beta=0.8,  <span style="color: #b22222;"># </span><span style="color: #b22222;">&lt;-- this matters</span>
+    gamma=0.1, <span style="color: #b22222;"># </span><span style="color: #b22222;">&lt;-- this matters</span>
+    I0=1,
+    n_days=50,
+    observation_noise=<span style="color: #8b2252;">'poisson'</span>,
+    noise_scale=1.0,
+    seed=42
+    ...
+</pre>
+</div>
+
+<p>
+where <code>beta</code>.8= and <code>gamma</code>.1= is what we will try to recover. To do
+this, the two most important part of the model specification is now in
+the <code>model {...}</code> part of the Stan code. It will contain the
+likelihood function (our expectation of what the data will look like)
+and the priors. In Bayesian statistics, the priors are what we expect
+the data to be (given our previous knowledge) before actually seeing
+the data. In a way, it will guide the model to find the correct
+parameter values without having to explore an infinite value space.
+</p>
+
+<p>
+In our model, the priors are:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stan">beta <span style="color: #008b8b;">~</span> <span style="color: #0000ff;">lognormal</span>(-0.69, 0.5);
+gamma <span style="color: #008b8b;">~</span> <span style="color: #0000ff;">lognormal</span>(-2.30, 0.5);
+phi <span style="color: #008b8b;">~</span> <span style="color: #0000ff;">exponential</span>(0.1);
+</pre>
+</div>
+
+<p>
+These prior choices are <b>weakly informative</b>, they don't constrain the
+search too much, and grounded in epidemiological knowledge. The <b>beta
+prior</b> <code>lognormal(-0.69, 0.5)</code> centers around 0.5 per day with a 95%
+credible interval of roughly [0.2, 1.2], covering realistic
+transmission rates from slow-spreading diseases with interventions to
+highly transmissible infections like early COVID-19, while the
+lognormal distribution ensures positivity and allows for right-skewed
+behavior typical of transmission parameters. The <b>gamma prior</b>
+<code>lognormal(-2.30, 0.5)</code> centers around 0.1 per day (corresponding to a
+10-day infectious period) with a range covering 4-25 day infectious
+periods, which encompasses most respiratory infections from
+fast-recovering common colds to slower bacterial infections. The <b>phi
+prior</b> has a mean of 10 and mode at 0, weakly favoring less
+overdispersion while allowing the long tail to accommodate high
+overdispersion when the data demands it, with small phi values
+indicating noisy data and large phi values approaching Poisson-like
+behavior. Together, these priors encode basic biological constraints
+(positivity), rule out completely unrealistic scenarios (like beta =
+100 or 1-day infectious periods), provide gentle regularization when
+data is sparse, and allow the data to dominate inference while
+implying reasonable R0 values (mean ≈ 5) that align with
+epidemiological expectations for infectious disease modeling.
+</p>
+
+<p>
+Finally, the likelihood is <code>cases ~ neg_binomial_2(y[,2], phi);</code>,
+because real epidemiological data almost always exhibits
+<b>overdispersion</b>, the variance is much larger than the mean, due to
+reporting inconsistencies, testing variability, behavioral
+heterogeneity, spatial clustering, and measurement error that our
+simple SIR model doesn't capture. A Poisson likelihood would assume
+variance equals the mean, which is unrealistic for disease
+surveillance data. The negative binomial distribution naturally
+extends Poisson to handle overdispersion with mean <code>E[cases] = y[,2]</code>
+(the infected count from our SIR model) and variance <code>Var[cases] =
+mu + mu²/phi</code>, where phi controls the overdispersion; ie, large phi
+behaves like Poisson while small phi allows high overdispersion. This
+likelihood essentially says "the observed cases are drawn from a
+distribution centered at our model's predicted infected count, but
+with additional variance controlled by phi to account for all the
+real-world noise our ODE doesn't capture." This approach is
+empirically supported since count data in epidemiology is almost
+always overdispersed, provides a flexible variance structure that's
+robust to model misspecification, remains computationally efficient,
+and gives interpretable parameters where φ directly measures how much
+extra variability exists beyond what a perfect model would predict,
+making our inferences more robust and realistic by acknowledging that
+our SIR model is a simplified approximation of reality.
+</p>
+
+<p>
+So, does our model fit the generated data? Let's look at some plots
+generated by running the python script in
+<a href="../code/sir_infer.py"><code>sir_infer.py</code></a>:
+</p>
+
+
+<div id="org58a645b" class="figure">
+<p><img src="../img/sir_inference_results.png" alt="sir_inference_results.png" style="margin: 5px; width: 900px;" />
+</p>
+</div>
+
+<p>
+or, in numbers:
+</p>
+
+<pre class="example" id="org8f4a57f">
+                 Mean      MCSE  StdDev        MAD       5%      50%      95%  ESS_bulk  ESS_tail  R_hat
+lp__         -203.918  0.033031   1.318   1.008910 -206.610 -203.558 -202.536   1777.15   2417.88  1.000
+beta            1.183  0.000359   0.018   0.018110    1.154    1.182    1.212   2742.12   2336.94  1.000
+gamma           0.100  0.000022   0.001   0.001233    0.098    0.100    0.102   3098.30   2665.67  1.000
+phi            91.223  0.433643  25.389  23.988400   54.080   88.724  137.356   3350.32   2747.04  1.000
+...
+[205 rows x 10 columns]
+</pre>
+
+<p>
+The parameter recovery is remarkably precise (in this toy example,
+reality is not like that, unfortunately). For <b>beta</b> (transmission
+rate), our posterior mean of 1.183 is extremely close to the true
+value of 1.2 we used to generate the data, representing only a 1.4%
+difference. The 95% credible interval [1.154, 1.213] captures the true
+value with high confidence, and the narrow standard deviation of 0.018
+indicates excellent precision.
+</p>
+
+<p>
+Similarly, <b>gamma</b> (recovery rate) shows outstanding recovery with a
+posterior mean of 0.101 versus the true value of 0.1 - a 1%
+difference. The extremely tight 95% credible interval [0.099, 0.103]
+and minuscule standard deviation of 0.001 demonstrate the model's
+ability to precisely estimate this parameter from the observed case
+counts alone. This translates to a basic reproduction number R0 =
+beta/gamma = 1.183/0.101 = 11.7, which closely matches the true R0 =
+1.2/0.1 = 12 used in data generation (only 2.5% difference).
+</p>
+
+<p>
+The model diagnostics are also excellent: all R-hat values are very
+close to 1.0 (indicating convergence), and the effective sample sizes
+(ESS) are well above 1000, confirming reliable posterior
+estimates. The fit between observed and predicted cases (bottom left
+panel) shows the model capturing the epidemic curve's shape and
+magnitude with high fidelity, while the inferred SIR trajectories
+(bottom right) recreate the full epidemic dynamics that were never
+directly observed, demonstrating the power of mechanistic modeling to
+recover underlying epidemiological processes from limited surveillance
+data.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd2a8c3f" class="outline-2">
+<h2 id="orgd2a8c3f">A real disease!</h2>
+<div class="outline-text-2" id="text-orgd2a8c3f">
+<p>
+There's <a href="https://github.com/reconverse/outbreaks.git">github repo</a>
+with a few files that can serve as an example. You can either download
+a specific file from the repo's
+<a href="https://github.com/reconverse/outbreaks/tree/master/data">data
+directory</a> or clone all of it. I've written a small python script
+<a href="../code/convert2csv.py">convert2csv.py</a> that reads the <code>RData</code> files
+and transform them into <code>csv</code> files.
+</p>
+
+<p>
+I have chosen a simple flu outbreak, appearing in <code>influenza_england_1978_school.csv</code> in the files above.
+</p>
+
+<pre class="example" id="org52b5748">
+                 Mean   MCSE   StdDev    MAD       5%      50%      95%  ESS_bulk  ESS_tail  R_hat
+lp__          -71.844  0.060   1.628   1.182  -74.967  -71.397  -70.221   1111.97   981.472  1.001
+beta            1.716  0.001   0.062   0.051    1.623    1.717    1.812   1804.90  1017.500  1.000
+gamma           0.511  0.001   0.049   0.041    0.434    0.514    0.581   1633.92  1150.480  1.000
+phi            10.105  0.131   5.508   4.686    3.405    8.964   20.467   1437.19  1373.830  1.000
+</pre>
+
+<p>
+Just like in the previous case, the model performs quite well, even without any modifications. We could have, for example, modified the priors with a bit more specific information about influenza that could have brought down the errors, but there's no need to do that at this point. This is just an example. We will sophisticate this in future posts so that we can account for our potential dengue outbreaks.
+</p>
+
+
+<div id="org4d6f8c0" class="figure">
+<p><img src="../img/flu_inference_results.png" alt="flu_inference_results.png" style="margin: 5px; width: 900px;" />
+</p>
+</div>
+
+<p>
+<i>This post also appears on Substack.</i>
+</p>
+
+<p>
+<i>This post has been written with the support of Fondo de Investigación
+y Desarrollo en Salud – Fonis, Project SA24I0124</i>
+</p>
+
+<p>
+&#x2014;
+</p>
+
+<p>
+Now you can go <a href="../index.html">home</a> or read <a href="file:///home/leo/Dropbox/leoferres.github.io/org/public/blog/dengue.html">the second part</a> of this series.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

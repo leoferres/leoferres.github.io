@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stan-Based Epidemiological Models II: Modeling Dengue</title>
+<meta name="author" content="Leo Ferres" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Stan-Based Epidemiological Models II: Modeling Dengue</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgf749061">Introduction</a></li>
+<li><a href="#orgff488c8">Modeling dengue</a></li>
+<li><a href="#org46e604a">Mathematical framework for coupled SEIR-SEI dynamics</a>
+<ul>
+<li><a href="#orgd059bef">Core differential equations</a>
+<ul>
+<li><a href="#org35b666b">Human population dynamics (SEIR):</a></li>
+<li><a href="#org126bf24">Mosquito population dynamics (SEI):</a></li>
+</ul>
+</li>
+<li><a href="#org24c535d">Critical coupling mechanism</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf749061" class="outline-2">
+<h2 id="orgf749061">Introduction</h2>
+<div class="outline-text-2" id="text-orgf749061">
+<p>
+This post continues the exploration of epidemiological models
+introduced in a previous entry. Here, I present the foundational
+version of the model that will underpin our project on forecasting
+potential dengue outbreaks and identifying transmission corridors
+shaped by climate change in Santiago, Chile.
+</p>
+</div>
+</div>
+<div id="outline-container-orgff488c8" class="outline-2">
+<h2 id="orgff488c8">Modeling dengue</h2>
+<div class="outline-text-2" id="text-orgff488c8">
+<p>
+Vector-borne diseases require coupled mathematical models that capture
+transmission dynamics between human hosts and mosquito vectors. For
+dengue fever, the simplest effective model combines SEIR dynamics for
+humans with SEI dynamics for mosquitoes, creating a system of seven
+differential equations that captures the essential biological
+processes. This minimal framework provides the mathematical foundation
+needed for Stan implementation while incorporating the most critical
+epidemiological parameters.
+</p>
+</div>
+</div>
+<div id="outline-container-org46e604a" class="outline-2">
+<h2 id="org46e604a">Mathematical framework for coupled SEIR-SEI dynamics</h2>
+<div class="outline-text-2" id="text-org46e604a">
+<p>
+The fundamental structure links human
+susceptible-exposed-infectious-recovered dynamics with mosquito
+susceptible-exposed-infectious dynamics through force of infection
+terms that represent transmission between species.
+</p>
+</div>
+<div id="outline-container-orgd059bef" class="outline-3">
+<h3 id="orgd059bef">Core differential equations</h3>
+<div class="outline-text-3" id="text-orgd059bef">
+</div>
+<div id="outline-container-org35b666b" class="outline-4">
+<h4 id="org35b666b">Human population dynamics (SEIR):</h4>
+<div class="outline-text-4" id="text-org35b666b">
+<pre class="example" id="org1898df0">
+dS_h/dt = -(b β_h I_m S_h)/N_h
+dE_h/dt = (b β_h I_m S_h)/N_h - k_h E_h
+dI_h/dt = k_h E_h - γ_h I_h
+dR_h/dt = γ_h I_h
+</pre>
+
+<p>
+The infection term (b β<sub>h</sub> I<sub>m</sub> S<sub>h</sub>)/N<sub>h</sub> represents the rate at which
+susceptible humans become infected through mosquito bites, and it
+captures the fundamental mechanics of dengue transmission. This term
+depends on several key factors working together: the number of
+infectious mosquitoes in the population (I<sub>m</sub>), the biting rate or how
+frequently each mosquito bites humans per day (b), the probability
+that a bite from an infectious mosquito actually transmits the virus
+to a susceptible person (β<sub>h</sub>), and the number of susceptible people
+available to be bitten (S<sub>h</sub>). The term is divided by the total human
+population (N<sub>h</sub>) to convert this into a proper rate per
+capita. Essentially, this tells us that disease transmission increases
+when there are more infectious mosquitoes around, when mosquitoes bite
+more frequently, when each bite is more likely to cause infection, and
+when there are more susceptible people in the population. It's scaled
+by population size so that larger populations don't automatically have
+higher per-person infection rates.
+</p>
+
+<p>
+The exposed humans equation dE<sub>h</sub>/dt = (b β<sub>h</sub> I<sub>m</sub> S<sub>h</sub>)/N<sub>h</sub> - k<sub>h</sub> E<sub>h</sub>
+describes how people flow into and out of the incubation stage, where
+the inflow is exactly the infection term from susceptible humans
+(people who just got bitten and infected), while the outflow k<sub>h</sub> E<sub>h</sub>
+represents exposed people finishing their incubation period and
+becoming infectious at rate k<sub>h</sub>. The infectious humans equation
+dI<sub>h</sub>/dt = k<sub>h</sub> E<sub>h</sub> - γ<sub>h</sub> I<sub>h</sub> shows that people become infectious after
+incubation (inflow k<sub>h</sub> E<sub>h</sub>) and then recover at rate γ<sub>h</sub>, making
+γ<sub>h</sub> I<sub>h</sub> the number of people recovering per day. Finally, the
+recovered equation dR<sub>h</sub>/dt = γ<sub>h</sub> I<sub>h</sub> simply captures that all the
+people recovering from infection (γ<sub>h</sub> I<sub>h</sub>) join the imμne
+population, with no outflow since recovered individuals remain imμne
+to that dengue strain.
+</p>
+</div>
+</div>
+<div id="outline-container-org126bf24" class="outline-4">
+<h4 id="org126bf24">Mosquito population dynamics (SEI):</h4>
+<div class="outline-text-4" id="text-org126bf24">
+<p>
+The mosquito model is simpler: they don't recover, just die. But we
+have another term here, birth and death rates of mosquitoes.
+</p>
+
+<pre class="example" id="org9b78c95">
+dS_m/dt = μ_m N_m - (b β_m I_h S_m)/N_h - μ_m S_m
+dE_m/dt = (b β_m I_h S_m)/N_h - k_m E_m - μ_m E_m
+dI_m/dt = k_m E_m - μ_m I_m
+</pre>
+
+<p>
+The mosquito population dynamics follow a simpler SEI pattern since
+mosquitoes don't recover from dengue infection. The susceptible
+mosquito equation dS<sub>m</sub>/dt = μ<sub>m</sub> N<sub>m</sub> - (b β<sub>m</sub> I<sub>h</sub> S<sub>m</sub>)/N<sub>h</sub> - μ<sub>m</sub> S<sub>m</sub>
+shows that new mosquitoes are constantly born at rate μ<sub>m</sub> N<sub>m</sub> (where
+μ<sub>m</sub> is the mosquito mortality rate of about 0.134-0.164 per day,
+corresponding to their short 14-28 day lifespan), while susceptible
+mosquitoes leave this compartment either by getting infected when they
+bite infectious humans at rate (b β<sub>m</sub> I<sub>h</sub> S<sub>m</sub>)/N<sub>h</sub> (where b is the
+biting rate of ~1 bite per day, β<sub>m</sub> is the human-to-mosquito
+transmission probability of 0.3-0.9, and I<sub>h</sub> is the number of
+infectious humans) or by dying at rate μ<sub>m</sub> S<sub>m</sub>. The exposed mosquito
+equation dE<sub>m</sub>/dt = (b β<sub>m</sub> I<sub>h</sub> S<sub>m</sub>)/N<sub>h</sub> - k<sub>m</sub> E<sub>m</sub> - μ<sub>m</sub> E<sub>m</sub> captures
+mosquitoes that have acquired the virus but are still in the extrinsic
+incubation period, flowing in from new infections and flowing out
+either by completing incubation at rate k<sub>m</sub> (approximately 1/10 per
+day for the standard 8-12 day incubation period) or by dying. Finally,
+the infectious mosquito equation dI<sub>m</sub>/dt = k<sub>m</sub> E<sub>m</sub> - μ<sub>m</sub> I<sub>m</sub>
+represents mosquitoes that have completed viral development and can
+now transmit dengue to humans, with inflow from completed incubation
+and outflow only through death since mosquitoes remain infectious for
+life.
+</p>
+
+<p>
+But why did we not include births and deaths in the human SEIR
+model. For short-term dengue outbreaks lasting weeks to months, it
+would not make sense to include human births and deaths because these
+demographic terms (μ<sub>h</sub>, μ<sub>m</sub>) are often negligible compared to
+disease dynamics. Consider the timescales involved: human lifespan
+averages around 70 years, giving a daily mortality rate μ<sub>h</sub> of
+approximately 0.00004 per day, while dengue incubation takes about 5.5
+days (k<sub>h</sub> ≈ 0.18/day) and recovery occurs in roughly 6 days (γ<sub>h</sub> ≈
+0.17/day). This means the disease processes operate about 4,000 times
+faster than human demographics, making births and deaths essentially
+irrelevant noise when studying acute outbreaks where the epidemic
+dynamics unfold over weeks rather than years, as in this example case.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org24c535d" class="outline-3">
+<h3 id="org24c535d">Critical coupling mechanism</h3>
+<div class="outline-text-3" id="text-org24c535d">
+<p>
+&#x2014;
+</p>
+
+<p>
+Now you can go <a href="../index.html">home</a> or read <a href="file:///home/leo/Dropbox/leoferres.github.io/org/public/blog/modeling_intro.html">the first part</a> of this series.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

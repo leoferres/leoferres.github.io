@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+Leo's Home Page -- IELE 2025 1
+</title>
+</head>
+<body>
+<h1>IELE 2025 1</h1>
+<b>Prof:</b> Leo Ferres
+<h2>Overview</h2>
+<p>
+Curious how scientists predict outbreaks before they
+happen?  Wonder what it takes to build models that inform real-world
+public health decisions?  Want to use Bayesian statistics, geospatial
+tools, and real data to tackle an actual crisis?  Like the idea of
+working in teams to solve a fast-moving, high-stakes epidemiological
+puzzle?
+</p>
+<p>
+In this course, you'll take on the role of data scientists racing to
+model the spread of dengue in Chile, a disease on the move thanks to
+climate change, urbanization, and global travel. You'll collect messy,
+real-world data, learn modern tools like Python, Stan, and QGIS, and
+build predictive models that aim to forecast where the next outbreak
+will hit. This is not a toy problem. It's the kind of challenge public
+health agencies face every day. By the end, you'll not only understand
+the science of prediction, you’ll have practiced it.
+</p>
+
+<h2>Teaching philosophy</h2>
+
+This is not a typical course and that's by design.
+
+Rather than traditional lectures, this is a <b>project-driven,
+skill-based course</b> designed to immerse you in the actual practice
+of scientific modeling and data analysis. You won't be sitting through
+lectures while I walk you through material. Instead, you'll learn by
+doing, tackling real-world problems using tools and methods drawn from
+contemporary data science and epidemiology.
+
+Every week (or sometimes every two weeks, depending on the
+complexity), you'll receive an assignment that introduces a specific
+type of skill or analytical technique. These are not isolated
+exercises—they build toward a larger goal: constructing a functioning
+predictive model of dengue spread in Chile. Think of each assignment
+as a piece of that puzzle.
+
+The structure is intentionally <b>inverted</b>: I won't be lecturing
+on each topic in advance. Instead, I'll guide you to <b>high-quality
+external tutorials</b>, documentation, and video content (e.g., from
+YouTube or official project pages). You'll study the material
+independently <b>before</b> class. Then, during class, we'll use our
+time together to dive deeper, discuss the content, troubleshoot your
+work, and collaboratively address any roadblocks.
+
+<b>To make this work, your engagement is essential.</b> You're
+expected to come to class having reviewed the assigned materials,
+having tried the assignment, and <b>critically having real
+questions</b>. The learning will happen through interaction,
+collaboration, and problem-solving. My role is not to lecture, but to
+help you think, guide you through complexity, and learn alongside you
+as a team.
+
+This course is designed to feel closer to a research lab or
+collaborative project environment than a lecture hall. If you're
+curious, self-directed, and ready to take on challenging, meaningful
+problems, you'll thrive here.
+
+<h2>Topics</h2>
+
+This is a data-driven course on modeling spatial, environmental, and
+epidemiological phenomena using Bayesian methods. Emphasis is on
+integrating diverse datasets and implementing models in Stan and
+Python. Topics include:
+
+<ul>
+  <li>Tools for data science workflows
+    <ul>
+      <li>Jupyter, VSCode, QGIS</li>
+      <li>Python: <code>pandas</code>, <code>geopandas</code>, <code>seaborn</code></li>
+      <li>Obsidian, Zotero, Overleaf, GitHub</li>
+    </ul>
+  </li>
+  <li>GIS and spatial data
+    <ul>
+      <li>Administrative boundaries vs. grid systems</li>
+    </ul>
+  </li>
+  <li>Population estimation
+    <ul>
+      <li>Census vs. satellite-based proxies (e.g., nighttime lights)</li>
+    </ul>
+  </li>
+  <li>Environmental monitoring
+    <ul>
+      <li>Ground sensors vs. satellite data</li>
+    </ul>
+  </li>
+  <li>Air quality
+    <ul>
+      <li>Data fusion from sensors and satellites</li>
+    </ul>
+  </li>
+  <li>Epidemiological and socio-economic datasets</li>
+  <li>Bayesian data analysis
+    <ul>
+      <li>Introduction to Bayesian inference</li>
+      <li>Prior specification and prior predictive checks</li>
+      <li>Bayesian workflow in Stan</li>
+    </ul>
+  </li>
+  <li>Regression modeling
+    <ul>
+      <li>Linear regression in Stan</li>
+      <li>Multiple regression with post-stratification (MRP)</li>
+      <li>Negative binomial regression for count data (e.g., dengue cases)</li>
+    </ul>
+  </li>
+  <li>Compartmental disease models
+    <ul>
+      <li>SIR and SEIR models in Stan</li>
+      <li>Model building and validation workflows</li>
+    </ul>
+  </li>
+  <li>Applications
+    <ul>
+      <li>Mobility and transportation data</li>
+      <li>Health, pollution, and socio-economic integration</li>
+      <li>Modeling dengue dynamics in Chile</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Assignments</h2>
+
+<p><b>General Description:</b> This course is structured around five
+cumulative assignments that progressively build technical and
+analytical skills in geospatial analysis, environmental modeling, and
+Bayesian inference, with a focus on public health and
+socio-environmental data. Each task introduces new tools and concepts
+while reinforcing prior work, culminating in a final project involving
+Bayesian disease modeling with real-world data.</p>
+
+<ul>
+  <li><b>Assignment 1: QGIS Project Setup and Spatial Grids [<a href="files/tarea1.md">markdown</a>, <a href="files/tarea1.pdf">pdf</a></b>, in Spanish]<br>
+  Students install QGIS, download administrative and infrastructure
+  data for a South American country, and create two spatial grids
+  (500m and 250m resolution). This forms the foundation for all
+  subsequent analyses.
+  </li>
+
+  <li><b>Assignment 2: Population, Airports, and Nightlights [<a href="files/tarea2.md">markdown</a>, <a href="files/tarea2.pdf">pdf</a></b>, in Spanish]<br>
+  Using Python, students build choropleth maps of population, overlay
+  airport data, and correlate official population statistics with
+  satellite nightlight data to explore proxies for human activity.
+  </li>
+
+  <li><b>Assignment 3: Climate Data and Temporal Trends
+  [<a href="files/tarea3.md">markdown</a>, <a href="files/tarea3.pdf">pdf</a></b>, in Spanish]<br> Students analyze
+  multiyear climatic variables (temperature, rainfall, humidity, wind)
+  using netCDF data. They map spatial patterns, identify climatic
+  zones, and detect long-term trends and extremes through temporal
+  analysis.
+  </li>
+
+  <li><b>Assignment 4: Air Quality and Pollution Modeling [<a href="files/tarea4.md">markdown</a>, <a href="files/tarea4.pdf">pdf</a></b>, in Spanish]<br> This
+  task focuses on analyzing air pollution data (PM2.5, PM10, NO₂, SO₂,
+  O₃). Students examine temporal dynamics, model pollution episodes,
+  and correlate pollution with demographic and meteorological factors,
+  culminating in predictive models.</li>
+
+  <li><b>Assignment 5: Bayesian Modeling of Disease and Inequality
+  [<a href="files/tarea5.md">markdown</a>, <a href="files/tarea5.pdf">pdf</a></b>, in Spanish]<br> Students
+  integrate socioeconomic indicators and epidemiological data (ideally
+  dengue) to fit Bayesian regression models using Stan. The goal is to
+  identify key predictors of disease presence and quantify spatial
+  risk and uncertainty.
+  </li>
+</ul>
+
+</body>

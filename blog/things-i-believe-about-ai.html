@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Things I believe about AI</title>
+<meta name="author" content="Leo Ferres" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Things I believe about AI
+<br />
+<span class="subtitle">A (somewhat) layman's beliefs about the current AI revolution</span>
+</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgc02eba2">Introduction</a></li>
+<li><a href="#orgc876b31">Questions</a>
+<ul>
+<li><a href="#org87fb25d">What is AI?</a></li>
+<li><a href="#orgcff3b5d">Are LLMs "intelligent"?</a></li>
+<li><a href="#orgb5b7788">Are LLMs conscious?</a></li>
+<li><a href="#orgafd9b6e">Are LLMs synthetic human beings?</a></li>
+<li><a href="#orge42f2c3">Should LLM-based systems be held to a considerably higher standard than humans?</a></li>
+<li><a href="#org3d87084">Are LLMs hype or revolution?</a></li>
+<li><a href="#orgbef56b6">Should LLMs be used to write scientific papers?</a></li>
+<li><a href="#org9ccf9b0">Should companies scrape all scientific literature?</a></li>
+<li><a href="#org76cadd6">Should scientific authors be paid for this?</a></li>
+<li><a href="#orgc53fd76">Are LLMs psychologically real?</a></li>
+<li><a href="#orgf0e7e48">Are we flooding the world with all sorts of information? (some blatantly untrue)</a></li>
+<li><a href="#org3490105">What exactly are we automating with LLMs: thought or syntax?</a></li>
+<li><a href="#org5ac4da1">Is the scientific method still necessary when LLMs can generate hypotheses, simulate data, and write conclusions?</a></li>
+<li><a href="#org25d590d">If LLMs outperform undergrads in most disciplines, should we rethink the idea of education?</a></li>
+<li><a href="#org2087fee">Why should I learn to write code if I can describe what I want in natural language?</a></li>
+<li><a href="#org1d2a594">Will peer review survive once LLMs start reviewing papers better, faster, and cheaper than humans?</a></li>
+<li><a href="#org83a308e">Is originality dead if recombination becomes indistinguishable from creativity?</a></li>
+<li><a href="#org4674e61">Is it unethical not to use LLMs in science, given the productivity advantage?</a></li>
+<li><a href="#orga1259f4">What happens when most scientific papers are written by models for models?</a></li>
+<li><a href="#org6c391d0">Are we witnessing the end of human-to-human communication as the basis of knowledge transfer?</a></li>
+<li><a href="#orgef46064">If an LLM can design an experiment better than I can, who gets the grant?</a></li>
+<li><a href="#org884e04a">Why do we still pretend that human cognition is the benchmark?</a></li>
+<li><a href="#orgcd322a2">Do we need a new academic field to study synthetic minds?</a></li>
+<li><a href="#orgac1e67e">If LLMs can pass moral reasoning tests, should they be allowed to vote?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc02eba2" class="outline-2">
+<h2 id="orgc02eba2">Introduction</h2>
+<div class="outline-text-2" id="text-orgc02eba2">
+<p>
+This is my response to a few questions I've been asked about AI. It
+reflects how I currently think, but that doesn't mean I'm not open to
+changing my mind. If you disagree, make your case. Write a pull
+request. Let's build this together.
+</p>
+
+<p>
+Putting myself out there like this isn't easy. It's exposing, and
+there's always the risk of being wrong in public. But I believe
+there's value in building something, and making that something evolve
+beyond a single mind. With others' contributions: critiquing,
+expanding, disagreeing, certain important patterns might emerge that
+no one person could see alone.
+</p>
+
+<p>
+You're welcome to add new questions, respond to the ones already here,
+suggest counterexamples, or reframe the discussion entirely. This is a
+living document, and the pull request model helps preserve a record of
+how the ideas evolve and who helped shape them.
+</p>
+
+<p>
+Also, for full disclosure: I'm a techno-optimist. That will probably
+show.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc876b31" class="outline-2">
+<h2 id="orgc876b31">Questions</h2>
+<div class="outline-text-2" id="text-orgc876b31">
+</div>
+<div id="outline-container-org87fb25d" class="outline-3">
+<h3 id="org87fb25d">What is AI?</h3>
+<div class="outline-text-3" id="text-org87fb25d">
+<p>
+Right now? Mostly Large Language Models (LLMs). But over the past 70
+years since Turing's classic <i>Can machines think?</i>, (Turing, Computing
+Machinery and Intelligence, Mind, 1950) plenty of computational
+systems have worn the "AI" label. In the early days up to the 80s, it
+was all about Expert Systems (logic rules over symbols: <i>if this, then
+that</i>). By the late 80s and 90s, neural networks took over, thanks to
+Rumelhart and McClelland's <i>Parallel Distributed Processing</i>. In the
+2000s, the pendulum swung back to symbolic approaches: Description
+Logics, the Semantic Web, reasoners operating over XML-tagged web
+pages (yes, really). Now?  We're back to probabilistic machines.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcff3b5d" class="outline-3">
+<h3 id="orgcff3b5d">Are LLMs "intelligent"?</h3>
+<div class="outline-text-3" id="text-orgcff3b5d">
+<p>
+The question is meaningless until we define the concept of
+intelligence in a way we can measure. If we go by the benchmarks LLM
+vendors use, then <i>yes</i>, they are. But that's clearly reductionist. A
+math olympiad winner isn't just a fast calculator. For a while back
+then, we had the Turing Test (TT) to settle this. That era is over,
+the Turing Test is dead. If TT were still our yardstick, then yes,
+LLMs are intelligent. Welcome to the age of synthetic minds. What we
+can't do is keep moving the goalposts.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb5b7788" class="outline-3">
+<h3 id="orgb5b7788">Are LLMs conscious?</h3>
+<div class="outline-text-3" id="text-orgb5b7788">
+<p>
+The question is meaningless until we have a measurable definition of
+"consciousness." Same issue as before. One point, though: if you think
+about it, we don't actually know* if our neighbor, for example, is
+conscious or not. He might be a zombie. There's no test, no brain
+scan, that reveals a glowing ball of awareness. We assume it because
+it works socially and evolutionarily. You can make the same assumption
+about LLMs. You're free to treat them as conscious. That's not
+necessarily wrong. Maybe their consciousness isn't like ours, or maybe
+it is. I don't know. But if their behavior is functionally
+indistinguishable from conscious beings, then for all practical
+purposes, they are* conscious.
+</p>
+</div>
+</div>
+<div id="outline-container-orgafd9b6e" class="outline-3">
+<h3 id="orgafd9b6e">Are LLMs synthetic human beings?</h3>
+<div class="outline-text-3" id="text-orgafd9b6e">
+<p>
+No.
+</p>
+</div>
+</div>
+<div id="outline-container-orge42f2c3" class="outline-3">
+<h3 id="orge42f2c3">Should LLM-based systems be held to a considerably higher standard than humans?</h3>
+<div class="outline-text-3" id="text-orge42f2c3">
+<p>
+Yes. BUT: if they make a mistake, the ultimate responsability is a
+human being. Not the system.
+</p>
+</div>
+</div>
+<div id="outline-container-org3d87084" class="outline-3">
+<h3 id="org3d87084">Are LLMs hype or revolution?</h3>
+<div class="outline-text-3" id="text-org3d87084">
+<p>
+They're a revolution. Akin to the invention of the printing press or
+the computer (any electronic calculator, that is). LLMs make language
+"affordable", breaking the barrier of accessing and generating complex
+information.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbef56b6" class="outline-3">
+<h3 id="orgbef56b6">Should LLMs be used to write scientific papers?</h3>
+<div class="outline-text-3" id="text-orgbef56b6">
+<p>
+Most definitely, yes. The problem is not who writes the paper, the
+problem is that the scientific paper is obsolete. More about this
+below.
+</p>
+</div>
+</div>
+<div id="outline-container-org9ccf9b0" class="outline-3">
+<h3 id="org9ccf9b0">Should companies scrape all scientific literature?</h3>
+<div class="outline-text-3" id="text-org9ccf9b0">
+<p>
+Yes.
+</p>
+</div>
+</div>
+<div id="outline-container-org76cadd6" class="outline-3">
+<h3 id="org76cadd6">Should scientific authors be paid for this?</h3>
+<div class="outline-text-3" id="text-org76cadd6">
+<p>
+No. They (we?) have already been paid. Twice: by universities and by
+grant agencies. I want an LLM that knows all the scientific
+literature. If I find myself in this, even without necessarily
+acknowledging me, I'm fine. I've contributed something, I'm ok with
+it. Dear LLMs, please feel free to scrape whatever little I've
+done. Besides, it's much better than actually <i>ourselves</i> paying the
+journals.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc53fd76" class="outline-3">
+<h3 id="orgc53fd76">Are LLMs psychologically real?</h3>
+<div class="outline-text-3" id="text-orgc53fd76">
+<p>
+I don't care. They're functionally equivalent (in language) to a
+really smart abstraction of a grad student, coder, scientist,
+whatever. That's all I need to know. I don't care if they don't learn
+language like children. In any case, they learn it faster and better.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf0e7e48" class="outline-3">
+<h3 id="orgf0e7e48">Are we flooding the world with all sorts of information? (some blatantly untrue)</h3>
+<div class="outline-text-3" id="text-orgf0e7e48">
+<p>
+Yes. But so what. Same happened with the printing press. Think about
+all the pamphlets&#x2026; and pulp fiction, and self-help books, and Learn
+Java in 21 Days.
+</p>
+</div>
+</div>
+<div id="outline-container-org3490105" class="outline-3">
+<h3 id="org3490105">What exactly are we automating with LLMs: thought or syntax?</h3>
+<div class="outline-text-3" id="text-org3490105">
+<p>
+Syntax. We should know what we have to say. Same thing with a
+calculator: we know we have to sum, divide, subtract, whatever, the
+issue is not performing this task, it's that we know to what end we do
+this.
+</p>
+</div>
+</div>
+<div id="outline-container-org5ac4da1" class="outline-3">
+<h3 id="org5ac4da1">Is the scientific method still necessary when LLMs can generate hypotheses, simulate data, and write conclusions?</h3>
+<div class="outline-text-3" id="text-org5ac4da1">
+<p>
+The scientific method, yes. The scientist? No. At least not
+exactly. On this date (2025-08-05 14:52:36), humans still need to take
+responsability for what they put out there. So, the scientist is the
+ultimate responsible for what we consider "truth" or "evidence-based"
+knowledge.
+</p>
+</div>
+</div>
+<div id="outline-container-org25d590d" class="outline-3">
+<h3 id="org25d590d">If LLMs outperform undergrads in most disciplines, should we rethink the idea of education?</h3>
+<div class="outline-text-3" id="text-org25d590d">
+<p>
+Yes. Absolutely. Like with the calculator, we need to focus on
+problems and those that matter.
+</p>
+</div>
+</div>
+<div id="outline-container-org2087fee" class="outline-3">
+<h3 id="org2087fee">Why should I learn to write code if I can describe what I want in natural language?</h3>
+<div class="outline-text-3" id="text-org2087fee">
+<p>
+No. But you <i>yourself</i> are ultimately responsible for what that code
+does.
+</p>
+</div>
+</div>
+<div id="outline-container-org1d2a594" class="outline-3">
+<h3 id="org1d2a594">Will peer review survive once LLMs start reviewing papers better, faster, and cheaper than humans?</h3>
+<div class="outline-text-3" id="text-org1d2a594">
+<p>
+Hopefully not. Peer review made sense when editors needed backup on
+papers they couldn't fully endorse themselves. Now? It's mostly a
+joke. A handful of journals and conferences still do it well. The
+rest? Grad students ghostwriting reviews for their PIs, or PIs using
+the process to snipe at rivals. Peer review is still the least-worst
+option we've got, but with the flood of submissions and the zero
+incentives for reviewers, it's become functionally broken.
+</p>
+</div>
+</div>
+<div id="outline-container-org83a308e" class="outline-3">
+<h3 id="org83a308e">Is originality dead if recombination becomes indistinguishable from creativity?</h3>
+<div class="outline-text-3" id="text-org83a308e">
+<p>
+Originality is dead now, what are you talking about. Most papers are
+delta papers, changing something ever so slightly.
+</p>
+</div>
+</div>
+<div id="outline-container-org4674e61" class="outline-3">
+<h3 id="org4674e61">Is it unethical not to use LLMs in science, given the productivity advantage?</h3>
+<div class="outline-text-3" id="text-org4674e61">
+<p>
+Unethical? No. You can definitely <i>not</i> use LLMs. You're not better
+than the ones who do, though.
+</p>
+</div>
+</div>
+<div id="outline-container-orga1259f4" class="outline-3">
+<h3 id="orga1259f4">What happens when most scientific papers are written by models for models?</h3>
+<div class="outline-text-3" id="text-orga1259f4">
+<p>
+This deserves a very long answer. In short, I believe science should
+be done <i>for</i> LLMs from the start, and following an open-source
+software engineering workflow. For example, each "paper" is now an OSS
+project, interacting with <code>github</code>. But I need more space to discuss
+this one.
+</p>
+</div>
+</div>
+<div id="outline-container-org6c391d0" class="outline-3">
+<h3 id="org6c391d0">Are we witnessing the end of human-to-human communication as the basis of knowledge transfer?</h3>
+<div class="outline-text-3" id="text-org6c391d0">
+<p>
+I don't know. But I hope so.
+</p>
+</div>
+</div>
+<div id="outline-container-orgef46064" class="outline-3">
+<h3 id="orgef46064">If an LLM can design an experiment better than I can, who gets the grant?</h3>
+<div class="outline-text-3" id="text-orgef46064">
+<p>
+Whoever asked the main research question and started the
+process, and, most importantly, whoever is willing to take the blame
+if something goes wrong.
+</p>
+</div>
+</div>
+<div id="outline-container-org884e04a" class="outline-3">
+<h3 id="org884e04a">Why do we still pretend that human cognition is the benchmark?</h3>
+<div class="outline-text-3" id="text-org884e04a">
+<p>
+I don't know. We should strive for better benchmarks than human
+cognition. It's hard to imagine things we don't know, though.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcd322a2" class="outline-3">
+<h3 id="orgcd322a2">Do we need a new academic field to study synthetic minds?</h3>
+<div class="outline-text-3" id="text-orgcd322a2">
+<p>
+Yes, I'd say so. But I don't know what form that will take.
+</p>
+</div>
+</div>
+<div id="outline-container-orgac1e67e" class="outline-3">
+<h3 id="orgac1e67e">If LLMs can pass moral reasoning tests, should they be allowed to vote?</h3>
+<div class="outline-text-3" id="text-orgac1e67e">
+<p>
+I don't know.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

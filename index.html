@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-08-05 mar 09:31 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Leo's Home Page</title>
+<meta name="author" content="Leo Ferres" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Leo's Home Page</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org4efbcd2">News</a></li>
+<li><a href="#org2ca3b6b">Research</a></li>
+<li><a href="#orgd055ddf">Teaching</a></li>
+<li><a href="#orgef4ce5c">Old computers</a></li>
+<li><a href="#orgc359592">Posts</a></li>
+</ul>
+</div>
+</div>
+<p>
+<b>Welcome to my home page!</b>
+</p>
+
+<a href="pics/leo.jpg">
+  <img src="img/leo.jpg" alt="Leo" style="width:300px; float:right; height:auto; margin-right:5px;">
+</a>
+
+<p>
+I'm an Associate Professor of Computer and Data Science at the <a href="https://ingenieria.udd.cl/data-science/">Data
+Science Institute</a>, <a href="https://ingenieria.udd.cl/">Faculty of Engineering</a>, <a href="http://www.udd.cl">Universidad del Desarrollo</a>
+(2016-) in Santiago, Chile, a Fellow of Telefónica Research &amp;
+Development, also in Santiago, and a Research Fellow of the <a href="https://isi.it/en/home">ISI
+Foundation</a> (2019-), in Turin, Italy. I got my PhD from Carleton
+University, in Ottawa, Canada. I did a post-doc (2004-2005) at the
+Human-Oriented Technology Lab at Carleton, and became a senior
+researcher there (2006-2008). I was an invited professor at the
+University of Edinburgh (2006-2008) and moved to Chile as an Assistant
+professor of Computer Science at <a href="https://fi.udec.cl/departamentos/informatica-y-cs-de-la-computacion/">Universidad de Concepción</a> (2008-2016)
+before moving to UDD in Santiago. I've published in high-performance
+computing (in a somewhat previous life) and in computational social
+science. Currently, my research focuses on using mobile and telephony
+data for social good, data-driven policy and non-traditional data
+sources. At UDD/TEF I've been involved in <a href="https://www.udd.cl/noticias/2021/12/22/premios-icono-udd-a-la-transferencia-e-innovacion/">industry and government</a>
+research and development projects.
+</p>
+
+<p>
+Contact: <a href="mailto:lferres@udd.cl">lferres@udd.cl</a>, <a href="https://x.com/leoferres">X/Twitter</a>, <a href="http://github.com/leoferres">Github</a>
+</p>
+
+<p>
+My <a href="https://signalshifts.substack.com/">substack</a> (Signal Shifts) redirects to the posts in this page.
+</p>
+<div id="outline-container-org4efbcd2" class="outline-2">
+<h2 id="org4efbcd2">News</h2>
+<div class="outline-text-2" id="text-org4efbcd2">
+<ul class="org-ul">
+<li><b>2025</b>: <a href="https://netsci2025.github.io/">NetSci2025</a> (Maastricht, The Netherlands) | <a href="https://chartingcomplexity.webflow.io/">Charting Complexity</a> (London, UK) | <a href="https://ic2s2-2025.org/">IC2S2</a> (Norrköping, Sweden) | EEDen Network (Quito, Ecuador)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2ca3b6b" class="outline-2">
+<h2 id="org2ca3b6b">Research</h2>
+<div class="outline-text-2" id="text-org2ca3b6b">
+<ul class="org-ul">
+<li><b>Risk</b>:</li>
+<li><b>Epidemics &amp; mobility</b>:</li>
+<li><b>Mobility &amp; mobile phone data:</b></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd055ddf" class="outline-2">
+<h2 id="orgd055ddf">Teaching</h2>
+<div class="outline-text-2" id="text-orgd055ddf">
+<ul class="org-ul">
+<li><b>IELE 754</b> [<a href="../public/iele20251.html">2025-1</a>, 2025-2]: This is a project-driven data science
+course that transforms students into collaborative researchers by
+assigning each team a different South American country to analyze
+using real-world datasets.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgef4ce5c" class="outline-2">
+<h2 id="orgef4ce5c">Old computers</h2>
+<div class="outline-text-2" id="text-orgef4ce5c">
+<p>
+I have several 1980s microcomputers and I enjoy collecting and fixing
+them. Here's a list of the ones I have, and there's some links for
+each one on the work I've done on them:
+</p>
+
+<ul class="org-ul">
+<li><b>Commodore 16</b>: On 2025-05-31 11:15:30 +0200, I acquired a <a href="https://it.wikipedia.org/wiki/Commodore_16">Commodore
+16</a> micro-computer in <a href="https://maps.app.goo.gl/RCShYTbYf1MvbLEd8">Chivasso</a>, Piemonte, Italy. The Commodore 16 was
+a low-cost 8-bit home computer released by Commodore in 1984 as part
+of the 264 series. Intended as a successor to the VIC-20, it
+featured a MOS 7501 or 8501 CPU running at 1.76 MHz, 16KB of RAM,
+and the TED (Text Editing Device) chip for video and sound. It
+included Commodore BASIC v3.5 in ROM and was aimed at entry-level
+users, but lacked compatibility with the popular C64. Despite
+limited commercial success, it was notable for its affordability and
+was especially popular in parts of Europe and Latin America. And it
+came with a Commodore Dataset!</li>
+</ul>
+
+<div style="margin-top:0.5em; margin-bottom:0.5em; margin-left: 3em;">
+    <a href="img/c16above.jpg"><img src="img/c16above.jpg"
+    alt="Commodore 16 from above"
+    style="width:150px; height:auto; margin-right:5px;"></a>
+    <a href="img/c16label.jpg"><img src="img/c16label.jpg"
+    alt="Commodore 16's label"
+    style="width:150px; height:auto; margin-right:5px;"></a>
+    <a href="img/c16expslot.jpg"><img src="img/c16expslot.jpg"
+    alt="Commodore 16's expansion slot"
+    style="width:150px; height:auto;"></a>
+    <a href="img/c16dataset.jpg"><img src="img/c16dataset.jpg"
+    alt="Commodore 16's datasette" style="width:150px;
+    height:auto;"></a>
+    </div>
+
+<ul class="org-ul">
+<li><b>Talent MSX</b>: On 12/28/2024, I acquired a Talent <a href="https://en.wikipedia.org/wiki/MSX">MSX</a> computer in <a href="https://maps.app.goo.gl/E69ZXapW657ahSAo6">San
+Juan</a>, Argentina. The Talent MSX was an 8-bit home computer
+manufactured by Talent Argentina (see a nice <a href="https://www.msxviva.com.ar/2016/07/el-lado-oculto-en-la-historia-de-la.html">history</a> here) in the
+mid-1980s, based on the MSX standard developed by Microsoft and
+<a href="https://en.wikipedia.org/wiki/ASCII_Corporation">ASCII Corporation</a>. This machine featured a Zilog Z80A processor
+running at 3.58 MHz, 64KB of RAM, and the Texas Instruments TMS9918A
+video display processor capable of producing colorful graphics and
+sprites. Like other MSX computers, it included Microsoft MSX-BASIC
+in ROM and was designed to be compatible with a wide range of MSX
+software and peripherals. The Talent MSX was particularly notable in
+the South American market as one of the locally-manufactured
+computers that brought affordable computing to the region during the
+1980s home computer boom. I haven't cleaned this one yet, though.</li>
+</ul>
+
+<div style="margin-top:0.5em; margin-bottom:0.5em; margin-left: 3em;">
+    <a href="img/tmsxabove.jpg"><img src="img/tmsxabove.jpg"
+    alt="Talent MSX from above"
+    style="width:150px; height:auto; margin-right:5px;"></a>
+    <a href="img/tmsxlabel.jpg"><img src="img/tmsxlabel.jpg"
+    alt="Talent MSX label"
+    style="width:150px; height:auto; margin-right:5px;"></a>
+    <a href="img/tmsxjstk.jpg"><img src="img/tmsxjstk.jpg"
+    alt="Talent MSX joystick ports"
+    style="width:150px; height:auto;"></a></div>
+</div>
+</div>
+<div id="outline-container-orgc359592" class="outline-2">
+<h2 id="orgc359592">Posts</h2>
+<div class="outline-text-2" id="text-orgc359592">
+<p>
+I'll be migrating my posts slowly
+</p>
+
+<ul class="org-ul">
+<li><b>2025-07-16 05:06:16</b> - <a href="../public/blog/modeling_intro.html">Stan Based Epidemic Models I: The Basics</a></li>
+<li><b>2025-08-04 16:40:51</b> - <a href="../public/blog/dengue.html">Stan Based Epidemic Models II: Modeling Dengue</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

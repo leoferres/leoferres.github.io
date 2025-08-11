@@ -280,7 +280,7 @@ terms that represent transmission between species.
 <div id="outline-container-org35b666b" class="outline-4">
 <h4 id="org35b666b">Human population dynamics (SEIR):</h4>
 <div class="outline-text-4" id="text-org35b666b">
-<pre class="example" id="org1898df0">
+<pre class="example" id="org9415a30">
 dS_h/dt = -(b β_h I_m S_h)/N_h
 dE_h/dt = (b β_h I_m S_h)/N_h - k_h E_h
 dI_h/dt = k_h E_h - γ_h I_h
@@ -331,7 +331,7 @@ The mosquito model is simpler: they don't recover, just die. But we
 have another term here, birth and death rates of mosquitoes.
 </p>
 
-<pre class="example" id="org9b78c95">
+<pre class="example" id="orgd4d3728">
 dS_m/dt = μ_m N_m - (b β_m I_h S_m)/N_h - μ_m S_m
 dE_m/dt = (b β_m I_h S_m)/N_h - k_m E_m - μ_m E_m
 dI_m/dt = k_m E_m - μ_m I_m
@@ -381,6 +381,36 @@ dynamics unfold over weeks rather than years, as in this example case.
 <div id="outline-container-org24c535d" class="outline-3">
 <h3 id="org24c535d">Critical coupling mechanism</h3>
 <div class="outline-text-3" id="text-org24c535d">
+<p>
+The magic happens in the force of infection terms that link the two
+populations:
+</p>
+
+<pre class="example" id="org387dbf3">
+λ_h = (b β_h I_m)/N_h: How fast humans get infected (depends on infectious mosquitoes)
+λ_m = (b β_m I_h)/N_h: How fast mosquitoes get infected (depends on infectious humans)
+</pre>
+
+<p>
+This creates a feedback loop: more infectious mosquitoes → more
+infected humans → more infectious mosquitoes → and so on. But it's
+self-limiting because as more humans become immune (R<sub>h</sub>), fewer are
+susceptible (S<sub>h</sub>), breaking the cycle.  Think of it like a dance
+between two populations, where each partner's moves depend on what the
+other is doing. The disease can only persist if both populations keep
+"dancing" together, if either runs out of susceptible individuals, the
+music stops.
+</p>
+
+<p>
+All in all, the model looks like this (the <code>gnuplot</code> source file is
+<a href="file:///home/leo/Dropbox/leoferres.github.io/org/src/seir-sei-gnuplot.gp">here</a>.)
+</p>
+
+<p>
+:<img src="../img/seir-sei-gnuplot.png" alt="seir-sei-gnuplot.png" />
+</p>
+
 <p>
 &#x2014;
 </p>

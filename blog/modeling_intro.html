@@ -227,8 +227,26 @@
 <li><a href="#org14a9418">SEIR</a></li>
 </ul>
 </li>
-<li><a href="#org392b8da">Inference</a></li>
-<li><a href="#orgd2a8c3f">A real disease!</a></li>
+<li><a href="#org392b8da">Inference</a>
+<ul>
+<li>
+<ul>
+<li><a href="#orgae700f4">The priors</a></li>
+<li><a href="#org9a31ad5">Why a negative binomial likelihood?</a></li>
+<li><a href="#orgece7da4">Parameter recovery</a></li>
+<li><a href="#orgc217582">Model diagnostics</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgafeff46">Testing on Real Epidemiological Data</a>
+<ul>
+<li><a href="#org68d5223">Priors</a></li>
+<li><a href="#org1c06da3">Fitting the model</a></li>
+<li><a href="#org9827807">Model limitations</a></li>
+</ul>
+</li>
+<li><a href="#org963a89d">Conclusion</a></li>
 </ul>
 </div>
 </div>
@@ -236,7 +254,25 @@
 <h2 id="org494c69c">Introduction</h2>
 <div class="outline-text-2" id="text-org494c69c">
 <p>
-This post is primarily for my own understanding rather than to present new ideas. I'll walk through the latest epidemiological model developed by a leading group of researchers, one that incorporates behavioral factors like mobility, from the ground up. I couldn't find working Stan implementations. Partly due to version changes (e.g., renaming of the differential equation solver: from <code>integrate_ode_rk45</code> to <code>ode_rk45</code>) LLMs don't do that well on it either, so I've reconstructed the models here. Hopefully, this will be useful to others facing similar issues.
+This post is primarily for my own understanding rather than to present
+new ideas. I'll walk through the latest epidemiological model
+developed by a leading group of researchers, one that incorporates
+behavioral factors like mobility, from the ground up. Finding working
+Stan implementations proved challenging for several reasons. Version
+changes have broken many existing examples. For instance, the
+differential equation solver was renamed from <code>integrate_ode_rk45</code> to
+<code>ode_rk45</code>. Even LLMs struggle with these updated syntax
+requirements. I've therefore reconstructed the models from scratch,
+hoping this will help others facing similar implementation issues.
+</p>
+
+<p>
+This work is motivated by an upcoming analysis of dengue fever
+outbreaks in Chile, which present unique modeling challenges due to their
+vector-borne transmission patterns and seasonal dynamics. However,
+before tackling dengue-specific models, I need to establish a solid
+foundation in basic epidemiological modeling with Stan, hence this
+step-by-step walkthrough of increasingly complex compartmental models.
 </p>
 </div>
 </div>
@@ -252,20 +288,27 @@ Files are: <a href="../code/sir0.stan">sir0.stan</a>: the model, <a href="../cod
 </p>
 
 <p>
-SIR models divide a population into three compartments: S - Susceptible → I - Infected → R - Recovered. S: People who can catch the disease, I: People currently infected and contagious and R: People who have recovered (or died!) and are immune. The parameters of these models are
+SIR models divide a population into three compartments: S -
+Susceptible → I - Infected → R - Recovered. S: People who can catch
+the disease, I: People currently infected and contagious and R: People
+who have recovered (or died!) and are immune. The parameters of these
+models are
 </p>
 
 <ul class="org-ul">
 <li>beta: Transmission rate or how easily the disease spreads</li>
 <li>gamma: Recovery rate or how quickly people recover</li>
-<li>R0 = beta/gamma: Basic reproduction number or average new infections per infected person.</li>
+<li>R0 = beta/gamma: Basic reproduction number or average new infections
+per infected person.</li>
 </ul>
 
 <p>
-The rate of transition from one state to the other can be modeled using a system of ordinary differential equations, with each equation describing the rate of change of one compartment.
+The rate of transition from one state to the other can be modeled
+using a system of ordinary differential equations, with each equation
+describing the rate of change of one compartment.
 </p>
 
-<pre class="example" id="org4e3d326">
+<pre class="example" id="orgc08542b">
 dS/dt = -beta × S × I / N
 dI/dt = beta × S × I / N - gamma × I
 dR/dt = gamma × I
@@ -274,7 +317,6 @@ dR/dt = gamma × I
 <p>
 which in turn can be straightforwardly encoded in Stan as:
 </p>
-
 
 <div class="org-src-container">
 <pre class="src src-stan"><span style="color: #a020f0;">functions</span> { <span style="color: #228b22;">vector</span> <span style="color: #a0522d;">sir</span>(<span style="color: #228b22;">real</span> t, <span style="color: #228b22;">vector</span> y, <span style="color: #228b22;">real</span> beta, <span style="color: #228b22;">real</span> gamma) {
@@ -314,7 +356,7 @@ estimation. We'll come back to this below
 </p>
 
 
-<div id="org6d7830a" class="figure">
+<div id="org1acd183" class="figure">
 <p><img src="../img/sir0.png" alt="sir0.png" style="margin: 5px; width: 600px;" />
 </p>
 </div>
@@ -388,7 +430,7 @@ I).
 </p>
 
 
-<div id="orgea7a134" class="figure">
+<div id="org7474a01" class="figure">
 <p><img src="../img/seir0.png" alt="seir0.png" style="margin: 5px; width: 600px;" />
 </p>
 </div>
@@ -457,11 +499,10 @@ the data to be (given our previous knowledge) before actually seeing
 the data. In a way, it will guide the model to find the correct
 parameter values without having to explore an infinite value space.
 </p>
-
-<p>
-In our model, the priors are:
-</p>
-
+</div>
+<div id="outline-container-orgae700f4" class="outline-4">
+<h4 id="orgae700f4">The priors</h4>
+<div class="outline-text-4" id="text-orgae700f4">
 <div class="org-src-container">
 <pre class="src src-stan">beta <span style="color: #008b8b;">~</span> <span style="color: #0000ff;">lognormal</span>(-0.69, 0.5);
 gamma <span style="color: #008b8b;">~</span> <span style="color: #0000ff;">lognormal</span>(-2.30, 0.5);
@@ -471,29 +512,45 @@ phi <span style="color: #008b8b;">~</span> <span style="color: #0000ff;">exponen
 
 <p>
 These prior choices are <b>weakly informative</b>, they don't constrain the
-search too much, and grounded in epidemiological knowledge. The <b>beta
-prior</b> <code>lognormal(-0.69, 0.5)</code> centers around 0.5 per day with a 95%
-credible interval of roughly [0.2, 1.2], covering realistic
-transmission rates from slow-spreading diseases with interventions to
-highly transmissible infections like early COVID-19, while the
-lognormal distribution ensures positivity and allows for right-skewed
-behavior typical of transmission parameters. The <b>gamma prior</b>
-<code>lognormal(-2.30, 0.5)</code> centers around 0.1 per day (corresponding to a
-10-day infectious period) with a range covering 4-25 day infectious
-periods, which encompasses most respiratory infections from
-fast-recovering common colds to slower bacterial infections. The <b>phi
-prior</b> has a mean of 10 and mode at 0, weakly favoring less
-overdispersion while allowing the long tail to accommodate high
-overdispersion when the data demands it, with small phi values
-indicating noisy data and large phi values approaching Poisson-like
-behavior. Together, these priors encode basic biological constraints
+search too much, and grounded in epidemiological knowledge.
+</p>
+
+<p>
+<b>Beta prior</b>: The <code>lognormal(-0.69, 0.5)</code> distribution centers around 0.5
+per day with a 95% credible interval of roughly [0.2, 1.2]. This
+covers realistic transmission rates from slow-spreading diseases with
+interventions to highly transmissible infections like early
+COVID-19. The lognormal distribution ensures positivity while allowing
+for the right-skewed behavior typical of transmission parameters.
+</p>
+
+<p>
+<b>Gamma prior</b>: The <code>lognormal(-2.30, 0.5)</code> distribution centers around
+0.1 per day, corresponding to a 10-day infectious period. This range
+covers 4-25 day infectious periods, encompassing most respiratory
+infections from fast-recovering common colds to slower bacterial
+infections.
+</p>
+
+<p>
+<b>Phi prior</b>: The exponential prior has a mean of 10 and mode at 0,
+weakly favoring less overdispersion while allowing the long tail to
+accommodate high overdispersion when data demands it.
+</p>
+
+<p>
+Together, these priors encode basic biological constraints
 (positivity), rule out completely unrealistic scenarios (like beta =
 100 or 1-day infectious periods), provide gentle regularization when
 data is sparse, and allow the data to dominate inference while
 implying reasonable R0 values (mean ≈ 5) that align with
 epidemiological expectations for infectious disease modeling.
 </p>
-
+</div>
+</div>
+<div id="outline-container-org9a31ad5" class="outline-4">
+<h4 id="org9a31ad5">Why a negative binomial likelihood?</h4>
+<div class="outline-text-4" id="text-org9a31ad5">
 <p>
 Finally, the likelihood is <code>cases ~ neg_binomial_2(y[,2], phi);</code>,
 because real epidemiological data almost always exhibits
@@ -502,24 +559,28 @@ reporting inconsistencies, testing variability, behavioral
 heterogeneity, spatial clustering, and measurement error that our
 simple SIR model doesn't capture. A Poisson likelihood would assume
 variance equals the mean, which is unrealistic for disease
-surveillance data. The negative binomial distribution naturally
-extends Poisson to handle overdispersion with mean <code>E[cases] = y[,2]</code>
-(the infected count from our SIR model) and variance <code>Var[cases] =
-mu + mu²/phi</code>, where phi controls the overdispersion; ie, large phi
-behaves like Poisson while small phi allows high overdispersion. This
-likelihood essentially says "the observed cases are drawn from a
-distribution centered at our model's predicted infected count, but
-with additional variance controlled by phi to account for all the
-real-world noise our ODE doesn't capture." This approach is
-empirically supported since count data in epidemiology is almost
-always overdispersed, provides a flexible variance structure that's
-robust to model misspecification, remains computationally efficient,
-and gives interpretable parameters where φ directly measures how much
-extra variability exists beyond what a perfect model would predict,
-making our inferences more robust and realistic by acknowledging that
-our SIR model is a simplified approximation of reality.
+surveillance data. The negative binomial distribution handles
+overdispersion better than Poisson. It uses our SIR model's infected
+count as the mean, but adds extra variance controlled by the parameter
+phi. Large phi values behave like Poisson, while small phi allows for
+much higher variance than the mean. This likelihood essentially says
+"the observed cases are drawn from a distribution centered at our
+model's predicted infected count, but with additional variance
+controlled by phi to account for all the real-world noise our ODE
+doesn't capture." This approach is empirically supported since count
+data in epidemiology is almost always overdispersed, provides a
+flexible variance structure that's robust to model misspecification,
+remains computationally efficient, and gives interpretable parameters
+where φ directly measures how much extra variability exists beyond
+what a perfect model would predict, making our inferences more robust
+and realistic by acknowledging that our SIR model is a simplified
+approximation of reality.
 </p>
-
+</div>
+</div>
+<div id="outline-container-orgece7da4" class="outline-4">
+<h4 id="orgece7da4">Parameter recovery</h4>
+<div class="outline-text-4" id="text-orgece7da4">
 <p>
 So, does our model fit the generated data? Let's look at some plots
 generated by running the python script in
@@ -527,7 +588,7 @@ generated by running the python script in
 </p>
 
 
-<div id="org58a645b" class="figure">
+<div id="org0ffc456" class="figure">
 <p><img src="../img/sir_inference_results.png" alt="sir_inference_results.png" style="margin: 5px; width: 900px;" />
 </p>
 </div>
@@ -536,7 +597,7 @@ generated by running the python script in
 or, in numbers:
 </p>
 
-<pre class="example" id="org8f4a57f">
+<pre class="example" id="org86faacf">
                  Mean      MCSE  StdDev        MAD       5%      50%      95%  ESS_bulk  ESS_tail  R_hat
 lp__         -203.918  0.033031   1.318   1.008910 -206.610 -203.558 -202.536   1777.15   2417.88  1.000
 beta            1.183  0.000359   0.018   0.018110    1.154    1.182    1.212   2742.12   2336.94  1.000
@@ -566,7 +627,11 @@ counts alone. This translates to a basic reproduction number R0 =
 beta/gamma = 1.183/0.101 = 11.7, which closely matches the true R0 =
 1.2/0.1 = 12 used in data generation (only 2.5% difference).
 </p>
-
+</div>
+</div>
+<div id="outline-container-orgc217582" class="outline-4">
+<h4 id="orgc217582">Model diagnostics</h4>
+<div class="outline-text-4" id="text-orgc217582">
 <p>
 The model diagnostics are also excellent: all R-hat values are very
 close to 1.0 (indicating convergence), and the effective sample sizes
@@ -581,24 +646,69 @@ data.
 </p>
 </div>
 </div>
-<div id="outline-container-orgd2a8c3f" class="outline-2">
-<h2 id="orgd2a8c3f">A real disease!</h2>
-<div class="outline-text-2" id="text-orgd2a8c3f">
+</div>
+<div id="outline-container-orgafeff46" class="outline-2">
+<h2 id="orgafeff46">Testing on Real Epidemiological Data</h2>
+<div class="outline-text-2" id="text-orgafeff46">
 <p>
-There's <a href="https://github.com/reconverse/outbreaks.git">github repo</a>
-with a few files that can serve as an example. You can either download
-a specific file from the repo's
-<a href="https://github.com/reconverse/outbreaks/tree/master/data">data
-directory</a> or clone all of it. I've written a small python script
-<a href="../code/convert2csv.py">convert2csv.py</a> that reads the <code>RData</code> files
-and transform them into <code>csv</code> files.
+While synthetic data validation is encouraging, real disease outbreaks
+present additional challenges: irregular reporting, behavioral
+changes, and environmental factors that our simple models don't
+capture. To test our approach's robustness, let's fit the model to
+actual influenza data.
 </p>
 
 <p>
-I have chosen a simple flu outbreak, appearing in <code>influenza_england_1978_school.csv</code> in the files above.
+I chose influenza data for this validation because it shares key
+characteristics with dengue: both are infectious diseases with clear
+epidemic curves, but influenza's simpler transmission dynamics (direct
+human-to-human) make it ideal for testing our modeling framework
+before moving to dengue's more complex vector-borne transmission in
+future posts.
 </p>
 
-<pre class="example" id="org52b5748">
+<p>
+There's <a href="https://github.com/reconverse/outbreaks.git">github repo</a> with a few files that can serve as an example. You
+can either download a specific file from the repo's <a href="https://github.com/reconverse/outbreaks/tree/master/data">data directory</a> or
+clone all of it. I've written a small python script <a href="../code/convert2csv.py">convert2csv.py</a>
+that reads the <code>RData</code> files and transform them into <code>csv</code> files.
+</p>
+
+<p>
+I have chosen a simple flu outbreak, appearing in
+<code>influenza_england_1978_school.csv</code> in the files above.
+</p>
+</div>
+<div id="outline-container-org68d5223" class="outline-3">
+<h3 id="org68d5223">Priors</h3>
+<div class="outline-text-3" id="text-org68d5223">
+<p>
+For the influenza data, I kept the same priors used in the synthetic
+example rather than tailoring them to flu-specific knowledge. This
+tests whether our 'generic' priors are robust enough for real
+applications. However, we could have used more informative priors
+based on influenza literature: flu typically has R0 values between
+1.3-1.7, suggesting a tighter beta prior, and infectious periods of
+2-8 days, implying a gamma prior centered around 0.2-0.5 per day.
+</p>
+
+<p>
+Prior sensitivity deserves attention in any Bayesian analysis. Our
+lognormal priors are weakly informative by design, but even weak
+priors can influence results when data is limited. A proper
+sensitivity analysis would involve refitting the model with
+alternative prior specifications (e.g., wider or narrower variances,
+different central values) and comparing posterior distributions. This
+is particularly important for policy-relevant parameters like R0,
+where prior assumptions could meaningfully affect public health
+recommendations.
+</p>
+</div>
+</div>
+<div id="outline-container-org1c06da3" class="outline-3">
+<h3 id="org1c06da3">Fitting the model</h3>
+<div class="outline-text-3" id="text-org1c06da3">
+<pre class="example" id="orgf68df67">
                  Mean   MCSE   StdDev    MAD       5%      50%      95%  ESS_bulk  ESS_tail  R_hat
 lp__          -71.844  0.060   1.628   1.182  -74.967  -71.397  -70.221   1111.97   981.472  1.001
 beta            1.716  0.001   0.062   0.051    1.623    1.717    1.812   1804.90  1017.500  1.000
@@ -607,14 +717,68 @@ phi            10.105  0.131   5.508   4.686    3.405    8.964   20.467   1437.1
 </pre>
 
 <p>
-Just like in the previous case, the model performs quite well, even without any modifications. We could have, for example, modified the priors with a bit more specific information about influenza that could have brought down the errors, but there's no need to do that at this point. This is just an example. We will sophisticate this in future posts so that we can account for our potential dengue outbreaks.
+While parameter recovery looks good, other validation metrics would
+strengthen our confidence: posterior predictive checks comparing
+simulated outbreaks to observed data, cross-validation on held-out
+time periods, and comparison with alternative model structures (e.g.,
+SEIR, age-structured models) to assess whether added complexity
+improves predictive performance.
+</p>
+
+<p>
+We could refine this influenza model with more specific priors or
+account for seasonal patterns, but for now, this demonstrates that our
+basic framework works on real data. The next step is adapting these
+methods for dengue's unique epidemiological features: vector dynamics,
+climate dependence, and serotype interactions that make dengue
+modeling considerably more complex.
 </p>
 
 
-<div id="org4d6f8c0" class="figure">
+<div id="org221dbdc" class="figure">
 <p><img src="../img/flu_inference_results.png" alt="flu_inference_results.png" style="margin: 5px; width: 900px;" />
 </p>
 </div>
+</div>
+</div>
+<div id="outline-container-org9827807" class="outline-3">
+<h3 id="org9827807">Model limitations</h3>
+<div class="outline-text-3" id="text-org9827807">
+<p>
+Our SIR framework makes several strong assumptions that merit
+discussion. We assume homogeneous mixing (everyone contacts everyone
+else equally), constant transmission and recovery rates, and no
+births, deaths, or migration during the epidemic (which in places like
+Chile remain constant and therefore invariant). Real flu outbreaks
+violate these assumptions through age-structured transmission,
+changing behavior during epidemics, and seasonal effects. The negative
+binomial likelihood partially addresses these limitations by allowing
+extra variance, but it's a statistical bandage rather than a
+mechanistic solution.
+</p>
+
+<p>
+The Stan implementation requires careful attention to numerical
+stability. The ODE solver can fail with extreme parameter values, so
+our priors implicitly constrain the search space to numerically stable
+regions. Additionally, the negative binomial parameterization using
+phi (dispersion) rather than traditional r and p parameters improves
+MCMC efficiency by reducing parameter correlation.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org963a89d" class="outline-2">
+<h2 id="org963a89d">Conclusion</h2>
+<div class="outline-text-2" id="text-org963a89d">
+<p>
+This foundational post establishes the core Stan implementation
+patterns we'll need for dengue modeling. In the next posts, we'll
+extend these methods to handle vector-borne transmission,
+incorporating mosquito population dynamics, seasonal climate effects,
+and the multiple dengue serotypes that complicate real-world dengue
+surveillance and prediction.
+</p>
 
 <p>
 <i>This post also appears on Substack.</i>

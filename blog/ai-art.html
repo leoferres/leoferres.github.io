@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Era of Ideas: Finding Meaning Through AI Art</title>
+<meta name="author" content="Leo Ferres" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">The Era of Ideas: Finding Meaning Through AI Art</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orge9e3fa4">Prompt</a></li>
+</ul>
+</div>
+</div>
+<p>
+<a href="file:///home/leo/Dropbox/leoferres.github.io/org/src/img/MothersLove.png">A Mother's Love</a>
+</p>
+
+<p>
+<b>A Mother's Love</b>, attributed to a little-known Swedish painter Carl
+Olof Petersen (1828–1881), was said to have been painted in 1867 after
+he heard stories of a grieving mother who begged for her lost child's
+return and instead embraced something monstrous. Petersen, remembered
+in small circles for his dark style and interest in themes of
+motherhood and the supernatural, supposedly captured this disturbing
+vision in a work that shocked audiences of the time, with rumors of
+fainting and even a curse before it disappeared into a private
+collection. The painting shows an old woman in pale robes, eyes closed
+in gentle devotion, holding a demonic figure with glowing red eyes and
+sharp teeth, its dark, clawed body a harsh contrast to her calm but
+determined expression.
+</p>
+
+<p>
+Except it isn't. It's AI generated (the painting, not the story). The
+image first surfaced on Instagram (though the original post has since
+been removed) under the title "A Mother's Love", credited to Carl Olof
+Petersen
+(<a href="https://www.instagram.com/p/C0-u0sMRWjg/?igsh=NjB3bjF4OWJmdmV2">https://www.instagram.com/p/C0-u0sMRWjg/?igsh=NjB3bjF4OWJmdmV2</a>). It
+spread quickly, gaining traction before disappearing, only to reappear
+in new uploads; one of which has already reached over 16K
+likes. Commenters marveled at what they thought was a forgotten
+masterpiece, speculating on its symbolism and supposed place in art
+history, though some have since noted it was AI-made. In fact, the
+"painting" was created with AI image generation tools, the false
+backstory crafted to make it seem real. The conversation then moved to
+Reddit, where users began to question its origins (see this thread:
+<a href="https://www.reddit.com/r/WhatIsThisPainting/comments/1g7ug5m/help_identify_this_painting_is_it_really_a/">https://www.reddit.com/r/WhatIsThisPainting/comments/1g7ug5m/help_identify_this_painting_is_it_really_a/</a>),
+and soon after the truth came out.
+</p>
+
+<p>
+But to me, it felt not only real, it also moved me deeply because of
+my own experience: I could relate to the mother's feelings. And I know
+I'm not the only one. On Reddit, in r/WhatIsThisPainting, one user
+wrote, "It looks real to me, too," echoing the quiet certainty many
+expressed when first seeing the image
+(<a href="https://www.reddit.com/r/WhatIsThisPainting/comments/1g7ug5m/help_identify_this_painting_is_it_really_a/?utm_source=chatgpt.com">https://www.reddit.com/r/WhatIsThisPainting/comments/1g7ug5m/help_identify_this_painting_is_it_really_a/?utm_source=chatgpt.com</a>). The
+same response appeared on Instagram, where the reposted version and
+other shares drew comments about the powerful emotions it stirred. One
+caption read, "AI can generate art&#x2026; it depicts the all-encompassing
+nature of a mother's love and the intense connection I felt." Taken
+together, these reactions show how strongly people connect to the
+image, even after learning it isn't a "real" painting.
+</p>
+
+<p>
+What does this mean for art? To me, it shows that what matters most is
+not who made it or what tools were used, but its message and how it
+makes us feel. An image created by AI can still hit just as hard as a
+painting on canvas, because art is really about the meaning we take
+from it (not the medium used to express it). This one touched me in a
+very personal way, to the point of strong emotion. If something moves
+us, whether joy, sadness, or wonder, then it works as art. That means
+AI isn't just copying art; it's stepping into the same space where art
+has always lived: in the feelings and reactions it brings out in us.
+</p>
+
+<p>
+But there's one more thing. I can't paint, and I know I never will. To
+learn oil painting at even a basic level would take me years, maybe a
+lifetime, and even then there's no promise that I could ever reach the
+skill needed to show what I truly mean. That gap, the distance between
+what I feel inside and what my hands could put on a canvas, has always
+been impossible to cross. Yet with AI, I can create something that
+gets closer to the picture in my head. It gives me a way to share
+emotions and ideas that would otherwise stay locked away, unexpressed.
+</p>
+
+<p>
+I'm a father. I've lived through what almost every father goes through
+with their children: the tension between love and discipline, the
+struggle to guide while also letting go, the challenge of sharing
+hard-won experience. So I began to wonder: what would a "father's
+love" look like if it were a painting? I asked an AI to create one in
+a similar style as "A Mother's Love". And here it is: "A Father's
+Love":
+</p>
+
+<p>
+<a href="file:///home/leo/Dropbox/leoferres.github.io/org/src/img/FathersLove.png">Father's Love</a>
+</p>
+
+<p>
+I loved it, more than I can really explain. What struck me was the
+strength and the rough violence in the picture. The father looks like
+he's been stabbed, maybe dying, yet he's embracing the child just like
+the mother was. The "child" is holding on to him as well, almost as if
+something important has been understood in that moment. Being a father
+often has that mix of toughness and care. There's the need to protect,
+even if it costs you, and the need to be firm, even if it causes
+pain. Fathers can show love through hard lessons, through conflict,
+and sometimes even through anger. That edge of violence, whether in
+struggle, discipline, or sacrifice, can still carry a kind of love
+inside it.
+</p>
+
+<p>
+Even if I'm the only one who feels this, that's okay. What amazes me
+is that I was able to express something in a "painting" that I never
+could have made on my own. And if one day there's a machine that can
+take this image and translate it into oil on canvas, with all the
+richness and weight that medium deserves, I would be glad.
+</p>
+
+<p>
+There's a lot more I could say, but I'll end with what matters most to
+me: painting, like language, music, or any art, is only a tool for
+sharing ideas. If you don't have an idea, the tool won't help you;
+you'll still have nothing to say. But AI has given me a way to express
+something I wanted to show without words, without needing years of
+training in the medium. We've entered, in a very real sense, the era
+of ideas. I'm still the one responsible for the message, for what it
+means. Tools like language or painting are now cheap. What counts,
+more than ever, are the ideas themselves.
+</p>
+<div id="outline-container-orge9e3fa4" class="outline-2">
+<h2 id="orge9e3fa4">Prompt</h2>
+<div class="outline-text-2" id="text-orge9e3fa4">
+<p>
+This painting is called &lt;X&gt;, by &lt;X&gt;, &lt;add brief history&gt;. &lt;discuss
+what it makes me feel&gt;
+</p>
+
+<p>
+Except it isn't. It's AI generated. &lt;tell the Reddit story&gt;
+</p>
+
+<p>
+But to me, it felt not only real, but it also moved me deeply. I'm
+seemingly not alone in this &lt;search the internet for proof and
+discuss&gt;
+</p>
+
+<p>
+What does this mean for art? Well, for one, it can cause the same
+feeling of real art. Why? Because art is not about the medium or the
+artist, but about the meaning it conveys. And this did convey a lot to
+me for personal reasons, to the point of extreme emotion.
+</p>
+
+<p>
+But there's one more thing. I can't paint. It would take me a lifetime
+to try to achieve any mastery in oil paiting. And even that would not
+guarantee I'd be able to convey the meaning I wanted to convey.
+</p>
+
+<p>
+But, I do have something to say. I'm a father. I've suffered what
+(almost any) father suffer with their children. The tension of loving
+and education for life, the communication of experience. So, what
+would a "father's love" painting look like. So I asked AI to give me a
+depiction of it. Here it is.
+</p>
+
+<p>
+&lt;show a father's love&gt;
+</p>
+
+<p>
+I loved it. More than anyone can know. I love the strength and the
+violence of the picture. While the father is probably stabbed to
+death, the "child" is not and embraces the father as if having learned
+something. Add some other things about fathers and violence.
+</p>
+
+<p>
+Even if I am the only one that feels this, that's ok. What is
+generally amazing though is that now I could express something (in
+painting) that I could've never expressed before. I'd be happy if
+there's a machine that translate the painting to oil with such
+deserved sophistication.
+</p>
+
+<p>
+There's a lot I can say here, but I'll conclude with my favorite idea:
+painting (and language, music and art in general) is just (simply) a
+medium to communicate ideas. If you have no ideas, you will have
+nothing to say no matter the medium. Conversely, AI has given me the
+possibility to communicate something I wanted to communicate without
+words without having to learn the medium. We are, for all practical
+purposes, in the era of ideas. I'm still responsible, as a human, for
+my message. But the instrument (language, painting) is cheap. Ideas
+are now everything.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

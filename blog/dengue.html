@@ -237,6 +237,9 @@
 </ul>
 </div>
 </div>
+<p>
+<b>!!!!THIS POST IS UNDER CONSTRUCTION. BE PATIENT. THINGS WILL CHANGE!!!!</b>
+</p>
 <div id="outline-container-orgf749061" class="outline-2">
 <h2 id="orgf749061">Introduction</h2>
 <div class="outline-text-2" id="text-orgf749061">
@@ -281,7 +284,7 @@ terms that represent transmission between species.
 <div id="outline-container-org35b666b" class="outline-4">
 <h4 id="org35b666b">Human population dynamics (SEIR):</h4>
 <div class="outline-text-4" id="text-org35b666b">
-<pre class="example" id="org1ecfaae">
+<pre class="example" id="org4ee3fee">
 dS_h/dt = -(b β_h I_m S_h)/N_h
 dE_h/dt = (b β_h I_m S_h)/N_h - k_h E_h
 dI_h/dt = k_h E_h - γ_h I_h
@@ -332,7 +335,7 @@ The mosquito model is simpler: they don't recover, just die. But we
 have another term here, birth and death rates of mosquitoes.
 </p>
 
-<pre class="example" id="org36cf1e5">
+<pre class="example" id="org7d31383">
 dS_m/dt = μ_m N_m - (b β_m I_h S_m)/N_h - μ_m S_m
 dE_m/dt = (b β_m I_h S_m)/N_h - k_m E_m - μ_m E_m
 dI_m/dt = k_m E_m - μ_m I_m
@@ -387,7 +390,7 @@ The magic happens in the force of infection terms that link the two
 populations:
 </p>
 
-<pre class="example" id="org6e46b67">
+<pre class="example" id="orga7dd8f2">
 λ_h = (b β_h I_m)/N_h: How fast humans get infected (depends on infectious mosquitoes)
 λ_m = (b β_m I_h)/N_h: How fast mosquitoes get infected (depends on infectious humans)
 </pre>
@@ -409,7 +412,7 @@ All in all, the model looks like this (the <code>gnuplot</code> source file is
 </p>
 
 
-<div id="orga042f91" class="figure">
+<div id="org7beaf22" class="figure">
 <p><img src="../img/seir-sei-gnuplot.png" alt="seir-sei-gnuplot.png" />
 </p>
 </div>

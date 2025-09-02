@@ -39,7 +39,6 @@ model {
 
   // Likelihood: observed cases come from true infected count
   cases ~ neg_binomial_2(y[,2], phi);
-  //  cases ~ neg_binomial_2(fmax(1e-3, y[,2]), phi);
 }
 
 generated quantities {

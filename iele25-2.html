@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-08-06 mié 13:04 -->
+<!-- 2025-09-04 jue 14:09 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>IELE756 Preparación y Análisis de Datos (Spring 2025)</title>
 <meta name="author" content="Leo Ferres" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
@@ -193,29 +193,265 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<script>
-// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-// @license-end
-</script>
+<style type="text/css">
+hr {
+border-width: 2px;
+border-style: solid;
+border-color: black;
+width: 70%;
+margin-left: 0;
+margin-right: auto;
+}
+</style>
 </head>
 <body>
 <div id="content" class="content">
+<h1 class="title">IELE756 Preparación y Análisis de Datos (Spring 2025)</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org7c3f1a6">Overview</a></li>
+<li><a href="#org4e1b159">Inverted Lectures</a></li>
+<li><a href="#orgf55fbbe">Topics</a></li>
+<li><a href="#org561f316">Readings and Resources</a></li>
+<li><a href="#org860f0c9">Specifics</a></li>
+<li><a href="#orgcf3d29e">Requirements &amp; Grading</a></li>
+<li><a href="#orgdeb3fbb">Past and Future</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7c3f1a6" class="outline-2">
+<h2 id="org7c3f1a6">Overview</h2>
+<div class="outline-text-2" id="text-org7c3f1a6">
+<p>
+<i>Curious how environmental exposures (air quality, climate, greenness)
+and agricultural production patterns shape the regional burden of
+noncommunicable diseases in Chile? Want to turn official statistics
+and satellite records into defensible models that illuminate
+territorial inequalities? Prefer working in teams on a fast,
+policy-relevant problem rather than passive lectures?</i>
+</p>
+
+<p>
+In this project-driven course, you will assemble an annual,
+region-level dataset for 2010–2022 that links MINSAL hospital
+discharges, INE crop production, CASEN socioeconomic indicators, ERA5
+climate, Sentinel-5P atmospheric composition, VIIRS nightlights
+(population proxy), Earth Engine greenness indices (NDVI, SAVI, NDWI),
+Köppen–Geiger climate classes, and Chilean administrative
+boundaries. You will pose and test hypotheses about how exposure,
+agriculture, climate zones, urbanization, and socioeconomic context
+relate to NCD burden, culminating in hierarchical Bayesian models and
+uncertainty-aware regional maps designed to inform policy.
+</p>
+</div>
+</div>
+<div id="outline-container-org4e1b159" class="outline-2">
+<h2 id="org4e1b159">Inverted Lectures</h2>
+<div class="outline-text-2" id="text-org4e1b159">
+<p>
+This is not a typical course and that's by design. Rather than
+traditional lectures, this is a project-driven, skill-based course
+designed to immerse you in the actual practice of scientific modeling
+and data analysis. You won't be sitting through lectures while I walk
+you through material. Instead, you'll learn by doing, tackling
+real-world problems using tools and methods drawn from contemporary
+data science and statistical modeling. Every week (or sometimes every
+two weeks, depending on the complexity), you'll receive an assignment
+that introduces a specific type of skill or analytical
+technique. These are not isolated exercises, they build toward a
+larger goal: constructing a functioning predictive model of dengue
+spread in Chile. Think of each assignment as a piece of that
+puzzle.
+</p>
+
+<p>
+The structure is intentionally <b>inverted</b>: I won't be lecturing on
+each topic in advance. Instead, I'll guide you to high-quality
+external tutorials, documentation, and video content (e.g., from
+YouTube or official project pages). You'll study the material
+independently before class. Then, <b>during class, we'll use our time
+together to dive deeper, discuss the content, troubleshoot your work,
+and collaboratively address any roadblocks</b>. To make this work, your
+engagement is essential. You're expected to come to class having
+reviewed the assigned materials, having tried the assignment, and
+critically having real questions. The learning will happen through
+interaction, collaboration, and problem-solving. My role is not to
+lecture, but to help you think, guide you through complexity, and
+learn alongside you as a team.
+</p>
+
+<p>
+This course is designed to feel closer to a research lab or
+collaborative project environment than a lecture hall. If you're
+curious, self-directed, and ready to take on challenging, meaningful
+problems, you'll thrive here.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf55fbbe" class="outline-2">
+<h2 id="orgf55fbbe">Topics</h2>
+<div class="outline-text-2" id="text-orgf55fbbe">
+<p>
+This is a data-driven course on modeling spatial, environmental, and
+epidemiological phenomena using Bayesian methods. Emphasis is on
+integrating diverse datasets and implementing models in Bambi and
+Python. Topics include:
+</p>
+
+<ul class="org-ul">
+<li>Tools for data science workflows
+<ul class="org-ul">
+<li>Google colab</li>
+<li>Python: pandas, geopandas, xarray, rioxarray, rasterio, dask</li>
+<li>Obsidian, GitHub, markdown</li>
+</ul></li>
+
+<li>Spatial data
+<ul class="org-ul">
+<li>Administrative boundaries vs grid systems</li>
+<li>Projections and zonal statistics</li>
+</ul></li>
+
+<li>Population estimation
+<ul class="org-ul">
+<li>Census vs VIIRS nighttime lights</li>
+<li>Intercensal interpolation</li>
+</ul></li>
+
+<li>Environmental monitoring
+<ul class="org-ul">
+<li>ERA5 climate variables</li>
+<li>Sentinel-5P gases (NO2, O3, SO2)</li>
+<li>Greenness indices: NDVI, SAVI, NDWI</li>
+<li>Köppen-Geiger climate classes</li>
+</ul></li>
+
+<li>Agriculture and land surface
+<ul class="org-ul">
+<li>INE crop harvests</li>
+<li>Disaggregating “other” and proportional allocation</li>
+</ul></li>
+
+<li>Epidemiological and socio-economic datasets
+<ul class="org-ul">
+<li>MINSAL NCD outcomes</li>
+<li>CASEN/Census indicators</li>
+<li>Administrative geodata</li>
+</ul></li>
+
+<li>Bayesian data analysis
+<ul class="org-ul">
+<li>Introduction to Bayesian inference</li>
+<li>Prior specification</li>
+<li>Prior and posterior predictive checks</li>
+<li>Bayesian workflow</li>
+</ul></li>
+
+<li>Regression modeling
+<ul class="org-ul">
+<li>Counts with offsets: Poisson, negative binomial, zero-inflated</li>
+<li>Nonlinearities and interactions: splines, greenness × pollution</li>
+</ul></li>
+
+<li>Spatiotemporal modeling
+<ul class="org-ul">
+<li>Hierarchical models: CAR, BYM2, random walks</li>
+<li>Distributed lag non-linear models for climate and pollutants</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org561f316" class="outline-2">
+<h2 id="org561f316">Readings and Resources</h2>
+<div class="outline-text-2" id="text-org561f316">
+<p>
+There is no textbook for this class, but there are several good
+resources.
+</p>
+</div>
+</div>
+<div id="outline-container-org860f0c9" class="outline-2">
+<h2 id="org860f0c9">Specifics</h2>
+<div class="outline-text-2" id="text-org860f0c9">
+<hr />
+<ul class="org-ul">
+<li><b>Class Time</b>: Thursdays (11:10am-12:20pm), Fridays (11:10am-1:40pm)</li>
+<li><b>Class Room</b>: Online (but first class is in 116 Q Building, 1st floor)</li>
+<li><b>First Class</b>: Friday, September 6, 2025</li>
+<li><b>Office Hours</b>: by appointment (email staff)</li>
+</ul>
+<hr />
+<ul class="org-ul">
+<li><b>Professor</b>: <a href="https://leoferres.github.io">Leo Ferres</a>, 227 S
+Building, <a href="mailto:lferres@udd.cl">lferres@udd.cl</a></li>
+<li><b>TAs</b>:
+<ul class="org-ul">
+<li>Antuan Vayisqui, <a href="mailto:lferres@udd.cl">lferres@udd.cl</a></li>
+<li>Alex Palatnic, <a href="mailto:apalatnicf@udd.cl">apalatnicf@udd.cl</a></li>
+</ul></li>
+<li><b>Staff Email</b>: (send email through Canvas to all staff)</li>
+</ul>
+<hr />
+<ul class="org-ul">
+<li><b>Prerequisites</b>:
+<ul class="org-ul">
+<li>(Taller de programación en Python)</li>
+<li>IIP225A (Probability and Statistics)</li>
+<li>or permission from the instructor</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="outline-container-orgcf3d29e" class="outline-2">
+<h2 id="orgcf3d29e">Requirements &amp; Grading</h2>
+<div class="outline-text-2" id="text-orgcf3d29e">
+<p>
+There are six components to the class, some of which are required:
+</p>
+
+<ul class="org-ul">
+<li>[required] <b>Watch</b> and <b>read</b> all video lectures and extra mateiral
+assigned for the class, measured by thumbs-upping the canvas XXX</li>
+<li><b>Participate</b> in class discussion, measured as coauthoring at least
+one <b>nontrivial</b> Canvas post each week about the topics we're
+covering wither about a solution you're working on or a
+well-formulated question about the new material. (Example of a
+trivial post for a solved problem: "Use <code>pandas</code> to sort." Example
+of a nontrivial post for a solved problem: Describing the solution
+techniques you tried but failed.)</li>
+<li><a href="assign2023.html">Assignments</a>. Assignments will be posted weekly
+(in Spanish).</li>
+</ul>
+
+<p>
+The grading scheme this semester is:
+</p>
+
+<ol class="org-ol">
+<li>10 points for watching lectures</li>
+<li>10 points for in-class participation</li>
+<li>50 points for problem sets</li>
+</ol>
+
+<p>
+One additional rule is that you cannot pass the class without watching
+most of the lectures (according to the fairly minimal requirements
+above), which is the meaning of "required".
+</p>
+</div>
+</div>
+<div id="outline-container-orgdeb3fbb" class="outline-2">
+<h2 id="orgdeb3fbb">Past and Future</h2>
+<div class="outline-text-2" id="text-orgdeb3fbb">
+<p>
+A similar class is offered often. It was given in the Fall as
+<a href="iele25-1.html">IELE756 2025-1</a>.
+</p>
+</div>
+</div>
 </div>
 </body>
 </html>

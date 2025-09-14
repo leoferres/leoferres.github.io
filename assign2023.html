@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-04 jue 17:33 -->
+<!-- 2025-09-14 dom 18:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>IELE756 Preparación y Análisis de Datos (Spring 2025)</title>
-<meta name="author" content="Leo Ferres" />
+<title>IELE756 Preparación y Análisis de Datos [en español]</title>
+<meta name="author" content="Leo Ferres, PhD" />
 <meta name="generator" content="Org Mode" />
-<style type="text/css">
+<style>
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -206,59 +206,151 @@ margin-right: auto;
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">IELE756 Preparación y Análisis de Datos (Spring 2025)</h1>
-<div id="outline-container-org31fc589" class="outline-2">
-<h2 id="org31fc589">Policies</h2>
-<div class="outline-text-2" id="text-org31fc589">
+<h1 class="title">IELE756 Preparación y Análisis de Datos [en español]
+<br />
+<span class="subtitle">Spring 2025</span>
+</h1>
+<p>
+[ <b>NOTA</b>: Decidí cambiar esta página al español completamente. ]
+</p>
+
+<div id="outline-container-org29f7953" class="outline-2">
+<h2 id="org29f7953">Políticas</h2>
+<div class="outline-text-2" id="text-org29f7953">
 <ul class="org-ul">
-<li>There will be a weekly problem set, up to 5 problem sets in total,
-plus an "Assignment 0", which is about installing and running the
-software tools.</li>
-<li><b>Late policy</b>. You can request an extension of up to two days on any
-problem set by emailing your issue (heavy workload, travel,
-sickness, hangover, etc.) to the Canvas staff email before the
-problem set is due; reasonable such extension requests will be
-approved.</li>
-<li><b>Collaboration policy</b>. Science is not done in isolation; you will
-work in teams of 2 or 3, as in real research labs. Together you will
-build a model from scratch using real data to predict when and where
-new outbreaks of selected diseases could emerge in Chile. You may
-use as much ChatGPT as you want, but everyone on the team must
-understand and be able to reproduce every part of the
-deliverable. AI tools can help, yet you are ultimately responsible
-for all submitted work and its correctness.</li>
-<li><b>Grading</b>. Submissions must made through the Canvas page and consist
-of a compiled PDF document. Grades and comments will be posted to
-Canvas.</li>
-<li>Problems will be <b>graded</b> on a 0-2 scale:
-<ul class="org-ul">
-<li><b>0</b> = Your solution is far from a good one, e.g., the code is
-incorrect or the solution vaguely specified, and not easily
-fixable.</li>
-<li><b>1</b> = Your solution is on the right track to a good one, but the
-write-up contained major errors or omissions, e.g., you didn't
-show what you need for correctness of your reduction.</li>
-<li><b>1.5</b> = Your solution is close to a good one, but the write-up
-contained some minor omissions or errors, or it was poorly worded.</li>
-<li><b>2</b> = Nailed it.</li>
-</ul></li>
-<li>Due dates are generally at 11:59am (noon) on the specified day
-(typically Mondays and 7 days after release).</li>
+<li>Habrá un conjunto de problemas semanal, hasta un total de 5, más una
+"Tarea 0", que consiste en instalar y ejecutar las herramientas de
+software.</li>
+<li><b>Política de entregas atrasadas</b>. Puedes solicitar una extensión de
+hasta dos días en cualquier conjunto de problemas enviando un correo
+al email del equipo en Canvas antes de la fecha de entrega, explicando tu
+situación (carga de trabajo, viaje, enfermedad, resaca, etc.); tales
+solicitudes razonables serán aprobadas.</li>
+<li><b>Política de colaboración</b>. La ciencia no se hace en aislamiento; se
+trabajará en equipos de 2 o 3 personas, como en laboratorios de
+investigación reales. En conjunto construirán un modelo desde cero
+usando datos reales para predecir cuándo y dónde podrían surgir
+nuevos brotes de ciertas enfermedades en Chile. Puedes usar tanto
+ChatGPT como quieras, pero todos los integrantes del equipo deben
+comprender y ser capaces de reproducir cada parte del entregable. Las
+herramientas de IA pueden ayudar, pero en última instancia ustedes son
+responsables de todo el trabajo entregado y de su corrección.</li>
+<li><b>Evaluación</b>. Las entregas deben hacerse a través de la página de
+Canvas y consistir en un documento PDF compilado. Las notas y
+comentarios se publicarán en Canvas.</li>
+<li>Los problemas serán <b>calificados</b> en una escala de 0 a 9</li>
+<li>Las fechas de entrega son generalmente a las 11:59am (mediodía) en
+el día especificado (típicamente los lunes y 7 días después de la
+publicación, pero hay excepciones, dependiendo de cómo sea la
+tarea).</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orga288eb3" class="outline-2">
-<h2 id="orga288eb3">Problem sets</h2>
-<div class="outline-text-2" id="text-orga288eb3">
+
+<div id="outline-container-orgd80260a" class="outline-2">
+<h2 id="orgd80260a">Conjuntos de problemas tentativos con objetivos</h2>
+<div class="outline-text-2" id="text-orgd80260a">
+<p>
+<b>Tema central</b>: Predicción de enfermedades no transmisibles: cómo la
+temporada de floración afecta las alergias en Chile.
+</p>
+
+<p>
+<b>Formato</b>: trabajo grupal, con división por comunas de la Región
+Metropolitana.
+</p>
+
+<p>
+<b>Intro</b>: Esta sección presenta un conjunto tentativo de <b>Problem Sets
+(PSETs)</b> diseñados para guiar el proyecto grupal del curso. Cada tarea
+incluye un objetivo general y objetivos específicos que avanzan de
+manera progresiva desde la manipulación de datos espaciales básicos
+hasta la construcción de modelos espacio-temporales bayesianos para
+predecir la incidencia de alergias en la Región Metropolitana de
+Chile. El propósito es que las y los estudiantes integren datos
+demográficos, ambientales, agrícolas y epidemiológicos utilizando
+Python, desarrollando competencias tanto técnicas como analíticas en
+el proceso.
+</p>
+
+<ul class="org-ul">
+<li><b>Tarea 1</b>: Población, Territorio y Datos Satelitales
+<ul class="org-ul">
+<li>Objetivo General: Aprender a trabajar con datos espaciales y demográficos en Python.</li>
+<li>Objetivos específicos:
+<ol class="org-ol">
+<li>Construir mapas coropléticos de población por comuna.</li>
+<li>Integrar fuentes oficiales (Censo/INE) con proxies satelitales (luces nocturnas VIIRS).</li>
+<li>Calcular correlaciones básicas entre población y proxies.</li>
+<li>Familiarizarse con `geopandas`, `pandas`, `matplotlib`, `rasterio`, `rasterstats`.</li>
+</ol></li>
+</ul></li>
+
+<li><b>Tarea 2</b>: Variables Ambientales y Clima Local
+<ul class="org-ul">
+<li>Objetivo General: Introducir el monitoreo ambiental y su relación con la salud.</li>
+<li>Objetivos específicos:
+<ol class="org-ol">
+<li>Descargar y procesar variables climáticas (temperatura, humedad, precipitación) desde ERA5.</li>
+<li>Incorporar contaminantes atmosféricos (NO₂, O₃, SO₂) de Sentinel-5P.</li>
+<li>Asociar estas capas a las comunas asignadas mediante zonal statistics.</li>
+<li>Generar un reporte gráfico que muestre la variación espacial de clima y contaminación en la RM.</li>
+</ol></li>
+</ul></li>
+
+<li><b>Tarea 3</b>: Floración y Producción Agrícola
+<ul class="org-ul">
+<li>Objetivo General: Analizar la relación entre agricultura, vegetación y exposición a pólenes.</li>
+<li>Objetivos específicos:
+<ol class="org-ol">
+<li>Incorporar datos de cosechas agrícolas (INE) y asignarlos a comunas.</li>
+<li>Calcular índices de vegetación (NDVI, SAVI, NDWI) con imágenes satelitales.</li>
+<li>Identificar períodos de mayor floración y su localización espacial.</li>
+<li>Comparar patrones agrícolas con variables ambientales de la Tarea 2.</li>
+</ol></li>
+</ul></li>
+
+<li><b>Tarea 4</b>: Datos Epidemiológicos y Modelos de Regresión
+<ul class="org-ul">
+<li>Objetivo General: Conectar la información ambiental y agrícola con resultados en salud.</li>
+<li>Objetivos específicos:
+<ol class="org-ol">
+<li>Integrar hospitalizaciones por enfermedades respiratorias/alérgicas (MINSAL).</li>
+<li>Combinar con datos socioeconómicos (CASEN, Censo).</li>
+<li>Construir regresiones de conteo (Poisson/NegBin) con offsets poblacionales.</li>
+<li>Evaluar interacciones (ej. contaminación × vegetación).</li>
+</ol></li>
+</ul></li>
+
+<li><b>Tarea 5</b>: Modelos Espacio-Temporales Bayesianos
+<ul class="org-ul">
+<li>Objetivo General: Implementar modelos jerárquicos para predecir la carga de alergias.</li>
+<li>Objetivos específicos:
+<ol class="org-ol">
+<li>Especificar modelos CAR o BYM2 que consideren dependencia espacial entre comunas.</li>
+<li>Incluir efectos temporales (caminatas aleatorias, distributed lag).</li>
+<li>Usar `bambi` o `pymc` para ajustar los modelos.</li>
+<li>Integrar todas las capas (población, clima, contaminación, agricultura, salud).</li>
+<li>Generar mapas de riesgo con intervalos de credibilidad.</li>
+</ol></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3de17bd" class="outline-2">
+<h2 id="org3de17bd">Problem sets</h2>
+<div class="outline-text-2" id="text-org3de17bd">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
 <col  class="org-right" />
 
-<col  class="org-left" />
+<col  class="org-right" />
 
-<col  class="org-left" />
+<col  class="org-right" />
 
 <col  class="org-left" />
 
@@ -269,8 +361,8 @@ contained some minor omissions or errors, or it was poorly worded.</li>
 <thead>
 <tr>
 <th scope="col" class="org-right"><b>#</b></th>
-<th scope="col" class="org-left"><b>Release</b></th>
-<th scope="col" class="org-left"><b>Due date</b></th>
+<th scope="col" class="org-right"><b>Release</b></th>
+<th scope="col" class="org-right"><b>Due date</b></th>
 <th scope="col" class="org-left"><b>PSET</b></th>
 <th scope="col" class="org-left"><b>Solution</b></th>
 <th scope="col" class="org-left"><b>Title</b></th>
@@ -279,15 +371,71 @@ contained some minor omissions or errors, or it was poorly worded.</li>
 <tbody>
 <tr>
 <td class="org-right">0</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-right">2025-09-26</td>
+<td class="org-right">2025-10-02</td>
+<td class="org-left"><a href="tarea1-25-2.html">MD</a> / <a href="tarea0-25-2.pdf">PDF</a></td>
+<td class="org-left">TBA</td>
+<td class="org-left">Introducción: instalación, herramientas y flujo de trabajo</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">2025-10-02</td>
+<td class="org-right">2025-10-09</td>
+<td class="org-left"><a href="tarea2-25-2.html">MD</a> / <a href="tarea1-25-2.pdf">PDF</a></td>
+<td class="org-left">TBA</td>
+<td class="org-left">Población, Territorio y Datos Satelitales</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">2025-10-09</td>
+<td class="org-right">2025-10-16</td>
+<td class="org-left"><a href="tarea3-25-2.html">MD</a> / <a href="tarea2-25-2.pdf">PDF</a></td>
+<td class="org-left">TBA</td>
+<td class="org-left">Variables Ambientales y Clima Local</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">2025-10-16</td>
+<td class="org-right">2025-10-23</td>
+<td class="org-left"><a href="tarea4-25-2.html">MD</a> / <a href="tarea3-25-2.pdf">PDF</a></td>
+<td class="org-left">TBA</td>
+<td class="org-left">Floración y Producción Agrícola</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">2025-10-23</td>
+<td class="org-right">2025-11-06</td>
+<td class="org-left"><a href="tarea5-25-2.html">MD</a> / <a href="tarea4-25-2.pdf">PDF</a></td>
+<td class="org-left">TBA</td>
+<td class="org-left">Datos Epidemiológicos y Modelos de Regresión</td>
 </tr>
 </tbody>
 </table>
 
+<p>
+Esta tabla organiza las tareas del curso. Cada fila corresponde a una
+tarea, con su calendario, enlaces y título. Úsala para saber cuándo se
+publican, cuándo vencen y dónde encontrar los archivos.
+</p>
+
+<ul class="org-ul">
+<li><b>#</b>: Número secuencial de la tarea, comenzando en 0.</li>
+<li><b>Release</b>: Fecha en que la tarea se publica y queda disponible.</li>
+<li><b>Due date</b>: Fecha límite para entregar la tarea.</li>
+<li><b>PSET</b>: Enlaces al enunciado de la tarea en Markdown (.md) y PDF
+(.pdf).</li>
+<li><b>Solution</b>: Enlaces a los archivos con la solución (actualmente
+marcados como TBA).</li>
+<li><b>Title</b>: Título de la tarea (en español para los estudiantes).</li>
+</ul>
+
+<p>
+&#x2014;
+</p>
 
 <p>
 Go to the main course's <a href="iele25-2.html">home</a>.

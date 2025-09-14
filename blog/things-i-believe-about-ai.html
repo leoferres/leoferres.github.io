@@ -3,12 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2025-09-14 dom 12:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Things I believe about AI</title>
 <meta name="author" content="Leo Ferres" />
 <meta name="generator" content="Org Mode" />
-<style type="text/css">
+<style>
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -192,26 +193,6 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<script>
-// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-// @license-end
-</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -223,42 +204,43 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgc02eba2">Introduction</a></li>
-<li><a href="#orgc876b31">Questions</a>
+<li><a href="#org9c9659b">Introduction</a></li>
+<li><a href="#org349c91c">Questions</a>
 <ul>
-<li><a href="#org87fb25d">What is AI?</a></li>
-<li><a href="#orgcff3b5d">Are LLMs "intelligent"?</a></li>
-<li><a href="#orgb5b7788">Are LLMs conscious?</a></li>
-<li><a href="#orgafd9b6e">Are LLMs synthetic human beings?</a></li>
-<li><a href="#org648b258">Can LLMs experience beauty?</a></li>
-<li><a href="#orge42f2c3">Should LLM-based systems be held to a considerably higher standard than humans?</a></li>
-<li><a href="#org3d87084">Are LLMs hype or revolution?</a></li>
-<li><a href="#orgbef56b6">Should LLMs be used to write scientific papers?</a></li>
-<li><a href="#org9ccf9b0">Should companies scrape all scientific literature?</a></li>
-<li><a href="#org76cadd6">Should scientific authors be paid for this?</a></li>
-<li><a href="#orgc53fd76">Are LLMs psychologically real?</a></li>
-<li><a href="#orgf0e7e48">Are we flooding the world with all sorts of information? (some blatantly untrue)</a></li>
-<li><a href="#org3490105">What exactly are we automating with LLMs: thought or syntax?</a></li>
-<li><a href="#org5ac4da1">Is the scientific method still necessary when LLMs can generate hypotheses, simulate data, and write conclusions?</a></li>
-<li><a href="#org25d590d">If LLMs outperform undergrads in most disciplines, should we rethink the idea of education?</a></li>
-<li><a href="#org2087fee">Why should I learn to write code if I can describe what I want in natural language?</a></li>
-<li><a href="#org1d2a594">Will peer review survive once LLMs start reviewing papers better, faster, and cheaper than humans?</a></li>
-<li><a href="#org83a308e">Is originality dead if recombination becomes indistinguishable from creativity?</a></li>
-<li><a href="#org4674e61">Is it unethical not to use LLMs in science, given the productivity advantage?</a></li>
-<li><a href="#orga1259f4">What happens when most scientific papers are written by models for models?</a></li>
-<li><a href="#org6c391d0">Are we witnessing the end of human-to-human communication as the basis of knowledge transfer?</a></li>
-<li><a href="#orgef46064">If an LLM can design an experiment better than I can, who gets the grant?</a></li>
-<li><a href="#org884e04a">Why do we still pretend that human cognition is the benchmark?</a></li>
-<li><a href="#orgcd322a2">Do we need a new academic field to study synthetic minds?</a></li>
-<li><a href="#orgac1e67e">If LLMs can pass moral reasoning tests, should they be allowed to vote?</a></li>
+<li><a href="#org8ad03e7">What is AI?</a></li>
+<li><a href="#orgf964713">Are LLMs "intelligent"?</a></li>
+<li><a href="#org227a914">Are LLMs conscious?</a></li>
+<li><a href="#orgaa806d4">Are LLMs synthetic human beings?</a></li>
+<li><a href="#orge667956">Can LLMs experience beauty?</a></li>
+<li><a href="#org3abaa07">Should LLM-based systems be held to a considerably higher standard than humans?</a></li>
+<li><a href="#orgba5fa41">Are LLMs hype or revolution?</a></li>
+<li><a href="#org890733e">Should LLMs be used to write scientific papers?</a></li>
+<li><a href="#orgd6db2b7">Should companies scrape all scientific literature?</a></li>
+<li><a href="#orgddaa2aa">Should scientific authors be paid for this?</a></li>
+<li><a href="#orgc752bd0">Are LLMs psychologically real?</a></li>
+<li><a href="#org0b944d7">Are we flooding the world with all sorts of information? (some blatantly untrue)</a></li>
+<li><a href="#orgaca04d0">What exactly are we automating with LLMs: thought or syntax?</a></li>
+<li><a href="#org8450972">Is the scientific method still necessary when LLMs can generate hypotheses, simulate data, and write conclusions?</a></li>
+<li><a href="#orga1d9f58">If LLMs outperform undergrads in most disciplines, should we rethink the idea of education?</a></li>
+<li><a href="#orgc104e63">Why should I learn to write code if I can describe what I want in natural language?</a></li>
+<li><a href="#org2e833ee">Will peer review survive once LLMs start reviewing papers better, faster, and cheaper than humans?</a></li>
+<li><a href="#org267fda6">Is originality dead if recombination becomes indistinguishable from creativity?</a></li>
+<li><a href="#orgfd36695">Is it unethical not to use LLMs in science, given the productivity advantage?</a></li>
+<li><a href="#org5ecb7c0">What happens when most scientific papers are written by models for models?</a></li>
+<li><a href="#org6ecf97b">Are we witnessing the end of human-to-human communication as the basis of knowledge transfer?</a></li>
+<li><a href="#orge79905e">If an LLM can design an experiment better than I can, who gets the grant?</a></li>
+<li><a href="#org4165bfc">Why do we still pretend that human cognition is the benchmark?</a></li>
+<li><a href="#org1bc8ce7">Do we need a new academic field to study synthetic minds?</a></li>
+<li><a href="#org0d908a7">If LLMs can pass moral reasoning tests, should they be allowed to vote?</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc02eba2" class="outline-2">
-<h2 id="orgc02eba2">Introduction</h2>
-<div class="outline-text-2" id="text-orgc02eba2">
+
+<div id="outline-container-org9c9659b" class="outline-2">
+<h2 id="org9c9659b">Introduction</h2>
+<div class="outline-text-2" id="text-org9c9659b">
 <p>
 This is my response to a few questions I've been asked about AI. It
 reflects how I currently think, but that doesn't mean I'm not open to
@@ -288,13 +270,14 @@ show.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc876b31" class="outline-2">
-<h2 id="orgc876b31">Questions</h2>
-<div class="outline-text-2" id="text-orgc876b31">
+
+<div id="outline-container-org349c91c" class="outline-2">
+<h2 id="org349c91c">Questions</h2>
+<div class="outline-text-2" id="text-org349c91c">
 </div>
-<div id="outline-container-org87fb25d" class="outline-3">
-<h3 id="org87fb25d">What is AI?</h3>
-<div class="outline-text-3" id="text-org87fb25d">
+<div id="outline-container-org8ad03e7" class="outline-3">
+<h3 id="org8ad03e7">What is AI?</h3>
+<div class="outline-text-3" id="text-org8ad03e7">
 <p>
 Right now? Mostly Large Language Models (LLMs). But over the past 70
 years since Turing's classic <i>Can machines think?</i>, (Turing, Computing
@@ -309,9 +292,11 @@ pages (yes, really). Now?  We're back to probabilistic machines.
 </p>
 </div>
 </div>
-<div id="outline-container-orgcff3b5d" class="outline-3">
-<h3 id="orgcff3b5d">Are LLMs "intelligent"?</h3>
-<div class="outline-text-3" id="text-orgcff3b5d">
+
+
+<div id="outline-container-orgf964713" class="outline-3">
+<h3 id="orgf964713">Are LLMs "intelligent"?</h3>
+<div class="outline-text-3" id="text-orgf964713">
 <p>
 The question is meaningless until we define the concept of
 intelligence in a way we can measure. If we go by the benchmarks LLM
@@ -324,9 +309,11 @@ can't do is keep moving the goalposts.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb5b7788" class="outline-3">
-<h3 id="orgb5b7788">Are LLMs conscious?</h3>
-<div class="outline-text-3" id="text-orgb5b7788">
+
+
+<div id="outline-container-org227a914" class="outline-3">
+<h3 id="org227a914">Are LLMs conscious?</h3>
+<div class="outline-text-3" id="text-org227a914">
 <p>
 The question is meaningless until we have a measurable definition of
 "consciousness." Same issue as before. One point, though: if you think
@@ -342,9 +329,11 @@ purposes, they are* conscious.
 </p>
 </div>
 </div>
-<div id="outline-container-orgafd9b6e" class="outline-3">
-<h3 id="orgafd9b6e">Are LLMs synthetic human beings?</h3>
-<div class="outline-text-3" id="text-orgafd9b6e">
+
+
+<div id="outline-container-orgaa806d4" class="outline-3">
+<h3 id="orgaa806d4">Are LLMs synthetic human beings?</h3>
+<div class="outline-text-3" id="text-orgaa806d4">
 <p>
 No.
 </p>
@@ -354,26 +343,31 @@ No.
 </p>
 </div>
 </div>
-<div id="outline-container-org648b258" class="outline-3">
-<h3 id="org648b258">Can LLMs experience beauty?</h3>
-<div class="outline-text-3" id="text-org648b258">
+
+<div id="outline-container-orge667956" class="outline-3">
+<h3 id="orge667956">Can LLMs experience beauty?</h3>
+<div class="outline-text-3" id="text-orge667956">
 <p>
 Can you? Or: Prove to me that you can.
 </p>
 </div>
 </div>
-<div id="outline-container-orge42f2c3" class="outline-3">
-<h3 id="orge42f2c3">Should LLM-based systems be held to a considerably higher standard than humans?</h3>
-<div class="outline-text-3" id="text-orge42f2c3">
+
+
+<div id="outline-container-org3abaa07" class="outline-3">
+<h3 id="org3abaa07">Should LLM-based systems be held to a considerably higher standard than humans?</h3>
+<div class="outline-text-3" id="text-org3abaa07">
 <p>
 Yes. BUT: if they make a mistake, the ultimate responsability is a
 human being. Not the system.
 </p>
 </div>
 </div>
-<div id="outline-container-org3d87084" class="outline-3">
-<h3 id="org3d87084">Are LLMs hype or revolution?</h3>
-<div class="outline-text-3" id="text-org3d87084">
+
+
+<div id="outline-container-orgba5fa41" class="outline-3">
+<h3 id="orgba5fa41">Are LLMs hype or revolution?</h3>
+<div class="outline-text-3" id="text-orgba5fa41">
 <p>
 They're a revolution. Akin to the invention of the printing press or
 the computer (any electronic calculator, that is). LLMs make language
@@ -382,9 +376,11 @@ information.
 </p>
 </div>
 </div>
-<div id="outline-container-orgbef56b6" class="outline-3">
-<h3 id="orgbef56b6">Should LLMs be used to write scientific papers?</h3>
-<div class="outline-text-3" id="text-orgbef56b6">
+
+
+<div id="outline-container-org890733e" class="outline-3">
+<h3 id="org890733e">Should LLMs be used to write scientific papers?</h3>
+<div class="outline-text-3" id="text-org890733e">
 <p>
 Most definitely, yes. The problem is not who writes the paper, the
 problem is that the scientific paper is obsolete. More about this
@@ -392,17 +388,21 @@ below.
 </p>
 </div>
 </div>
-<div id="outline-container-org9ccf9b0" class="outline-3">
-<h3 id="org9ccf9b0">Should companies scrape all scientific literature?</h3>
-<div class="outline-text-3" id="text-org9ccf9b0">
+
+
+<div id="outline-container-orgd6db2b7" class="outline-3">
+<h3 id="orgd6db2b7">Should companies scrape all scientific literature?</h3>
+<div class="outline-text-3" id="text-orgd6db2b7">
 <p>
 Yes.
 </p>
 </div>
 </div>
-<div id="outline-container-org76cadd6" class="outline-3">
-<h3 id="org76cadd6">Should scientific authors be paid for this?</h3>
-<div class="outline-text-3" id="text-org76cadd6">
+
+
+<div id="outline-container-orgddaa2aa" class="outline-3">
+<h3 id="orgddaa2aa">Should scientific authors be paid for this?</h3>
+<div class="outline-text-3" id="text-orgddaa2aa">
 <p>
 No. They (we?) have already been paid. Twice: by universities and by
 grant agencies. I want an LLM that knows all the scientific
@@ -414,9 +414,11 @@ journals.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc53fd76" class="outline-3">
-<h3 id="orgc53fd76">Are LLMs psychologically real?</h3>
-<div class="outline-text-3" id="text-orgc53fd76">
+
+
+<div id="outline-container-orgc752bd0" class="outline-3">
+<h3 id="orgc752bd0">Are LLMs psychologically real?</h3>
+<div class="outline-text-3" id="text-orgc752bd0">
 <p>
 I don't care. They're functionally equivalent (in language) to a
 really smart abstraction of a grad student, coder, scientist,
@@ -425,9 +427,11 @@ language like children. In any case, they learn it faster and better.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf0e7e48" class="outline-3">
-<h3 id="orgf0e7e48">Are we flooding the world with all sorts of information? (some blatantly untrue)</h3>
-<div class="outline-text-3" id="text-orgf0e7e48">
+
+
+<div id="outline-container-org0b944d7" class="outline-3">
+<h3 id="org0b944d7">Are we flooding the world with all sorts of information? (some blatantly untrue)</h3>
+<div class="outline-text-3" id="text-org0b944d7">
 <p>
 Yes. But so what. Same happened with the printing press. Think about
 all the pamphlets&#x2026; and pulp fiction, and self-help books, and Learn
@@ -435,9 +439,11 @@ Java in 21 Days.
 </p>
 </div>
 </div>
-<div id="outline-container-org3490105" class="outline-3">
-<h3 id="org3490105">What exactly are we automating with LLMs: thought or syntax?</h3>
-<div class="outline-text-3" id="text-org3490105">
+
+
+<div id="outline-container-orgaca04d0" class="outline-3">
+<h3 id="orgaca04d0">What exactly are we automating with LLMs: thought or syntax?</h3>
+<div class="outline-text-3" id="text-orgaca04d0">
 <p>
 Syntax. We should know what we have to say. Same thing with a
 calculator: we know we have to sum, divide, subtract, whatever, the
@@ -446,9 +452,11 @@ this.
 </p>
 </div>
 </div>
-<div id="outline-container-org5ac4da1" class="outline-3">
-<h3 id="org5ac4da1">Is the scientific method still necessary when LLMs can generate hypotheses, simulate data, and write conclusions?</h3>
-<div class="outline-text-3" id="text-org5ac4da1">
+
+
+<div id="outline-container-org8450972" class="outline-3">
+<h3 id="org8450972">Is the scientific method still necessary when LLMs can generate hypotheses, simulate data, and write conclusions?</h3>
+<div class="outline-text-3" id="text-org8450972">
 <p>
 The scientific method, yes. The scientist? No. At least not
 exactly. On this date (2025-08-05 14:52:36), humans still need to take
@@ -458,27 +466,32 @@ knowledge.
 </p>
 </div>
 </div>
-<div id="outline-container-org25d590d" class="outline-3">
-<h3 id="org25d590d">If LLMs outperform undergrads in most disciplines, should we rethink the idea of education?</h3>
-<div class="outline-text-3" id="text-org25d590d">
+
+<div id="outline-container-orga1d9f58" class="outline-3">
+<h3 id="orga1d9f58">If LLMs outperform undergrads in most disciplines, should we rethink the idea of education?</h3>
+<div class="outline-text-3" id="text-orga1d9f58">
 <p>
 Yes. Absolutely. Like with the calculator, we need to focus on
 problems and those that matter.
 </p>
 </div>
 </div>
-<div id="outline-container-org2087fee" class="outline-3">
-<h3 id="org2087fee">Why should I learn to write code if I can describe what I want in natural language?</h3>
-<div class="outline-text-3" id="text-org2087fee">
+
+
+<div id="outline-container-orgc104e63" class="outline-3">
+<h3 id="orgc104e63">Why should I learn to write code if I can describe what I want in natural language?</h3>
+<div class="outline-text-3" id="text-orgc104e63">
 <p>
 You shouldn't. But you <i>yourself</i> are ultimately responsible for what
 that code does. You must not assume that the code is right.
 </p>
 </div>
 </div>
-<div id="outline-container-org1d2a594" class="outline-3">
-<h3 id="org1d2a594">Will peer review survive once LLMs start reviewing papers better, faster, and cheaper than humans?</h3>
-<div class="outline-text-3" id="text-org1d2a594">
+
+
+<div id="outline-container-org2e833ee" class="outline-3">
+<h3 id="org2e833ee">Will peer review survive once LLMs start reviewing papers better, faster, and cheaper than humans?</h3>
+<div class="outline-text-3" id="text-org2e833ee">
 <p>
 Hopefully not. Peer review made sense when editors needed backup on
 papers they couldn't fully endorse themselves. Now? It's mostly a
@@ -490,27 +503,33 @@ incentives for reviewers, it's become functionally broken.
 </p>
 </div>
 </div>
-<div id="outline-container-org83a308e" class="outline-3">
-<h3 id="org83a308e">Is originality dead if recombination becomes indistinguishable from creativity?</h3>
-<div class="outline-text-3" id="text-org83a308e">
+
+
+<div id="outline-container-org267fda6" class="outline-3">
+<h3 id="org267fda6">Is originality dead if recombination becomes indistinguishable from creativity?</h3>
+<div class="outline-text-3" id="text-org267fda6">
 <p>
 Originality is dead now, what are you talking about. Most papers are
 delta papers, changing something ever so slightly.
 </p>
 </div>
 </div>
-<div id="outline-container-org4674e61" class="outline-3">
-<h3 id="org4674e61">Is it unethical not to use LLMs in science, given the productivity advantage?</h3>
-<div class="outline-text-3" id="text-org4674e61">
+
+
+<div id="outline-container-orgfd36695" class="outline-3">
+<h3 id="orgfd36695">Is it unethical not to use LLMs in science, given the productivity advantage?</h3>
+<div class="outline-text-3" id="text-orgfd36695">
 <p>
 Unethical? No. You can definitely <i>not</i> use LLMs. You're not better
 than the ones who do, though.
 </p>
 </div>
 </div>
-<div id="outline-container-orga1259f4" class="outline-3">
-<h3 id="orga1259f4">What happens when most scientific papers are written by models for models?</h3>
-<div class="outline-text-3" id="text-orga1259f4">
+
+
+<div id="outline-container-org5ecb7c0" class="outline-3">
+<h3 id="org5ecb7c0">What happens when most scientific papers are written by models for models?</h3>
+<div class="outline-text-3" id="text-org5ecb7c0">
 <p>
 This deserves a very long answer. In short, I believe science should
 be done <i>for</i> LLMs from the start, and following an open-source
@@ -520,17 +539,21 @@ this one.
 </p>
 </div>
 </div>
-<div id="outline-container-org6c391d0" class="outline-3">
-<h3 id="org6c391d0">Are we witnessing the end of human-to-human communication as the basis of knowledge transfer?</h3>
-<div class="outline-text-3" id="text-org6c391d0">
+
+
+<div id="outline-container-org6ecf97b" class="outline-3">
+<h3 id="org6ecf97b">Are we witnessing the end of human-to-human communication as the basis of knowledge transfer?</h3>
+<div class="outline-text-3" id="text-org6ecf97b">
 <p>
 I don't know. But I hope so.
 </p>
 </div>
 </div>
-<div id="outline-container-orgef46064" class="outline-3">
-<h3 id="orgef46064">If an LLM can design an experiment better than I can, who gets the grant?</h3>
-<div class="outline-text-3" id="text-orgef46064">
+
+
+<div id="outline-container-orge79905e" class="outline-3">
+<h3 id="orge79905e">If an LLM can design an experiment better than I can, who gets the grant?</h3>
+<div class="outline-text-3" id="text-orge79905e">
 <p>
 Whoever asked the main research question and started the
 process, and, most importantly, whoever is willing to take the blame
@@ -538,26 +561,32 @@ if something goes wrong.
 </p>
 </div>
 </div>
-<div id="outline-container-org884e04a" class="outline-3">
-<h3 id="org884e04a">Why do we still pretend that human cognition is the benchmark?</h3>
-<div class="outline-text-3" id="text-org884e04a">
+
+
+<div id="outline-container-org4165bfc" class="outline-3">
+<h3 id="org4165bfc">Why do we still pretend that human cognition is the benchmark?</h3>
+<div class="outline-text-3" id="text-org4165bfc">
 <p>
 I don't know. We should strive for better benchmarks than human
 cognition. It's hard to imagine things we don't know, though.
 </p>
 </div>
 </div>
-<div id="outline-container-orgcd322a2" class="outline-3">
-<h3 id="orgcd322a2">Do we need a new academic field to study synthetic minds?</h3>
-<div class="outline-text-3" id="text-orgcd322a2">
+
+
+<div id="outline-container-org1bc8ce7" class="outline-3">
+<h3 id="org1bc8ce7">Do we need a new academic field to study synthetic minds?</h3>
+<div class="outline-text-3" id="text-org1bc8ce7">
 <p>
 Yes, I'd say so. But I don't know what form that will take.
 </p>
 </div>
 </div>
-<div id="outline-container-orgac1e67e" class="outline-3">
-<h3 id="orgac1e67e">If LLMs can pass moral reasoning tests, should they be allowed to vote?</h3>
-<div class="outline-text-3" id="text-orgac1e67e">
+
+
+<div id="outline-container-org0d908a7" class="outline-3">
+<h3 id="org0d908a7">If LLMs can pass moral reasoning tests, should they be allowed to vote?</h3>
+<div class="outline-text-3" id="text-org0d908a7">
 <p>
 I don't know.
 </p>

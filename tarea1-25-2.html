@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-14 dom 12:55 -->
+<!-- 2025-09-14 dom 18:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Blog Posts</title>
+<title>Tarea 1</title>
 <meta name="author" content="Leo Ferres" />
 <meta name="generator" content="Org Mode" />
 <style>
@@ -196,13 +196,227 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Blog Posts</h1>
+<h1 class="title">Tarea 1
+<br />
+<span class="subtitle">Población, Territorio y Datos Satelitales</span>
+</h1>
+
+<div id="outline-container-orgfa341b8" class="outline-2">
+<h2 id="orgfa341b8">Información general</h2>
+<div class="outline-text-2" id="text-orgfa341b8">
 <ul class="org-ul">
-<li><a href="modeling_intro.html">Stan-Based Epidemiological Models I: The Basics</a></li>
-<li><a href="dengue.html">Stan-Based Epidemiological Models II: Modeling Dengue</a></li>
-<li><a href="ai-art.html">The Era of Ideas: Finding Meaning Through AI Art</a></li>
-<li><a href="things-i-believe-about-ai.html">Things I believe about AI</a></li>
+<li><b>Profesor:</b> Leo Ferres, <b>TAs:</b> Antuan Vayisqui y Alex Palatnic</li>
+<li><b>Valor:</b> 9 puntos de homework (consistente con el esquema del curso)</li>
+<li><b>Librerías clave:</b> <code>geopandas</code>, <code>pandas</code>, <code>matplotlib</code>, <code>rasterio</code>,
+<code>rasterstats</code></li>
+<li><b>Contexto del curso:</b> estimación poblacional con VIIRS y datos
+administrativos, parte del pipeline hacia modelos espacio-temporales
+de salud.</li>
+<li><b>Alcance:</b> Trabajo <b>grupal</b> por comunas asignadas de la Región
+Metropolitana (RM). <b>Objetivo</b>: consolidar una capa comunal con
+población y proxies satelitales, y producir mapas y análisis
+exploratorio reproducible.</li>
 </ul>
+</div>
+</div>
+
+<div id="outline-container-orgb78576c" class="outline-2">
+<h2 id="orgb78576c">Limpieza</h2>
+<div class="outline-text-2" id="text-orgb78576c">
+<ol class="org-ol">
+<li>Cree la estructura mínima de proyecto:
+<ul class="org-ul">
+<li><code>data/raw</code>, <code>data/processed/geo</code>, <code>notebooks</code>, <code>reports</code>,
+<code>scripts</code>.</li>
+</ul></li>
+<li>Coloque <b>todas</b> las fuentes originales en <code>data/raw</code>; en
+<code>data/processed/geo</code> guarde la <b>capa comunal RM</b> ya armonizada (CRS
+común).</li>
+<li>Documente <b>fuentes y versión</b> de cada dataset en
+<code>reports/README.md</code>.</li>
+<li>Cada grupo trabajará <b>solo</b> con sus comunas asignadas, pero el repo
+debe permitir recomputar para toda la RM con un parámetro.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9857cf1" class="outline-2">
+<h2 id="org9857cf1">Mapas de Población y Proxies Satelitales (VIIRS)</h2>
+<div class="outline-text-2" id="text-org9857cf1">
+</div>
+<div id="outline-container-org02f6a4c" class="outline-3">
+<h3 id="org02f6a4c">Objetivo</h3>
+<div class="outline-text-3" id="text-org02f6a4c">
+<p>
+Aprender a cargar, unir y visualizar datos geoespaciales en Python;
+construir un coroplético comunal de población y evaluar la relación
+<b>población ↔ luces nocturnas</b> como proxy de magnitud urbana (coherente
+con el temario de <b>Population estimation: Census vs
+VIIRS</b>).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org39adcef" class="outline-3">
+<h3 id="org39adcef">Parte 1: Búsqueda y preparación de datos</h3>
+<div class="outline-text-3" id="text-org39adcef">
+<ol class="org-ol">
+<li><b>Límites comunales RM:</b> shapefile o geopackage oficial.</li>
+<li><b>Población por comuna:</b> Censo/INE (último año disponible) con
+<b>códigos</b> administrativos compatibles.</li>
+<li><b>Luces nocturnas (VIIRS):</b> raster reciente (radiance o stable
+lights).</li>
+<li><b>Opcional (puntos):</b> aeropuertos u otra POI para practicar
+superposición de puntos (estilo
+<b>tarea2</b>).</li>
+<li>Armonice CRS, renombre columnas y verifique <b>joins</b> por código
+comuna.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org51f4134" class="outline-3">
+<h3 id="org51f4134">Parte 2: Mapa coroplético de población</h3>
+<div class="outline-text-3" id="text-org51f4134">
+<ol class="org-ol">
+<li>Cargue límites con <code>geopandas</code> y población con <code>pandas</code>; haga el
+<b>join</b>.</li>
+<li>Genere un coroplético: <code>gdf.plot(column="poblacion")</code> con leyenda,
+título, <b>scale bar</b> simple y <b>north arrow</b> básico.</li>
+<li>Exporte a <code>reports/figs/poblacion_rm.png</code>.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org728d798" class="outline-3">
+<h3 id="org728d798">Parte 3: Puntos (opcional guiado)</h3>
+<div class="outline-text-3" id="text-org728d798">
+<ol class="org-ol">
+<li>Cargue POIs (p. ej., aeropuertos).</li>
+<li>Conviértalos a <code>GeoDataFrame</code> y superpóngalos sobre el coroplético
+con símbolos diferenciados.</li>
+<li>Exporte a <code>reports/figs/poblacion_pois.png</code>.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1b07eb0" class="outline-3">
+<h3 id="org1b07eb0">Parte 4: Zonal statistics de VIIRS por comuna</h3>
+<div class="outline-text-3" id="text-org1b07eb0">
+<ol class="org-ol">
+<li>Cargue raster VIIRS con <code>rasterio</code>.</li>
+<li>Calcule <code>zonal_stats</code> (media y suma) por comuna; añada las métricas
+a la capa comunal.</li>
+<li>Construya un <code>DataFrame</code> con columnas <b>poblacion</b> y
+<b>viirs<sub>mean</sub>/viirs<sub>sum</sub></b>.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgb064ff3" class="outline-3">
+<h3 id="orgb064ff3">Parte 5: Análisis y visualización</h3>
+<div class="outline-text-3" id="text-orgb064ff3">
+<ol class="org-ol">
+<li>Estime correlación (<b>Pearson/Spearman</b>) entre población y VIIRS;
+reporte coeficientes y <b>n</b>.</li>
+<li>Genere un <b>scatter</b> con línea de tendencia y destaque outliers con
+<b>labels</b> de comuna.</li>
+<li>Incluya dos mapas mínimos: población y VIIRS (clasificación
+cuantílica).</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgea4f692" class="outline-2">
+<h2 id="orgea4f692">Entrega</h2>
+<div class="outline-text-2" id="text-orgea4f692">
+<ol class="org-ol">
+<li>Un <code>.ipynb</code> <b>o</b> <code>.py</code> reproducible en <code>notebooks/</code> con <b>seed</b> fija
+y rutas relativas.</li>
+<li><code>reports/README.md</code> con:
+<ul class="org-ul">
+<li>Fuentes y enlaces de datos, fechas de descarga y licencias.</li>
+<li>Decisiones de limpieza y CRS usado.</li>
+<li>Resultados (mapas y gráficos) y 5–8 <b>bullet points</b> de hallazgos.</li>
+</ul></li>
+<li><b>Figuras:</b> al menos <b>dos mapas</b> (población y VIIRS) y <b>un scatter</b>
+de correlación en <code>reports/figs/</code>.</li>
+<li>Estructura de proyecto conforme a <b>Limpieza</b>.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1daf0f5" class="outline-2">
+<h2 id="org1daf0f5">Fecha de entrega</h2>
+<div class="outline-text-2" id="text-org1daf0f5">
+<p>
+<b>Domingo 28 de septiembre de 2025</b> (23:59, hora RM).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org65a54fe" class="outline-2">
+<h2 id="org65a54fe">Criterios de evaluación</h2>
+<div class="outline-text-2" id="text-org65a54fe">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Criterio</th>
+<th scope="col" class="org-right">Puntos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Estructura de proyecto y documentación de fuentes</td>
+<td class="org-right">1.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Coroplético de población (join correcto, legibilidad)</td>
+<td class="org-right">1.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Superposición de puntos (POIs)</td>
+<td class="org-right">0.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Zonal stats de VIIRS por comuna (pipeline correcto)</td>
+<td class="org-right">2.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Correlación y análisis crítico (interpretación, outliers)</td>
+<td class="org-right">2.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Calidad de visualizaciones (2 mapas + 1 scatter)</td>
+<td class="org-right">1.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Reproducibilidad (rutas relativas, seeds, README claro)</td>
+<td class="org-right">1.0</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total</b></td>
+<td class="org-right"><b>9.0</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 </body>
 </html>

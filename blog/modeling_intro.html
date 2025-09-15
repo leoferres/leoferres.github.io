@@ -3,7 +3,6 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-14 dom 12:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stan-Based Epidemiological Models I: The Basics</title>
@@ -201,36 +200,36 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org7615a6f">Introduction</a></li>
-<li><a href="#org7a18526">The simplest models in Stan</a>
+<li><a href="#org27d39b8">Introduction</a></li>
+<li><a href="#org47cd86e">The simplest models in Stan</a>
 <ul>
-<li><a href="#org5ce99c4">SIR</a></li>
-<li><a href="#org96744a1">SEIR</a></li>
+<li><a href="#org3514536">SIR</a></li>
+<li><a href="#orga158f99">SEIR</a></li>
 </ul>
 </li>
-<li><a href="#orge8c906c">Inference</a>
+<li><a href="#orgf683aa1">Inference</a>
 <ul>
-<li><a href="#org940614b">Priors</a></li>
-<li><a href="#org98ecdb8">Why a negative binomial likelihood?</a></li>
-<li><a href="#org36177bf">Parameter recovery</a></li>
-<li><a href="#orgbf755d1">Model diagnostics</a></li>
+<li><a href="#org38739f3">Priors</a></li>
+<li><a href="#orgc27b1da">Why a negative binomial likelihood?</a></li>
+<li><a href="#org35ef4bb">Parameter recovery</a></li>
+<li><a href="#org781f4c5">Model diagnostics</a></li>
 </ul>
 </li>
-<li><a href="#org85fa192">Testing on Real Epidemiological Data</a>
+<li><a href="#org90bbf3e">Testing on Real Epidemiological Data</a>
 <ul>
-<li><a href="#org80c4b0c">Priors</a></li>
-<li><a href="#orgad019b6">Fitting the model</a></li>
-<li><a href="#org9033b3d">Model limitations</a></li>
+<li><a href="#org4e4f963">Priors</a></li>
+<li><a href="#org8cad095">Fitting the model</a></li>
+<li><a href="#orge7c0fef">Model limitations</a></li>
 </ul>
 </li>
-<li><a href="#orgc69d3fb">Conclusion</a></li>
+<li><a href="#org11c5b37">Conclusion</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org7615a6f" class="outline-2">
-<h2 id="org7615a6f">Introduction</h2>
-<div class="outline-text-2" id="text-org7615a6f">
+<div id="outline-container-org27d39b8" class="outline-2">
+<h2 id="org27d39b8">Introduction</h2>
+<div class="outline-text-2" id="text-org27d39b8">
 <p>
 This post is primarily for my own understanding rather than to present
 new ideas. I'll walk through the latest epidemiological model
@@ -259,13 +258,13 @@ This post has been heavily inspired by <a href="https://doi.org/10.1002/sim.9164
 </div>
 </div>
 
-<div id="outline-container-org7a18526" class="outline-2">
-<h2 id="org7a18526">The simplest models in Stan</h2>
-<div class="outline-text-2" id="text-org7a18526">
+<div id="outline-container-org47cd86e" class="outline-2">
+<h2 id="org47cd86e">The simplest models in Stan</h2>
+<div class="outline-text-2" id="text-org47cd86e">
 </div>
-<div id="outline-container-org5ce99c4" class="outline-3">
-<h3 id="org5ce99c4">SIR</h3>
-<div class="outline-text-3" id="text-org5ce99c4">
+<div id="outline-container-org3514536" class="outline-3">
+<h3 id="org3514536">SIR</h3>
+<div class="outline-text-3" id="text-org3514536">
 <p>
 Files are: <a href="../code/sir0.stan">sir0.stan</a>: the model, <a href="../code/sir0.py">sir0.py</a>: the runtime.
 </p>
@@ -291,7 +290,7 @@ using a system of ordinary differential equations, with each equation
 describing the rate of change of one compartment.
 </p>
 
-<pre class="example" id="org9c9ad3b">
+<pre class="example" id="orgc31aa13">
 dS/dt = -beta × S × I / N
 dI/dt = beta × S × I / N - gamma × I
 dR/dt = gamma × I
@@ -339,7 +338,7 @@ estimation. We'll come back to this below
 </p>
 
 
-<div id="org7e01355" class="figure">
+<div id="org91d9816" class="figure">
 <p><img src="../img/sir0.png" alt="sir0.png" style="margin: 5px; width: 600px;" />
 </p>
 </div>
@@ -378,9 +377,9 @@ translates to an average infectious period of 1/gamma = 10 days.
 </div>
 </div>
 
-<div id="outline-container-org96744a1" class="outline-3">
-<h3 id="org96744a1">SEIR</h3>
-<div class="outline-text-3" id="text-org96744a1">
+<div id="outline-container-orga158f99" class="outline-3">
+<h3 id="orga158f99">SEIR</h3>
+<div class="outline-text-3" id="text-orga158f99">
 <p>
 Files are <a href="../code/seir0.stan">seir0.stan</a> and <a href="../code/seir0.py">seir0.py</a>.
 </p>
@@ -414,7 +413,7 @@ I).
 </p>
 
 
-<div id="org087229f" class="figure">
+<div id="org9a8eb60" class="figure">
 <p><img src="../img/seir0.png" alt="seir0.png" style="margin: 5px; width: 600px;" />
 </p>
 </div>
@@ -423,9 +422,9 @@ I).
 </div>
 
 
-<div id="outline-container-orge8c906c" class="outline-2">
-<h2 id="orge8c906c">Inference</h2>
-<div class="outline-text-2" id="text-orge8c906c">
+<div id="outline-container-orgf683aa1" class="outline-2">
+<h2 id="orgf683aa1">Inference</h2>
+<div class="outline-text-2" id="text-orgf683aa1">
 <p>
 The above is essentially using Stan as a differential equation solver
 rather than a probabilistic programming language. Remember the
@@ -487,9 +486,9 @@ parameter values without having to explore an infinite value space.
 </p>
 </div>
 
-<div id="outline-container-org940614b" class="outline-3">
-<h3 id="org940614b">Priors</h3>
-<div class="outline-text-3" id="text-org940614b">
+<div id="outline-container-org38739f3" class="outline-3">
+<h3 id="org38739f3">Priors</h3>
+<div class="outline-text-3" id="text-org38739f3">
 <div class="org-src-container">
 <pre class="src src-stan">beta <span style="color: #008b8b;">~</span> <span style="color: #0000ff;">lognormal</span>(-0.69, 0.5);
 gamma <span style="color: #008b8b;">~</span> <span style="color: #0000ff;">lognormal</span>(-2.30, 0.5);
@@ -536,9 +535,9 @@ epidemiological expectations for infectious disease modeling.
 </div>
 </div>
 
-<div id="outline-container-org98ecdb8" class="outline-3">
-<h3 id="org98ecdb8">Why a negative binomial likelihood?</h3>
-<div class="outline-text-3" id="text-org98ecdb8">
+<div id="outline-container-orgc27b1da" class="outline-3">
+<h3 id="orgc27b1da">Why a negative binomial likelihood?</h3>
+<div class="outline-text-3" id="text-orgc27b1da">
 <p>
 Finally, the likelihood is <code>cases ~ neg_binomial_2(y[,2], phi);</code>,
 because real epidemiological data almost always exhibits
@@ -567,9 +566,9 @@ approximation of reality.
 </div>
 </div>
 
-<div id="outline-container-org36177bf" class="outline-3">
-<h3 id="org36177bf">Parameter recovery</h3>
-<div class="outline-text-3" id="text-org36177bf">
+<div id="outline-container-org35ef4bb" class="outline-3">
+<h3 id="org35ef4bb">Parameter recovery</h3>
+<div class="outline-text-3" id="text-org35ef4bb">
 <p>
 So, does our model fit the generated data? Let's look at some plots
 generated by running the python script in
@@ -577,7 +576,7 @@ generated by running the python script in
 </p>
 
 
-<div id="org6788774" class="figure">
+<div id="orgb8e2884" class="figure">
 <p><img src="../img/sir_inference_results.png" alt="sir_inference_results.png" style="margin: 5px; width: 900px;" />
 </p>
 </div>
@@ -586,7 +585,7 @@ generated by running the python script in
 or, in numbers:
 </p>
 
-<pre class="example" id="org03c4e9b">
+<pre class="example" id="org2aef6e5">
                  Mean      MCSE  StdDev        MAD       5%      50%      95%  ESS_bulk  ESS_tail  R_hat
 lp__         -203.918  0.033031   1.318   1.008910 -206.610 -203.558 -202.536   1777.15   2417.88  1.000
 beta            1.183  0.000359   0.018   0.018110    1.154    1.182    1.212   2742.12   2336.94  1.000
@@ -619,9 +618,9 @@ beta/gamma = 1.183/0.101 = 11.7, which closely matches the true R0 =
 </div>
 </div>
 
-<div id="outline-container-orgbf755d1" class="outline-3">
-<h3 id="orgbf755d1">Model diagnostics</h3>
-<div class="outline-text-3" id="text-orgbf755d1">
+<div id="outline-container-org781f4c5" class="outline-3">
+<h3 id="org781f4c5">Model diagnostics</h3>
+<div class="outline-text-3" id="text-org781f4c5">
 <p>
 The model diagnostics are also excellent: all R-hat values are very
 close to 1.0 (indicating convergence), and the effective sample sizes
@@ -638,9 +637,9 @@ data.
 </div>
 </div>
 
-<div id="outline-container-org85fa192" class="outline-2">
-<h2 id="org85fa192">Testing on Real Epidemiological Data</h2>
-<div class="outline-text-2" id="text-org85fa192">
+<div id="outline-container-org90bbf3e" class="outline-2">
+<h2 id="org90bbf3e">Testing on Real Epidemiological Data</h2>
+<div class="outline-text-2" id="text-org90bbf3e">
 <p>
 While synthetic data validation is encouraging, real disease outbreaks
 present additional challenges: irregular reporting, behavioral
@@ -671,9 +670,9 @@ I have chosen a simple flu outbreak, appearing in
 </p>
 </div>
 
-<div id="outline-container-org80c4b0c" class="outline-3">
-<h3 id="org80c4b0c">Priors</h3>
-<div class="outline-text-3" id="text-org80c4b0c">
+<div id="outline-container-org4e4f963" class="outline-3">
+<h3 id="org4e4f963">Priors</h3>
+<div class="outline-text-3" id="text-org4e4f963">
 <p>
 For the influenza data, I kept the same priors used in the synthetic
 example rather than tailoring them to flu-specific knowledge. This
@@ -698,10 +697,10 @@ recommendations.
 </div>
 </div>
 
-<div id="outline-container-orgad019b6" class="outline-3">
-<h3 id="orgad019b6">Fitting the model</h3>
-<div class="outline-text-3" id="text-orgad019b6">
-<pre class="example" id="org72b0b22">
+<div id="outline-container-org8cad095" class="outline-3">
+<h3 id="org8cad095">Fitting the model</h3>
+<div class="outline-text-3" id="text-org8cad095">
+<pre class="example" id="org4ff9090">
                  Mean   MCSE   StdDev    MAD       5%      50%      95%  ESS_bulk  ESS_tail  R_hat
 lp__          -71.844  0.060   1.628   1.182  -74.967  -71.397  -70.221   1111.97   981.472  1.001
 beta            1.716  0.001   0.062   0.051    1.623    1.717    1.812   1804.90  1017.500  1.000
@@ -728,16 +727,16 @@ modeling considerably more complex.
 </p>
 
 
-<div id="orge77ad82" class="figure">
+<div id="org8293029" class="figure">
 <p><img src="../img/flu_inference_results.png" alt="flu_inference_results.png" style="margin: 5px; width: 900px;" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9033b3d" class="outline-3">
-<h3 id="org9033b3d">Model limitations</h3>
-<div class="outline-text-3" id="text-org9033b3d">
+<div id="outline-container-orge7c0fef" class="outline-3">
+<h3 id="orge7c0fef">Model limitations</h3>
+<div class="outline-text-3" id="text-orge7c0fef">
 <p>
 Our SIR framework makes several strong assumptions that merit
 discussion. We assume homogeneous mixing (everyone contacts everyone
@@ -763,9 +762,9 @@ MCMC efficiency by reducing parameter correlation.
 </div>
 </div>
 
-<div id="outline-container-orgc69d3fb" class="outline-2">
-<h2 id="orgc69d3fb">Conclusion</h2>
-<div class="outline-text-2" id="text-orgc69d3fb">
+<div id="outline-container-org11c5b37" class="outline-2">
+<h2 id="org11c5b37">Conclusion</h2>
+<div class="outline-text-2" id="text-org11c5b37">
 <p>
 This foundational post establishes the core Stan implementation
 patterns we'll need for dengue modeling. In the next posts, we'll

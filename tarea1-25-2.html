@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-15 lun 15:17 -->
+<!-- 2025-09-15 lun 16:04 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Tarea 1</title>
@@ -217,10 +217,57 @@ make the list of comunas available when everyone has signed up. They
 will be assigned by the code available
 <a href="code/random_assign.py">here</a> (with a different
 <a href="https://en.wikipedia.org/wiki/Random_seed">seed</a>).</li>
+<li><b>Objetivo</b>: consolidar una capa comunal con población y proxies
+satelitales, y producir mapas y análisis exploratorio reproducible.</li>
 </ul>
+</div>
+</div>
+
+<div id="outline-container-org936dc51" class="outline-2">
+<h2 id="org936dc51">Materiales de estudio</h2>
+<div class="outline-text-2" id="text-org936dc51">
+<ul class="org-ul">
+<li>Geopandas
+<ul class="org-ul">
+<li>GIS in <code>geopandas</code> and <code>python</code> [<a href="https://www.youtube.com/playlist?list=PLLxyyob7YmEH1R0kGwAb-jjDUuD4tf5EM">link</a>]</li>
+<li>Intro to <code>geopandas</code> [<a href="https://geopandas.org/en/stable/getting_started/introduction.html">link</a>]</li>
+<li>Joris Van den Bossche's <code>geopandas</code> tutorial [<a href="https://github.com/jorisvandenbossche/geopandas-tutorial">link</a>]</li>
+</ul></li>
+<li>Rasterio
+<ul class="org-ul">
+<li>Official Documentation: Python Quickstart - Rasterio
+[<a href="https://medium.com/@mommermiscience/dealing-with-geospatial-raster-data-in-python-with-rasterio-775e5ba0c9f5">link</a>]</li>
+<li>Comprehensive Tutorial: Dealing with Geospatial Raster Data in
+Python with Rasterio [<a href="https://medium.com/@mommermiscience/dealing-with-geospatial-raster-data-in-python-with-rasterio-775e5ba0c9f5">link</a>]</li>
+</ul></li>
+<li>Rasterstats
+<ul class="org-ul">
+<li>Manual [<a href="https://pythonhosted.org/rasterstats/manual.html">link</a>]</li>
+<li>Tutorial
+[<a href="https://community.esri.com/t5/python-snippets-blog/calculating-zonal-statistics-with-python/ba-p/883278">here</a>]</li>
+</ul></li>
+</ul>
+
 <p>
--<b>Objetivo</b>: consolidar una capa comunal con población y proxies
-  satelitales, y producir mapas y análisis exploratorio reproducible.
+<b>Recommended Study Order</b>
+</p>
+
+<ol class="org-ol">
+<li>Comenzar con el curso de YouTube de GeoDelta Labs sobre <code>geopandas</code>
+(2,5 horas)</li>
+<li>Leer la guía rápida de Python de <code>rasterio</code> para el manejo de
+rásteres</li>
+<li>Revisar la guía de la comunidad ESRI sobre <code>rasterstats</code> para
+estadísticas zonales</li>
+<li>Practicar con ejemplos de integración <code>geopandas-rasterio</code></li>
+<li>Repasar <code>pandas</code>, <code>scipy</code>, <code>matplotlib</code> en el contexto de
+visualización geoespacial</li>
+</ol>
+
+<p>
+Si encuentran un tutorial más claro o una documentación mejor,
+compártanlo para poder añadirlo aquí y que sirva tanto a los demás
+como a futuros cursos. Por favor, incluyan el enlace.
 </p>
 </div>
 </div>
@@ -343,7 +390,10 @@ y rutas relativas.</li>
 <ul class="org-ul">
 <li>Fuentes y enlaces de datos, fechas de descarga y licencias.</li>
 <li>Decisiones de limpieza y CRS usado.</li>
-<li>Resultados (mapas y gráficos) y 5–8 <b>bullet points</b> de hallazgos.</li>
+<li>Resultados (mapas y gráficos) y 5-8 <b>bullet points</b> de
+hallazgos. Es decir, qué les llamó la atención numericamente. Pro
+ejemplo, los aeropuertos están en zonas rurales, o la población
+tiene una cierta distribucipón, etc.</li>
 </ul></li>
 <li><b>Figuras:</b> al menos <b>dos mapas</b> (población y VIIRS) y <b>un scatter</b>
 de correlación en <code>reports/figs/</code>.</li>

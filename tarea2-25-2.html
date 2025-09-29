@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2025-09-29 lun 11:26 -->
+<!-- 2025-09-29 lun 11:28 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tarea 2 — Variables Ambientales y Clima Local</title>
+<title>Tarea 2 - Variables Ambientales y Clima Local</title>
 <meta name="author" content="Equipo docente" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
@@ -196,54 +196,13 @@
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Tarea 2 — Variables Ambientales y Clima Local
+<h1 class="title">Tarea 2 - Variables Ambientales y Clima Local
 <br />
-<span class="subtitle">Predicción de ENT — Efectos de floración y alergias</span>
+<span class="subtitle">Predicción de ENT - Efectos de floración y alergias</span>
 </h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>&Iacute;ndice</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#org7cfbdf2">1. Propósito</a></li>
-<li><a href="#org3b0dc2e">2. Objetivos de aprendizaje</a></li>
-<li><a href="#org25682ac">3. Entregables</a></li>
-<li><a href="#org1987afd">4. Rubrica de evaluación (100 pts)</a></li>
-<li><a href="#orgc6581df">5. Datos y alcance</a>
-<ul>
-<li><a href="#orgf42e3b3">5.1. Cobertura espacial</a></li>
-<li><a href="#org67a4c8a">5.2. Horizonte temporal</a></li>
-<li><a href="#orge2abe7f">5.3. Fuentes</a></li>
-</ul>
-</li>
-<li><a href="#org2b8f086">6. Estructura de carpetas recomendada</a></li>
-<li><a href="#org690f728">7. Requisitos</a></li>
-<li><a href="#orgb2d84a8">8. Diccionario de variables </a></li>
-<li><a href="#orgbcc351f">9. Flujo de trabajo</a>
-<ul>
-<li><a href="#orgd3b4b40">9.1. 1) Descarga</a></li>
-<li><a href="#org6016a04">9.2. 2) Preprocesamiento</a></li>
-<li><a href="#org5ece1fb">9.3. 3) Estadísticas zonales</a></li>
-<li><a href="#orgf8f567c">9.4. 4) Integración y <b>panel</b></a></li>
-<li><a href="#org35a6797">9.5. 5) Visualización y reporte</a></li>
-</ul>
-</li>
-<li><a href="#orgdddbae6">10. Chequeos mínimos (QA/QC)</a></li>
-<li><a href="#org1d38680">11. Preguntas que deben responder en el reporte</a></li>
-<li><a href="#orgc3573c6">12. Preparación para Tarea 3–5</a></li>
-<li><a href="#org42984af">13. Plantillas de código (mínimas)</a>
-<ul>
-<li><a href="#orge963a3a">13.1. Estadísticas zonales diarias</a></li>
-<li><a href="#org217722f">13.2. Serie comunal agregada semanal</a></li>
-<li><a href="#org9dcc496">13.3. Mapa rápido</a></li>
-</ul>
-</li>
-<li><a href="#orgd017a02">14. Entrega</a></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org7cfbdf2" class="outline-2">
-<h2 id="org7cfbdf2"><span class="section-number-2">1.</span> Propósito</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-org484a9bb" class="outline-2">
+<h2 id="org484a9bb">Propósito</h2>
+<div class="outline-text-2" id="text-org484a9bb">
 <p>
 Esta tarea consolida la obtención, el preprocesamiento y la
 integración de variables climáticas y de calidad del aire a escala
@@ -254,9 +213,9 @@ estandarizado.
 </p>
 </div>
 </div>
-<div id="outline-container-org3b0dc2e" class="outline-2">
-<h2 id="org3b0dc2e"><span class="section-number-2">2.</span> Objetivos de aprendizaje</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgef37553" class="outline-2">
+<h2 id="orgef37553">Objetivos de aprendizaje</h2>
+<div class="outline-text-2" id="text-orgef37553">
 <ul class="org-ul">
 <li>Descargar y procesar <b>reanalysis</b> climática (ERA5) y contaminantes
 (Sentinel‑5P).</li>
@@ -269,9 +228,9 @@ sobre umbral).</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org25682ac" class="outline-2">
-<h2 id="org25682ac"><span class="section-number-2">3.</span> Entregables</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orgf9ef721" class="outline-2">
+<h2 id="orgf9ef721">Entregables</h2>
+<div class="outline-text-2" id="text-orgf9ef721">
 <ol class="org-ol">
 <li><code>data/processed/ambiental_rm.parquet</code> con panel comuna‑fecha y
 columnas descritas en <code>diccionario</code> más abajo.</li>
@@ -282,9 +241,9 @@ columnas descritas en <code>diccionario</code> más abajo.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org1987afd" class="outline-2">
-<h2 id="org1987afd"><span class="section-number-2">4.</span> Rubrica de evaluación (100 pts)</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-orga51c6d8" class="outline-2">
+<h2 id="orga51c6d8">Rubrica de evaluación (100 pts)</h2>
+<div class="outline-text-2" id="text-orga51c6d8">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -338,13 +297,13 @@ columnas descritas en <code>diccionario</code> más abajo.</li>
 </table>
 </div>
 </div>
-<div id="outline-container-orgc6581df" class="outline-2">
-<h2 id="orgc6581df"><span class="section-number-2">5.</span> Datos y alcance</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org01ce02a" class="outline-2">
+<h2 id="org01ce02a">Datos y alcance</h2>
+<div class="outline-text-2" id="text-org01ce02a">
 </div>
-<div id="outline-container-orgf42e3b3" class="outline-3">
-<h3 id="orgf42e3b3"><span class="section-number-3">5.1.</span> Cobertura espacial</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-org5a78dee" class="outline-3">
+<h3 id="org5a78dee">Cobertura espacial</h3>
+<div class="outline-text-3" id="text-org5a78dee">
 <ul class="org-ul">
 <li>Regiones asignadas (uso del <b>shapefile</b> o <code>GeoPackage</code> aprobado en
 Tarea 1).</li>
@@ -353,18 +312,18 @@ en <code>EPSG:4326</code>.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org67a4c8a" class="outline-3">
-<h3 id="org67a4c8a"><span class="section-number-3">5.2.</span> Horizonte temporal</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-org928dfd5" class="outline-3">
+<h3 id="org928dfd5">Horizonte temporal</h3>
+<div class="outline-text-3" id="text-org928dfd5">
 <ul class="org-ul">
 <li>2018–2025 (ajusten si su equipo requiere un subconjunto). Resolución
 diaria; agregaciones semanales ISO y mensuales.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge2abe7f" class="outline-3">
-<h3 id="orge2abe7f"><span class="section-number-3">5.3.</span> Fuentes</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-orga20332a" class="outline-3">
+<h3 id="orga20332a">Fuentes</h3>
+<div class="outline-text-3" id="text-orga20332a">
 <ul class="org-ul">
 <li><b>ERA5-Land/ERA5</b>: temperatura 2 m (t2m), humedad relativa (rh, derivada), precipitación total (tp), velocidad del viento 10 m (u10, v10).</li>
 <li><b>Sentinel‑5P TROPOMI</b>: NO2 troposférico, O3 total col., SO2, con <b>quality flags</b>.</li>
@@ -372,10 +331,10 @@ diaria; agregaciones semanales ISO y mensuales.</li>
 </div>
 </div>
 </div>
-<div id="outline-container-org2b8f086" class="outline-2">
-<h2 id="org2b8f086"><span class="section-number-2">6.</span> Estructura de carpetas recomendada</h2>
-<div class="outline-text-2" id="text-6">
-<pre class="example" id="org2f06aad">
+<div id="outline-container-orgf7e2485" class="outline-2">
+<h2 id="orgf7e2485">Estructura de carpetas recomendada</h2>
+<div class="outline-text-2" id="text-orgf7e2485">
+<pre class="example" id="org4f243dc">
 data/
   raw/{era5,s5p}/
   processed/
@@ -386,18 +345,18 @@ report/
 </pre>
 </div>
 </div>
-<div id="outline-container-org690f728" class="outline-2">
-<h2 id="org690f728"><span class="section-number-2">7.</span> Requisitos</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-org7855de6" class="outline-2">
+<h2 id="org7855de6">Requisitos</h2>
+<div class="outline-text-2" id="text-org7855de6">
 <ul class="org-ul">
 <li>Usar: <code>geopandas</code>, <code>pandas</code>, <code>xarray</code>, <code>rioxarray</code>, <code>rasterio</code>, <code>rasterstats</code>, <code>pyproj</code>, <code>matplotlib</code>.</li>
 <li>Entregar <code>environment.yml</code> o <code>requirements.txt</code> con versiones bloqueadas.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb2d84a8" class="outline-2">
-<h2 id="orgb2d84a8"><span class="section-number-2">8.</span> Diccionario de variables <a id="org81842b2"></a></h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-orgeb43ac3" class="outline-2">
+<h2 id="orgeb43ac3">Diccionario de variables <a id="orgaf7c55f"></a></h2>
+<div class="outline-text-2" id="text-orgeb43ac3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -503,13 +462,13 @@ report/
 </table>
 </div>
 </div>
-<div id="outline-container-orgbcc351f" class="outline-2">
-<h2 id="orgbcc351f"><span class="section-number-2">9.</span> Flujo de trabajo</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-org75c7ef1" class="outline-2">
+<h2 id="org75c7ef1">Flujo de trabajo</h2>
+<div class="outline-text-2" id="text-org75c7ef1">
 </div>
-<div id="outline-container-orgd3b4b40" class="outline-3">
-<h3 id="orgd3b4b40"><span class="section-number-3">9.1.</span> 1) Descarga</h3>
-<div class="outline-text-3" id="text-9-1">
+<div id="outline-container-org962d619" class="outline-3">
+<h3 id="org962d619">1) Descarga</h3>
+<div class="outline-text-3" id="text-org962d619">
 <ul class="org-ul">
 <li>Parametrizar fecha inicial/final, <b>bbox</b> regiones y variables.</li>
 <li>Registrar <b>logs</b> y tamaños de archivo; no subir datos crudos al repo
@@ -517,9 +476,9 @@ público.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org6016a04" class="outline-3">
-<h3 id="org6016a04"><span class="section-number-3">9.2.</span> 2) Preprocesamiento</h3>
-<div class="outline-text-3" id="text-9-2">
+<div id="outline-container-orgaa5149f" class="outline-3">
+<h3 id="orgaa5149f">2) Preprocesamiento</h3>
+<div class="outline-text-3" id="text-orgaa5149f">
 <ul class="org-ul">
 <li>Convertir unidades a SI y a °C cuando aplique.</li>
 <li>Derivar humedad relativa a partir de temperatura y punto de rocío si
@@ -530,9 +489,9 @@ es necesario.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5ece1fb" class="outline-3">
-<h3 id="org5ece1fb"><span class="section-number-3">9.3.</span> 3) Estadísticas zonales</h3>
-<div class="outline-text-3" id="text-9-3">
+<div id="outline-container-org40db6d2" class="outline-3">
+<h3 id="org40db6d2">3) Estadísticas zonales</h3>
+<div class="outline-text-3" id="text-org40db6d2">
 <ul class="org-ul">
 <li>Para cada día y comuna: media, p5, p95. Calcular también % de días &gt;
 umbral mensual de NO2.</li>
@@ -541,9 +500,9 @@ vs. promedio regional ponderado.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf8f567c" class="outline-3">
-<h3 id="orgf8f567c"><span class="section-number-3">9.4.</span> 4) Integración y <b>panel</b></h3>
-<div class="outline-text-3" id="text-9-4">
+<div id="outline-container-orgee4fb29" class="outline-3">
+<h3 id="orgee4fb29">4) Integración y <b>panel</b></h3>
+<div class="outline-text-3" id="text-orgee4fb29">
 <ul class="org-ul">
 <li>Unir todas las variables por <code>[comuna_id, fecha]</code>. Incluir columna
 <code>source</code> y <code>qa_flag</code>.</li>
@@ -552,9 +511,9 @@ vs. promedio regional ponderado.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org35a6797" class="outline-3">
-<h3 id="org35a6797"><span class="section-number-3">9.5.</span> 5) Visualización y reporte</h3>
-<div class="outline-text-3" id="text-9-5">
+<div id="outline-container-orge774a6e" class="outline-3">
+<h3 id="orge774a6e">5) Visualización y reporte</h3>
+<div class="outline-text-3" id="text-orge774a6e">
 <ul class="org-ul">
 <li>Mapas: cuantilización (q5‑q95) y <b>class breaks</b> consistentes entre
 meses.</li>
@@ -565,9 +524,9 @@ extremos.</li>
 </div>
 </div>
 </div>
-<div id="outline-container-orgdddbae6" class="outline-2">
-<h2 id="orgdddbae6"><span class="section-number-2">10.</span> Chequeos mínimos (QA/QC)</h2>
-<div class="outline-text-2" id="text-10">
+<div id="outline-container-orgfcaf6fb" class="outline-2">
+<h2 id="orgfcaf6fb">Chequeos mínimos (QA/QC)</h2>
+<div class="outline-text-2" id="text-orgfcaf6fb">
 <ul class="org-ul">
 <li class="off"><code>[&nbsp;]</code> Cobertura temporal ≥ 95% por comuna y año o justificar imputación</li>
 <li class="off"><code>[&nbsp;]</code> Proyecciones coherentes y área conservada tras reproyección</li>
@@ -576,9 +535,9 @@ extremos.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org1d38680" class="outline-2">
-<h2 id="org1d38680"><span class="section-number-2">11.</span> Preguntas que deben responder en el reporte</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-orgd41dcdc" class="outline-2">
+<h2 id="orgd41dcdc">Preguntas que deben responder en el reporte</h2>
+<div class="outline-text-2" id="text-orgd41dcdc">
 <ol class="org-ol">
 <li>¿Cómo varían clima y contaminación entre comunas y estaciones?</li>
 <li>¿Qué relación exploratoria se observa entre NO2 y temperatura/humedad?</li>
@@ -587,9 +546,9 @@ extremos.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgc3573c6" class="outline-2">
-<h2 id="orgc3573c6"><span class="section-number-2">12.</span> Preparación para Tarea 3–5</h2>
-<div class="outline-text-2" id="text-12">
+<div id="outline-container-org0f2fc72" class="outline-2">
+<h2 id="org0f2fc72">Preparación para Tarea 3–5</h2>
+<div class="outline-text-2" id="text-org0f2fc72">
 <ul class="org-ul">
 <li>Exportar agregados semanales ISO y mensuales en <code>data/processed/ambiental_rm_agg.parquet</code>.</li>
 <li>Mantener claves y nombres coherentes para unión con NDVI/SAVI y epidemiología.</li>
@@ -597,13 +556,13 @@ extremos.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org42984af" class="outline-2">
-<h2 id="org42984af"><span class="section-number-2">13.</span> Plantillas de código (mínimas)</h2>
-<div class="outline-text-2" id="text-13">
+<div id="outline-container-org45fa161" class="outline-2">
+<h2 id="org45fa161">Plantillas de código (mínimas)</h2>
+<div class="outline-text-2" id="text-org45fa161">
 </div>
-<div id="outline-container-orge963a3a" class="outline-3">
-<h3 id="orge963a3a"><span class="section-number-3">13.1.</span> Estadísticas zonales diarias</h3>
-<div class="outline-text-3" id="text-13-1">
+<div id="outline-container-org30c4c21" class="outline-3">
+<h3 id="org30c4c21">Estadísticas zonales diarias</h3>
+<div class="outline-text-3" id="text-org30c4c21">
 <div class="org-src-container">
 <pre class="src src-python"><code><span style="color: #a020f0;">import</span> geopandas <span style="color: #a020f0;">as</span> gpd, pandas <span style="color: #a020f0;">as</span> pd, xarray <span style="color: #a020f0;">as</span> xr, rioxarray <span style="color: #a020f0;">as</span> rxr
 <span style="color: #a020f0;">from</span> rasterstats <span style="color: #a020f0;">import</span> zonal_stats
@@ -624,9 +583,9 @@ extremos.</li>
 </div>
 </div>
 </div>
-<div id="outline-container-org217722f" class="outline-3">
-<h3 id="org217722f"><span class="section-number-3">13.2.</span> Serie comunal agregada semanal</h3>
-<div class="outline-text-3" id="text-13-2">
+<div id="outline-container-org56239db" class="outline-3">
+<h3 id="org56239db">Serie comunal agregada semanal</h3>
+<div class="outline-text-3" id="text-org56239db">
 <div class="org-src-container">
 <pre class="src src-python"><code><span style="color: #a0522d;">df</span>=pd.read_parquet(<span style="color: #8b2252;">"data/processed/ambiental_rm.parquet"</span>)
 <span style="color: #a0522d;">w</span>=(df.assign(iso_week=df[<span style="color: #8b2252;">"fecha"</span>].dt.isocalendar().week)
@@ -637,9 +596,9 @@ w.to_parquet(<span style="color: #8b2252;">"data/processed/ambiental_rm_agg.parq
 </div>
 </div>
 </div>
-<div id="outline-container-org9dcc496" class="outline-3">
-<h3 id="org9dcc496"><span class="section-number-3">13.3.</span> Mapa rápido</h3>
-<div class="outline-text-3" id="text-13-3">
+<div id="outline-container-org452df3d" class="outline-3">
+<h3 id="org452df3d">Mapa rápido</h3>
+<div class="outline-text-3" id="text-org452df3d">
 <div class="org-src-container">
 <pre class="src src-python"><code><span style="color: #a020f0;">import</span> matplotlib.pyplot <span style="color: #a020f0;">as</span> plt
 <span style="color: #a0522d;">g</span>=gpd.read_file(<span style="color: #8b2252;">"data/geo/comunas_rm.gpkg"</span>).to_crs(4326)
@@ -653,9 +612,9 @@ plt.savefig(<span style="color: #8b2252;">"figs/no2_rm_primavera2023.png"</span>
 </div>
 </div>
 </div>
-<div id="outline-container-orgd017a02" class="outline-2">
-<h2 id="orgd017a02"><span class="section-number-2">14.</span> Entrega</h2>
-<div class="outline-text-2" id="text-14">
+<div id="outline-container-org04c81d9" class="outline-2">
+<h2 id="org04c81d9">Entrega</h2>
+<div class="outline-text-2" id="text-org04c81d9">
 <ul class="org-ul">
 <li>Fecha límite: Indicar según cronograma del curso.</li>
 </ul>

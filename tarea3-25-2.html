@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2025-10-20 lun 14:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tarea 3 - Floración y Producción Agrícola</title>
+<meta name="author" content="Equipo docente" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Tarea 3 - Floración y Producción Agrícola
+<br />
+<span class="subtitle">Predicción de ENT — Floración, vegetación y exposición a pólenes</span>
+</h1>
+<div id="outline-container-org03a3cff" class="outline-2">
+<h2 id="org03a3cff">Propósito</h2>
+<div class="outline-text-2" id="text-org03a3cff">
+<p>
+Esta tarea conecta agricultura y fenología de la vegetación con la
+exposición potencial a pólenes. Construirán series espacio-temporales
+de índices de vegetación, identificarán períodos de floración por
+comuna y los compararán con clima y contaminación de la Tarea 2. El
+resultado será un set de <b>features</b> listo para modelos de la Tarea 4 y
+jerárquicos de la Tarea 5.
+</p>
+</div>
+</div>
+<div id="outline-container-org4c0a307" class="outline-2">
+<h2 id="org4c0a307">Objetivos de aprendizaje</h2>
+<div class="outline-text-2" id="text-org4c0a307">
+<ul class="org-ul">
+<li>Integrar datos de producción/cosechas agrícolas (INE) a nivel
+comunal.</li>
+<li>Calcular y resumir NDVI, SAVI y NDWI desde imágenes satelitales con
+enmascaramiento de nubes.</li>
+<li>Detectar ventanas de máxima actividad fenológica por comuna y
+estación.</li>
+<li>Comparar patrones agrícolas/vegetacionales con clima y contaminantes
+(salidas de Tarea 2).</li>
+<li>Entregar un pipeline reproducible en Python.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb5cdf3f" class="outline-2">
+<h2 id="orgb5cdf3f">Insumos (mínimos)</h2>
+<div class="outline-text-2" id="text-orgb5cdf3f">
+<ul class="org-ul">
+<li><b>Shapefile/GeoJSON de comunas</b> y tabla de población de la Tarea 1.</li>
+<li><b>Clima y contaminación</b> armonizados por comuna-fecha de la Tarea 2.</li>
+<li><b>Agricultura (INE)</b>: superficie/producción por cultivo y comuna 2024
+si disponible.</li>
+<li><b>Imágenes satelitales</b>: Sentinel-2 L2A o Landsat-8/9 (según
+disponibilidad y cobertura de nubes). Bandas rojo, NIR, green y
+SCL/QA.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org06a3e14" class="outline-2">
+<h2 id="org06a3e14">Estructura sugerida de proyecto</h2>
+<div class="outline-text-2" id="text-org06a3e14">
+<pre class="example">
+data/
+  ine_agricola.csv
+  s2/
+  l8/
+  clima_contam_t2.parquet
+geo/ comunas.gpkg
+out/
+  indices_vegetación.parquet
+  fenología_resumen.parquet
+figs/
+notebooks/
+</pre>
+</div>
+</div>
+<div id="outline-container-org26ccc87" class="outline-2">
+<h2 id="org26ccc87">Tareas y entregables intermedios</h2>
+<div class="outline-text-2" id="text-org26ccc87">
+</div>
+<div id="outline-container-orge7fe9f8" class="outline-3">
+<h3 id="orge7fe9f8">1) Integración agrícola INE → comunas</h3>
+<div class="outline-text-3" id="text-orge7fe9f8">
+<ul class="org-ul">
+<li>Normalicen nombres/códigos de comuna y cultivo.</li>
+<li>Construyan métricas por comuna-año: superficie_ha, producción_ton,
+diversidad_cultivos (p.ej., índice de Shannon), principales
+cultivos.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-python"><code><span style="color: #a020f0;">import</span> pandas <span style="color: #a020f0;">as</span> pd
+<span style="color: #a0522d;">ine</span>=pd.read_csv(<span style="color: #8b2252;">"data/ine_agricola.csv"</span>)
+<span style="color: #a0522d;">mapa</span>=pd.read_parquet(<span style="color: #8b2252;">"data/comunas_codigos.parquet"</span>)
+<span style="color: #a0522d;">ine</span>=ine.merge(mapa,how=<span style="color: #8b2252;">"left"</span>,on=[<span style="color: #8b2252;">"region"</span>,<span style="color: #8b2252;">"provincia"</span>,<span style="color: #8b2252;">"comuna"</span>])
+<span style="color: #a0522d;">agg</span>=(ine.groupby([<span style="color: #8b2252;">"comuna_id"</span>,<span style="color: #8b2252;">"anio"</span>])
+         .agg(superficie_ha=(<span style="color: #8b2252;">"superficie_ha"</span>,<span style="color: #8b2252;">"sum"</span>),
+              produccion_ton=(<span style="color: #8b2252;">"produccion_ton"</span>,<span style="color: #8b2252;">"sum"</span>),
+              cultivos=(<span style="color: #8b2252;">"cultivo"</span>,<span style="color: #8b2252;">"nunique"</span>))
+         .reset_index())
+agg.to_parquet(<span style="color: #8b2252;">"out/agricola_comuna_anio.parquet"</span>)
+<span style="color: #483d8b;">print</span>(agg.head(3))
+</code></pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org1ce21d8" class="outline-3">
+<h3 id="org1ce21d8">2) Preprocesamiento de imágenes y cálculo de índices</h3>
+<div class="outline-text-3" id="text-org1ce21d8">
+<ul class="org-ul">
+<li>Seleccionen meses relevantes para floración por macro-estación
+(p.ej., SON y DJF).</li>
+<li>Enmascaren nubes y sombras con la banda SCL/QA.</li>
+<li>Generen <b>composites</b> mensuales por comuna utilizando <b>zonal
+statistics</b>.</li>
+<li>Calculen NDVI, SAVI y NDWI; documenten fórmulas y bandas usadas.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-python"><code><span style="color: #a020f0;">import</span> rasterio, geopandas <span style="color: #a020f0;">as</span> gpd, numpy <span style="color: #a020f0;">as</span> np
+<span style="color: #a020f0;">from</span> rasterstats <span style="color: #a020f0;">import</span> zonal_stats
+<span style="color: #a0522d;">g</span>=gpd.read_file(<span style="color: #8b2252;">"geo/comunas.gpkg"</span>).to_crs(32719)
+<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">comp_zonal</span>(path_red,path_nir,path_green,geom):
+    <span style="color: #a020f0;">with</span> rasterio.<span style="color: #483d8b;">open</span>(path_red) <span style="color: #a020f0;">as</span> r, rasterio.<span style="color: #483d8b;">open</span>(path_nir) <span style="color: #a020f0;">as</span> n, rasterio.<span style="color: #483d8b;">open</span>(path_green) <span style="color: #a020f0;">as</span> gch:
+        <span style="color: #a0522d;">red</span>, <span style="color: #a0522d;">nir</span>, <span style="color: #a0522d;">gr</span>=r.read(1).astype(<span style="color: #8b2252;">"float32"</span>), n.read(1).astype(<span style="color: #8b2252;">"float32"</span>), gch.read(1).astype(<span style="color: #8b2252;">"float32"</span>)
+    <span style="color: #a0522d;">ndvi</span>=(nir-red)/((nir+red)+1e-6)
+    <span style="color: #a0522d;">savi</span>=((1.5*(nir-red))/((nir+red+0.5)+1e-6))
+    <span style="color: #a0522d;">ndwi</span>=(gr-nir)/((gr+nir)+1e-6)
+    <span style="color: #a0522d;">arr</span>={<span style="color: #8b2252;">"ndvi"</span>:ndvi,<span style="color: #8b2252;">"savi"</span>:savi,<span style="color: #8b2252;">"ndwi"</span>:ndwi}
+    <span style="color: #a0522d;">out</span>={}
+    <span style="color: #a020f0;">for</span> k,a <span style="color: #a020f0;">in</span> arr.items():
+        <span style="color: #a0522d;">zs</span>=zonal_stats(geom,a,stats=[<span style="color: #8b2252;">"mean"</span>,<span style="color: #8b2252;">"median"</span>,<span style="color: #8b2252;">"std"</span>],affine=r.transform,nodata=np.nan)
+        <span style="color: #a0522d;">out</span>|={f<span style="color: #8b2252;">"</span>{k}<span style="color: #8b2252;">_</span>{s}<span style="color: #8b2252;">"</span>:[zs[i][s] <span style="color: #a020f0;">for</span> i <span style="color: #a020f0;">in</span> <span style="color: #483d8b;">range</span>(<span style="color: #483d8b;">len</span>(zs))] <span style="color: #a020f0;">for</span> s <span style="color: #a020f0;">in</span> [<span style="color: #8b2252;">"mean"</span>,<span style="color: #8b2252;">"median"</span>,<span style="color: #8b2252;">"std"</span>]}
+    <span style="color: #a020f0;">return</span> out
+</code></pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orge15408f" class="outline-3">
+<h3 id="orge15408f">3) Serie temporal comuna-mes y detección de floración</h3>
+<div class="outline-text-3" id="text-orge15408f">
+<ul class="org-ul">
+<li>Unifiquen índices por comuna-mes.</li>
+<li>Detecten ventanas de floración con una o más reglas:
+<ul class="org-ul">
+<li>umbral relativo: NDVI/SAVI por encima del percentil 75 de la
+comuna y pendiente positiva;</li>
+<li>picos mediante <b>peak finding</b> tras suavizado (p.ej., media móvil
+3).</li>
+</ul></li>
+<li>Reporten por comuna: inicio, fin, duración y magnitud del pico
+principal por año.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-python"><code><span style="color: #a0522d;">idx</span>=pd.read_parquet(<span style="color: #8b2252;">"out/&#237;ndices_vegetaci&#243;n.parquet"</span>)
+<span style="color: #a0522d;">idx</span>=idx.sort_values([<span style="color: #8b2252;">"comuna_id"</span>,<span style="color: #8b2252;">"fecha"</span>])
+<span style="color: #a0522d;">idx</span>[<span style="color: #8b2252;">"ndvi_smooth"</span>]=idx.groupby(<span style="color: #8b2252;">"comuna_id"</span>).ndvi_mean.transform(<span style="color: #a020f0;">lambda</span> s: s.rolling(3,1).mean())
+<span style="color: #a0522d;">thr</span>=idx.groupby(<span style="color: #8b2252;">"comuna_id"</span>).ndvi_smooth.transform(<span style="color: #a020f0;">lambda</span> s: s.quantile(0.75))
+<span style="color: #a0522d;">idx</span>[<span style="color: #8b2252;">"flag_flor"</span>]= (idx.ndvi_smooth&gt;=thr) &amp; (idx.ndvi_smooth.diff().gt(0))
+<span style="color: #a0522d;">win</span>=(idx[idx.flag_flor].groupby([<span style="color: #8b2252;">"comuna_id"</span>,<span style="color: #8b2252;">"anio"</span>])
+       .agg(inicio=(<span style="color: #8b2252;">"fecha"</span>,<span style="color: #8b2252;">"min"</span>), fin=(<span style="color: #8b2252;">"fecha"</span>,<span style="color: #8b2252;">"max"</span>),
+            ndvi_max=(<span style="color: #8b2252;">"ndvi_smooth"</span>,<span style="color: #8b2252;">"max"</span>), dur_dias=(<span style="color: #8b2252;">"fecha"</span>,<span style="color: #8b2252;">"nunique"</span>))
+       .reset_index())
+win.to_parquet(<span style="color: #8b2252;">"out/fenolog&#237;a_resumen.parquet"</span>)
+<span style="color: #483d8b;">print</span>(win.head(3))
+</code></pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org89464ff" class="outline-3">
+<h3 id="org89464ff">4) Comparación con clima y contaminación de Tarea 2</h3>
+<div class="outline-text-3" id="text-org89464ff">
+<ul class="org-ul">
+<li>Integren <code>clima_contam_t2.parquet</code> por comuna-mes.</li>
+<li>Analicen asociaciones exploratorias:
+<ul class="org-ul">
+<li>correlaciones entre magnitud/duración de floración y temperatura,
+humedad, precipitación;</li>
+<li>cruces con NO2, O3, SO2.</li>
+</ul></li>
+<li>Entreguen 3–5 figuras estándar: mapas de pico de floración,
+calendarios de calor por comuna, y <b>scatter</b> con bandas de
+confianza.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-python"><code><span style="color: #a0522d;">fen</span>=pd.read_parquet(<span style="color: #8b2252;">"out/fenolog&#237;a_resumen.parquet"</span>)
+<span style="color: #a0522d;">cc</span>=pd.read_parquet(<span style="color: #8b2252;">"data/clima_contam_t2.parquet"</span>)
+<span style="color: #a0522d;">df</span>=fen.merge(cc,on=[<span style="color: #8b2252;">"comuna_id"</span>,<span style="color: #8b2252;">"anio"</span>,<span style="color: #8b2252;">"mes"</span>],how=<span style="color: #8b2252;">"left"</span>)
+<span style="color: #a0522d;">corr</span>=(df[[<span style="color: #8b2252;">"ndvi_max"</span>,<span style="color: #8b2252;">"dur_dias"</span>,<span style="color: #8b2252;">"t2m_mean"</span>,<span style="color: #8b2252;">"rh_mean"</span>,<span style="color: #8b2252;">"pr_sum"</span>,<span style="color: #8b2252;">"no2_mean"</span>,<span style="color: #8b2252;">"o3_mean"</span>,<span style="color: #8b2252;">"so2_mean"</span>]]
+      .corr().<span style="color: #483d8b;">round</span>(2))
+<span style="color: #483d8b;">print</span>(corr)
+</code></pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb2f86d1" class="outline-3">
+<h3 id="orgb2f86d1">5) Producto final para T4–T5</h3>
+<div class="outline-text-3" id="text-orgb2f86d1">
+<ul class="org-ul">
+<li>Generen <b>features</b> por comuna-mes: <code>ndvi_mean</code>, <code>savi_mean</code>,
+<code>ndwi_mean</code>, <code>ndvi_max</code>, <code>dur_flor</code>, indicadores de estación y de
+cultivos dominantes.</li>
+<li>Guarden un único <code>features_vegetacion.parquet</code> documentado y listo
+para su unión con epidemiología y socioeconómicos.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfd93fe1" class="outline-2">
+<h2 id="orgfd93fe1">Requisitos de visualización mínima</h2>
+<div class="outline-text-2" id="text-orgfd93fe1">
+<ul class="org-ul">
+<li>Mapa coroplético de pico de floración por comuna y año reciente.</li>
+<li>Calendario de calor comuna vs. mes para <code>ndvi_mean</code>.</li>
+<li>Figura comparativa: <code>ndvi_mean</code> vs. <code>t2m_mean</code> y <code>no2_mean</code> en la
+región asignada.</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-python"><code><span style="color: #a020f0;">import</span> matplotlib.pyplot <span style="color: #a020f0;">as</span> plt, geopandas <span style="color: #a020f0;">as</span> gpd, pandas <span style="color: #a020f0;">as</span> pd
+<span style="color: #a0522d;">g</span>=gpd.read_file(<span style="color: #8b2252;">"geo/comunas.gpkg"</span>)
+<span style="color: #a0522d;">fv</span>=pd.read_parquet(<span style="color: #8b2252;">"out/fenolog&#237;a_resumen.parquet"</span>)
+<span style="color: #a0522d;">m</span>=g.merge(fv[fv.anio==2024],on=<span style="color: #8b2252;">"comuna_id"</span>,how=<span style="color: #8b2252;">"left"</span>)
+<span style="color: #a0522d;">ax</span>=g.plot(edgecolor=<span style="color: #8b2252;">"black"</span>,linewidth=0.2); m.plot(column=<span style="color: #8b2252;">"ndvi_max"</span>,legend=<span style="color: #008b8b;">True</span>,ax=ax)
+plt.title(<span style="color: #8b2252;">"Pico de floraci&#243;n (NDVI m&#225;x) &#8212; 2024 &#8212; REGION_ASIGNADA"</span>); plt.tight_layout()
+plt.savefig(<span style="color: #8b2252;">"figs/mapa_pico_floracion_2024.png"</span>,dpi=300)
+</code></pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org3ee333b" class="outline-2">
+<h2 id="org3ee333b">Entrega</h2>
+<div class="outline-text-2" id="text-org3ee333b">
+<ul class="org-ul">
+<li>Un notebook limpio y ejecutable con el pipeline completo.</li>
+<li><code>features_vegetacion.parquet</code>, <code>fenología_resumen.parquet</code> e
+<code>índices_vegetación.parquet</code>.</li>
+<li>3–5 figuras en <code>figs/</code> con títulos y ejes legibles.</li>
+<li>Un <code>README.org</code> breve con dependencias, estructura de carpetas y
+tiempos de ejecución aproximados.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0b70339" class="outline-2">
+<h2 id="org0b70339">Evaluación  (9 puntos)</h2>
+<div class="outline-text-2" id="text-org0b70339">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Criterio</th>
+<th scope="col" class="org-right">Puntos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Integración agrícola INE a nivel comunal (calidad y documentación)</td>
+<td class="org-right">2.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Cálculo de NDVI/SAVI/NDWI con enmascaramiento y <b>zonal stats</b></td>
+<td class="org-right">2.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Detección y resumen de ventanas de floración por comuna-año</td>
+<td class="org-right">2.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Análisis comparativo con clima y contaminantes (figuras y texto)</td>
+<td class="org-right">2.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Reproducibilidad y organización (estructura, naming, README)</td>
+<td class="org-right">1.0</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total</b></td>
+<td class="org-right">9.0</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+&mdash;
+</p>
+
+<p>
+Go to the course's <a href="iele25-2.html">home</a> or to
+<a href="https://leoferres.github.io">my website</a>.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

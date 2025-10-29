@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-10-12 dom 19:16 -->
+<!-- 2025-10-29 Wed 11:58 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Tarea 1</title>
 <meta name="author" content="Leo Ferres" />
 <meta name="generator" content="Org Mode" />
-<style type="text/css">
+<style>
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -71,7 +71,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-js:before { content: 'Javascript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -200,9 +200,10 @@
 <br />
 <span class="subtitle">Población, Territorio y Datos Satelitales</span>
 </h1>
-<div id="outline-container-org23d663d" class="outline-2">
-<h2 id="org23d663d">Información general</h2>
-<div class="outline-text-2" id="text-org23d663d">
+
+<div id="outline-container-orgc7092ea" class="outline-2">
+<h2 id="orgc7092ea">Información general</h2>
+<div class="outline-text-2" id="text-orgc7092ea">
 <ul class="org-ul">
 <li><b>Profesor:</b> Leo Ferres, <b>TAs:</b> Antuan Vayisqui y Alex Palatnic</li>
 <li><b>Valor:</b> 9 puntos de homework (consistente con el esquema del curso)</li>
@@ -237,9 +238,10 @@ satelitales, y producir mapas y análisis exploratorio reproducible.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3ba08ac" class="outline-2">
-<h2 id="org3ba08ac">Materiales de estudio</h2>
-<div class="outline-text-2" id="text-org3ba08ac">
+
+<div id="outline-container-org337bbab" class="outline-2">
+<h2 id="org337bbab">Materiales de estudio</h2>
+<div class="outline-text-2" id="text-org337bbab">
 <ul class="org-ul">
 <li>Geopandas
 <ul class="org-ul">
@@ -301,9 +303,10 @@ como a futuros cursos. Por favor, incluyan el enlace.
 </p>
 </div>
 </div>
-<div id="outline-container-orgf1c7066" class="outline-2">
-<h2 id="orgf1c7066">Limpieza</h2>
-<div class="outline-text-2" id="text-orgf1c7066">
+
+<div id="outline-container-org917a788" class="outline-2">
+<h2 id="org917a788">Limpieza</h2>
+<div class="outline-text-2" id="text-org917a788">
 <ol class="org-ol">
 <li>Cree la estructura mínima de proyecto:
 <ul class="org-ul">
@@ -320,13 +323,14 @@ debe permitir recomputar para todo Chile con un parámetro.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org486bd57" class="outline-2">
-<h2 id="org486bd57">Mapas de Población y Proxies Satelitales (VIIRS)</h2>
-<div class="outline-text-2" id="text-org486bd57">
+
+<div id="outline-container-org4faacb4" class="outline-2">
+<h2 id="org4faacb4">Mapas de Población y Proxies Satelitales (VIIRS)</h2>
+<div class="outline-text-2" id="text-org4faacb4">
 </div>
-<div id="outline-container-orgcc2ca96" class="outline-3">
-<h3 id="orgcc2ca96">Objetivo</h3>
-<div class="outline-text-3" id="text-orgcc2ca96">
+<div id="outline-container-orgbeec8c6" class="outline-3">
+<h3 id="orgbeec8c6">Objetivo</h3>
+<div class="outline-text-3" id="text-orgbeec8c6">
 <p>
 Aprender a cargar, unir y visualizar datos geoespaciales en Python;
 construir un coroplético comunal de población y evaluar la relación
@@ -336,9 +340,10 @@ VIIRS</b>).
 </p>
 </div>
 </div>
-<div id="outline-container-org17c0a11" class="outline-3">
-<h3 id="org17c0a11">Parte 1: Búsqueda y preparación de datos</h3>
-<div class="outline-text-3" id="text-org17c0a11">
+
+<div id="outline-container-org8861542" class="outline-3">
+<h3 id="org8861542">Parte 1: Búsqueda y preparación de datos</h3>
+<div class="outline-text-3" id="text-org8861542">
 <ol class="org-ol">
 <li><b>Límites comunales RM:</b> shapefile o geopackage oficial.</li>
 <li><b>Población por comuna:</b> Censo/INE (último año disponible) con
@@ -353,9 +358,10 @@ comuna.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org2d03ec1" class="outline-3">
-<h3 id="org2d03ec1">Parte 2: Mapa coroplético de población</h3>
-<div class="outline-text-3" id="text-org2d03ec1">
+
+<div id="outline-container-orgb18ee9f" class="outline-3">
+<h3 id="orgb18ee9f">Parte 2: Mapa coroplético de población</h3>
+<div class="outline-text-3" id="text-orgb18ee9f">
 <ol class="org-ol">
 <li>Cargue límites con <code>geopandas</code> y población con <code>pandas</code>; haga el
 <b>join</b>.</li>
@@ -365,9 +371,10 @@ título, <b>scale bar</b> simple y <b>north arrow</b> básico.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgfc4e710" class="outline-3">
-<h3 id="orgfc4e710">Parte 3: Puntos</h3>
-<div class="outline-text-3" id="text-orgfc4e710">
+
+<div id="outline-container-org2d56195" class="outline-3">
+<h3 id="org2d56195">Parte 3: Puntos</h3>
+<div class="outline-text-3" id="text-org2d56195">
 <ol class="org-ol">
 <li>Cargue POIs (p. ej., aeropuertos).</li>
 <li>Conviértalos a <code>GeoDataFrame</code> y superpóngalos sobre el coroplético
@@ -376,9 +383,10 @@ con símbolos diferenciados.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgef71455" class="outline-3">
-<h3 id="orgef71455">Parte 4: Zonal statistics de VIIRS por comuna</h3>
-<div class="outline-text-3" id="text-orgef71455">
+
+<div id="outline-container-org5f6b190" class="outline-3">
+<h3 id="org5f6b190">Parte 4: Zonal statistics de VIIRS por comuna</h3>
+<div class="outline-text-3" id="text-org5f6b190">
 <ol class="org-ol">
 <li>Cargue raster VIIRS con <code>rasterio</code>.</li>
 <li>Calcule <code>zonal_stats</code> (media y suma) por comuna; añada las métricas
@@ -388,9 +396,10 @@ a la capa comunal.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org07ef59a" class="outline-3">
-<h3 id="org07ef59a">Parte 5: Análisis y visualización</h3>
-<div class="outline-text-3" id="text-org07ef59a">
+
+<div id="outline-container-orgf9a7b6d" class="outline-3">
+<h3 id="orgf9a7b6d">Parte 5: Análisis y visualización</h3>
+<div class="outline-text-3" id="text-orgf9a7b6d">
 <ol class="org-ol">
 <li>Estime correlación (<b>Pearson/Spearman</b>) entre población y VIIRS;
 reporte coeficientes y <b>n</b>.</li>
@@ -402,9 +411,10 @@ cuantílica).</li>
 </div>
 </div>
 </div>
-<div id="outline-container-orgd6a6e09" class="outline-2">
-<h2 id="orgd6a6e09">Entrega</h2>
-<div class="outline-text-2" id="text-orgd6a6e09">
+
+<div id="outline-container-org9bb7d08" class="outline-2">
+<h2 id="org9bb7d08">Entrega</h2>
+<div class="outline-text-2" id="text-org9bb7d08">
 <ol class="org-ol">
 <li>Un <code>.ipynb</code> <b>o</b> <code>.py</code> reproducible en <code>notebooks/</code> con <b>seed</b> fija
 y rutas relativas.</li>
@@ -423,17 +433,19 @@ de correlación en <code>reports/figs/</code>.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orge639f92" class="outline-2">
-<h2 id="orge639f92">Fecha de entrega</h2>
-<div class="outline-text-2" id="text-orge639f92">
+
+<div id="outline-container-orgfe77294" class="outline-2">
+<h2 id="orgfe77294">Fecha de entrega</h2>
+<div class="outline-text-2" id="text-orgfe77294">
 <p>
 <b>Viernes 3 de octubre de 2025</b> (11:59pm, hora RM).
 </p>
 </div>
 </div>
-<div id="outline-container-orga99d3cc" class="outline-2">
-<h2 id="orga99d3cc">Criterios de evaluación</h2>
-<div class="outline-text-2" id="text-orga99d3cc">
+
+<div id="outline-container-orgd0bca2a" class="outline-2">
+<h2 id="orgd0bca2a">Criterios de evaluación</h2>
+<div class="outline-text-2" id="text-orgd0bca2a">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -492,7 +504,7 @@ de correlación en <code>reports/figs/</code>.</li>
 </table>
 
 <p>
-&mdash;
+&#x2014;
 </p>
 
 <p>

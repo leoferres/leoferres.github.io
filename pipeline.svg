@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 870 140" width="870" height="140">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#333"></path>
+    </marker>
+    <style>
+      .box{rx:6;fill:#f7fafc;stroke:#2a5673;stroke-width:2}
+      .text{font:600 14px sans-serif;fill:#122;text-anchor:middle}
+      .sub{font:400 12px sans-serif;fill:#334;text-anchor:middle}
+    </style>
+  </defs>
+
+  <rect x="10" y="25" width="140" height="70" class="box"></rect>
+  <text x="80" y="55" class="text">Integración INE</text>
+  <text x="80" y="73" class="sub">superficie / cultivos</text>
+
+  <rect x="175" y="25" width="150" height="70" class="box"></rect>
+  <text x="250" y="55" class="text">Índices satelitales</text>
+  <text x="250" y="73" class="sub">NDVI, SAVI, NDWI</text>
+
+  <rect x="345" y="25" width="150" height="70" class="box"></rect>
+  <text x="420" y="55" class="text">Fenología</text>
+  <text x="420" y="73" class="sub">detección de floración</text>
+
+  <rect x="515" y="25" width="150" height="70" class="box"></rect>
+  <text x="590" y="55" class="text">Comparación</text>
+  <text x="590" y="73" class="sub">clima y contaminación</text>
+
+  <rect x="685" y="25" width="100" height="70" class="box"></rect>
+  <text x="735" y="55" class="text">Features</text>
+  <text x="735" y="73" class="sub">para modelar</text>
+
+  <line x1="150" y1="60" x2="175" y2="60" stroke="#333" stroke-width="2" marker-end="url(#arrow)"></line>
+  <line x1="325" y1="60" x2="345" y2="60" stroke="#333" stroke-width="2" marker-end="url(#arrow)"></line>
+  <line x1="495" y1="60" x2="515" y2="60" stroke="#333" stroke-width="2" marker-end="url(#arrow)"></line>
+  <line x1="665" y1="60" x2="685" y2="60" stroke="#333" stroke-width="2" marker-end="url(#arrow)"></line>
+</svg>

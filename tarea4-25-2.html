@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<!-- 2025-11-05 Wed 11:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tarea 4 - Datos Epidemiológicos y Modelos de Regresión</title>
+<meta name="author" content="Leo Ferres" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Tarea 4 - Datos Epidemiológicos y Modelos de Regresión
+<br />
+<span class="subtitle">Predicción de ENT — Integrando hospitalizaciones con determinantes ambientales</span>
+</h1>
+
+<div id="outline-container-org4726b58" class="outline-2">
+<h2 id="org4726b58">Propósito</h2>
+<div class="outline-text-2" id="text-org4726b58">
+<p>
+Esta tarea consolida el análisis epidemiológico integrando datos de
+egresos hospitalarios con los determinantes ambientales, climáticos y
+de vegetación construidos en las tareas previas. Desarrollarán modelos
+de regresión de conteo para estimar asociaciones entre exposición
+ambiental y hospitalizaciones por enfermedades respiratorias y
+alérgicas, preparando el terreno para los modelos espacio-temporales
+de la Tarea 5.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8c0a0ed" class="outline-2">
+<h2 id="org8c0a0ed">Objetivos de aprendizaje</h2>
+<div class="outline-text-2" id="text-org8c0a0ed">
+<ul class="org-ul">
+<li>Procesar y limpiar datos de egresos hospitalarios de la
+Superintendencia de Salud.</li>
+<li>Integrar información socioeconómica de CASEN y Censo como
+covariables de ajuste.</li>
+<li>Construir modelos de regresión Poisson y Binomial Negativa con
+offsets poblacionales.</li>
+<li>Evaluar interacciones entre contaminación atmosférica y períodos de
+floración.</li>
+<li>Implementar diagnósticos de modelo y validación cruzada temporal.</li>
+<li>Generar mapas de riesgo relativo y tasas ajustadas por comuna.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org77220b8" class="outline-2">
+<h2 id="org77220b8">Insumos y datos base</h2>
+<div class="outline-text-2" id="text-org77220b8">
+</div>
+<div id="outline-container-orgf7e9301" class="outline-3">
+<h3 id="orgf7e9301">Fuentes principales</h3>
+<div class="outline-text-3" id="text-orgf7e9301">
+<ul class="org-ul">
+<li><b>Egresos hospitalarios 2024</b>: Base de datos de la Superintendencia
+de Salud con registros anonimizados por diagnóstico CIE-10.</li>
+<li><b>Datos ambientales</b>: Panel comuna-fecha de Tarea 2
+(<code>ambiental_rm.*</code>).</li>
+<li><b>Índices de vegetación</b>: Fenología y floración de Tarea 3
+(<code>features_vegetacion.parquet</code>).</li>
+<li><b>Socioeconómicos</b>: CASEN 2022/2024 y proyecciones censales INE.</li>
+<li><b>Geografía</b>: Shapefile/GeoPackage de comunas con población de
+Tarea 1.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org251e75f" class="outline-3">
+<h3 id="org251e75f">Diagnósticos CIE-10 de interés</h3>
+<div class="outline-text-3" id="text-org251e75f">
+<ul class="org-ul">
+<li>J00-J06: Infecciones agudas vías respiratorias superiores</li>
+<li>J12-J18: Neumonía</li>
+<li>J20-J22: Bronquitis aguda y bronquiolitis</li>
+<li>J30-J39: Enfermedades vías respiratorias superiores (incluye rinitis
+alérgica J30)</li>
+<li>J40-J47: Enfermedades crónicas vías respiratorias inferiores
+(incluye asma J45)</li>
+<li>L20-L30: Dermatitis y eczema (potencial componente alérgico)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgef7ca1f" class="outline-2">
+<h2 id="orgef7ca1f">Estructura de proyecto requerida</h2>
+<div class="outline-text-2" id="text-orgef7ca1f">
+<pre class="example">
+data/
+  egresos/
+    egresos_2024_raw.csv
+    diagnosticos_cie10.csv
+  socioeconomicos/
+    casen_comunal_2024.csv
+    censo_proyecciones_2024.csv
+  processed/
+    egresos_procesados.parquet
+    panel_integrado.parquet
+models/
+  poisson_base.pkl
+  negbin_interacciones.pkl
+figs/
+  tasas_ajustadas_mapa.png
+  rr_floracion_no2.png
+  diagnosticos_temporales.png
+notebooks/
+  04_epidemiologia_regresion.ipynb
+reports/
+  04_resultados_modelos.org
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgfa21664" class="outline-2">
+<h2 id="orgfa21664">Flujo de trabajo detallado</h2>
+<div class="outline-text-2" id="text-orgfa21664">
+</div>
+<div id="outline-container-orgf5e41a2" class="outline-3">
+<h3 id="orgf5e41a2">1) Procesamiento de egresos hospitalarios</h3>
+<div class="outline-text-3" id="text-orgf5e41a2">
+<ul class="org-ul">
+<li>Descargar y leer base de datos de egresos 2024.</li>
+<li>Filtrar por región asignada y diagnósticos de interés.</li>
+<li>Geocodificar comuna de residencia (no de hospital).</li>
+<li>Agregar por comuna-semana epidemiológica.</li>
+<li>Calcular tasas brutas por 100,000 habitantes.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org97b4fda" class="outline-3">
+<h3 id="org97b4fda">2) Integración de determinantes socioeconómicos</h3>
+<div class="outline-text-3" id="text-org97b4fda">
+<ul class="org-ul">
+<li>Procesar CASEN: pobreza multidimensional, escolaridad promedio,
+hacinamiento, acceso a salud.</li>
+<li>Estandarizar proyecciones poblacionales por grupo etario.</li>
+<li>Crear índice de vulnerabilidad social compuesto.</li>
+<li>Documentar métodos de imputación para datos faltantes.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge6f669c" class="outline-3">
+<h3 id="orge6f669c">3) Panel integrado espacio-temporal</h3>
+<div class="outline-text-3" id="text-orge6f669c">
+<ul class="org-ul">
+<li>Unir egresos, ambiente, vegetación y socioeconómicos por [comuna_id,
+semana_epi, año].</li>
+<li>Crear rezagos (lags) de 0-4 semanas para exposiciones ambientales.</li>
+<li>Definir ventanas de exposición acumulada (media móvil 7-14 días).</li>
+<li>Incluir indicadores estacionales y tendencia temporal.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgab90780" class="outline-3">
+<h3 id="orgab90780">4) Modelamiento estadístico</h3>
+<div class="outline-text-3" id="text-orgab90780">
+</div>
+<div id="outline-container-org3b1009b" class="outline-4">
+<h4 id="org3b1009b">Modelo base Poisson</h4>
+<div class="outline-text-4" id="text-org3b1009b">
+<ul class="org-ul">
+<li>Variable respuesta: conteo de hospitalizaciones por comuna-semana</li>
+<li>Offset: log(población) para modelar tasas</li>
+<li>Covariables principales: t2m_mean, no2_mean, ndvi_mean,
+vulnerabilidad</li>
+<li>Efectos fijos por comuna y mes</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org429b89b" class="outline-4">
+<h4 id="org429b89b">Modelo Binomial Negativo con interacciones</h4>
+<div class="outline-text-4" id="text-org429b89b">
+<ul class="org-ul">
+<li>Mismo setup que Poisson pero con parámetro de dispersión</li>
+<li>Interacciones clave:
+<ul class="org-ul">
+<li>no2_mean × flag_floracion</li>
+<li>t2m_mean × vulnerabilidad_alta</li>
+<li>ndvi_mean × estación</li>
+</ul></li>
+<li>Splines para relaciones no lineales de temperatura</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf195a7a" class="outline-4">
+<h4 id="orgf195a7a">Diagnósticos y validación</h4>
+<div class="outline-text-4" id="text-orgf195a7a">
+<ul class="org-ul">
+<li>Test de sobredispersión (Poisson vs NegBin)</li>
+<li>Residuos de Pearson y deviance</li>
+<li>Autocorrelación espacial (Moran's I)</li>
+<li>Validación cruzada temporal (train 2024 Q1-Q3, test Q4)</li>
+<li>Bootstrap para intervalos de confianza de efectos</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org95ecd99" class="outline-3">
+<h3 id="org95ecd99">5) Visualización de resultados</h3>
+<div class="outline-text-3" id="text-org95ecd99">
+<ul class="org-ul">
+<li>Mapa coroplético de tasas ajustadas y riesgo relativo</li>
+<li>Serie temporal de casos observados vs predichos por comuna</li>
+<li>Gráfico de efectos marginales de interacciones</li>
+<li>Curvas dosis-respuesta para contaminantes principales</li>
+<li>Tabla resumen de IRR (Incidence Rate Ratios) con IC 95%</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6cd0b4d" class="outline-2">
+<h2 id="org6cd0b4d">Requisitos técnicos</h2>
+<div class="outline-text-2" id="text-org6cd0b4d">
+<ul class="org-ul">
+<li>Python 3.9+</li>
+<li>Librerías principales: <code>pandas</code>, <code>geopandas</code>, <code>statsmodels</code>,
+<code>scikit-learn</code></li>
+<li>Para modelos: <code>statsmodels.api.GLM</code>, <code>scipy.stats</code></li>
+<li>Visualización: <code>matplotlib</code>, <code>seaborn</code>, <code>plotly</code></li>
+<li>Procesamiento paralelo recomendado para bootstrap</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org522adcc" class="outline-2">
+<h2 id="org522adcc">Entregables específicos</h2>
+<div class="outline-text-2" id="text-org522adcc">
+</div>
+<div id="outline-container-org7f407e5" class="outline-3">
+<h3 id="org7f407e5">Código ejecutable</h3>
+<div class="outline-text-3" id="text-org7f407e5">
+<ul class="org-ul">
+<li>Notebook o script Python completo y comentado</li>
+<li>Funciones modulares para preprocessing, modeling y visualization</li>
+<li>Configuración reproducible con semillas fijas</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7bf43de" class="outline-3">
+<h3 id="org7bf43de">Datos procesados</h3>
+<div class="outline-text-3" id="text-org7bf43de">
+<ol class="org-ol">
+<li><code>egresos_procesados.parquet</code>: Panel limpio de hospitalizaciones</li>
+<li><code>panel_integrado.parquet</code>: Dataset final para modelamiento</li>
+<li><code>predicciones_comunales.parquet</code>: Tasas predichas y residuos</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf24bb43" class="outline-3">
+<h3 id="orgf24bb43">Reporte técnico (4-6 páginas)</h3>
+<div class="outline-text-3" id="text-orgf24bb43">
+<p>
+Secciones obligatorias:
+</p>
+<ol class="org-ol">
+<li><b>Introducción</b>: Hipótesis sobre relación ambiente-salud</li>
+<li><b>Métodos</b>: Descripción de modelos y estrategia de validación</li>
+<li><b>Resultados</b>:
+<ul class="org-ul">
+<li>Estadísticas descriptivas de hospitalizaciones</li>
+<li>Tabla de coeficientes principales (IRR con IC)</li>
+<li>Interpretación de interacciones significativas</li>
+</ul></li>
+<li><b>Discusión</b>:
+<ul class="org-ul">
+<li>Limitaciones del análisis ecológico</li>
+<li>Sesgos potenciales y confusores no medidos</li>
+<li>Recomendaciones para política pública</li>
+</ul></li>
+<li><b>Conclusiones</b>: Síntesis de hallazgos principales</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orged31d0c" class="outline-3">
+<h3 id="orged31d0c">Visualizaciones mínimas requeridas</h3>
+<div class="outline-text-3" id="text-orged31d0c">
+<ol class="org-ol">
+<li>Mapa de tasas de hospitalización ajustadas por edad</li>
+<li>Gráfico de interacción NO2 × floración</li>
+<li>Serie temporal observado vs predicho (3 comunas ejemplo)</li>
+<li>Forest plot de IRR para exposiciones principales</li>
+<li>Matriz de correlación de predictores</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb9f817d" class="outline-2">
+<h2 id="orgb9f817d">Evaluación (9 puntos)</h2>
+<div class="outline-text-2" id="text-orgb9f817d">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Criterio</th>
+<th scope="col" class="org-right">Puntos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Procesamiento correcto de egresos hospitalarios y CIE-10</td>
+<td class="org-right">1.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Integración apropiada de datos socioeconómicos</td>
+<td class="org-right">1.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Construcción del panel espacio-temporal con rezagos</td>
+<td class="org-right">1.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Implementación y diagnóstico de modelos Poisson/NegBin</td>
+<td class="org-right">2.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Evaluación de interacciones y validación cruzada</td>
+<td class="org-right">1.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Calidad del reporte y visualizaciones</td>
+<td class="org-right">1.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Reproducibilidad y documentación del código</td>
+<td class="org-right">0.5</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total</b></td>
+<td class="org-right">9.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgd31b6ff" class="outline-2">
+<h2 id="orgd31b6ff">Preguntas guía para el análisis</h2>
+<div class="outline-text-2" id="text-orgd31b6ff">
+<ol class="org-ol">
+<li>¿Qué diagnósticos respiratorios muestran mayor asociación con NO2 y
+material particulado?</li>
+<li>¿La relación contaminación-salud se modifica durante períodos de
+alta actividad vegetal?</li>
+<li>¿Las comunas con mayor vulnerabilidad social presentan efectos más
+pronunciados?</li>
+<li>¿Existe evidencia de umbrales no lineales para temperatura o
+contaminantes?</li>
+<li>¿Los rezagos temporales sugieren efectos agudos (0-7 días) o
+subagudos (7-21 días)?</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9265ed8" class="outline-2">
+<h2 id="org9265ed8">Tips de implementación</h2>
+<div class="outline-text-2" id="text-org9265ed8">
+</div>
+<div id="outline-container-org585e352" class="outline-3">
+<h3 id="org585e352">Cálculo de tasas con offset poblacional</h3>
+<div class="outline-text-3" id="text-org585e352">
+<p>
+La regresión Poisson con offset modela tasas en lugar de conteos:
+</p>
+<ul class="org-ul">
+<li>log(μ) = β₀ + β₁X₁ + &#x2026; + log(población)</li>
+<li>Equivale a: log(μ/población) = β₀ + β₁X₁ + &#x2026;</li>
+<li>IRR = exp(β): cambio multiplicativo en la tasa por unidad de X</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc460930" class="outline-3">
+<h3 id="orgc460930">Manejo de ceros y valores extremos</h3>
+<div class="outline-text-3" id="text-orgc460930">
+<ul class="org-ul">
+<li>Para comunas-semanas sin hospitalizaciones, mantener ceros (no
+eliminar)</li>
+<li>Considerar zero-inflated models si &gt;30% de ceros</li>
+<li>Winsorizar outliers extremos de exposición (p99)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1b2ddfd" class="outline-3">
+<h3 id="org1b2ddfd">Interpretación de interacciones</h3>
+<div class="outline-text-3" id="text-org1b2ddfd">
+<p>
+Para NO2 × floración:
+</p>
+<ul class="org-ul">
+<li>Si β₃ &gt; 0: efecto de NO2 amplificado durante floración</li>
+<li>Graficar efectos marginales para distintos niveles de floración</li>
+<li>Reportar p-valor de término de interacción, no solo coeficientes</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0cc19c8" class="outline-2">
+<h2 id="org0cc19c8">Fecha de entrega</h2>
+<div class="outline-text-2" id="text-org0cc19c8">
+<p>
+<b>17 de noviembre de 2025</b> (11:59pm, hora Santiago).  Tiempo
+estimado de dedicación: ~4 días completos de trabajo.
+</p>
+
+<p>
+&#x2014;
+</p>
+
+<p>
+Go to the course's <a href="iele25-2.html">home</a> or to
+<a href="https://leoferres.github.io">my website</a>.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
